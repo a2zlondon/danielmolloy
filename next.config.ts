@@ -1,7 +1,27 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "danielmolloy.com",
+      },
+      {
+        protocol: "https",
+        hostname: "**.wordpress.com",
+      },
+    ],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/blog-posts",
+        destination: "/blog",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

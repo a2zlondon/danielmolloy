@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# danielmolloy.com
+
+A modern, conversion-focused website for Daniel Molloy's fractional CTO services, built with Next.js and headless WordPress.
+
+## Features
+
+- **Headless WordPress**: Content managed in WordPress, rendered by Next.js
+- **SEO-Optimized**: Preserves all existing blog post URLs, sitemap, robots.txt
+- **Apple-Inspired Design**: Charcoal and crème color scheme with clean typography
+- **Three-Tier Pricing**: Day Rate, Monthly Retainer, and Embedded Fractional CTO
+- **Responsive**: Mobile-first design with shadcn/ui components
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS v4
+- **UI Components**: shadcn/ui
+- **CMS**: WordPress (headless via REST API)
+- **TypeScript**: Full type safety
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js 18+ 
+- npm or yarn
+- WordPress site (for content)
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env.local` file:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+4. Update `.env.local` with your WordPress API URL:
+   ```
+   NEXT_PUBLIC_WP_API_URL=https://cms.danielmolloy.com/wp-json/wp/v2
+   ```
+
+5. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+```
+├── app/                    # Next.js app router pages
+│   ├── [year]/[month]/[day]/[slug]/  # Blog post dynamic routes
+│   ├── about/               # About page
+│   ├── blog/                # Blog index
+│   ├── contact/             # Contact page
+│   ├── work-with-me/        # Pricing/services page
+│   └── page.tsx             # Homepage
+├── components/              # React components
+│   ├── ui/                  # shadcn/ui components
+│   ├── hero.tsx             # Homepage hero section
+│   ├── pricing-tiers.tsx    # Pricing cards
+│   ├── capabilities.tsx     # Skills/capabilities section
+│   └── ...
+├── lib/                     # Utilities
+│   ├── wp.ts                # WordPress API client
+│   └── utils.ts             # General utilities
+└── public/                  # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## WordPress Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The site uses WordPress as a headless CMS. After launch:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Move WordPress to `cms.danielmolloy.com` subdomain
+2. Ensure REST API is enabled (default in WordPress)
+3. Set permalink structure to: `/%year%/%monthnum%/%day%/%postname%/`
+4. Update `NEXT_PUBLIC_WP_API_URL` environment variable
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Vercel (Recommended)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push code to GitHub
+2. Import project in Vercel
+3. Add environment variable: `NEXT_PUBLIC_WP_API_URL`
+4. Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Other Platforms
 
-## Deploy on Vercel
+The site can be deployed to any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- Self-hosted (Node.js server)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `NEXT_PUBLIC_WP_API_URL`: WordPress REST API base URL (required)
+
+## Blog Post URL Preservation
+
+All blog posts maintain their original WordPress permalink structure:
+- Format: `/{year}/{month}/{day}/{slug}/`
+- Example: `/2024/09/20/the-ctos-role-the-decision-maker-behind-the-scenes/`
+
+This ensures zero SEO impact during migration.
+
+## Launch Checklist
+
+See [LAUNCH_CHECKLIST.md](./LAUNCH_CHECKLIST.md) for a complete pre-launch checklist.
+
+## License
+
+Private project - All rights reserved.
