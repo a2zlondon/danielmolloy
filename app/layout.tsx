@@ -18,7 +18,10 @@ export const metadata: Metadata = {
   authors: [{ name: "Daniel Molloy" }],
   creator: "Daniel Molloy",
   icons: {
-    icon: "/icon.png",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+    ],
   },
   openGraph: {
     type: "website",
