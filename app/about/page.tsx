@@ -4,8 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
 export const metadata = {
-  title: "About | Daniel Molloy",
-  description: "About Daniel Molloy - CEO of Misura.ai, fractional CTO, and tech leader with 20+ years of experience.",
+  title: "About",
+  description:
+    "About Daniel Molloy — fractional CTO for scale-ups, enterprises, and banking. 20+ years in software. UK, Europe, UAE, Saudi, US. I work with scale-ups and Series A+ companies, often referred by VCs and advisory firms.",
 };
 
 export default function AboutPage() {
@@ -37,9 +38,11 @@ export default function AboutPage() {
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   I build companies by turning complexity into clarity.
                 </p>
-                
                 <p>
-                  I work at the intersection of software, data, and decision-making—helping teams design systems that scale, endure, and actually get used. Software is complex by nature; my strength is holding the whole map in my head, understanding how the pieces connect, and then working methodically through each part until the solution is both elegant and practical.
+                  I work with scale-ups and Series A+ companies that need first or upgrade CTO leadership, often referred by VCs and advisory firms; I also work with banks, fintech, and enterprises. I work at the intersection of software, data, and decision-making—helping teams design systems that scale, endure, and actually get used.
+                </p>
+                <p>
+                  Software is complex by nature; my strength is holding the whole map in my head, understanding how the pieces connect, and then working methodically through each part until the solution is both elegant and practical.
                 </p>
                 
                 <p>

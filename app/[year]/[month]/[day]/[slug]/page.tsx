@@ -1,9 +1,10 @@
-import { getPostByDateAndSlug, getPosts } from "@/lib/wp";
+import { getPostByDateAndSlug } from "@/lib/wp";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { decodeHtmlEntities, getFeaturedImageUrl, stripHtml } from "@/lib/wp";
+import { ArticleJsonLd } from "@/components/structured-data";
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -14,13 +15,15 @@ interface BlogPostPageProps {
   }>;
 }
 
+const BASE_URL = "https://danielmolloy.com";
+
 export const dynamic = "force-dynamic";
 export const revalidate = 3600;
 
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const { year, month, day, slug } = await params;
   const post = await getPostByDateAndSlug(year, month, day, slug);
-  
+
   if (!post) {
     return {
       title: "Post not found",
@@ -29,10 +32,28 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
 
   const title = decodeHtmlEntities(post.title.rendered);
   const description = stripHtml(post.excerpt.rendered || post.content.rendered).slice(0, 160);
-  
+  const imageUrl = getFeaturedImageUrl(post);
+  const postUrl = `${BASE_URL}/${year}/${month}/${day}/${slug}`;
+  const ogImage = imageUrl || `${BASE_URL}/opengraph-image`;
+
   return {
     title,
     description,
+    openGraph: {
+      title,
+      description,
+      url: postUrl,
+      type: "article",
+      publishedTime: post.date,
+      modifiedTime: post.modified,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 
@@ -47,9 +68,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const date = new Date(post.date);
   const imageUrl = getFeaturedImageUrl(post);
   const title = decodeHtmlEntities(post.title.rendered);
-  
+  const description = stripHtml(post.excerpt.rendered || post.content.rendered).slice(0, 160);
+  const postUrl = `${BASE_URL}/${year}/${month}/${day}/${slug}`;
+
   return (
     <>
+      <ArticleJsonLd
+        headline={title}
+        description={description}
+        datePublished={post.date}
+        dateModified={post.modified}
+        imageUrl={imageUrl}
+        url={postUrl}
+      />
       <Nav />
       <main>
         <article className="py-24 bg-background">

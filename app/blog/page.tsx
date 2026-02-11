@@ -6,8 +6,9 @@ import Link from "next/link";
 import { decodeHtmlEntities, extractDateParts, getFeaturedImageUrl, stripHtml } from "@/lib/wp";
 
 export const metadata = {
-  title: "Writing | Daniel Molloy",
-  description: "Articles on technology strategy, product development, and startup leadership.",
+  title: "Writing",
+  description:
+    "Articles on technology strategy, product development, and leadership for scale-ups and enterprises. Daniel Molloy — fractional CTO.",
 };
 
 export const dynamic = "force-dynamic";

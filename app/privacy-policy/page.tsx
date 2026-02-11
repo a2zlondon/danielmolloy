@@ -3,7 +3,8 @@ import { Footer } from "@/components/footer";
 
 export const metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for danielmolloy.com",
+  description:
+    "Privacy policy for danielmolloy.com. How we collect, use, and protect your information when you use this site or book a call.",
 };
 
 export default function PrivacyPolicyPage() {

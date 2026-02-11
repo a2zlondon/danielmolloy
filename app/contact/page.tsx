@@ -5,8 +5,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { BOOK_CALL_URL } from "@/lib/constants";
 
 export const metadata = {
-  title: "Contact | Daniel Molloy",
-  description: "Get in touch with Daniel Molloy for fractional CTO services and tech leadership.",
+  title: "Contact",
+  description:
+    "Contact Daniel Molloy — Fractional CTO for enterprises and scale-ups. Remote and worldwide. Book a call or get in touch.",
 };
 
 export default function ContactPage() {

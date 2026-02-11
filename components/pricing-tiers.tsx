@@ -62,7 +62,7 @@ export function PricingTiers() {
             Three levels of engagement
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Each step up provides more dedicated leadership and strategic depth.
+            Each step up provides more dedicated leadership and strategic depth. Monthly Retainer is the most popular for scale-ups needing ongoing leadership.
           </p>
         </div>
         

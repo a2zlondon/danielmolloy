@@ -84,6 +84,9 @@ export function Testimonials() {
           </div>
         </div>
         
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Trusted by transformation and technology leaders at Snell, X4 Group and others.
+        </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {hydrated.map((testimonial, idx) => (
             <Card key={idx} className="border-0 shadow-sm h-full">

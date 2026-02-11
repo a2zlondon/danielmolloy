@@ -7,8 +7,9 @@ import { Footer } from "@/components/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata = {
-  title: "Work with me | Daniel Molloy",
-  description: "Fractional CTO services: Day Rate, Monthly Retainer, or Embedded Fractional CTO. Choose the engagement level that fits your startup.",
+  title: "Work with me",
+  description:
+    "Fractional CTO for scale-ups and Series A+. Day Rate, Monthly Retainer, or Embedded CTO. UK, Europe, MENA, US. Ongoing leadership and strategic depth for technical teams.",
 };
 
 export default function WorkWithMe() {
@@ -23,7 +24,7 @@ export default function WorkWithMe() {
                 Work with me
               </h1>
               <p className="text-xl text-muted-foreground">
-                Three levels of engagement, each providing more dedicated leadership and strategic depth as you scale.
+                I work with scale-ups and Series A+ companies that need fractional CTO leadership. Three levels of engagement—Day Rate, Monthly Retainer (most popular for ongoing leadership), and Embedded CTO—across Europe, MENA and the US.
               </p>
             </div>
           </div>

@@ -45,6 +45,21 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/locations" className="text-muted-foreground hover:text-foreground">
+                  Where I work
+                </Link>
+              </li>
+              <li>
+                <Link href="/for-partners" className="text-muted-foreground hover:text-foreground">
+                  For partners
+                </Link>
+              </li>
+              <li>
+                <Link href="/for-enterprises" className="text-muted-foreground hover:text-foreground">
+                  For enterprises
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy-policy" className="text-muted-foreground hover:text-foreground">
                   Privacy Policy
                 </Link>

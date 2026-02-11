@@ -18,10 +18,13 @@ export function Hero() {
               I work at the intersection of software, data, and decision-making. I help teams design systems that scale, endure, and get used in the real world.
             </p>
             <div className="flex flex-wrap items-center gap-2">
+              <Badge variant="secondary">Fractional CTO for scale-ups and Series A+</Badge>
               <Badge variant="secondary">20+ years in software</Badge>
-              <Badge variant="secondary">Founder-level operator</Badge>
-              <Badge variant="secondary">Strategy + execution</Badge>
+              <Badge variant="secondary">Trusted by VCs and leadership teams</Badge>
             </div>
+            <p className="text-sm text-muted-foreground">
+              Remote or on-site in London, Madrid, Berlin, Amsterdam, Paris, Dubai, Riyadh and across the US.
+            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-lg px-8 py-6" asChild>
                 <a href={BOOK_CALL_URL}>Book a call</a>

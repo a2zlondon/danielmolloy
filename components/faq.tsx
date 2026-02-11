@@ -5,30 +5,51 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
+export const faqs = [
+  {
+    question: "Who do you work with?",
+    answer:
+      "Scale-ups and Series A+ companies that need first or upgrade CTO leadership. I'm often referred by VCs, accelerators, and advisory firms. I also work with banks, fintech, and enterprises.",
+  },
+  {
+    question: "Do you work with banks and regulated industries?",
+    answer:
+      "Yes. I work with banks, financial services, fintech, and other regulated sectors. I'm used to working within compliance and governance requirements and can support technical leadership and strategy in those contexts.",
+  },
+  {
+    question: "Do you work remotely or on-site? Which regions?",
+    answer:
+      "Both. I work remotely with clients worldwide, and on-site when it adds value. I'm based in the UK and regularly work with clients in Europe (e.g. London, Madrid, Berlin, Amsterdam, Paris), MENA (UAE, Saudi Arabia), and across the US.",
+  },
   {
     question: "What's included in the pricing?",
-    answer: "All prices are exclusive of VAT. Day Rate includes a full-day strategic session. Monthly Retainer includes a set number of hours per month with regular calls and ongoing support. Embedded Fractional CTO includes leadership meeting participation, tech strategy ownership, and near co-founder level involvement.",
+    answer:
+      "All prices are exclusive of VAT. Day Rate includes a full-day strategic session. Monthly Retainer includes a set number of hours per month with regular calls and ongoing support. Embedded Fractional CTO includes leadership meeting participation, tech strategy ownership, and near co-founder level involvement.",
   },
   {
     question: "How quickly can we start?",
-    answer: "We can typically begin within days, not months. After an initial discovery call, we can have a tailored proposal ready within 24-48 hours and start the engagement immediately upon agreement.",
+    answer:
+      "We can typically begin within days, not months. After an initial discovery call, we can have a tailored proposal ready within 24-48 hours and start the engagement immediately upon agreement.",
   },
   {
     question: "What makes this different from hiring a full-time CTO?",
-    answer: "You get executive-level expertise without the full-time salary overhead (typically 60-70% cost savings), no equity dilution, immediate availability, and the flexibility to scale engagement up or down based on your needs. You also get access to proven frameworks and battle-tested experience from multiple startups.",
+    answer:
+      "You get executive-level expertise without the full-time salary overhead (typically 60-70% cost savings), no equity dilution, immediate availability, and the flexibility to scale engagement up or down based on your needs. You also get access to proven frameworks and battle-tested experience from multiple startups.",
   },
   {
     question: "What stage companies do you work with?",
-    answer: "I work with founders and startups at various stages—from pre-seed through Series A and beyond. Whether you're validating product-market fit, scaling your team, or navigating technical complexity, I adapt the engagement to your specific needs.",
+    answer:
+      "I work with scale-ups and Series A+ companies that need first or upgrade CTO leadership—from pre-seed through growth stage. Whether you're validating product-market fit, scaling your team, or navigating technical complexity, I adapt the engagement to your specific needs.",
   },
   {
     question: "Do you write code or just provide strategy?",
-    answer: "I'm structural, not hands-off. While my primary role is strategic leadership, I'm equally comfortable deep in code or shaping strategy. I focus on systems thinking, architecture design, and ensuring the right technical decisions are made—whether that means writing code, reviewing it, or guiding the team.",
+    answer:
+      "I'm structural, not hands-off. While my primary role is strategic leadership, I'm equally comfortable deep in code or shaping strategy. I focus on systems thinking, architecture design, and ensuring the right technical decisions are made—whether that means writing code, reviewing it, or guiding the team.",
   },
   {
     question: "What's the minimum commitment?",
-    answer: "Day Rate engagements are one-off. Monthly Retainer typically requires a 3-6 month minimum commitment for early-stage companies. Embedded Fractional CTO engagements are usually 6-12 months to deliver meaningful results and ROI.",
+    answer:
+      "Day Rate engagements are one-off. Monthly Retainer typically requires a 3-6 month minimum commitment for early-stage companies. Embedded Fractional CTO engagements are usually 6-12 months to deliver meaningful results and ROI.",
   },
 ];
 
