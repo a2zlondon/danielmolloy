@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { PersonAndServiceJsonLd } from "@/components/structured-data";
 
@@ -93,6 +94,7 @@ export default function RootLayout({
         </noscript>
         <PersonAndServiceJsonLd />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
