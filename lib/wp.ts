@@ -10,7 +10,7 @@
 
 import { SITE_URL } from "@/lib/constants";
 
-?// WordPress.com site domain (e.g. yoursite.wordpress.com) — required for public-api.wordpress.com
+// WordPress.com site domain (e.g. yoursite.wordpress.com), required for public-api.wordpress.com
 const DEFAULT_WPCOM_SITE = process.env.NEXT_PUBLIC_WPCOM_SITE || "danielmolloycom.wordpress.com";
 
 function normalizeBase(url: string) {
