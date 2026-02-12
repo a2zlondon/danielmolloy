@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 export const dynamic = "force-dynamic";
-export const revalidate = 3600;
+export const revalidate = 300; // 5 min — new WordPress posts show within a few minutes
 
 export default async function BlogPage() {
   const posts = await getPosts();

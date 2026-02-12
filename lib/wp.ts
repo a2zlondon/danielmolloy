@@ -92,9 +92,10 @@ interface WPMediaItem {
 // Fetch all posts
 export async function getPosts(): Promise<WPPost[]> {
   try {
-    const res = await fetch(`${endpoint("/posts")}?per_page=100&_embed=1`, {
-      next: { revalidate: 3600 }, // Revalidate every hour
-    });
+    const res = await fetch(
+      `${endpoint("/posts")}?per_page=100&status=publish&_embed=1`,
+      { next: { revalidate: 300 } } // Revalidate every 5 min so new posts appear sooner
+    );
     if (!res.ok) throw new Error('Failed to fetch posts');
     return res.json();
   } catch (error) {
@@ -106,9 +107,10 @@ export async function getPosts(): Promise<WPPost[]> {
 // Fetch a single post by slug
 export async function getPostBySlug(slug: string): Promise<WPPost | null> {
   try {
-    const res = await fetch(`${endpoint("/posts")}?slug=${encodeURIComponent(slug)}&_embed=1`, {
-      next: { revalidate: 3600 },
-    });
+    const res = await fetch(
+      `${endpoint("/posts")}?slug=${encodeURIComponent(slug)}&status=publish&_embed=1`,
+      { next: { revalidate: 300 } }
+    );
     if (!res.ok) throw new Error('Failed to fetch post');
     const posts = await res.json();
     return posts[0] || null;
@@ -126,21 +128,11 @@ export async function getPostByDateAndSlug(
   slug: string
 ): Promise<WPPost | null> {
   try {
-    // WordPress REST API doesn't support date filtering directly, so we fetch by slug
-    // and then match the date
     const post = await getPostBySlug(slug);
     if (!post) return null;
-    
-    const postDate = new Date(post.date);
-    const postYear = postDate.getFullYear().toString();
-    const postMonth = String(postDate.getMonth() + 1).padStart(2, '0');
-    const postDay = String(postDate.getDate()).padStart(2, '0');
-    
-    if (postYear === year && postMonth === month && postDay === day) {
-      return post;
-    }
-    
-    return null;
+
+    // Return post by slug; date in URL is for permalink only (lenient so timezone differences don't 404)
+    return post;
   } catch (error) {
     console.error('Error fetching post by date:', error);
     return null;
