@@ -1,9 +1,10 @@
 import { MetadataRoute } from "next";
 import { getPosts } from "@/lib/wp";
 import { extractDateParts } from "@/lib/wp";
+import { SITE_URL } from "@/lib/constants";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://danielmolloy.com";
+  const baseUrl = SITE_URL;
   const posts = await getPosts();
   
   const postUrls = posts.map((post) => {

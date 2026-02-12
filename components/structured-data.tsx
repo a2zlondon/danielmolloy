@@ -1,24 +1,26 @@
+import { SITE_URL } from "@/lib/constants";
+
 const PERSON_AND_SERVICE_JSON_LD = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://danielmolloy.com/#person",
+      "@id": `${SITE_URL}/#person`,
       name: "Daniel Molloy",
       jobTitle: "Fractional CTO",
       description:
         "Fractional CTO for scale-ups and Series A+ companies. I build companies by turning complexity into clarity. Technical leadership for banks, fintech, and enterprises. Remote or on-site in UK, Europe, UAE, Saudi Arabia and US.",
-      url: "https://danielmolloy.com",
+      url: SITE_URL,
       sameAs: [],
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://danielmolloy.com/#service",
+      "@id": `${SITE_URL}/#service`,
       name: "Daniel Molloy | Fractional CTO",
       description:
         "Fractional CTO and technical leadership for scale-ups, Series A+ companies, banks, fintech and enterprises. Day rate, monthly retainer, or embedded engagement. Remote or on-site in UK, Europe, MENA and US.",
-      url: "https://danielmolloy.com",
-      provider: { "@id": "https://danielmolloy.com/#person" },
+      url: SITE_URL,
+      provider: { "@id": `${SITE_URL}/#person` },
       areaServed: [
         { "@type": "Country", name: "United Kingdom" },
         { "@type": "Country", name: "United States" },
@@ -100,12 +102,12 @@ export function ArticleJsonLd({
     author: {
       "@type": "Person",
       name: "Daniel Molloy",
-      url: "https://danielmolloy.com",
+      url: SITE_URL,
     },
     publisher: {
       "@type": "Person",
       name: "Daniel Molloy",
-      url: "https://danielmolloy.com",
+      url: SITE_URL,
     },
     ...(imageUrl && { image: imageUrl }),
     url,

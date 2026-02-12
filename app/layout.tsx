@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { PersonAndServiceJsonLd } from "@/components/structured-data";
+import { SITE_URL } from "@/lib/constants";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://danielmolloy.com",
+    url: SITE_URL,
     siteName: "Daniel Molloy",
     title: "Daniel Molloy | Fractional CTO & Tech Leader",
     description:

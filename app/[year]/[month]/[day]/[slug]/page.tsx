@@ -3,8 +3,9 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { decodeHtmlEntities, getFeaturedImageUrl, stripHtml } from "@/lib/wp";
+import { decodeHtmlEntities, getFeaturedImageUrl, rewriteContentLinks, stripHtml } from "@/lib/wp";
 import { ArticleJsonLd } from "@/components/structured-data";
+import { SITE_URL } from "@/lib/constants";
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -14,8 +15,6 @@ interface BlogPostPageProps {
     slug: string;
   }>;
 }
-
-const BASE_URL = "https://danielmolloy.com";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 3600;
@@ -33,8 +32,8 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   const title = decodeHtmlEntities(post.title.rendered);
   const description = stripHtml(post.excerpt.rendered || post.content.rendered).slice(0, 160);
   const imageUrl = getFeaturedImageUrl(post);
-  const postUrl = `${BASE_URL}/${year}/${month}/${day}/${slug}`;
-  const ogImage = imageUrl || `${BASE_URL}/opengraph-image`;
+  const postUrl = `${SITE_URL}/${year}/${month}/${day}/${slug}`;
+  const ogImage = imageUrl || `${SITE_URL}/opengraph-image`;
 
   return {
     title,
@@ -69,7 +68,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const imageUrl = getFeaturedImageUrl(post);
   const title = decodeHtmlEntities(post.title.rendered);
   const description = stripHtml(post.excerpt.rendered || post.content.rendered).slice(0, 160);
-  const postUrl = `${BASE_URL}/${year}/${month}/${day}/${slug}`;
+  const postUrl = `${SITE_URL}/${year}/${month}/${day}/${slug}`;
 
   return (
     <>
@@ -122,7 +121,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               
               <div
                 className="prose prose-lg max-w-none prose-headings:font-light prose-p:text-muted-foreground prose-a:text-foreground prose-a:underline prose-strong:font-medium"
-                dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+                dangerouslySetInnerHTML={{ __html: rewriteContentLinks(post.content.rendered) }}
               />
             </div>
           </div>

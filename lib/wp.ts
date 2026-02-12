@@ -8,6 +8,8 @@
 // set `NEXT_PUBLIC_WP_API_URL` to:
 //   https://cms.danielmolloy.com/wp-json/wp/v2
 
+import { SITE_URL } from "@/lib/constants";
+
 const DEFAULT_WPCOM_SITE = process.env.NEXT_PUBLIC_WPCOM_SITE || "danielmolloy.com";
 
 function normalizeBase(url: string) {
@@ -226,6 +228,61 @@ export function decodeHtmlEntities(input: string): string {
 export function stripHtml(input: string): string {
   if (!input) return input;
   return input.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+}
+
+/**
+ * Rewrite blog links in post HTML so they point to this site's URLs.
+ * - WordPress.com and same-site absolute URLs for blog posts -> relative /year/month/day/slug
+ * - /blog-posts -> /blog
+ * Preserves external links and non-blog same-site links.
+ */
+export function rewriteContentLinks(html: string): string {
+  if (!html || typeof html !== "string") return html;
+
+  const siteHosts = [
+    "danielmolloy.com",
+    "www.danielmolloy.com",
+    "danielmolloy.wordpress.com",
+  ];
+
+  return html.replace(
+    /<a\s+([^>]*?)href=["']([^"']+)["']([^>]*)>/gi,
+    (match, before, href, after) => {
+      const trimmed = href.trim();
+      if (!trimmed) return match;
+
+      try {
+        // Relative path starting with / (e.g. /2024/01/15/my-post or /blog)
+        if (trimmed.startsWith("/")) {
+          const normalized = trimmed.replace(/\/+$/, ""); // strip trailing slash
+          const toBlog = normalized === "/blog-posts" ? "/blog" : normalized;
+          return `<a ${before}href="${toBlog}"${after}>`;
+        }
+
+        const url = new URL(trimmed, SITE_URL);
+        const host = url.hostname.toLowerCase();
+        const pathname = url.pathname.replace(/\/+$/, "") || "/";
+
+        if (!siteHosts.some((h) => host === h)) return match;
+
+        // Same-site or WP.com: rewrite blog post URLs to relative
+        const postMatch = pathname.match(/^(\/\d{4}\/\d{2}\/\d{2}\/[^/]+)/);
+        if (postMatch) {
+          const relative = postMatch[1];
+          const search = url.search;
+          const hash = url.hash;
+          return `<a ${before}href="${relative}${search}${hash}"${after}>`;
+        }
+        if (pathname === "/blog-posts" || pathname === "/blog-posts/") {
+          return `<a ${before}href="/blog"${after}>`;
+        }
+        // Other same-site links: make relative
+        return `<a ${before}href="${pathname}${url.search}${url.hash}"${after}>`;
+      } catch {
+        return match;
+      }
+    }
+  );
 }
 
 // WP.com provides `jetpack_featured_media_url` which is the easiest reliable image URL.
