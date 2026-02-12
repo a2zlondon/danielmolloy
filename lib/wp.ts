@@ -11,7 +11,10 @@
 import { SITE_URL } from "@/lib/constants";
 
 // WordPress.com site domain (e.g. yoursite.wordpress.com), required for public-api.wordpress.com
-const DEFAULT_WPCOM_SITE = process.env.NEXT_PUBLIC_WPCOM_SITE || "danielmolloycom.wordpress.com";
+const WPCOM_SITE_RAW = process.env.NEXT_PUBLIC_WPCOM_SITE || "danielmolloycom.wordpress.com";
+// Normalize custom domain to .wordpress.com so the Public API works (e.g. danielmolloy.com -> danielmolloycom.wordpress.com)
+const DEFAULT_WPCOM_SITE =
+  WPCOM_SITE_RAW === "danielmolloy.com" ? "danielmolloycom.wordpress.com" : WPCOM_SITE_RAW;
 
 function normalizeBase(url: string) {
   return url.replace(/\/+$/, "");
