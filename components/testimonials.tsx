@@ -61,14 +61,13 @@ export function Testimonials() {
     <section className="py-24 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="relative rounded-2xl overflow-hidden bg-foreground shadow-2xl lg:order-1">
-            <div className="absolute inset-0 bg-gradient-to-tr from-foreground via-foreground to-foreground/70" />
+          <div className="relative max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-muted shadow-lg lg:order-1">
             <Image
-              src="/images/misura-stage.png"
-              alt="Speaking at Misura.ai"
-              width={1200}
-              height={800}
-              className="relative w-full h-auto object-cover opacity-85"
+              src="/images/dan-by-window.png"
+              alt="Daniel Molloy"
+              width={480}
+              height={640}
+              className="relative w-full h-auto object-cover grayscale-[0.85] contrast-[1.05]"
             />
           </div>
           <div className="lg:order-2">
