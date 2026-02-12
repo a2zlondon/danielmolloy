@@ -31,7 +31,7 @@ git push -u origin main
 4. Vercel will auto-detect Next.js settings
 5. **Configure Environment Variables:**
    - `NEXT_PUBLIC_WP_API_URL` - Leave empty for now (uses WordPress.com API)
-   - `NEXT_PUBLIC_WPCOM_SITE` - Set to `danielmolloy.com` (if not using NEXT_PUBLIC_WP_API_URL)
+   - `NEXT_PUBLIC_WPCOM_SITE` - Set to `danielmolloycom.wordpress.com` (or leave unset to use this default)
 6. Click "Deploy"
 
 ### Step 3: Configure Domain
