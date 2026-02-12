@@ -61,14 +61,19 @@ export function Testimonials() {
     <section className="py-24 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="relative max-w-sm mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-muted shadow-lg lg:order-1">
-            <Image
-              src="/images/dan-by-window.png"
-              alt="Daniel Molloy"
-              width={480}
-              height={640}
-              className="relative w-full h-auto object-cover grayscale-[0.85] contrast-[1.05]"
-            />
+          <div className="flex justify-center lg:justify-start lg:order-1">
+            <div className="relative max-w-sm w-full">
+              <div className="absolute -inset-4 rounded-3xl bg-card/80 backdrop-blur-xl" aria-hidden />
+              <div className="relative rounded-2xl overflow-hidden bg-muted shadow-lg">
+                <Image
+                  src="/images/dan-by-window.png"
+                  alt="Daniel Molloy"
+                  width={480}
+                  height={640}
+                  className="w-full h-auto object-cover object-center grayscale-[0.85] contrast-[1.05]"
+                />
+              </div>
+            </div>
           </div>
           <div className="lg:order-2">
             <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4">
