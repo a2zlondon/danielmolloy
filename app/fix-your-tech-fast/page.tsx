@@ -1,8 +1,12 @@
+import Script from "next/script";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { STRIPE_AUDIT_URL, STRIPE_FIX_OPTIMISE_URL } from "@/lib/constants";
+import {
+  STRIPE_PUBLISHABLE_KEY,
+  STRIPE_BUY_BUTTON_AUDIT_ID,
+  STRIPE_BUY_BUTTON_FIX_OPTIMISE_ID,
+} from "@/lib/constants";
 
 export const metadata = {
   title: "Fix your tech fast",
@@ -13,6 +17,11 @@ export const metadata = {
 export default function FixYourTechFastPage() {
   return (
     <>
+      <Script
+        src="https://js.stripe.com/v3/buy-button.js"
+        strategy="afterInteractive"
+        async
+      />
       <Nav />
       <main>
         <section className="py-24 bg-background">
@@ -59,9 +68,13 @@ export default function FixYourTechFastPage() {
                       <span className="text-sm">1–2 page report, delivered in 48 hours</span>
                     </li>
                   </ul>
-                  <Button className="w-full" asChild>
-                    <a href={STRIPE_AUDIT_URL}>Buy Audit</a>
-                  </Button>
+                  <div className="stripe-buy-button-wrapper">
+                    {/* @ts-expect-error Stripe buy button web component */}
+                    <stripe-buy-button
+                      buy-button-id={STRIPE_BUY_BUTTON_AUDIT_ID}
+                      publishable-key={STRIPE_PUBLISHABLE_KEY}
+                    />
+                  </div>
                 </CardContent>
               </Card>
 
@@ -88,9 +101,13 @@ export default function FixYourTechFastPage() {
                       <span className="text-sm">1–3 days Work</span>
                     </li>
                   </ul>
-                  <Button className="w-full" variant="outline" asChild>
-                    <a href={STRIPE_FIX_OPTIMISE_URL}>Buy Fix &amp; Optimise</a>
-                  </Button>
+                  <div className="stripe-buy-button-wrapper">
+                    {/* @ts-expect-error Stripe buy button web component */}
+                    <stripe-buy-button
+                      buy-button-id={STRIPE_BUY_BUTTON_FIX_OPTIMISE_ID}
+                      publishable-key={STRIPE_PUBLISHABLE_KEY}
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>

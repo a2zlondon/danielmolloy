@@ -177,3 +177,23 @@
     @apply border-l-4 border-muted pl-4 italic my-6;
   }
 }
+
+/* Stripe buy button (fix-your-tech-fast): match site layout and radius */
+.stripe-buy-button-wrapper {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.stripe-buy-button-wrapper stripe-buy-button {
+  display: block;
+  width: 100%;
+}
+.stripe-buy-button-wrapper stripe-buy-button::part(button) {
+  border-radius: var(--radius-md);
+  width: 100%;
+}
+/* Fallback: Stripe injects an iframe; we style the host so layout fits the card */
+.stripe-buy-button-wrapper iframe {
+  border-radius: var(--radius-md);
+  width: 100% !important;
+}
