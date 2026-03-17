@@ -39,7 +39,7 @@ export default function FixYourTechFastPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-2xl font-light">
-                    Technical Audit – £750
+                    Technical Audit – £900 (incl. VAT)
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -68,7 +68,7 @@ export default function FixYourTechFastPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-2xl font-light">
-                    Fix &amp; Optimise – £1500
+                    Fix &amp; Optimise – £1800 (incl. VAT)
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -95,12 +95,9 @@ export default function FixYourTechFastPage() {
               </Card>
             </div>
 
-            <div className="max-w-5xl mx-auto pt-12 mt-12 border-t border-border">
-              <p className="text-muted-foreground">
-                20+ years in tech · Azure / AI / SaaS systems · Founder building
-                AI healthcare platform
-              </p>
-            </div>
+            <p className="max-w-5xl mx-auto mt-12 text-xs text-muted-foreground text-center">
+              All prices include VAT. Payment is taken at checkout via Stripe.
+            </p>
           </div>
         </section>
       </main>
