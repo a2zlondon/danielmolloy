@@ -68,7 +68,7 @@ export default function FixYourTechFastPage() {
                       <span className="text-sm">1–2 page report, delivered in 48 hours</span>
                     </li>
                   </ul>
-                  <div className="stripe-buy-button-wrapper">
+                  <div className="stripe-buy-button-wrapper flex justify-center">
                     {/* @ts-expect-error Stripe buy button web component */}
                     <stripe-buy-button
                       buy-button-id={STRIPE_BUY_BUTTON_AUDIT_ID}
@@ -101,7 +101,7 @@ export default function FixYourTechFastPage() {
                       <span className="text-sm">1–3 days Work</span>
                     </li>
                   </ul>
-                  <div className="stripe-buy-button-wrapper">
+                  <div className="stripe-buy-button-wrapper flex justify-center">
                     {/* @ts-expect-error Stripe buy button web component */}
                     <stripe-buy-button
                       buy-button-id={STRIPE_BUY_BUTTON_FIX_OPTIMISE_ID}

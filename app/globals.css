@@ -186,14 +186,12 @@
 }
 .stripe-buy-button-wrapper stripe-buy-button {
   display: block;
-  width: 100%;
+  width: fit-content;
 }
 .stripe-buy-button-wrapper stripe-buy-button::part(button) {
   border-radius: var(--radius-md);
-  width: 100%;
 }
 /* Fallback: Stripe injects an iframe; we style the host so layout fits the card */
 .stripe-buy-button-wrapper iframe {
   border-radius: var(--radius-md);
-  width: 100% !important;
 }
