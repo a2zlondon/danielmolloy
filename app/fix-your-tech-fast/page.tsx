@@ -46,21 +46,17 @@ export default function FixYourTechFastPage() {
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start">
                       <span className="mr-2">•</span>
-                      <span className="text-sm">60–90 min deep dive</span>
+                      <span className="text-sm">60–90 min Deep dive</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2">•</span>
                       <span className="text-sm">
-                        architecture / performance / AI review
+                        Architecture / Performance / AI Review
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2">•</span>
-                      <span className="text-sm">1–2 page report</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2">•</span>
-                      <span className="text-sm">delivered in 48 hours</span>
+                      <span className="text-sm">1–2 page report, delivered in 48 hours</span>
                     </li>
                   </ul>
                   <Button className="w-full" asChild>
@@ -79,17 +75,17 @@ export default function FixYourTechFastPage() {
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-start">
                       <span className="mr-2">•</span>
-                      <span className="text-sm">audit + implementation</span>
+                      <span className="text-sm">Audit + Implementation</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2">•</span>
                       <span className="text-sm">
-                        performance / infra / architecture fixes
+                        Performance / Infra / Architecture Fixes
                       </span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2">•</span>
-                      <span className="text-sm">1–3 days work</span>
+                      <span className="text-sm">1–3 days Work</span>
                     </li>
                   </ul>
                   <Button className="w-full" variant="outline" asChild>
