@@ -11,7 +11,10 @@ const PERSON_AND_SERVICE_JSON_LD = {
       description:
         "Fractional CTO for scale-ups and Series A+ companies. I build companies by turning complexity into clarity. Technical leadership for banks, fintech, and enterprises. Remote or on-site in UK, Europe, UAE, Saudi Arabia and US.",
       url: SITE_URL,
-      sameAs: [],
+      sameAs: [
+        "https://www.linkedin.com/in/danielthomasmolloy/",
+        "https://github.com/a2zlondon",
+      ],
     },
     {
       "@type": "ProfessionalService",
