@@ -50,7 +50,7 @@ export function Hero() {
                 width={900}
                 height={1200}
                 priority
-                className="relative w-full h-auto object-cover opacity-95 -scale-x-100"
+                className="relative w-full h-auto object-cover opacity-95"
               />
               <div className="absolute bottom-4 left-4 right-4">
                 <div className="inline-flex items-center rounded-full bg-background/10 px-4 py-2 text-background backdrop-blur">

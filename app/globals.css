@@ -3,6 +3,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+img {
+  filter: grayscale(100%);
+}
+img[data-preserve-color] {
+  filter: none;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

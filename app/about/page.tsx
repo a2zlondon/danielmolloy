@@ -95,6 +95,7 @@ export default function AboutPage() {
                             width={120}
                             height={60}
                             className="h-auto w-full max-w-[120px] object-contain mb-2"
+                            data-preserve-color
                             style={{ filter: "contrast(1.1)" }}
                           />
                         ) : (

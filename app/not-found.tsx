@@ -19,6 +19,7 @@ export default function NotFound() {
                   width={240}
                   height={200}
                   className="w-48 h-auto text-muted-foreground"
+                  data-preserve-color
                 />
               </div>
               <h1 className="text-5xl md:text-6xl font-light mb-3">

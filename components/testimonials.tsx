@@ -70,7 +70,7 @@ export function Testimonials() {
                   alt="Daniel Molloy"
                   width={480}
                   height={640}
-                  className="w-full h-auto object-cover object-center grayscale-[0.85] contrast-[1.05]"
+                  className="w-full h-auto object-cover object-center"
                 />
               </div>
             </div>
