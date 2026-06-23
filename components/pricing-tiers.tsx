@@ -3,52 +3,51 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BOOK_CALL_URL } from "@/lib/constants";
 
-const tiers = [
+const services = [
   {
-    name: "Day Rate",
-    price: "£1,000",
+    name: "Technical Assessment",
+    price: "From £5,000",
     priceNote: "+ VAT",
-    description: "High-impact strategic sessions",
+    description: "Rapid review for investors and founders",
     features: [
-      "Strategic decision-making sessions",
-      "Architecture reviews",
-      "Product roadmap planning",
-      "Technical due diligence",
-      "One-day intensive engagement",
+      "Startup or pre-deal screening",
+      "AI capability verification",
+      "Key risk summary report",
+      "Executive briefing call",
+      "Typical turnaround: 5–7 days",
     ],
-    cta: "Book a session",
+    cta: "Discuss an assessment",
     popular: false,
   },
   {
-    name: "Monthly Retainer",
-    price: "£10,000",
+    name: "Acquisition Due Diligence",
+    price: "From £15,000",
     priceNote: "+ VAT",
-    description: "Ongoing leadership and regular involvement",
+    description: "Full M&A technical report for PE and corporate finance",
     features: [
-      "Regular strategy calls",
-      "Team mentorship",
-      "Hiring support",
-      "Product–engineering alignment",
-      "Set commitment of hours",
-      "Ongoing decision-making support",
+      "Product, engineering & infrastructure review",
+      "Code quality, security & technical debt",
+      "Team, bus factor & knowledge concentration",
+      "Cloud cost profile & scalability",
+      "Commercial technology defensibility",
+      "Written report + management presentation",
     ],
-    cta: "Start retainer",
+    cta: "Start a review",
     popular: true,
   },
   {
-    name: "Embedded Fractional CTO",
-    price: "£20,000+",
-    priceNote: "+ VAT",
-    description: "Near co-founder level presence",
+    name: "Embedded Advisory",
+    price: "From £10,000",
+    priceNote: "+ VAT / month",
+    description: "Ongoing technical counsel for deal teams",
     features: [
-      "Key leadership meetings",
-      "Tech strategy ownership",
-      "Board-level communication",
-      "Full product strategy",
-      "Team building & scaling",
-      "Near co-founder presence",
+      "Portfolio-wide technology oversight",
+      "Pre-deal screening on demand",
+      "Broker and adviser partnership",
+      "Board and investment committee support",
+      "Repeat mandate pricing available",
     ],
-    cta: "Discuss engagement",
+    cta: "Discuss partnership",
     popular: false,
   },
 ];
@@ -59,37 +58,37 @@ export function PricingTiers() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-4">
-            Three levels of engagement
+            Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Each step up provides more dedicated leadership and strategic depth. Monthly Retainer is the most popular for scale-ups needing ongoing leadership.
+            From a rapid investor screen to a full acquisition report — structured to reduce uncertainty before you commit capital.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {tiers.map((tier) => (
+          {services.map((service) => (
             <Card
-              key={tier.name}
-              className={`relative ${tier.popular ? "border-2 border-foreground" : ""}`}
+              key={service.name}
+              className={`relative ${service.popular ? "border-2 border-foreground" : ""}`}
             >
-              {tier.popular && (
+              {service.popular && (
                 <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  Most Popular
+                  Most Requested
                 </Badge>
               )}
               <CardHeader>
-                <CardTitle className="text-2xl">{tier.name}</CardTitle>
-                <CardDescription>{tier.description}</CardDescription>
+                <CardTitle className="text-2xl">{service.name}</CardTitle>
+                <CardDescription>{service.description}</CardDescription>
                 <div className="mt-4">
-                  <span className="text-4xl font-light">{tier.price}</span>
+                  <span className="text-4xl font-light">{service.price}</span>
                   <span className="text-muted-foreground ml-2">
-                    {tier.priceNote}
+                    {service.priceNote}
                   </span>
                 </div>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 mb-6">
-                  {tier.features.map((feature, idx) => (
+                  {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <span className="mr-2">•</span>
                       <span className="text-sm">{feature}</span>
@@ -98,10 +97,10 @@ export function PricingTiers() {
                 </ul>
                 <Button
                   className="w-full"
-                  variant={tier.popular ? "default" : "outline"}
+                  variant={service.popular ? "default" : "outline"}
                   asChild
                 >
-                  <a href={BOOK_CALL_URL}>{tier.cta}</a>
+                  <a href={BOOK_CALL_URL}>{service.cta}</a>
                 </Button>
               </CardContent>
             </Card>

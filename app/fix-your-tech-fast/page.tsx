@@ -11,7 +11,7 @@ import {
 export const metadata = {
   title: "Fix your tech fast",
   description:
-    "Technical audit and rapid fixes for systems that are broken, slow, or fragile. Clear plan in 48 hours, with optional implementation.",
+    "Pay online and get a technical audit or rapid fix. Architecture, performance, and AI review — clear plan in 48 hours, with optional implementation.",
 };
 
 export default function FixYourTechFastPage() {
@@ -31,12 +31,10 @@ export default function FixYourTechFastPage() {
                 Fix your tech. Fast.
               </h1>
               <p className="text-xl text-muted-foreground">
-                I identify what’s broken, slow, or fragile in your system and
-                give you a clear plan to fix it.
+                For founders and teams with urgent tech problems — broken, slow, or fragile systems that need a clear diagnosis and a path forward.
               </p>
               <p className="mt-4 text-sm text-muted-foreground">
-                I lead every engagement personally and bring in specialist
-                expertise where needed.
+                Choose a package below, pay securely via Stripe, and I&apos;ll be in touch within one business day to schedule. Audit reports delivered within 48 hours.
               </p>
             </div>
           </div>
@@ -113,7 +111,18 @@ export default function FixYourTechFastPage() {
             </div>
 
             <p className="max-w-5xl mx-auto mt-12 text-xs text-muted-foreground text-center">
-              All prices include VAT. Payment is taken at checkout via Stripe.
+              All prices include VAT. Payment is taken at checkout via Stripe — no invoice required.
+            </p>
+            <p className="max-w-5xl mx-auto mt-3 text-xs text-muted-foreground text-center">
+              Need a larger engagement?{" "}
+              <a href="/work-with-me" className="underline hover:no-underline text-foreground/80">
+                View due diligence services
+              </a>
+              {" "}or{" "}
+              <a href="mailto:connect@danielmolloy.com" className="underline hover:no-underline text-foreground/80">
+                email connect@danielmolloy.com
+              </a>
+              .
             </p>
           </div>
         </section>

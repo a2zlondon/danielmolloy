@@ -3,23 +3,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const steps = [
   {
     number: "01",
-    title: "Discovery Call",
-    description: "We explore your challenges, goals, and technology needs. No commitment—just clarity on whether we're the right fit.",
+    title: "Scope & Access",
+    description:
+      "We agree the deal context, timeline, and access requirements — source code, infrastructure, documentation, and key personnel interviews.",
   },
   {
     number: "02",
-    title: "Tailored Proposal",
-    description: "A custom roadmap and engagement structure aligned with your priorities, with flexibility to fit your needs.",
+    title: "Technical Review",
+    description:
+      "Our team examines product, engineering, infrastructure, and team dimensions in parallel. We ask the questions founders hope you won't.",
   },
   {
     number: "03",
-    title: "Collaborative Engagement",
-    description: "We act as your strategic partner, defining the tech roadmap, establishing KPIs, and ensuring every milestone drives measurable results.",
+    title: "Findings Report",
+    description:
+      "A structured written report with risk ratings, evidence, and commercial implications — not jargon, but what you need to negotiate or walk away.",
   },
   {
     number: "04",
-    title: "Ongoing Support",
-    description: "Actionable documentation and insights delivered. Whether you need continued advisory or ad-hoc services, we're here for your long-term success.",
+    title: "Management Briefing",
+    description:
+      "We present findings to your deal team, investment committee, or client. Available for follow-up questions throughout the transaction.",
   },
 ];
 
@@ -32,10 +36,10 @@ export function HowItWorks() {
             How it works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A streamlined, professional process designed for impact.
+            A disciplined process designed for deal timelines and confidentiality.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {steps.map((step) => (
             <Card key={step.number} className="border-0 shadow-sm">

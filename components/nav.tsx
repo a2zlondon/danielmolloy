@@ -15,20 +15,22 @@ export function Nav() {
               Home
             </Link>
             <Link href="/work-with-me" className="text-sm hover:text-foreground/80 transition-colors">
-              Work with me
+              Services
+            </Link>
+            <Link href="/who-we-are" className="text-sm hover:text-foreground/80 transition-colors">
+              Who we are
             </Link>
             <Link href="/blog" className="text-sm hover:text-foreground/80 transition-colors">
               Writing
-            </Link>
-            <Link href="/about" className="text-sm hover:text-foreground/80 transition-colors">
-              About
             </Link>
             <Button size="sm" asChild>
               <a href={BOOK_CALL_URL}>Book a call</a>
             </Button>
           </div>
           <div className="md:hidden">
-            <Button size="sm">Menu</Button>
+            <Button size="sm" asChild>
+              <a href={BOOK_CALL_URL}>Book a call</a>
+            </Button>
           </div>
         </div>
       </div>

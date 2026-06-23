@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <h3 className="font-medium mb-4">Daniel Molloy</h3>
             <p className="text-sm text-muted-foreground">
-              Building companies by turning complexity into clarity.
+              Technology due diligence for investors, PE firms, and corporate finance advisers.
             </p>
           </div>
           <div>
@@ -16,37 +16,42 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Day Rate
+                  Acquisition due diligence
                 </Link>
               </li>
               <li>
                 <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Monthly Retainer
+                  Technical assessments
                 </Link>
               </li>
               <li>
                 <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Fractional CTO
+                  AI capability reviews
+                </Link>
+              </li>
+              <li>
+                <Link href="/fix-your-tech-fast" className="text-muted-foreground hover:text-foreground">
+                  Fix your tech fast
+                </Link>
+              </li>
+              <li>
+                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
+                  Embedded advisory
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-4">Resources</h4>
+            <h4 className="font-medium mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/who-we-are" className="text-muted-foreground hover:text-foreground">
+                  Who we are
+                </Link>
+              </li>
               <li>
                 <Link href="/blog" className="text-muted-foreground hover:text-foreground">
                   Writing
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-muted-foreground hover:text-foreground">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/locations" className="text-muted-foreground hover:text-foreground">
-                  Where I work
                 </Link>
               </li>
               <li>
@@ -56,7 +61,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/for-enterprises" className="text-muted-foreground hover:text-foreground">
-                  For enterprises
+                  For PE &amp; acquirers
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-muted-foreground hover:text-foreground">
+                  About Daniel
                 </Link>
               </li>
               <li>

@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const metadata = {
   title: "For partners",
   description:
-    "VCs, accelerators, advisory firms, and banks: refer portfolio companies and clients to Daniel Molloy for fractional CTO leadership. Scale-ups and Series A+.",
+    "M&A brokers, corporate finance advisers, and PE firms: partner with Daniel Molloy for technology due diligence on software acquisitions and investments.",
 };
 
 export default function ForPartnersPage() {
@@ -23,35 +23,35 @@ export default function ForPartnersPage() {
                 For partners
               </h1>
               <p className="text-xl text-muted-foreground mb-12">
-                If you're a VC, accelerator, advisory firm, or bank and you have portfolio companies or clients that need fractional CTO leadership—I'm a trusted referral partner. Here's who I serve, what I offer, and how to refer.
+                Most brokers know finance or sales. We know technology — and that&apos;s rarer on the buy-side. If you&apos;re an M&A broker, corporate finance adviser, or PE firm evaluating software businesses, we&apos;re a trusted technology specialist for your side of the table.
               </p>
 
               <div className="space-y-8 mb-16">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl font-light">Who I serve</CardTitle>
+                    <CardTitle className="text-xl font-light">Who we work with</CardTitle>
                   </CardHeader>
                   <CardContent className="text-muted-foreground space-y-2">
                     <p>
-                      Scale-ups and Series A+ companies that need <strong className="text-foreground">first or upgrade CTO leadership</strong>. Founders and leadership teams who are scaling product and engineering and need strategic technical clarity without a full-time hire. I also work with banks, fintech, and enterprises where technical leadership or transformation is in scope.
+                      <strong className="text-foreground">M&A brokers and corporate finance advisers</strong> who need a technology specialist on software deals. <strong className="text-foreground">Private equity firms</strong> evaluating SaaS, fintech, and platform acquisitions. <strong className="text-foreground">VCs and family offices</strong> screening pre-investment technology risk.
                     </p>
                     <p>
-                      If your portfolio company or client is pre-seed through growth stage and needs a fractional CTO—or is considering hiring their first CTO—I'm a good fit.
+                      If your client says &ldquo;We&apos;ve got an AI-powered SaaS platform&rdquo; and you need someone to ask &ldquo;Show me the repo&rdquo; — that&apos;s us.
                     </p>
                   </CardContent>
                 </Card>
 
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-xl font-light">What I offer</CardTitle>
+                    <CardTitle className="text-xl font-light">What we offer</CardTitle>
                   </CardHeader>
                   <CardContent className="text-muted-foreground space-y-2">
                     <p>
-                      <strong className="text-foreground">Retainer-led fractional CTO</strong> is the core offer: ongoing leadership, regular involvement in decision-making, and a set commitment of hours. I also offer Day Rate sessions for high-impact strategic work and Embedded Fractional CTO for near co-founder level presence. All engagements are flexible—remote or on-site in UK, Europe, MENA, and US.
+                      Structured technology due diligence — from rapid investor screens to full acquisition reports covering product, engineering, infrastructure, team, and commercial defensibility. AI capability verification included. Written reports and management briefings for deal teams.
                     </p>
                     <p>
                       <Link href="/work-with-me" className="text-foreground underline hover:no-underline">
-                        View engagement options and pricing
+                        View services and pricing
                       </Link>
                     </p>
                   </CardContent>
@@ -63,7 +63,7 @@ export default function ForPartnersPage() {
                   </CardHeader>
                   <CardContent className="text-muted-foreground space-y-4">
                     <p>
-                      Introduce your portfolio company or client directly—email intro or share my Calendly. I'll take a discovery call, assess fit, and if it's right, propose an engagement. No formal referral agreement required; I treat every introduction with care and follow up quickly.
+                      Introduce your client or deal team directly — email intro or share our Calendly. We&apos;ll take a confidential discovery call, assess scope, and propose an engagement. No formal referral agreement required; every introduction is handled with care and we follow up quickly.
                     </p>
                     <Button asChild>
                       <a href={BOOK_CALL_URL}>Book a call (partner referral)</a>
@@ -80,12 +80,12 @@ export default function ForPartnersPage() {
 
               <div className="pt-8 border-t border-border">
                 <p className="text-muted-foreground">
-                  <Link href="/about" className="text-foreground underline hover:no-underline">
-                    About Daniel Molloy
+                  <Link href="/who-we-are" className="text-foreground underline hover:no-underline">
+                    Who we are
                   </Link>
                   {" · "}
                   <Link href="/locations" className="text-foreground underline hover:no-underline">
-                    Where I work
+                    Where we work
                   </Link>
                 </p>
               </div>

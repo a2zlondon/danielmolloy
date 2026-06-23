@@ -3,60 +3,49 @@ import { Separator } from "@/components/ui/separator";
 
 const capabilities = [
   {
-    category: "Core Leadership & Company-Building Skills",
+    category: "Product",
     skills: [
-      "Startup Leadership & Founder Decision-Making",
-      "Company Strategy & Vision Execution",
-      "Product Strategy & Roadmapping",
-      "0→1 Product Development",
-      "Technical Founder Leadership",
-      "Hiring, Mentorship & Team Building",
-      "Stakeholder & Investor Communication",
-      "Ownership, Delivery & Accountability",
+      "Active development & release cadence",
+      "Roadmap credibility vs customer demand",
+      "Feature claims vs actual capability",
+      "Technical product-market fit signals",
     ],
   },
   {
-    category: "Product, Systems & Execution",
+    category: "Engineering",
     skills: [
-      "Systems Thinking & Architecture Design",
-      "Complex Problem Decomposition",
-      "Product–Engineering Alignment",
-      "Platform & Data Strategy",
-      "AI-Enabled Product Design",
-      "Scalability & Technical Risk Management",
-      "Decision Frameworks & Trade-off Analysis",
-      "Documentation & Knowledge Systems",
+      "Code quality & architecture review",
+      "Test coverage & CI/CD maturity",
+      "Security posture & vulnerability exposure",
+      "Technical debt quantification",
+      "Source control & contributor analysis",
     ],
   },
   {
-    category: "Commercial & Founder-Level Execution",
+    category: "Infrastructure",
     skills: [
-      "Founder-Led Sales & Discovery",
-      "Customer Problem Validation",
-      "Go-to-Market Strategy (Early Stage)",
-      "Pricing & Value Positioning",
-      "Client & Partner Engagement",
-      "Advisory & Board-Level Communication",
+      "AWS, Azure & cloud architecture",
+      "Cost profile & scalability limits",
+      "Deployment process & reliability",
+      "Disaster recovery & operational maturity",
     ],
   },
   {
-    category: "Technical Credibility",
+    category: "Team",
     skills: [
-      "Software Architecture (Cloud & SaaS)",
-      "Data Platforms & Analytics Systems",
-      "AI / ML Foundations (Applied, Product-Led)",
-      "Cloud Platforms (Azure Ecosystem)",
-      "Full-Stack Engineering Literacy",
+      "Key personnel & bus factor",
+      "Knowledge concentration risk",
+      "Recruitment & retention exposure",
+      "Documentation & onboarding quality",
     ],
   },
   {
-    category: "Personal Operating Strengths",
+    category: "Commercial",
     skills: [
-      "Clear Written & Verbal Communication",
-      "Calm Under Ambiguity",
-      "Long-Term Thinking",
-      "Ethical Leadership",
-      "Continuous Learning & Self-Reflection",
+      "Is the claimed technology defensible?",
+      "Is the AI real or marketing wrapper?",
+      "IP, licensing & third-party dependencies",
+      "Integration risk for acquirers",
     ],
   },
 ];
@@ -67,13 +56,13 @@ export function Capabilities() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-4">
-            What I bring
+            What a report covers
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A structured approach to turning complexity into clarity.
+            Structured analysis across the dimensions that matter when capital is on the line.
           </p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto space-y-12">
           {capabilities.map((cap, idx) => (
             <Card key={idx} className="border-0 shadow-none bg-transparent">

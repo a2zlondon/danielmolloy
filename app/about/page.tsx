@@ -6,7 +6,7 @@ import Image from "next/image";
 export const metadata = {
   title: "About",
   description:
-    "About Daniel Molloy — fractional CTO for scale-ups, enterprises, and banking. 20+ years in software. UK, Europe, UAE, Saudi, US. I work with scale-ups and Series A+ companies, often referred by VCs and advisory firms.",
+    "About Daniel Molloy — technology due diligence advisor with 20+ years in software. Assessing complex systems for investors, PE firms, and corporate finance advisers.",
 };
 
 export default function AboutPage() {
@@ -28,7 +28,7 @@ export default function AboutPage() {
                     alt="Portrait of Daniel Molloy"
                     width={1400}
                     height={900}
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover grayscale"
                     priority={false}
                   />
                 </div>
@@ -36,17 +36,17 @@ export default function AboutPage() {
               
               <div className="prose prose-lg max-w-none mb-12">
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  I build companies by turning complexity into clarity.
+                  I reduce uncertainty before investors, acquirers, and deal teams commit capital — not by building software, but by telling people what is actually going on.
                 </p>
                 <p>
-                  I work with scale-ups and Series A+ companies that need first or upgrade CTO leadership, often referred by VCs and advisory firms; I also work with banks, fintech, and enterprises. I work at the intersection of software, data, and decision-making—helping teams design systems that scale, endure, and actually get used.
+                  I lead technology due diligence for private equity firms, corporate finance advisers, and investors evaluating software businesses. My work is walking into messy systems, figuring out how they actually work, finding hidden risks, and explaining them clearly to people who need to make high-stakes decisions. A founder says &ldquo;We&apos;re worth £5 million.&rdquo; I say &ldquo;Show me the repo.&rdquo;
                 </p>
                 <p>
-                  Software is complex by nature; my strength is holding the whole map in my head, understanding how the pieces connect, and then working methodically through each part until the solution is both elegant and practical.
+                  Software is complex by nature; my strength is holding the whole map in my head, understanding how the pieces connect, and then working methodically through each dimension until the findings are both rigorous and actionable for a deal team.
                 </p>
-                
+
                 <p>
-                  I've spent over 20 years in software development and architecture, equally comfortable deep in code or shaping strategy with founders, clients, and stakeholders. I care about ownership, quality, and finishing what we start. I'm drawn to tools, processes, and ideas that reduce friction and raise standards—and I document and share what I learn along the way.
+                  I&apos;ve spent over 20 years in software development and architecture — equally comfortable deep in a codebase or presenting findings to an investment committee. I care about evidence, clarity, and telling people what is actually going on, not what the pitch deck claims.
                 </p>
                 
                 <p>

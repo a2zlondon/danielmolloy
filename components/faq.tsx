@@ -9,47 +9,42 @@ export const faqs = [
   {
     question: "Who do you work with?",
     answer:
-      "Scale-ups and Series A+ companies that need first or upgrade CTO leadership. I'm often referred by VCs, accelerators, and advisory firms. I also work with banks, fintech, and enterprises.",
+      "Private equity firms, corporate finance advisers, M&A brokers, venture investors, and family offices evaluating software acquisitions or investments. We are often brought in by the buy-side or their advisers before a deal closes.",
   },
   {
-    question: "Do you work with banks and regulated industries?",
+    question: "What does a typical engagement look like?",
     answer:
-      "Yes. I work with banks, financial services, fintech, and other regulated sectors. I'm used to working within compliance and governance requirements and can support technical leadership and strategy in those contexts.",
+      "For acquisition due diligence, we typically need two to three weeks with access to source code, cloud infrastructure, documentation, and key technical personnel. We deliver a written report and a management briefing. Rapid investor assessments can be completed in five to seven days.",
   },
   {
-    question: "Do you work remotely or on-site? Which regions?",
+    question: "Can you assess whether the AI is real?",
     answer:
-      "Both. I work remotely with clients worldwide, and on-site when it adds value. I'm based in the UK and regularly work with clients in Europe (e.g. London, Madrid, Berlin, Amsterdam, Paris), MENA (UAE, Saudi Arabia), and across the US.",
+      "Yes. AI capability assessment is a core part of our work. We examine model architecture, training data, inference costs, integration depth, and whether claimed AI capabilities are genuine engineering or a ChatGPT wrapper in marketing clothing.",
   },
   {
-    question: "What's included in the pricing?",
+    question: "Do you work under NDA and deal confidentiality?",
     answer:
-      "All prices are exclusive of VAT. Day Rate includes a full-day strategic session. Monthly Retainer includes a set number of hours per month with regular calls and ongoing support. Embedded Fractional CTO includes leadership meeting participation, tech strategy ownership, and near co-founder level involvement.",
+      "Always. We operate under strict confidentiality for every engagement. We do not disclose client names, deal details, or findings to third parties without explicit permission.",
   },
   {
-    question: "How quickly can we start?",
+    question: "How is this different from a general IT consultant?",
     answer:
-      "We can typically begin within days, not months. After an initial discovery call, we can have a tailored proposal ready within 24-48 hours and start the engagement immediately upon agreement.",
+      "We specialise in technology risk for transactions — not building software. Our reports are structured for deal teams and investment committees: risk ratings, commercial implications, and questions to ask in negotiation. We have spent decades walking into messy systems and explaining what is actually going on.",
   },
   {
-    question: "What makes this different from hiring a full-time CTO?",
+    question: "Can brokers and corporate finance advisers refer clients?",
     answer:
-      "You get executive-level expertise without the full-time salary overhead (typically 60-70% cost savings), no equity dilution, immediate availability, and the flexibility to scale engagement up or down based on your needs. You also get access to proven frameworks and battle-tested experience from multiple startups.",
+      "Yes. We work regularly with M&A brokers and corporate finance firms who need a technology specialist on their side of the table. Referral and partnership arrangements are available — see our For Partners page or book a call to discuss.",
   },
   {
-    question: "What stage companies do you work with?",
+    question: "What access do you need from the target company?",
     answer:
-      "I work with scale-ups and Series A+ companies that need first or upgrade CTO leadership—from pre-seed through growth stage. Whether you're validating product-market fit, scaling your team, or navigating technical complexity, I adapt the engagement to your specific needs.",
+      "Typically: source code repository access, cloud console read-only access, CI/CD and deployment documentation, architecture diagrams if they exist, and 60–90 minute interviews with the CTO or lead engineer. We work with whatever access the deal timeline allows.",
   },
   {
-    question: "Do you write code or just provide strategy?",
+    question: "Do you only work on acquisitions?",
     answer:
-      "I'm structural, not hands-off. While my primary role is strategic leadership, I'm equally comfortable deep in code or shaping strategy. I focus on systems thinking, architecture design, and ensuring the right technical decisions are made—whether that means writing code, reviewing it, or guiding the team.",
-  },
-  {
-    question: "What's the minimum commitment?",
-    answer:
-      "Day Rate engagements are one-off. Monthly Retainer typically requires a 3-6 month minimum commitment for early-stage companies. Embedded Fractional CTO engagements are usually 6-12 months to deliver meaningful results and ROI.",
+      "No. We also support pre-investment screening for VCs, portfolio company reviews for PE firms, and standalone AI capability assessments. If technology risk is the question, we can scope an engagement to fit.",
   },
 ];
 
@@ -62,7 +57,7 @@ export function FAQ() {
             Frequently asked questions
           </h2>
         </div>
-        
+
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, idx) => (

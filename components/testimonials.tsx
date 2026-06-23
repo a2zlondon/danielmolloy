@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
@@ -28,21 +27,21 @@ export function Testimonials() {
     content: string;
   }> = [
     {
-      headline: "Clarity and confidence",
+      headline: "Clarity under pressure",
       name: "Matt Platt",
       role: "Transformation Director",
       content:
-        "Daniel and I worked together on some highly visible customer deliveries. Some of these were extremely complex but Daniel picked each up and turned them around in next to no time and to a great standard, meaning minimum time for on-site implementation and troubleshooting and maximum positive impact on Snell’s reputation with the customer (and colleagues!).",
+        "Daniel and I worked together on some highly visible customer deliveries. Some of these were extremely complex but Daniel picked each up and turned them around in next to no time and to a great standard, meaning minimum time for on-site implementation and troubleshooting and maximum positive impact on Snell's reputation with the customer (and colleagues!).",
     },
     {
-      headline: "Transformation",
+      headline: "Trusted advisor",
       name: "Rob Jones",
       role: "Director",
       content:
         "Daniel was a very helpful contact within the development team, willing to manage his time to assist us with ad-hoc queries without impacting his primary tasks. His cheerful nature, patience and willingness to explain solutions were appreciated in what could be a pressing environment.",
     },
     {
-      headline: "AI & automation",
+      headline: "Technical depth",
       name: "Glenn",
       role: "COO, X4 Group",
       content:
@@ -60,37 +59,18 @@ export function Testimonials() {
   return (
     <section className="py-24 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="flex justify-center lg:justify-start lg:order-1">
-            <div className="relative max-w-sm w-full">
-              <div className="absolute -inset-4 rounded-3xl bg-card/80 backdrop-blur-xl" aria-hidden />
-              <div className="relative rounded-2xl overflow-hidden bg-muted shadow-lg">
-                <Image
-                  src="/images/dan-by-window.png"
-                  alt="Daniel Molloy"
-                  width={480}
-                  height={640}
-                  className="w-full h-auto object-cover object-center"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="lg:order-2">
-            <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4">
-              What folks are saying
-            </p>
-            <h2 className="text-4xl md:text-5xl font-light mb-4">
-              Trust is built in the hard moments.
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-xl">
-              References from real deliveries—high-stakes, complex, and under pressure.
-            </p>
-          </div>
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4">
+            What clients say
+          </p>
+          <h2 className="text-4xl md:text-5xl font-light mb-4">
+            Trust is built in the hard moments.
+          </h2>
+          <p className="text-xl text-muted-foreground">
+            References from leaders who needed someone to walk in, assess the situation, and tell them what was actually going on.
+          </p>
         </div>
-        
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Trusted by transformation and technology leaders at Snell, X4 Group and others.
-        </p>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {hydrated.map((testimonial, idx) => (
             <Card key={idx} className="border-0 shadow-sm h-full">
@@ -106,12 +86,11 @@ export function Testimonials() {
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed flex-1">
-                  “{testimonial.content}”
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
 
                 <div className="flex items-center gap-3 mt-6 pt-6 border-t border-border">
                   {testimonial.imageSrc ? (
-                    // Use <img> for maximum compatibility with remote WP media.
                     <img
                       src={testimonial.imageSrc}
                       alt={testimonial.name}

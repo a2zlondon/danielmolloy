@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
-  title: "For enterprises",
+  title: "For PE & strategic acquirers",
   description:
-    "Fractional CTO for banks, fintech, and enterprises. Technical leadership and strategy for regulated industries. UK, Europe, MENA, US. Daniel Molloy.",
+    "Technology due diligence for private equity firms and strategic acquirers evaluating software businesses. Structured M&A tech reviews from Daniel Molloy.",
 };
 
 export default function ForEnterprisesPage() {
@@ -19,40 +19,40 @@ export default function ForEnterprisesPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-light mb-6">
-                For enterprises
+                For PE &amp; strategic acquirers
               </h1>
               <p className="text-xl text-muted-foreground mb-12">
-                Banks, fintech, and large enterprises need technical leadership that fits governance, compliance, and scale. I work with boards and leadership teams as a fractional CTO—turning complexity into clarity without the overhead of a full-time hire.
+                When a founder says &ldquo;We&apos;ve got an AI-powered SaaS platform&rdquo; and the investment committee hears &ldquo;Money please&rdquo; — we arrive and reduce the uncertainty before you commit capital.
               </p>
 
               <div className="prose prose-lg max-w-none text-muted-foreground space-y-6 mb-12">
                 <p>
-                  Whether you're building or upgrading digital platforms, navigating technical due diligence, or need a trusted advisor for product and engineering strategy, I bring 20+ years in software and architecture—including work with Snell, BBC, BT, and transformation-led organisations—so you get executive-level input without the full-time cost.
+                  We provide structured technology due diligence for private equity firms, corporate development teams, and strategic acquirers evaluating software businesses. Our reports cover product, engineering, infrastructure, team, and commercial defensibility — the dimensions that determine whether a deal holds up after close.
                 </p>
                 <p>
-                  I work remotely or on-site in the UK, Europe, MENA, and the US. Engagements range from day-rate sessions to monthly retainers and embedded fractional CTO roles. All engagements are flexible to your governance and procurement requirements.
+                  With 20+ years in software and architecture — including work with the BBC, BT Group, Capita, and transformation-led organisations — we bring the depth to walk into messy systems, figure out how they actually work, and explain findings clearly to deal teams and investment committees.
                 </p>
                 <p>
-                  If you're an enterprise or institutional partner (VC, accelerator, advisory firm, or bank) and want to discuss how we work together, book a call or get in touch.
+                  Engagements typically run two to three weeks for a full acquisition report. We operate under strict NDA and confidentiality. Multiple mandates can run in parallel through our specialist team.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
-                  <a href={BOOK_CALL_URL}>Book a call</a>
+                  <a href={BOOK_CALL_URL}>Book a confidential call</a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <Link href="/work-with-me">View engagement options</Link>
+                  <Link href="/work-with-me">View services</Link>
                 </Button>
               </div>
 
               <div className="mt-16 pt-12 border-t border-border text-sm text-muted-foreground">
                 <Link href="/for-partners" className="text-foreground underline hover:no-underline">
-                  For partners (VCs, accelerators, advisory, banks)
+                  For brokers &amp; corporate finance advisers
                 </Link>
                 {" · "}
-                <Link href="/locations" className="text-foreground underline hover:no-underline">
-                  Where I work
+                <Link href="/who-we-are" className="text-foreground underline hover:no-underline">
+                  Who we are
                 </Link>
               </div>
             </div>

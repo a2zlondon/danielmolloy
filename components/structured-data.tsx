@@ -7,9 +7,9 @@ const PERSON_AND_SERVICE_JSON_LD = {
       "@type": "Person",
       "@id": `${SITE_URL}/#person`,
       name: "Daniel Molloy",
-      jobTitle: "Fractional CTO",
+      jobTitle: "Technical Due Diligence Advisor",
       description:
-        "Fractional CTO for scale-ups and Series A+ companies. I build companies by turning complexity into clarity. Technical leadership for banks, fintech, and enterprises. Remote or on-site in UK, Europe, UAE, Saudi Arabia and US.",
+        "Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. 20+ years assessing complex technical environments and reducing uncertainty for deal teams.",
       url: SITE_URL,
       sameAs: [
         "https://www.linkedin.com/in/danielthomasmolloy/",
@@ -19,9 +19,9 @@ const PERSON_AND_SERVICE_JSON_LD = {
     {
       "@type": "ProfessionalService",
       "@id": `${SITE_URL}/#service`,
-      name: "Daniel Molloy | Fractional CTO",
+      name: "Daniel Molloy | Technology Due Diligence",
       description:
-        "Fractional CTO and technical leadership for scale-ups, Series A+ companies, banks, fintech and enterprises. Day rate, monthly retainer, or embedded engagement. Remote or on-site in UK, Europe, MENA and US.",
+        "M&A technology due diligence, acquisition reviews, AI capability assessments, and investor technical reviews for PE firms, brokers, and corporate finance advisers.",
       url: SITE_URL,
       provider: { "@id": `${SITE_URL}/#person` },
       areaServed: [
@@ -34,7 +34,12 @@ const PERSON_AND_SERVICE_JSON_LD = {
         { "@type": "Country", name: "Spain" },
         { "@type": "Country", name: "Netherlands" },
       ],
-      serviceType: ["Fractional CTO", "Technical leadership", "CTO as a service"],
+      serviceType: [
+        "Technical due diligence",
+        "M&A technology review",
+        "AI capability assessment",
+        "Acquisition due diligence",
+      ],
     },
   ],
 };

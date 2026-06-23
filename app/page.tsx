@@ -7,6 +7,8 @@ import { CTASection } from "@/components/cta-section";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Testimonials } from "@/components/testimonials";
+import { ActiveReviews } from "@/components/active-reviews";
+import { DueDiligenceQuestions } from "@/components/due-diligence-questions";
 import { FaqPageJsonLd } from "@/components/structured-data";
 
 export default function Home() {
@@ -19,14 +21,16 @@ export default function Home() {
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-background">
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Daniel Molloy is a fractional CTO for scale-ups, Series A+ companies, banks, fintech, and enterprises. He offers retainer-led technical leadership and strategy—turning complexity into clarity—remotely or on-site in the UK, Europe, UAE, Saudi Arabia, and the US. Often referred by VCs, accelerators, and advisory firms.
+              We provide technology due diligence for private equity firms, corporate finance advisers, and investors evaluating software businesses. With 20+ years walking into messy systems, finding hidden risks, and explaining them to deal teams, we help investors make informed decisions before capital is committed — not by selling code, but by reducing uncertainty.
             </p>
           </div>
         </section>
+        <DueDiligenceQuestions />
+        <ActiveReviews />
         <PricingTiers />
-        <Testimonials />
         <Capabilities />
         <HowItWorks />
+        <Testimonials />
         <FAQ />
         <CTASection />
       </main>
