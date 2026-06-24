@@ -20,6 +20,7 @@ type TeamMember = {
   initials: string;
   imageSrc?: string;
   isLeader?: boolean;
+  isHidden?: boolean;
 };
 
 const team: TeamMember[] = [
@@ -36,18 +37,21 @@ const team: TeamMember[] = [
     focus: "Cloud & Cost Review",
     bio: "Reviews AWS, Azure, and hybrid cloud architectures. Assesses cost profiles, scalability limits, deployment maturity, and operational reliability — the dimensions that determine post-acquisition integration risk.",
     initials: "IS",
+    isHidden: true,
   },
   {
     title: "Security & Engineering Specialist",
     focus: "Code Quality & Security",
     bio: "Examines source code repositories, CI/CD pipelines, test coverage, vulnerability exposure, and technical debt. Quantifies engineering risk and contributor patterns for deal teams.",
     initials: "SE",
+    isHidden: true,
   },
   {
     title: "Abdul Manan",
     focus: "Scale & Reliability Consultant",
     bio: "Abdul advises on production systems that need to stay reliable under scale, complexity, and real-world usage. He supports reviews of mobile, web, cloud, realtime datastores, distributed systems, and AI-enabled platforms across fintech, healthcare, SaaS, and Web3 environments.",
     initials: "AM",
+    imageSrc: "/images/team/abdul-manan.png",
   },
   {
     title: "Ray Mongey",
@@ -67,7 +71,7 @@ const capacitySignals = [
 
 export default function WhoWeArePage() {
   const leader = team.find((m) => m.isLeader)!;
-  const members = team.filter((m) => !m.isLeader);
+  const members = team.filter((m) => !m.isLeader && !m.isHidden);
 
   return (
     <>
