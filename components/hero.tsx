@@ -9,11 +9,10 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-5xl space-y-8">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
-            We reduce uncertainty before you{" "}
-            <span className="font-medium">invest, acquire, or build</span>.
+            Technical due diligence for startups and investors
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl">
-            Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. Our team creates transparency around technical maturity, debt, scalability, risk, and value potential.
+            We reduce uncertainty before you invest, acquire, or build. Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. Our team creates transparency around technical maturity, debt, scalability, risk, and value potential.
           </p>
           <div className="flex flex-wrap items-center gap-2">
             <Badge variant="secondary">M&A tech due diligence</Badge>
