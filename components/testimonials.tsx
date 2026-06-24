@@ -31,7 +31,7 @@ export function Testimonials() {
       name: "Matt Platt",
       role: "Transformation Director",
       content:
-        "Daniel and I worked together on some highly visible customer deliveries. Some of these were extremely complex but Daniel picked each up and turned them around in next to no time and to a great standard, meaning minimum time for on-site implementation and troubleshooting and maximum positive impact on Snell's reputation with the customer (and colleagues!).",
+        "Daniel worked on some highly visible customer deliveries. Some of these were extremely complex but Daniel picked each up and turned them around in next to no time and to a great standard, meaning minimum time for on-site implementation and troubleshooting and maximum positive impact on Snell's reputation with the customer (and colleagues!).",
     },
     {
       headline: "Trusted advisor",
@@ -67,7 +67,7 @@ export function Testimonials() {
             Trust is built in the hard moments.
           </h2>
           <p className="text-xl text-muted-foreground">
-            References from leaders who needed someone to walk in, assess the situation, and tell them what was actually going on.
+            References from leaders who needed technical depth, calm assessment, and clear answers under pressure.
           </p>
         </div>
 

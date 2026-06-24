@@ -1,15 +1,14 @@
 import { SITE_URL } from "@/lib/constants";
 
-const PERSON_AND_SERVICE_JSON_LD = {
+const ORGANIZATION_AND_SERVICE_JSON_LD = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
-      "@id": `${SITE_URL}/#person`,
-      name: "Daniel Molloy",
-      jobTitle: "Technical Due Diligence Advisor",
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "Daniel Molloy Technology Due Diligence",
       description:
-        "Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. 20+ years assessing complex technical environments and reducing uncertainty for deal teams.",
+        "Technical consulting and technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses.",
       url: SITE_URL,
       sameAs: [
         "https://www.linkedin.com/in/danielthomasmolloy/",
@@ -19,11 +18,11 @@ const PERSON_AND_SERVICE_JSON_LD = {
     {
       "@type": "ProfessionalService",
       "@id": `${SITE_URL}/#service`,
-      name: "Daniel Molloy | Technology Due Diligence",
+      name: "Daniel Molloy Technology Due Diligence",
       description:
         "M&A technology due diligence, acquisition reviews, AI capability assessments, and investor technical reviews for PE firms, brokers, and corporate finance advisers.",
       url: SITE_URL,
-      provider: { "@id": `${SITE_URL}/#person` },
+      provider: { "@id": `${SITE_URL}/#organization` },
       areaServed: [
         { "@type": "Country", name: "United Kingdom" },
         { "@type": "Country", name: "United States" },
@@ -44,11 +43,11 @@ const PERSON_AND_SERVICE_JSON_LD = {
   ],
 };
 
-export function PersonAndServiceJsonLd() {
+export function OrganizationAndServiceJsonLd() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_AND_SERVICE_JSON_LD) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_AND_SERVICE_JSON_LD) }}
     />
   );
 }

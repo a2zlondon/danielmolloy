@@ -19,10 +19,10 @@ export function DueDiligenceQuestions() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-light mb-4">
-              Show me the repo.
+              Technical transparency before the deal closes.
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The founder says &ldquo;We&apos;ve got an AI-powered SaaS platform.&rdquo; The investor hears &ldquo;Money please.&rdquo; We arrive and ask the questions that reduce uncertainty.
+              We assess the target&apos;s code, architecture, delivery process, infrastructure, data, AI claims, and team resilience so investors understand what they are really buying.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ export function DueDiligenceQuestions() {
           </div>
 
           <p className="text-center text-muted-foreground mt-10 text-lg">
-            You&apos;re not selling code. You&apos;re reducing uncertainty — and that&apos;s worth far more.
+            The output is practical: risk ratings, upside potential, mitigation actions, and a roadmap your deal team can use.
           </p>
         </div>
       </div>

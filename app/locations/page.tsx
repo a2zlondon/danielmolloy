@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Where I work",
+  title: "Where we work",
   description:
-    "Fractional CTO services remote or on-site. UK, Europe (London, Madrid, Berlin, Amsterdam, Paris), MENA (UAE, Saudi Arabia), and across the US. Daniel Molloy.",
+    "Technology due diligence and technical consulting delivered remotely or on-site. UK, Europe, MENA, and the US.",
 };
 
 export default function LocationsPage() {
@@ -19,24 +19,24 @@ export default function LocationsPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-light mb-6">
-                Where I work
+                Where we work
               </h1>
               <p className="text-xl text-muted-foreground mb-12">
-                I work with scale-ups and Series A+ companies globally—remotely or on-site when it adds value. Based in the UK, with regular work across Europe, MENA, and the United States.
+                We work with investors, advisers, and technology businesses globally, usually remotely and on-site when diligence, workshops, or management sessions require it.
               </p>
 
               <div className="space-y-10">
                 <div>
                   <h2 className="text-2xl font-light mb-3">Remote</h2>
                   <p className="text-muted-foreground">
-                    I work remotely with clients worldwide. Most engagements combine async work with regular video calls; time zones across UK, Europe, and US work well.
+                    Most engagements combine structured asynchronous review with regular video calls, evidence requests, and management Q&A sessions.
                   </p>
                 </div>
 
                 <div>
                   <h2 className="text-2xl font-light mb-3">Europe</h2>
                   <p className="text-muted-foreground mb-2">
-                    I&apos;m based in Reading, UK, and work on-site or hybrid with clients across Europe, including:
+                    The team works on-site or hybrid with clients across Europe, including:
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-1">
                     <li>United Kingdom — London, Reading, and nationwide</li>
@@ -51,7 +51,7 @@ export default function LocationsPage() {
                 <div>
                   <h2 className="text-2xl font-light mb-3">MENA</h2>
                   <p className="text-muted-foreground mb-2">
-                    I work with clients in the Middle East and North Africa, including:
+                    We support clients in the Middle East and North Africa, including:
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-1">
                     <li>United Arab Emirates — Dubai, Abu Dhabi</li>
@@ -62,7 +62,7 @@ export default function LocationsPage() {
                 <div>
                   <h2 className="text-2xl font-light mb-3">United States</h2>
                   <p className="text-muted-foreground mb-2">
-                    I work with US-based scale-ups and enterprises across all 50 states—remotely and, when it makes sense, on-site. Major hubs include New York, San Francisco, Austin, Chicago, Boston, and LA.
+                    We support US-based investors, scale-ups, and enterprises remotely and, when it makes sense, on-site. Major hubs include New York, San Francisco, Austin, Chicago, Boston, and LA.
                   </p>
                 </div>
               </div>

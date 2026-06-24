@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
-import { PersonAndServiceJsonLd } from "@/components/structured-data";
+import { OrganizationAndServiceJsonLd } from "@/components/structured-data";
 import { SITE_URL } from "@/lib/constants";
 
 const inter = Inter({
@@ -21,7 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 export const metadata: Metadata = {
   title: {
-    default: "Daniel Molloy | Technical Due Diligence",
+    default: "Daniel Molloy Technology Due Diligence",
     template: "%s | Daniel Molloy",
   },
   description:
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "software company acquisition",
     "technology risk assessment",
     "corporate finance technology",
-    "fractional CTO",
+    "technical consulting",
   ],
   authors: [{ name: "Daniel Molloy" }],
   creator: "Daniel Molloy",
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: SITE_URL,
     siteName: "Daniel Molloy",
-    title: "Daniel Molloy | Technical Due Diligence",
+    title: "Daniel Molloy Technology Due Diligence",
     description:
-      "Technology due diligence for PE firms, corporate finance advisers, and investors. Reduce uncertainty before you invest, acquire, or build.",
+      "Technology due diligence for PE firms, corporate finance advisers, and investors. Technical consulting depth for risks, value potential, mitigation actions, and roadmap clarity.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Molloy | Technical Due Diligence",
+    title: "Daniel Molloy Technology Due Diligence",
     description:
       "Technology due diligence for PE firms, corporate finance advisers, and investors evaluating software businesses.",
   },
@@ -90,7 +90,7 @@ export default function RootLayout({
             title="Google Tag Manager"
           />
         </noscript>
-        <PersonAndServiceJsonLd />
+        <OrganizationAndServiceJsonLd />
         {children}
         <SpeedInsights />
       </body>

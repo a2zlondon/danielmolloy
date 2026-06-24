@@ -36,7 +36,7 @@ export default function ForPartnersPage() {
                       <strong className="text-foreground">M&A brokers and corporate finance advisers</strong> who need a technology specialist on software deals. <strong className="text-foreground">Private equity firms</strong> evaluating SaaS, fintech, and platform acquisitions. <strong className="text-foreground">VCs and family offices</strong> screening pre-investment technology risk.
                     </p>
                     <p>
-                      If your client says &ldquo;We&apos;ve got an AI-powered SaaS platform&rdquo; and you need someone to ask &ldquo;Show me the repo&rdquo; — that&apos;s us.
+                      If your client says &ldquo;We&apos;ve got an AI-powered SaaS platform&rdquo; and you need a technical team to validate the claim, assess the evidence, and explain the risk — that&apos;s us.
                     </p>
                   </CardContent>
                 </Card>

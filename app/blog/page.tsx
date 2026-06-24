@@ -8,7 +8,7 @@ import { decodeHtmlEntities, extractDateParts, getFeaturedImageUrl, stripHtml } 
 export const metadata = {
   title: "Writing",
   description:
-    "Articles on technology strategy, product development, and leadership for scale-ups and enterprises. Daniel Molloy — fractional CTO.",
+    "Articles on technology due diligence, technical strategy, product development, engineering leadership, and AI capability assessment.",
 };
 
 export const dynamic = "force-dynamic";

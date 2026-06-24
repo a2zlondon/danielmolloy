@@ -35,7 +35,7 @@ export default function FixYourTechFastPage() {
                 For founders and teams with urgent tech problems — broken, slow, or fragile systems that need a clear diagnosis and a path forward.
               </p>
               <p className="mt-4 text-sm text-muted-foreground">
-                Choose a package below, pay securely via Stripe, and I&apos;ll be in touch within one business day to schedule. Audit reports delivered within 48 hours.
+                Choose a package below, pay securely via Stripe, and our team will be in touch within one business day to schedule. Audit reports are delivered within 48 hours.
               </p>
             </div>
           </div>

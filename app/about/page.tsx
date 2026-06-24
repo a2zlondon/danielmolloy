@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 export const metadata = {
   title: "About",
   description:
-    "About Daniel Molloy — technology due diligence advisor with 20+ years in software. Assessing complex systems for investors, PE firms, and corporate finance advisers.",
+    "About Daniel Molloy Technology Due Diligence — a technical consulting team assessing complex systems for investors, PE firms, and corporate finance advisers.",
 };
 
 export default function AboutPage() {
@@ -21,16 +21,16 @@ export default function AboutPage() {
 
               <div className="prose prose-lg max-w-none space-y-4">
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  I reduce uncertainty before investors, acquirers, and deal teams commit capital — not by building software, but by telling people what is actually going on.
+                  We reduce uncertainty before investors, acquirers, and deal teams commit capital by creating a clear technical view of the target company.
                 </p>
                 <p>
-                  I lead technology due diligence for private equity firms, corporate finance advisers, and investors evaluating software businesses. A founder says &ldquo;We&apos;re worth £5 million.&rdquo; I say &ldquo;Show me the repo.&rdquo;
+                  Our team provides technology due diligence for private equity firms, corporate finance advisers, and investors evaluating software businesses. We look beyond the pitch deck to assess the codebase, architecture, infrastructure, product maturity, AI capability, delivery process, and technical organisation.
                 </p>
                 <p>
-                  Over 20 years in software and architecture — equally comfortable deep in a codebase or presenting findings to an investment committee. I walk into messy systems, find hidden risks, and explain them clearly.
+                  The work is led from a technical consulting background: hands-on software, architecture, delivery, infrastructure, and engineering leadership. We identify risks, value potential, mitigation actions, and the practical roadmap required to make the investment case hold up after close.
                 </p>
                 <p>
-                  Based in Cornwall. I care about evidence, clarity, and well-designed systems that last.
+                  Engagements are evidence-led, structured, and designed for decision-makers who need clarity under time pressure.
                 </p>
                 <p>
                   Before you invest, acquire, or build anything significant — get clarity first.

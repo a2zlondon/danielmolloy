@@ -25,7 +25,7 @@ const team: TeamMember[] = [
   {
     title: "Daniel Molloy",
     focus: "Founder & Lead Technical Advisor",
-    bio: "Daniel has spent over 20 years walking into complex technical environments — figuring out how they work, finding hidden risks, and explaining them to management and investors. He has led architecture and delivery at scale for broadcast, media, fintech, and enterprise clients including the BBC, BT Group, and Capita. He leads every engagement and presents findings to deal teams and investment committees.",
+    bio: "Daniel leads the technical advisory team and brings over 20 years of software, architecture, delivery, and engineering leadership experience. His background spans broadcast, media, fintech, and enterprise clients including the BBC, BT Group, and Capita. He shapes the review methodology, supports specialist workstreams, and presents findings to deal teams and investment committees.",
     initials: "DM",
     imageSrc: "/images/portrait-smile.png",
     isLeader: true,
@@ -72,7 +72,7 @@ export default function WhoWeArePage() {
                 Who we are
               </h1>
               <p className="text-xl text-muted-foreground mb-12 max-w-2xl">
-                Daniel Molloy Technology Due Diligence — a specialist team supporting investors, PE firms, and corporate finance advisers with structured technical reviews before capital is committed.
+                Daniel Molloy Technology Due Diligence is a specialist technical consulting team supporting investors, PE firms, and corporate finance advisers with structured reviews before capital is committed.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
@@ -109,7 +109,7 @@ export default function WhoWeArePage() {
                         {leader.bio}
                       </p>
                       <p className="text-sm text-muted-foreground italic">
-                        &ldquo;Before we invested, acquired, or built anything significant — we got Daniel to look at it first.&rdquo;
+                        &ldquo;Before we invested, acquired, or built anything significant, we wanted technical clarity first.&rdquo;
                       </p>
                     </div>
                   </div>

@@ -7,7 +7,7 @@ import { BOOK_CALL_URL } from "@/lib/constants";
 export const metadata = {
   title: "Contact",
   description:
-    "Contact Daniel Molloy — Fractional CTO for enterprises and scale-ups. Remote and worldwide. Book a call or get in touch.",
+    "Contact Daniel Molloy Technology Due Diligence for technical consulting, M&A technology reviews, and investor technical assessments.",
 };
 
 export default function ContactPage() {

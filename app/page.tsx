@@ -23,7 +23,7 @@ export default function Home() {
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-background">
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We provide technology due diligence for private equity firms, corporate finance advisers, and investors evaluating software businesses. With 20+ years walking into messy systems, finding hidden risks, and explaining them to deal teams, we help investors make informed decisions before capital is committed — not by selling code, but by reducing uncertainty.
+              We provide technology due diligence for private equity firms, corporate finance advisers, and investors evaluating software businesses. Our work identifies risks, value potential, mitigation actions, and the practical roadmap required after close — grounded in hands-on engineering and technical consulting experience.
             </p>
           </div>
         </section>

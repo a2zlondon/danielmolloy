@@ -2,20 +2,22 @@ import { SITE_URL } from "@/lib/constants";
 
 export function GET() {
   const body = `# Daniel Molloy
-> Fractional CTO and technical leadership for scale-ups, Series A+ companies, fintech, and enterprises. I help teams turn technical complexity into clarity with practical delivery.
+> Technical consulting and technology due diligence for investors, PE firms, corporate finance advisers, and software businesses. We turn technical complexity into clear risks, value potential, mitigation actions, and delivery roadmaps.
 
 ## Services
-- Fractional CTO leadership
-- Technical strategy and architecture
-- Product and engineering delivery guidance
+- Technology due diligence
+- M&A technical reviews
+- Technical strategy and architecture assessment
+- Product and engineering delivery review
 - AI and automation advisory
-- Interim technical leadership for high-stakes transitions
+- Infrastructure, scalability, and technical debt assessment
 
-## Who I Work With
-- Scale-ups and Series A+ companies
+## Who We Work With
+- Private equity firms and investors
+- Corporate finance advisers and M&A brokers
+- Strategic acquirers
+- Software businesses and scale-ups
 - Founders and leadership teams
-- Venture-backed businesses
-- Banks, fintech, and enterprise organisations
 
 ## Locations
 - Remote worldwide
@@ -23,12 +25,12 @@ export function GET() {
 
 ## Key Pages
 - [Home](${SITE_URL}/): Primary overview and positioning.
-- [Work With Me](${SITE_URL}/work-with-me): Engagement options and ways to work together.
+- [Services](${SITE_URL}/work-with-me): Engagement options and ways to work together.
 - [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
 - [For Partners](${SITE_URL}/for-partners): Collaboration details for partners and advisors.
 - [For Enterprises](${SITE_URL}/for-enterprises): Enterprise-specific CTO support.
 - [Locations](${SITE_URL}/locations): Coverage across key regions.
-- [About](${SITE_URL}/about): Background, experience, and prior work.
+- [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.
 - [Blog](${SITE_URL}/blog): Articles on tech strategy, product, and leadership.
 - [Contact](${SITE_URL}/contact): Contact and booking pathways.
 

@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Daniel Molloy | Fractional CTO & Tech Leader";
+export const alt = "Daniel Molloy Technology Due Diligence";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -46,7 +46,7 @@ export default async function Image() {
               marginBottom: 24,
             }}
           >
-            Fractional CTO & Tech Leader
+            Technology Due Diligence
           </div>
           <div
             style={{
@@ -56,7 +56,7 @@ export default async function Image() {
               maxWidth: 600,
             }}
           >
-            Scale-ups · Series A+ · Europe, MENA & US
+            Risk · Value potential · Mitigation · Roadmap
           </div>
         </div>
       </div>
