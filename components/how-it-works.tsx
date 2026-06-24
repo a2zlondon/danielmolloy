@@ -9,21 +9,21 @@ const steps = [
   },
   {
     number: "02",
-    title: "Technical Review",
+    title: "Evidence Mining",
     description:
-      "Our team examines product, engineering, infrastructure, and team dimensions in parallel. We ask the questions founders hope you won't.",
+      "We extract structured insight from code, infrastructure, documents, product evidence, and targeted interviews.",
   },
   {
     number: "03",
-    title: "Findings Report",
+    title: "Synthesis",
     description:
-      "A structured written report with risk ratings, evidence, and commercial implications — not jargon, but what you need to negotiate or walk away.",
+      "Findings are ranked by impact, confidence, and solvability so risks and upside potential are clear.",
   },
   {
     number: "04",
-    title: "Management Briefing",
+    title: "Report & Briefing",
     description:
-      "We present findings to your deal team, investment committee, or client. Available for follow-up questions throughout the transaction.",
+      "You receive a concise report, recommendations, and a live briefing for the deal team or investment committee.",
   },
 ];
 
