@@ -1,4 +1,3 @@
-import { ClientLogoBanner } from "@/components/client-logo-banner";
 import { Hero } from "@/components/hero";
 import { PricingTiers } from "@/components/pricing-tiers";
 import { Capabilities } from "@/components/capabilities";
@@ -21,7 +20,6 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <ClientLogoBanner />
         <WorkingStyle />
         <DealConfidence />
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-background">

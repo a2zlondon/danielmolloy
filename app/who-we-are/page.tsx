@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { CTASection } from "@/components/cta-section";
+import { CredibilityEvidence } from "@/components/client-logo-banner";
 
 export const metadata = {
   title: "Who we are",
@@ -147,6 +148,7 @@ export default function WhoWeArePage() {
             </div>
           </div>
         </section>
+        <CredibilityEvidence />
         <CTASection />
       </main>
       <Footer />

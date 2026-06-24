@@ -8,7 +8,7 @@ const proofPoints = [
   { value: "NDA", label: "Confidential by default, with read-only access where possible" },
 ];
 
-export function ClientLogoBanner() {
+export function CredibilityEvidence() {
   const logos = CLIENT_LOGOS.slice(0, 10);
 
   return (
