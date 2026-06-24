@@ -1,5 +1,5 @@
 export const CLIENT_LOGOS = [
-  { name: "Misura AI", logo: "/images/logos/misura-ai.png" },
+  { name: "Misura AI", logo: "/images/logos/misura-ai.png", url: "https://misura.ai/" },
   { name: "X4 Group", logo: "/images/logos/x4-group.png" },
   { name: "VOTM", logo: "/images/logos/votm.png" },
   { name: "Thought Quarter | B Corp™", logo: "/images/logos/thought-quarter.png" },
