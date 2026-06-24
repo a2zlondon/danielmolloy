@@ -56,15 +56,6 @@ export function PricingTiers() {
   return (
     <section className="py-24 bg-card">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-4">
-            Services
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From a rapid investor screen to a full acquisition report — structured to reduce uncertainty before you commit capital.
-          </p>
-        </div>
-
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service) => (
             <Card
