@@ -44,6 +44,12 @@ const team: TeamMember[] = [
     initials: "SE",
   },
   {
+    title: "Abdul Manan",
+    focus: "Scale & Reliability Consultant",
+    bio: "Abdul advises on production systems that need to stay reliable under scale, complexity, and real-world usage. He supports reviews of mobile, web, cloud, realtime datastores, distributed systems, and AI-enabled platforms across fintech, healthcare, SaaS, and Web3 environments.",
+    initials: "AM",
+  },
+  {
     title: "Ray Mongey",
     focus: "Product & AI Specialist",
     bio: "Ray supports product and AI workstreams across technical due diligence engagements. He evaluates product roadmaps, customer demand signals, AI capability claims, and whether stated technology is defensible engineering or a thin wrapper around commodity tooling.",
@@ -123,7 +129,7 @@ export default function WhoWeArePage() {
                 Each engagement is supported by specialists who review infrastructure, security, and product dimensions in parallel — allowing multiple due diligence mandates to run concurrently without compromising depth.
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 {members.map((member) => (
                   <Card key={member.focus} className="border-0 shadow-sm">
                     <CardContent className="pt-8 pb-8">
