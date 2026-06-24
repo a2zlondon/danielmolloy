@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-5xl space-y-8">
+    <section className="relative overflow-hidden bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-20 md:pb-16 lg:pt-24 lg:pb-20">
+        <div className="max-w-5xl space-y-6">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
             Technical due diligence for startups and investors
           </h1>
@@ -30,7 +30,7 @@ export function Hero() {
               <Link href="/who-we-are">Who we are</Link>
             </Button>
           </div>
-          <div className="pt-2">
+          <div>
             <p className="text-sm text-muted-foreground">
               Technical consulting depth. Clear findings. Decisions your deal team can defend.
             </p>
