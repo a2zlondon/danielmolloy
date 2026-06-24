@@ -85,7 +85,7 @@ export default function ForPartnersPage() {
                   </Link>
                   {" · "}
                   <Link href="/locations" className="text-foreground underline hover:no-underline">
-                    Where we work
+                    Location
                   </Link>
                 </p>
               </div>

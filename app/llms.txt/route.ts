@@ -19,9 +19,11 @@ export function GET() {
 - Software businesses and scale-ups
 - Founders and leadership teams
 
-## Locations
-- Remote worldwide
-- On-site in the UK, Europe, UAE, Saudi Arabia, and the US
+## Location
+- Reading, UK
+- Dublin, Ireland
+- Amsterdam, Netherlands
+- Remote review for cross-border diligence
 
 ## Key Pages
 - [Home](${SITE_URL}/): Primary overview and positioning.
@@ -29,7 +31,7 @@ export function GET() {
 - [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
 - [For Partners](${SITE_URL}/for-partners): Collaboration details for partners and advisors.
 - [For Enterprises](${SITE_URL}/for-enterprises): Enterprise-specific CTO support.
-- [Locations](${SITE_URL}/locations): Coverage across key regions.
+- [Location](${SITE_URL}/locations): Reading, Dublin, and Amsterdam operating base.
 - [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.
 - [Blog](${SITE_URL}/blog): Articles on tech strategy, product, and leadership.
 - [Contact](${SITE_URL}/contact): Contact and booking pathways.
