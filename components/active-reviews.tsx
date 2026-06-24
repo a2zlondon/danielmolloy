@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 const activeStreams = [
   { label: "SaaS acquisition review", status: "In progress" },
@@ -42,7 +43,16 @@ export function ActiveReviews() {
             </div>
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-4">
+            <div className="relative overflow-hidden rounded-2xl bg-muted min-h-[220px]">
+              <Image
+                src="/images/editorial/autonomous-coding.jpg"
+                alt="Code editor used during technical review"
+                width={1800}
+                height={1200}
+                className="absolute inset-0 h-full w-full object-cover grayscale contrast-125"
+              />
+            </div>
             {activeStreams.map((stream) => (
               <Card key={stream.label} className="border-0 shadow-sm">
                 <CardContent className="py-4 flex items-center justify-between gap-4">

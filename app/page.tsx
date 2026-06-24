@@ -11,6 +11,7 @@ import { Testimonials } from "@/components/testimonials";
 import { ActiveReviews } from "@/components/active-reviews";
 import { DueDiligenceQuestions } from "@/components/due-diligence-questions";
 import { FaqPageJsonLd } from "@/components/structured-data";
+import { WorkingStyle } from "@/components/working-style";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <main>
         <Hero />
         <ClientLogoBanner />
+        <WorkingStyle />
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-background">
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
