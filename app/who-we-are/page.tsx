@@ -1,7 +1,7 @@
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { CTASection } from "@/components/cta-section";
@@ -44,10 +44,11 @@ const team: TeamMember[] = [
     initials: "SE",
   },
   {
-    title: "Product & AI Specialist",
-    focus: "Capability Assessment",
-    bio: "Evaluates product roadmaps, customer demand signals, and AI capability claims. Determines whether stated technology is defensible engineering or a ChatGPT wrapper in marketing clothing.",
-    initials: "PA",
+    title: "Ray Mongey",
+    focus: "Product & AI Specialist",
+    bio: "Ray supports product and AI workstreams across technical due diligence engagements. He evaluates product roadmaps, customer demand signals, AI capability claims, and whether stated technology is defensible engineering or a thin wrapper around commodity tooling.",
+    initials: "RM",
+    imageSrc: "/images/team/ray-mongey.png",
   },
 ];
 
@@ -127,12 +128,19 @@ export default function WhoWeArePage() {
                   <Card key={member.focus} className="border-0 shadow-sm">
                     <CardContent className="pt-8 pb-8">
                       <Avatar className="h-16 w-16 mb-4">
+                        {member.imageSrc ? (
+                          <AvatarImage
+                            src={member.imageSrc}
+                            alt={member.title}
+                            className="object-cover grayscale"
+                          />
+                        ) : null}
                         <AvatarFallback className="text-lg bg-muted text-muted-foreground">
                           {member.initials}
                         </AvatarFallback>
                       </Avatar>
                       <Badge variant="outline" className="mb-3 text-xs">
-                        Team member
+                        Consultant
                       </Badge>
                       <p className="text-sm tracking-[0.1em] uppercase text-muted-foreground mb-1">
                         {member.focus}
