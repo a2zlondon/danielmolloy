@@ -1,4 +1,5 @@
 import Script from "next/script";
+import Link from "next/link";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -115,9 +116,9 @@ export default function FixYourTechFastPage() {
             </p>
             <p className="max-w-5xl mx-auto mt-3 text-xs text-muted-foreground text-center">
               Need a larger engagement?{" "}
-              <a href="/work-with-me" className="underline hover:no-underline text-foreground/80">
+              <Link href="/work-with-me" className="underline hover:no-underline text-foreground/80">
                 View due diligence services
-              </a>
+              </Link>
               {" "}or{" "}
               <a href="mailto:connect@danielmolloy.com" className="underline hover:no-underline text-foreground/80">
                 email connect@danielmolloy.com
@@ -131,4 +132,3 @@ export default function FixYourTechFastPage() {
     </>
   );
 }
-

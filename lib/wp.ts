@@ -288,8 +288,19 @@ export function getFeaturedImageUrl(
 ): string | null {
   if (post.jetpack_featured_media_url) return post.jetpack_featured_media_url;
 
-  const embedded = post._embedded as any;
-  const fm = embedded?.["wp:featuredmedia"]?.[0];
-  const url = fm?.source_url || fm?.media_details?.sizes?.large?.source_url;
+  const featuredMedia = post._embedded?.["wp:featuredmedia"];
+  if (!Array.isArray(featuredMedia)) return null;
+
+  const media = featuredMedia[0] as {
+    source_url?: unknown;
+    media_details?: {
+      sizes?: {
+        large?: {
+          source_url?: unknown;
+        };
+      };
+    };
+  };
+  const url = media.source_url || media.media_details?.sizes?.large?.source_url;
   return typeof url === "string" ? url : null;
 }

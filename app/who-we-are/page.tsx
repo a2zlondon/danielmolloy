@@ -27,7 +27,7 @@ const team: TeamMember[] = [
     focus: "Founder & Lead Technical Advisor",
     bio: "Daniel has spent over 20 years walking into complex technical environments — figuring out how they work, finding hidden risks, and explaining them to management and investors. He has led architecture and delivery at scale for broadcast, media, fintech, and enterprise clients including the BBC, BT Group, and Capita. He leads every engagement and presents findings to deal teams and investment committees.",
     initials: "DM",
-    imageSrc: "/images/portrait-suit.png",
+    imageSrc: "/images/portrait-smile.png",
     isLeader: true,
   },
   {

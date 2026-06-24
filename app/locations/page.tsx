@@ -36,7 +36,7 @@ export default function LocationsPage() {
                 <div>
                   <h2 className="text-2xl font-light mb-3">Europe</h2>
                   <p className="text-muted-foreground mb-2">
-                    I'm based in Reading, UK, and work on-site or hybrid with clients across Europe, including:
+                    I&apos;m based in Reading, UK, and work on-site or hybrid with clients across Europe, including:
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-1">
                     <li>United Kingdom — London, Reading, and nationwide</li>
