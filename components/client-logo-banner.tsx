@@ -10,9 +10,9 @@ export function ExperienceIncludes() {
         <Image
           src={client.logo}
           alt=""
-          width={96}
-          height={40}
-          className="h-6 w-auto max-w-[88px] object-contain grayscale contrast-125"
+          width={192}
+          height={80}
+          className="h-12 w-auto max-w-[176px] object-contain grayscale contrast-125"
           data-preserve-color
         />
         <span className="sr-only">{client.name}</span>
@@ -42,19 +42,13 @@ export function ExperienceIncludes() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-6">
-            Experience includes
-          </p>
-          <div className="grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
             {logos.map((client) => (
               <div key={client.name} className="flex items-center gap-3 opacity-70">
                 {renderLogo(client)}
               </div>
             ))}
           </div>
-          <p className="mt-6 max-w-2xl text-xs text-muted-foreground">
-            Representative background and prior delivery experience. Current client and transaction details are not disclosed.
-          </p>
         </div>
       </div>
     </section>
