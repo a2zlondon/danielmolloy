@@ -74,25 +74,30 @@ export function ConsultationPrompt() {
           : "pointer-events-none translate-y-4 opacity-0"
       )}
     >
-      <div className="rounded-2xl border border-border bg-background/95 p-4 shadow-2xl shadow-black/10 backdrop-blur">
+      <div className="rounded-2xl border border-foreground/15 bg-foreground p-4 text-background shadow-2xl shadow-black/25">
         <div className="flex items-start gap-3">
-          <div className="mt-1 hidden h-2.5 w-2.5 shrink-0 rounded-full bg-foreground sm:block" />
+          <div className="mt-1 hidden h-2.5 w-2.5 shrink-0 rounded-full bg-background sm:block" />
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-medium text-foreground">
+            <p className="text-sm font-medium text-background">
               Need a technical second opinion?
             </p>
-            <p className="mt-1 text-sm text-muted-foreground">
+            <p className="mt-1 text-sm text-background/75">
               Book a 20-minute Technology Due Diligence consultation before
               you invest, acquire, or build.
             </p>
-            <Button size="sm" className="mt-3 w-full sm:w-auto" asChild>
+            <Button
+              size="sm"
+              variant="secondary"
+              className="mt-3 w-full bg-background text-foreground hover:bg-background/90 sm:w-auto"
+              asChild
+            >
               <a href={BOOK_CALL_URL}>Book a call</a>
             </Button>
           </div>
           <button
             type="button"
             onClick={dismiss}
-            className="rounded-full p-1 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            className="rounded-full p-1 text-background/65 transition-colors hover:bg-background/10 hover:text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/70"
             aria-label="Dismiss consultation prompt"
           >
             <X aria-hidden="true" className="h-4 w-4" />
