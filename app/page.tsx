@@ -12,6 +12,7 @@ import { FaqPageJsonLd } from "@/components/structured-data";
 import { WorkingStyle } from "@/components/working-style";
 import { DealConfidence } from "@/components/deal-confidence";
 import { ReportSampleDownload } from "@/components/report-sample-download";
+import { ConsultationPrompt } from "@/components/consultation-prompt";
 import Link from "next/link";
 
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
         <FAQ />
         <CTASection />
       </main>
+      <ConsultationPrompt />
       <Footer />
     </>
   );
