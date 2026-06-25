@@ -54,6 +54,13 @@ const team: TeamMember[] = [
     imageSrc: "/images/team/abdul-manan.png",
   },
   {
+    title: "Selinay Yildirim",
+    focus: "UI/UX & Frontend Consultant",
+    bio: "Selinay supports reviews of brand, interface quality, user journeys, and frontend execution. She helps identify where visual trust, interaction speed, confusing flows, or post-investment product work could affect conversion, sales velocity, and customer confidence.",
+    initials: "SY",
+    imageSrc: "/images/team/selinay-yildirim.png",
+  },
+  {
     title: "Ray Mongey",
     focus: "Product & AI Specialist",
     bio: "Ray supports product and AI workstreams across technical due diligence engagements. He evaluates product roadmaps, customer demand signals, AI capability claims, and whether stated technology is defensible engineering or a thin wrapper around commodity tooling.",
