@@ -15,6 +15,7 @@ export function GET() {
 ## Who We Work With
 - Private equity firms and investors
 - Corporate finance advisers and M&A brokers
+- Law firms supporting software, SaaS, AI, and technology transactions
 - Strategic acquirers
 - Software businesses and scale-ups
 - Founders and leadership teams
@@ -30,6 +31,7 @@ export function GET() {
 - [Services](${SITE_URL}/work-with-me): Engagement options and ways to work together.
 - [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
 - [For Partners](${SITE_URL}/for-partners): Collaboration details for partners and advisors.
+- [For Law Firms](${SITE_URL}/for-law-firms): Technical due diligence support for legal due diligence, software acquisitions, SaaS transactions, and AI capability reviews.
 - [For Enterprises](${SITE_URL}/for-enterprises): Enterprise-specific CTO support.
 - [Location](${SITE_URL}/locations): Reading, Dublin, and Amsterdam operating base.
 - [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.

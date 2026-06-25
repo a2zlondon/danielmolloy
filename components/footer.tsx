@@ -62,6 +62,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/for-law-firms" className="text-muted-foreground hover:text-foreground">
+                  For law firms
+                </Link>
+              </li>
+              <li>
                 <Link href="/for-enterprises" className="text-muted-foreground hover:text-foreground">
                   For PE &amp; acquirers
                 </Link>
