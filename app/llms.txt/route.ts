@@ -4,6 +4,15 @@ export function GET() {
   const body = `# Daniel Molloy Technology Due Diligence
 > Technical consulting and technology due diligence for investors, PE firms, corporate finance advisers, and software businesses. We turn technical complexity into clear risks, value potential, mitigation actions, and delivery roadmaps.
 
+## Legal Entity
+- Trading name: Daniel Molloy Technology Due Diligence
+- Legal company name: Daniel Molloy Ltd
+- Company number: 15228212
+- Registered in: England and Wales
+- Registered office: 5 Providence Court, Pynes Hill, Exeter, Devon, United Kingdom, EX2 5JL
+- Companies House: https://find-and-update.company-information.service.gov.uk/company/15228212
+- VAT details: available on request
+
 ## Services
 - Technology due diligence
 - M&A technical reviews

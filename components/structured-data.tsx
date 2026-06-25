@@ -1,4 +1,10 @@
-import { SITE_URL } from "@/lib/constants";
+import {
+  COMPANIES_HOUSE_URL,
+  COMPANY_NUMBER,
+  LEGAL_COMPANY_NAME,
+  REGISTERED_OFFICE_ADDRESS,
+  SITE_URL,
+} from "@/lib/constants";
 
 const ORGANIZATION_AND_SERVICE_JSON_LD = {
   "@context": "https://schema.org",
@@ -7,10 +13,18 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
       name: "Daniel Molloy Technology Due Diligence",
+      legalName: LEGAL_COMPANY_NAME,
+      identifier: COMPANY_NUMBER,
       description:
         "Technical consulting and technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses.",
       url: SITE_URL,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: REGISTERED_OFFICE_ADDRESS,
+        addressCountry: "GB",
+      },
       sameAs: [
+        COMPANIES_HOUSE_URL,
         "https://www.linkedin.com/in/danielthomasmolloy/",
         "https://github.com/a2zlondon",
       ],

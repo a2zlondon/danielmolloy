@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CompanyLegalDetails } from "@/components/company-legal-details";
 
 export function Footer() {
   return (
@@ -104,6 +105,9 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Daniel Molloy Technology Due
             Diligence. All rights reserved.
           </p>
+          <div className="mt-4 text-xs">
+            <CompanyLegalDetails compact />
+          </div>
         </div>
       </div>
     </footer>

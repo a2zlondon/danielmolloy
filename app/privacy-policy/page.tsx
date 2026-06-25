@@ -1,5 +1,6 @@
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
+import { CompanyLegalDetails } from "@/components/company-legal-details";
 
 export const metadata = {
   title: "Privacy Policy",
@@ -119,6 +120,7 @@ export default function PrivacyPolicyPage() {
                   <br />
                   Website: <a href="https://danielmolloy.com">danielmolloy.com</a>
                 </p>
+                <CompanyLegalDetails />
               </div>
             </div>
           </div>

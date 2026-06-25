@@ -1,5 +1,6 @@
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
+import { CompanyLegalDetails } from "@/components/company-legal-details";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { BOOK_CALL_URL } from "@/lib/constants";
@@ -49,6 +50,13 @@ export default function ContactPage() {
                     <Button size="lg" asChild>
                       <a href={BOOK_CALL_URL}>Book a call</a>
                     </Button>
+                  </div>
+
+                  <div className="border-t border-border pt-6 text-sm text-muted-foreground">
+                    <h2 className="text-xl font-medium mb-2 text-foreground">
+                      Legal details
+                    </h2>
+                    <CompanyLegalDetails />
                   </div>
                 </CardContent>
               </Card>
