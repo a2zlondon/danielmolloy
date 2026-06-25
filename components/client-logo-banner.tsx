@@ -25,7 +25,7 @@ export function ExperienceIncludes() {
           href={client.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 hover:opacity-100 transition-opacity"
+          className="inline-flex h-full w-full items-center justify-center hover:opacity-100 transition-opacity"
         >
           {logo}
         </a>
@@ -44,7 +44,10 @@ export function ExperienceIncludes() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
             {logos.map((client) => (
-              <div key={client.name} className="flex items-center gap-3 opacity-70">
+              <div
+                key={client.name}
+                className="flex min-h-16 items-center justify-center opacity-70"
+              >
                 {renderLogo(client)}
               </div>
             ))}
