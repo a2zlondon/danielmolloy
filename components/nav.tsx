@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,17 @@ const navItems = [
   { href: "/blog", label: "Writing" },
 ];
 
+const audienceItems = [
+  { href: "/for-partners", label: "For partners" },
+  { href: "/for-law-firms", label: "For law firms" },
+  { href: "/for-enterprises", label: "For PE & acquirers" },
+];
+
+const mobileNavItems = [
+  ...navItems,
+  ...audienceItems,
+];
+
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,7 +34,7 @@ export function Nav() {
           <Link href="/" className="text-xl font-medium" onClick={() => setIsOpen(false)}>
             Daniel Molloy
           </Link>
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -33,6 +44,26 @@ export function Nav() {
                 {item.label}
               </Link>
             ))}
+            <div className="group relative">
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 text-sm hover:text-foreground/80 transition-colors"
+              >
+                Who we help
+                <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
+              </button>
+              <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-52 -translate-x-1/2 rounded-xl border border-border bg-background p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                {audienceItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
             <Button size="sm" asChild>
               <a href={BOOK_CALL_URL}>Book a call</a>
             </Button>
@@ -52,7 +83,7 @@ export function Nav() {
         {isOpen ? (
           <div className="md:hidden border-t border-border py-4">
             <div className="flex flex-col gap-4">
-              {navItems.map((item) => (
+              {mobileNavItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
