@@ -110,7 +110,7 @@ export default function WhoWeArePage() {
               <Card className="mb-16 overflow-hidden border-0 shadow-sm">
                 <CardContent className="p-0">
                   <div className="grid md:grid-cols-5 gap-0">
-                    <div className="md:col-span-2 relative min-h-[280px] bg-muted">
+                    <div className="md:col-span-1 relative min-h-[220px] bg-muted">
                       <Image
                         src={leader.imageSrc!}
                         alt={leader.title}
@@ -119,7 +119,7 @@ export default function WhoWeArePage() {
                         className="w-full h-full object-cover object-top grayscale"
                       />
                     </div>
-                    <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
+                    <div className="md:col-span-4 p-8 md:p-10 flex flex-col justify-center">
                       <p className="text-sm tracking-[0.15em] uppercase text-muted-foreground mb-2">
                         {leader.focus}
                       </p>
@@ -140,11 +140,11 @@ export default function WhoWeArePage() {
                 Each engagement is supported by specialists who review infrastructure, security, and product dimensions in parallel — allowing multiple due diligence mandates to run concurrently without compromising depth.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-3 gap-6">
                 {members.map((member) => (
                   <Card key={member.focus} className="border-0 shadow-sm">
                     <CardContent className="pt-8 pb-8">
-                      <Avatar className="h-16 w-16 mb-4">
+                      <Avatar className="h-28 w-28 mb-5">
                         {member.imageSrc ? (
                           <AvatarImage
                             src={member.imageSrc}
