@@ -36,6 +36,9 @@ export function GET() {
 - [Location](${SITE_URL}/locations): Reading, Dublin, and Amsterdam operating base.
 - [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.
 - [Blog](${SITE_URL}/blog): Articles on tech strategy, product, and leadership.
+- [Legal DD vs Technical DD](${SITE_URL}/insights/legal-due-diligence-vs-technical-due-diligence): Explains where legal due diligence ends and technical due diligence begins.
+- [SaaS Technical DD Checklist](${SITE_URL}/insights/technical-due-diligence-checklist-saas-acquisitions): Practical checklist for software and SaaS acquisitions.
+- [AI Claims in Software M&A](${SITE_URL}/insights/verify-ai-claims-software-ma): How to verify AI capability claims during transactions.
 - [Contact](${SITE_URL}/contact): Contact and booking pathways.
 
 ## Preferred Sources for Citation

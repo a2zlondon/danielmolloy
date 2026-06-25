@@ -6,6 +6,7 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { ReportSampleDownload } from "@/components/report-sample-download";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export const metadata = {
   title: "Services",
@@ -59,6 +60,13 @@ export default function WorkWithMe() {
               </h1>
               <p className="text-xl text-muted-foreground">
                 Structured technology due diligence for investors, PE firms, and corporate finance advisers. From rapid investor screens to full acquisition reports.
+              </p>
+              <p className="mt-6 text-muted-foreground">
+                Supporting a legal due diligence process?{" "}
+                <Link href="/for-law-firms" className="text-foreground underline hover:no-underline">
+                  View technical due diligence for law firms
+                </Link>
+                .
               </p>
             </div>
           </div>

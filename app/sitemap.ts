@@ -16,6 +16,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     };
   });
+
+  const insightUrls = [
+    "legal-due-diligence-vs-technical-due-diligence",
+    "technical-due-diligence-checklist-saas-acquisitions",
+    "verify-ai-claims-software-ma",
+  ].map((slug) => ({
+    url: `${baseUrl}/insights/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
   
   return [
     {
@@ -96,6 +107,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    ...insightUrls,
     ...postUrls,
   ];
 }

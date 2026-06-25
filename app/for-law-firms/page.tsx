@@ -4,6 +4,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BOOK_CALL_URL } from "@/lib/constants";
+import { FurtherReading } from "@/components/further-reading";
 
 export const metadata = {
   title: "Technical due diligence for law firms",
@@ -158,6 +159,7 @@ export default function ForLawFirmsPage() {
             </div>
           </div>
         </section>
+        <FurtherReading />
       </main>
       <Footer />
     </>

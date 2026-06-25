@@ -54,6 +54,13 @@ export default function ForPartnersPage() {
                         View services and pricing
                       </Link>
                     </p>
+                    <p>
+                      Law firm or legal due diligence team?{" "}
+                      <Link href="/for-law-firms" className="text-foreground underline hover:no-underline">
+                        See technical due diligence support for law firms
+                      </Link>
+                      .
+                    </p>
                   </CardContent>
                 </Card>
 
@@ -86,6 +93,10 @@ export default function ForPartnersPage() {
                   {" · "}
                   <Link href="/locations" className="text-foreground underline hover:no-underline">
                     Location
+                  </Link>
+                  {" · "}
+                  <Link href="/insights/legal-due-diligence-vs-technical-due-diligence" className="text-foreground underline hover:no-underline">
+                    Legal DD vs technical DD
                   </Link>
                 </p>
               </div>
