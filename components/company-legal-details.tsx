@@ -4,7 +4,7 @@ import {
   LEGAL_COMPANY_NAME,
   REGISTERED_OFFICE_ADDRESS,
   TRADING_NAME,
-  VAT_DETAILS,
+  VAT_NUMBER,
 } from "@/lib/constants";
 
 export function CompanyLegalDetails({
@@ -30,7 +30,7 @@ export function CompanyLegalDetails({
         </a>
       </p>
       {!compact && <p>Registered office: {REGISTERED_OFFICE_ADDRESS}</p>}
-      <p>{VAT_DETAILS}.</p>
+      <p>VAT number: {VAT_NUMBER}.</p>
     </div>
   );
 }

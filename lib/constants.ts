@@ -8,7 +8,7 @@ export const REGISTERED_OFFICE_ADDRESS =
   "5 Providence Court, Pynes Hill, Exeter, Devon, United Kingdom, EX2 5JL";
 export const COMPANIES_HOUSE_URL =
   "https://find-and-update.company-information.service.gov.uk/company/15228212";
-export const VAT_DETAILS = "VAT details available on request";
+export const VAT_NUMBER = "GB452010546";
 
 // Stripe embed buy buttons (fix-your-tech-fast page)
 export const STRIPE_PUBLISHABLE_KEY =

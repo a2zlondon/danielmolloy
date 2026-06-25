@@ -11,7 +11,7 @@ export function GET() {
 - Registered in: England and Wales
 - Registered office: 5 Providence Court, Pynes Hill, Exeter, Devon, United Kingdom, EX2 5JL
 - Companies House: https://find-and-update.company-information.service.gov.uk/company/15228212
-- VAT details: available on request
+- VAT number: GB452010546
 
 ## Services
 - Technology due diligence
