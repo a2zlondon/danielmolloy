@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 import { BOOK_CALL_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
-const DISMISS_KEY = "consultationPromptDismissedUntil";
+const DISMISS_KEY = "consultationPromptDismissedUntil:v2";
 const DISMISS_FOR_DAYS = 14;
-const APPEAR_DELAY_MS = 9000;
-const SCROLL_THRESHOLD = 0.32;
+const APPEAR_DELAY_MS = 2500;
+const SCROLL_THRESHOLD = 0.12;
 
 function getDismissedUntil() {
   const storedValue = window.localStorage.getItem(DISMISS_KEY);
@@ -82,10 +82,11 @@ export function ConsultationPrompt() {
               Need a technical second opinion?
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
-              Book a 20-minute Technology Due Diligence consultation.
+              Book a 20-minute Technology Due Diligence consultation before
+              you invest, acquire, or build.
             </p>
             <Button size="sm" className="mt-3 w-full sm:w-auto" asChild>
-              <a href={BOOK_CALL_URL}>Book consultation</a>
+              <a href={BOOK_CALL_URL}>Book a call</a>
             </Button>
           </div>
           <button
