@@ -4,7 +4,7 @@ import { FAQ } from "@/components/faq";
 import { CTASection } from "@/components/cta-section";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
-import { Capabilities } from "@/components/capabilities";
+import { ReportSampleDownload } from "@/components/report-sample-download";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata = {
@@ -88,7 +88,7 @@ export default function WorkWithMe() {
           </div>
         </section>
 
-        <Capabilities />
+        <ReportSampleDownload />
         <HowItWorks />
         <FAQ />
         <CTASection />

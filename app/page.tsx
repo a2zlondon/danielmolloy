@@ -1,6 +1,5 @@
 import { Hero } from "@/components/hero";
 import { PricingTiers } from "@/components/pricing-tiers";
-import { Capabilities } from "@/components/capabilities";
 import { HowItWorks } from "@/components/how-it-works";
 import { FAQ, faqs } from "@/components/faq";
 import { CTASection } from "@/components/cta-section";
@@ -12,6 +11,7 @@ import { DueDiligenceQuestions } from "@/components/due-diligence-questions";
 import { FaqPageJsonLd } from "@/components/structured-data";
 import { WorkingStyle } from "@/components/working-style";
 import { DealConfidence } from "@/components/deal-confidence";
+import { ReportSampleDownload } from "@/components/report-sample-download";
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
         <DueDiligenceQuestions />
         <ActiveReviews />
         <PricingTiers />
-        <Capabilities />
+        <ReportSampleDownload />
         <HowItWorks />
         <FAQ />
         <CTASection />
