@@ -22,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 export const metadata: Metadata = {
   title: {
     default: "Daniel Molloy Technology Due Diligence",
-    template: "%s | Daniel Molloy",
+    template: "%s | Daniel Molloy Technology Due Diligence",
   },
   description:
     "Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. M&A tech reviews, AI capability assessments, and acquisition reports.",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     "corporate finance technology",
     "technical consulting",
   ],
-  authors: [{ name: "Daniel Molloy" }],
-  creator: "Daniel Molloy",
+  authors: [{ name: "Daniel Molloy Technology Due Diligence" }],
+  creator: "Daniel Molloy Technology Due Diligence",
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     url: SITE_URL,
-    siteName: "Daniel Molloy",
+    siteName: "Daniel Molloy Technology Due Diligence",
     title: "Daniel Molloy Technology Due Diligence",
     description:
       "Technology due diligence for PE firms, corporate finance advisers, and investors. Technical consulting depth for risks, value potential, mitigation actions, and roadmap clarity.",

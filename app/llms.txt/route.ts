@@ -1,7 +1,7 @@
 import { SITE_URL } from "@/lib/constants";
 
 export function GET() {
-  const body = `# Daniel Molloy
+  const body = `# Daniel Molloy Technology Due Diligence
 > Technical consulting and technology due diligence for investors, PE firms, corporate finance advisers, and software businesses. We turn technical complexity into clear risks, value potential, mitigation actions, and delivery roadmaps.
 
 ## Services

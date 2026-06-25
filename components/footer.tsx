@@ -6,7 +6,9 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-medium mb-4">Daniel Molloy</h3>
+            <h3 className="font-medium mb-4">
+              Daniel Molloy Technology Due Diligence
+            </h3>
             <p className="text-sm text-muted-foreground">
               Technology due diligence for investors, PE firms, and corporate finance advisers.
             </p>
@@ -93,7 +95,10 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border text-sm text-muted-foreground text-center">
-          <p>&copy; {new Date().getFullYear()} Daniel Molloy. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Daniel Molloy Technology Due
+            Diligence. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

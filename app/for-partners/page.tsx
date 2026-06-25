@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const metadata = {
   title: "For partners",
   description:
-    "M&A brokers, corporate finance advisers, and PE firms: partner with Daniel Molloy for technology due diligence on software acquisitions and investments.",
+    "M&A brokers, corporate finance advisers, and PE firms: partner with a specialist technical team for technology due diligence on software acquisitions and investments.",
 };
 
 export default function ForPartnersPage() {

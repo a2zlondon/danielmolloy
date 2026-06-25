@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata = {
   title: "For PE & strategic acquirers",
   description:
-    "Technology due diligence for private equity firms and strategic acquirers evaluating software businesses. Structured M&A tech reviews from Daniel Molloy.",
+    "Technology due diligence for private equity firms and strategic acquirers evaluating software businesses. Structured M&A tech reviews from a specialist technical team.",
 };
 
 export default function ForEnterprisesPage() {

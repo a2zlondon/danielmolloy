@@ -21,10 +21,10 @@ export default function PrivacyPolicyPage() {
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  At Daniel Molloy Design &amp; Technology, your privacy is important
-                  to us. This Privacy Policy explains how we collect, use, and
-                  protect your information when you use this website or book a
-                  call via Calendly.
+                  At Daniel Molloy Technology Due Diligence, your privacy is
+                  important to us. This Privacy Policy explains how we collect,
+                  use, and protect your information when you use this website or
+                  book a call via Calendly.
                 </p>
 
                 <h2>1. Information we collect</h2>
@@ -51,8 +51,8 @@ export default function PrivacyPolicyPage() {
                 <ul>
                   <li>Respond to your inquiry or interest in our services</li>
                   <li>
-                    Provide information about our software, design, or consulting
-                    services
+                    Provide information about our technical consulting and due
+                    diligence services
                   </li>
                   <li>
                     Send occasional updates, case studies, or relevant offers
@@ -110,7 +110,7 @@ export default function PrivacyPolicyPage() {
                   handle your data, please contact:
                 </p>
                 <p>
-                  Daniel Molloy Design &amp; Technology
+                  Daniel Molloy Technology Due Diligence
                   <br />
                   Email:{" "}
                   <a href="mailto:connect@danielmolloy.com">
@@ -128,4 +128,3 @@ export default function PrivacyPolicyPage() {
     </>
   );
 }
-
