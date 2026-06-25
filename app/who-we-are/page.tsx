@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/cta-section";
 import { ExperienceIncludes } from "@/components/client-logo-banner";
 
@@ -18,6 +19,7 @@ type TeamMember = {
   bio: string;
   initials: string;
   imageSrc?: string;
+  linkedInUrl?: string;
   isLeader?: boolean;
   isHidden?: boolean;
 };
@@ -26,9 +28,10 @@ const team: TeamMember[] = [
   {
     title: "Daniel Molloy",
     focus: "Founder & Lead Technical Advisor",
-    bio: "Daniel leads the technical advisory team and brings over 20 years of software, architecture, delivery, and engineering leadership experience. His background spans broadcast, media, fintech, and enterprise clients including the BBC, BT Group, and Capita. He shapes the review methodology, supports specialist workstreams, and presents findings to deal teams and investment committees.",
+    bio: "Leads technical due diligence methodology, specialist workstreams, and board-ready findings across software, architecture, delivery, and engineering risk.",
     initials: "DM",
     imageSrc: "/images/portrait-smile.png",
+    linkedInUrl: "https://www.linkedin.com/in/danielthomasmolloy/",
     isLeader: true,
   },
   {
@@ -48,23 +51,26 @@ const team: TeamMember[] = [
   {
     title: "Abdul Manan",
     focus: "Scale & Reliability Consultant",
-    bio: "Abdul advises on production systems that need to stay reliable under scale, complexity, and real-world usage. He supports reviews of mobile, web, cloud, realtime datastores, distributed systems, and AI-enabled platforms across fintech, healthcare, SaaS, and Web3 environments.",
+    bio: "Advises on scalable production systems across mobile, web, cloud, realtime datastores, distributed platforms, and reliability under real usage.",
     initials: "AM",
     imageSrc: "/images/team/abdul-manan.png",
+    linkedInUrl: "https://www.linkedin.com/in/abdul-manan10/",
   },
   {
     title: "Selinay Yildirim",
     focus: "UI/UX & Frontend Consultant",
-    bio: "Selinay supports reviews of brand, interface quality, user journeys, and frontend execution. She helps identify where visual trust, interaction speed, confusing flows, or post-investment product work could affect conversion, sales velocity, and customer confidence.",
+    bio: "Reviews brand, interface quality, frontend execution, interaction speed, and user journeys that may slow trust, conversion, or sales.",
     initials: "SY",
     imageSrc: "/images/team/selinay-yildirim.png",
+    linkedInUrl: "https://www.linkedin.com/in/selinayyildirim/",
   },
   {
     title: "Ray Mongey",
     focus: "Product & AI Specialist",
-    bio: "Ray supports product and AI workstreams across technical due diligence engagements. He evaluates product roadmaps, customer demand signals, AI capability claims, and whether stated technology is defensible engineering or a thin wrapper around commodity tooling.",
+    bio: "Evaluates product roadmaps, customer demand signals, AI capability claims, and whether the technology is defensible engineering.",
     initials: "RM",
     imageSrc: "/images/team/ray-mongey.png",
+    linkedInUrl: "https://www.linkedin.com/in/raymongey/",
   },
 ];
 
@@ -76,7 +82,9 @@ const capacitySignals = [
 ];
 
 export default function WhoWeArePage() {
-  const members = team.filter((m) => !m.isHidden);
+  const members = team
+    .filter((m) => !m.isHidden)
+    .sort((a, b) => Number(a.isLeader) - Number(b.isLeader));
 
   return (
     <>
@@ -110,9 +118,9 @@ export default function WhoWeArePage() {
                 Each engagement is supported by specialists who review infrastructure, security, and product dimensions in parallel — allowing multiple due diligence mandates to run concurrently without compromising depth.
               </p>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 {members.map((member) => (
-                  <Card key={member.focus} className="border-0 shadow-sm h-full">
+                  <Card key={member.title} className="border-0 shadow-sm h-full">
                     <CardContent className="pt-8 pb-8 h-full flex flex-col">
                       <Avatar className="h-28 w-28 mb-5">
                         {member.imageSrc ? (
@@ -133,9 +141,20 @@ export default function WhoWeArePage() {
                         {member.focus}
                       </p>
                       <h3 className="text-xl font-medium mb-3">{member.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
                         {member.bio}
                       </p>
+                      {member.linkedInUrl ? (
+                        <Button asChild variant="outline" size="sm" className="mt-auto w-fit">
+                          <a
+                            href={member.linkedInUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            LinkedIn
+                          </a>
+                        </Button>
+                      ) : null}
                     </CardContent>
                   </Card>
                 ))}
