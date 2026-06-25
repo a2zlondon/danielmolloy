@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { OrganizationAndServiceJsonLd } from "@/components/structured-data";
@@ -74,12 +75,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Tag Manager - as high in head as possible */}
-        <script
-          dangerouslySetInnerHTML={{ __html: gtmScript }}
-        />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {gtmScript}
+        </Script>
+        <Script
+          id="concord-consent"
+          src="https://api.concord.tech/site-v1/704a638f-b53d-4bb3-b0eb-f1dc6ebf3426/site-client"
+          strategy="afterInteractive"
+        />
         {/* Google Tag Manager (noscript) - immediately after opening body */}
         <noscript>
           <iframe
