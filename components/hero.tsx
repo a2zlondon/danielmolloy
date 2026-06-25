@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { BOOK_CALL_URL } from "@/lib/constants";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import { HeroTypewriter } from "@/components/hero-typewriter";
 
 export function Hero() {
   return (
@@ -12,7 +13,8 @@ export function Hero() {
             Technical due diligence for startups and investors
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl">
-            We reduce uncertainty before you invest, acquire, or build. Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. Our team creates transparency around technical maturity, debt, scalability, risk, and value potential.
+            We reduce uncertainty before you invest, acquire, or build. Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. Our team creates transparency around{" "}
+            <HeroTypewriter />.
           </p>
           <div className="flex flex-wrap items-center gap-2">
             <Badge variant="secondary">M&A tech due diligence</Badge>
