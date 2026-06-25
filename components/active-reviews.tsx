@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
 
 const activeStreams = [
   { label: "SaaS acquisition review", status: "In progress" },
@@ -45,16 +44,7 @@ export function ActiveReviews() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <div className="relative overflow-hidden rounded-2xl bg-muted min-h-[220px]">
-              <Image
-                src="/images/editorial/autonomous-coding.jpg"
-                alt="Code editor used during technical review"
-                width={1800}
-                height={1200}
-                className="absolute inset-0 h-full w-full object-cover grayscale contrast-125"
-              />
-            </div>
+          <div>
             <div className="grid sm:grid-cols-2 gap-4">
               {kanbanColumns.map((status) => {
                 const streams = activeStreams.filter(

@@ -22,6 +22,7 @@ export default function Home() {
         <Hero />
         <WorkingStyle />
         <DealConfidence />
+        <Testimonials />
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-background">
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -34,7 +35,6 @@ export default function Home() {
         <PricingTiers />
         <Capabilities />
         <HowItWorks />
-        <Testimonials />
         <FAQ />
         <CTASection />
       </main>
