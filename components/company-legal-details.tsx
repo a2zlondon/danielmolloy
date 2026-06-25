@@ -29,7 +29,7 @@ export function CompanyLegalDetails({
           {COMPANY_NUMBER}
         </a>
       </p>
-      {!compact && <p>Registered office: {REGISTERED_OFFICE_ADDRESS}</p>}
+      <p>Registered office: {REGISTERED_OFFICE_ADDRESS}</p>
       <p>VAT number: {VAT_NUMBER}.</p>
     </div>
   );

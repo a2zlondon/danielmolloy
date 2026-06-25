@@ -4,6 +4,7 @@ import {
   LEGAL_COMPANY_NAME,
   REGISTERED_OFFICE_ADDRESS,
   SITE_URL,
+  VAT_NUMBER,
 } from "@/lib/constants";
 
 const ORGANIZATION_AND_SERVICE_JSON_LD = {
@@ -15,6 +16,7 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
       name: "Daniel Molloy Technology Due Diligence",
       legalName: LEGAL_COMPANY_NAME,
       identifier: COMPANY_NUMBER,
+      vatID: VAT_NUMBER,
       description:
         "Technical consulting and technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses.",
       url: SITE_URL,
