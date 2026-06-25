@@ -11,6 +11,8 @@ const activeStreams = [
   { label: "Security & code quality review", status: "Reporting" },
 ];
 
+const kanbanColumns = ["In progress", "Reporting"];
+
 const reportAreas = [
   "Product",
   "Engineering",
@@ -53,22 +55,38 @@ export function ActiveReviews() {
                 className="absolute inset-0 h-full w-full object-cover grayscale contrast-125"
               />
             </div>
-            {activeStreams.map((stream) => (
-              <Card key={stream.label} className="border-0 shadow-sm">
-                <CardContent className="py-4 flex items-center justify-between gap-4">
-                  <span className="text-sm font-medium">{stream.label}</span>
-                  <Badge
-                    variant={stream.status === "Reporting" ? "default" : "secondary"}
-                    className="shrink-0 text-xs"
-                  >
-                    {stream.status}
-                  </Badge>
-                </CardContent>
-              </Card>
-            ))}
-            <p className="text-xs text-muted-foreground pt-2">
-              Representative active workstreams. Client details withheld under confidentiality.
-            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {kanbanColumns.map((status) => {
+                const streams = activeStreams.filter(
+                  (stream) => stream.status === status,
+                );
+
+                return (
+                  <div key={status} className="rounded-2xl bg-background p-4">
+                    <div className="mb-4 flex items-center justify-between gap-3">
+                      <h3 className="text-sm font-medium">{status}</h3>
+                      <Badge
+                        variant={status === "Reporting" ? "default" : "secondary"}
+                        className="text-xs"
+                      >
+                        {streams.length}
+                      </Badge>
+                    </div>
+                    <div className="space-y-3">
+                      {streams.map((stream) => (
+                        <Card key={stream.label} className="border-0 shadow-sm">
+                          <CardContent className="p-4">
+                            <p className="text-sm font-medium leading-snug">
+                              {stream.label}
+                            </p>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
