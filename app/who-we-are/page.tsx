@@ -3,7 +3,6 @@ import { Footer } from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
 import { CTASection } from "@/components/cta-section";
 import { ExperienceIncludes } from "@/components/client-logo-banner";
 
@@ -77,8 +76,7 @@ const capacitySignals = [
 ];
 
 export default function WhoWeArePage() {
-  const leader = team.find((m) => m.isLeader)!;
-  const members = team.filter((m) => !m.isLeader && !m.isHidden);
+  const members = team.filter((m) => !m.isHidden);
 
   return (
     <>
@@ -107,43 +105,15 @@ export default function WhoWeArePage() {
                 ))}
               </div>
 
-              <Card className="mb-16 overflow-hidden border-0 shadow-sm">
-                <CardContent className="p-0">
-                  <div className="grid md:grid-cols-5 gap-0">
-                    <div className="md:col-span-1 relative min-h-[220px] bg-muted">
-                      <Image
-                        src={leader.imageSrc!}
-                        alt={leader.title}
-                        width={600}
-                        height={800}
-                        className="w-full h-full object-cover object-top grayscale"
-                      />
-                    </div>
-                    <div className="md:col-span-4 p-8 md:p-10 flex flex-col justify-center">
-                      <p className="text-sm tracking-[0.15em] uppercase text-muted-foreground mb-2">
-                        {leader.focus}
-                      </p>
-                      <h2 className="text-3xl font-light mb-4">{leader.title}</h2>
-                      <p className="text-muted-foreground leading-relaxed mb-6">
-                        {leader.bio}
-                      </p>
-                      <p className="text-sm text-muted-foreground italic">
-                        &ldquo;Before we invested, acquired, or built anything significant, we wanted technical clarity first.&rdquo;
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
               <h2 className="text-3xl font-light mb-4">The team</h2>
               <p className="text-muted-foreground mb-10 max-w-2xl">
                 Each engagement is supported by specialists who review infrastructure, security, and product dimensions in parallel — allowing multiple due diligence mandates to run concurrently without compromising depth.
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {members.map((member) => (
-                  <Card key={member.focus} className="border-0 shadow-sm">
-                    <CardContent className="pt-8 pb-8">
+                  <Card key={member.focus} className="border-0 shadow-sm h-full">
+                    <CardContent className="pt-8 pb-8 h-full flex flex-col">
                       <Avatar className="h-28 w-28 mb-5">
                         {member.imageSrc ? (
                           <AvatarImage
@@ -157,7 +127,7 @@ export default function WhoWeArePage() {
                         </AvatarFallback>
                       </Avatar>
                       <Badge variant="outline" className="mb-3 text-xs">
-                        Consultant
+                        {member.isLeader ? "Founder · Consultant" : "Consultant"}
                       </Badge>
                       <p className="text-sm tracking-[0.1em] uppercase text-muted-foreground mb-1">
                         {member.focus}
