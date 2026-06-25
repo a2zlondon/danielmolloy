@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const principles = [
   "Independent technical judgement",
-  "Creative investigation",
+  "Evidence-led problem solving",
   "Shared review standards",
 ];
 
