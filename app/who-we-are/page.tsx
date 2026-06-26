@@ -72,6 +72,14 @@ const team: TeamMember[] = [
     imageSrc: "/images/team/ray-mongey.png",
     linkedInUrl: "https://www.linkedin.com/in/raymongey/",
   },
+  {
+    title: "Gillian Fitzgibbon",
+    focus: "Technology Readiness & Reporting Consultant",
+    bio: "Turns operational evidence into clear diligence findings on whether a target has the systems, controls, and delivery maturity to support the investment case.",
+    initials: "GF",
+    imageSrc: "/images/team/gillian-fitzgibbon.png",
+    linkedInUrl: "https://www.linkedin.com/in/gillian-fitzgibbon-60252333/",
+  },
 ];
 
 const capacitySignals = [
