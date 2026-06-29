@@ -14,7 +14,7 @@ export const faqs = [
   {
     question: "What does a typical engagement look like?",
     answer:
-      "It works like a property survey, but for a software business. We agree the scope, inspect the available technology evidence, interview key people, then provide a written report and briefing that explains what is solid, what is risky, and what questions should be answered before money changes hands.",
+      "We agree the scope, inspect the available technology evidence, interview key people, then provide a written report and briefing that explains what is solid, what is risky, and what questions should be answered before money changes hands. For a first-time investor, the closest analogy is a property survey, but for a software business.",
   },
   {
     question: "Can you assess whether the AI is real?",
@@ -29,12 +29,12 @@ export const faqs = [
   {
     question: "How is this different from a general IT consultant?",
     answer:
-      "A general IT consultant usually helps build, fix, or operate technology. We act more like a surveyor. We inspect the technology behind a business so investors, founders, advisers, and lawyers understand what is being bought, what risks exist, and what may need attention after investment or acquisition.",
+      "A general IT consultant usually helps build, fix, or operate technology. We provide independent technical due diligence. That means assessing the technology behind a business so investors, founders, advisers, and lawyers understand what is being bought, what risks exist, and what may need attention after investment or acquisition.",
   },
   {
     question: "Can brokers and corporate finance advisers refer clients?",
     answer:
-      "Yes. Corporate finance and M&A advisers often bring us in when a client needs an independent technical survey of a software, SaaS, AI, or technology business. The aim is to give the client more confidence in the technology behind the transaction.",
+      "Yes. Corporate finance and M&A advisers often bring us in when a client needs independent technical due diligence on a software, SaaS, AI, or technology business. The aim is to give the client more confidence in the technology behind the transaction.",
   },
   {
     question: "What access do you need from the target company?",

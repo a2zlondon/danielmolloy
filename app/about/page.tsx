@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 export const metadata = {
   title: "About",
   description:
-    "About Daniel Molloy Technology Due Diligence — a technical consulting team providing technology surveys for investors, advisers, law firms, and founders.",
+    "About Daniel Molloy Technology Due Diligence — a technical consulting team providing technology due diligence for investors, advisers, law firms, and founders.",
 };
 
 export default function AboutPage() {
@@ -24,7 +24,7 @@ export default function AboutPage() {
                   We reduce uncertainty before investors, acquirers, and deal teams commit capital by creating a clear technical view of the target company.
                 </p>
                 <p>
-                  Our team provides technology due diligence for investors, corporate finance advisers, law firms, and founders evaluating or preparing software businesses. Like a property survey, we look beyond the pitch deck to assess the codebase, architecture, infrastructure, product maturity, AI capability, delivery process, and technical organisation.
+                  Our team provides technology due diligence for investors, corporate finance advisers, law firms, and founders evaluating or preparing software businesses. We look beyond the pitch deck to assess the codebase, architecture, infrastructure, product maturity, AI capability, delivery process, and technical organisation.
                 </p>
                 <p>
                   The work is led from a technical consulting background: hands-on software, architecture, delivery, infrastructure, and engineering leadership. We identify risks, value potential, mitigation actions, and the practical roadmap required to make the investment case hold up after close.

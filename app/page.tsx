@@ -39,7 +39,7 @@ const audienceLinks = [
     href: "/for-founders",
     title: "For Founders",
     description:
-      "Prepare before a buyer's technical survey finds the issues.",
+      "Prepare before a buyer's technical due diligence finds the issues.",
   },
 ];
 
@@ -56,10 +56,10 @@ export default function Home() {
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-background">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Technical due diligence is the software equivalent of a property survey. Before someone invests, acquires, advises on, or sells a technology business, we inspect the product, code, cloud, data, AI claims, security, documentation, and team dependency so everyone understands what is really being bought.
+              Technology due diligence gives investors, advisers, law firms, and founders an independent view of what sits behind a software business. Before money changes hands, we assess the product, code, cloud, data, AI claims, security, documentation, and team dependency so everyone understands what is really being bought.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              The report is the evidence. What you are really buying is confidence: what is solid, what is fragile, what needs fixing, and what questions should be answered before money changes hands.
+              The closest analogy is a property survey: the report is the evidence, but what you are really buying is confidence — what is solid, what is fragile, what needs fixing, and what questions should be answered before completion.
             </p>
             <div className="grid gap-4 md:grid-cols-2 mt-10">
               {audienceLinks.map((audience) => (

@@ -16,9 +16,9 @@ export default function ForLawFirmsPage() {
       <main>
         <AudiencePage
           eyebrow="For law firms"
-          title="A technology survey alongside legal due diligence"
+          title="Technical due diligence alongside legal due diligence"
           intro="Independent technical expertise for law firms when a client needs to understand technology risks that could affect valuation, warranties, disclosure or transaction terms."
-          confidenceStatement="Legal due diligence answers legal questions. We answer the technical survey questions: what has been built, how robust it is, what risks sit behind it, and whether the technology supports the deal."
+          confidenceStatement="Legal due diligence answers legal questions. Technical due diligence answers what has been built, how robust it is, what risks sit behind it, and whether the technology supports the deal."
           sections={[
             {
               title: "When legal review needs technical evidence",

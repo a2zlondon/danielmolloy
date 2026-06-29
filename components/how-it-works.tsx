@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const steps = [
   {
     number: "01",
-    title: "Agree the survey scope",
+    title: "Agree the scope",
     description:
       "We agree the reason for the review, timeline, and access required — usually documents, source code, cloud details, product evidence, and a few focused interviews.",
   },
@@ -36,7 +36,7 @@ export function HowItWorks() {
             How it works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A structured technology survey designed for deal timelines, founder preparation, and confidentiality.
+            A structured technical due diligence process designed for deal timelines, founder preparation, and confidentiality.
           </p>
         </div>
 

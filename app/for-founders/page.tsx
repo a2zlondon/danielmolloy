@@ -15,7 +15,7 @@ export default function ForFoundersPage() {
       <main>
         <AudiencePage
           eyebrow="For founders"
-          title="Prepare before the buyer's technology survey"
+          title="Prepare before the buyer's technical due diligence"
           intro="Independent technical assessments for founders who need to prepare for investment, acquisition or commercial due diligence before a buyer's reviewer finds the issues."
           confidenceStatement="If you do not have an in-house technical leadership team, due diligence can feel opaque. We show you what an investor, buyer, lawyer, or alternative technical due diligence firm is likely to inspect — and what to fix, explain, or evidence before the process begins."
           primaryCta="Book a preparation call"
@@ -26,7 +26,7 @@ export default function ForFoundersPage() {
           sections={[
             {
               title: "Know what they will look for",
-              body: "We review code, architecture, deployment, security, cloud, AI claims, documentation, and team dependency through the lens of a buyer's technical survey.",
+              body: "We review code, architecture, deployment, security, cloud, AI claims, documentation, and team dependency through the lens of a buyer's technical due diligence process.",
             },
             {
               title: "Turn gaps into a plan",
@@ -40,7 +40,7 @@ export default function ForFoundersPage() {
             "How to present technical maturity honestly without creating avoidable concerns.",
           ]}
           closingTitle="Make your company investment-ready before due diligence begins."
-          closingBody="We help founders prepare for scrutiny with a practical technical survey, prioritised actions, and a clearer story for investors, buyers, lawyers, and advisers."
+          closingBody="We help founders prepare for scrutiny with a practical technical due diligence readiness review, prioritised actions, and a clearer story for investors, buyers, lawyers, and advisers."
         />
       </main>
       <Footer />

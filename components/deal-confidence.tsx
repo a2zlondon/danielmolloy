@@ -36,7 +36,7 @@ export function DealConfidence() {
               Confidence without slowing the decision.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Buyers and founders need more than a technical opinion. They need a clear survey of what is working, what is risky, and what needs attention before investment, acquisition, or legal due diligence.
+              Buyers and founders need more than a technical opinion. They need a clear due diligence view of what is working, what is risky, and what needs attention before investment, acquisition, or legal due diligence.
             </p>
           </div>
 

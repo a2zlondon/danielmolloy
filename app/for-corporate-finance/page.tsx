@@ -16,11 +16,11 @@ export default function ForCorporateFinancePage() {
         <AudiencePage
           eyebrow="For corporate finance & M&A advisers"
           title="Give clients confidence in the technology behind the deal"
-          intro="Independent technology due diligence for corporate finance and M&A advisers who need a specialist technical survey to support the transaction."
-          confidenceStatement="Like a property survey, our work gives the buyer or seller a clearer view of what is being transferred. We inspect the technology and translate the findings into evidence your client can understand and use."
+          intro="Independent technology due diligence for corporate finance and M&A advisers who need specialist technical evidence to support the transaction."
+          confidenceStatement="Our work gives the buyer or seller a clearer view of the technology being transferred. We assess the technology and translate the findings into evidence your client can understand and use."
           sections={[
             {
-              title: "A technical survey layer for your deal team",
+              title: "A technical due diligence layer for your deal team",
               body: "We support corporate finance advisers, M&A brokers, and transaction teams when software, SaaS, AI, cloud or platform risk needs deeper independent review.",
             },
             {

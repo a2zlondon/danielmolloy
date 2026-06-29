@@ -17,10 +17,10 @@ export default function ForInvestorsPage() {
           eyebrow="For investors"
           title="What am I really buying?"
           intro="Independent technical due diligence for investors who want to understand a software, SaaS or AI business before committing capital."
-          confidenceStatement="Think of this as a technology survey before you invest. We inspect the product, code, cloud, security, AI claims, documentation and team dependency so you understand what is solid, what is risky, and what may need money after investment."
+          confidenceStatement="Our technical due diligence assesses the product, code, cloud, security, AI claims, documentation and team dependency before you invest, so you understand what is solid, what is risky, and what may need funding after the deal."
           sections={[
             {
-              title: "A survey before you invest",
+              title: "Technical diligence before you invest",
               body: "For seed, SEIS, angel, family office or acquisition decisions, we give you an independent technical view before you rely on the founder's pitch or product demo.",
             },
             {
