@@ -36,7 +36,7 @@ export default function ForLawFirmsPage() {
             "What questions lawyers and clients should ask management before completion.",
           ]}
           closingTitle="Identify technical risks your legal review cannot uncover alone."
-          closingBody="We work under NDA with legal teams, buyers, sellers, advisers, and client-side sponsors. The report is the evidence; the value is confidence before transaction terms are finalised."
+          closingBody="We work under NDA with legal teams, buyers, sellers, advisers, and client-side sponsors. The report provides the evidence; the value is confidence before transaction terms are finalised."
         />
         <FurtherReading />
       </main>

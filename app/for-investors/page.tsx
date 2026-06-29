@@ -17,7 +17,7 @@ export default function ForInvestorsPage() {
           eyebrow="For investors"
           title="Invest with confidence in software, SaaS and AI businesses"
           intro="Independent technical due diligence to help you invest with confidence and avoid costly technology risks."
-          confidenceStatement="You are not buying a report. You are buying confidence at a critical decision point — with evidence strong enough to support the investment case, challenge the valuation, or walk away."
+          confidenceStatement="Not just a report — you are buying confidence at a critical decision point, backed by evidence strong enough to support the investment case, challenge the valuation, or walk away."
           sections={[
             {
               title: "Know what you are really buying",
