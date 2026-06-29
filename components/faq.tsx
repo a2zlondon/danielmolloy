@@ -29,7 +29,7 @@ export const faqs = [
   {
     question: "How is this different from a general IT consultant?",
     answer:
-      "We specialise in technology risk for transactions — not building software. Our reports are structured for deal teams and investment committees: risk ratings, commercial implications, and questions to ask in negotiation. We have spent decades walking into messy systems and explaining what is actually going on.",
+      "We specialise in technology risk for transactions — not building software. Our findings are structured for deal teams and investment committees: risk ratings, commercial implications, and questions to ask in negotiation. We have spent decades walking into messy systems and explaining what is actually going on.",
   },
   {
     question: "Can brokers and corporate finance advisers refer clients?",

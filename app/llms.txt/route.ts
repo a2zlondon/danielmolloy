@@ -22,12 +22,10 @@ export function GET() {
 - Infrastructure, scalability, and technical debt assessment
 
 ## Who We Work With
-- Private equity firms and investors
-- Corporate finance advisers and M&A brokers
+- Investors evaluating software, SaaS, AI, and technology businesses
+- Corporate finance advisers and M&A advisers
 - Law firms supporting software, SaaS, AI, and technology transactions
-- Strategic acquirers
-- Software businesses and scale-ups
-- Founders and leadership teams
+- Founders preparing for investment, acquisition, or commercial due diligence
 
 ## Location
 - Reading, UK
@@ -39,9 +37,10 @@ export function GET() {
 - [Home](${SITE_URL}/): Primary overview and positioning.
 - [Services](${SITE_URL}/work-with-me): Engagement options and ways to work together.
 - [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
-- [For Partners](${SITE_URL}/for-partners): Collaboration details for partners and advisors.
-- [For Law Firms](${SITE_URL}/for-law-firms): Technical due diligence support for legal due diligence, software acquisitions, SaaS transactions, and AI capability reviews.
-- [For Enterprises](${SITE_URL}/for-enterprises): Enterprise-specific CTO support.
+- [For Investors](${SITE_URL}/for-investors): Independent technical due diligence to help investors decide whether a software company is worth investing in.
+- [For Corporate Finance & M&A Advisers](${SITE_URL}/for-corporate-finance): Technology due diligence that strengthens transaction advice and gives clients confidence to complete the deal.
+- [For Law Firms](${SITE_URL}/for-law-firms): Technical expertise that supports legal due diligence by identifying technology risks that could affect valuation, warranties, and transaction terms.
+- [For Founders](${SITE_URL}/for-founders): Technical assessments that prepare companies for investment, acquisition, or commercial due diligence.
 - [Location](${SITE_URL}/locations): Reading, Dublin, and Amsterdam operating base.
 - [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.
 - [Blog](${SITE_URL}/blog): Articles on tech strategy, product, and leadership.

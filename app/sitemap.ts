@@ -78,7 +78,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.4,
     },
     {
-      url: `${baseUrl}/for-partners`,
+      url: `${baseUrl}/for-investors`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/for-corporate-finance`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -96,10 +102,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/for-enterprises`,
+      url: `${baseUrl}/for-founders`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/fix-your-tech-fast`,

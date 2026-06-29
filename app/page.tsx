@@ -13,7 +13,35 @@ import { WorkingStyle } from "@/components/working-style";
 import { DealConfidence } from "@/components/deal-confidence";
 import { ReportSampleDownload } from "@/components/report-sample-download";
 import { ConsultationPrompt } from "@/components/consultation-prompt";
+import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
+
+const audienceLinks = [
+  {
+    href: "/for-investors",
+    title: "For Investors",
+    description:
+      "Know whether this software company is worth investing in.",
+  },
+  {
+    href: "/for-corporate-finance",
+    title: "For Corporate Finance & M&A Advisers",
+    description:
+      "Give your clients confidence in the technology behind the deal.",
+  },
+  {
+    href: "/for-law-firms",
+    title: "For Law Firms",
+    description:
+      "Identify technical risks your legal review cannot uncover alone.",
+  },
+  {
+    href: "/for-founders",
+    title: "For Founders",
+    description:
+      "Make your company investment-ready before due diligence begins.",
+  },
+];
 
 export default function Home() {
   return (
@@ -25,18 +53,27 @@ export default function Home() {
         <WorkingStyle />
         <DealConfidence />
         <Testimonials />
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-background">
-          <div className="max-w-3xl mx-auto">
+        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-background">
+          <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We provide technology due diligence for private equity firms, corporate finance advisers, and investors evaluating software businesses. Our work identifies risks, value potential, mitigation actions, and the practical roadmap required after close — grounded in hands-on engineering and technical consulting experience.
+              We provide technology due diligence for investors, corporate finance advisers, law firms, and founders evaluating or preparing software businesses. Our work creates confidence at the decision point — with evidence on risks, value potential, mitigation actions, and the practical roadmap required after close.
             </p>
-            <p className="mt-4 text-muted-foreground">
-              We also support{" "}
-              <Link href="/for-law-firms" className="text-foreground underline hover:no-underline">
-                law firms and legal due diligence teams
-              </Link>
-              {" "}when software, SaaS or AI transactions need deeper technical review.
-            </p>
+            <div className="grid gap-4 md:grid-cols-2 mt-10">
+              {audienceLinks.map((audience) => (
+                <Card key={audience.href} className="border-0 shadow-sm h-full">
+                  <CardContent className="p-6 h-full">
+                    <Link href={audience.href} className="group block h-full">
+                      <h2 className="text-xl font-medium mb-3 group-hover:underline">
+                        {audience.title}
+                      </h2>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {audience.description}
+                      </p>
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
         <DueDiligenceQuestions />

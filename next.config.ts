@@ -20,6 +20,16 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: true,
       },
+      {
+        source: "/for-enterprises",
+        destination: "/for-investors",
+        permanent: true,
+      },
+      {
+        source: "/for-partners",
+        destination: "/for-corporate-finance",
+        permanent: true,
+      },
     ];
   },
 };

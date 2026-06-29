@@ -18,7 +18,7 @@ const additionalServices = [
   {
     title: "Acquisition Reviews",
     description:
-      "Full technical due diligence for PE and strategic acquirers evaluating software businesses.",
+      "Full technical due diligence for investors and acquirers evaluating software businesses.",
   },
   {
     title: "CTO Due Diligence",

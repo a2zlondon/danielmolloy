@@ -11,7 +11,7 @@ export function Footer() {
               Daniel Molloy Technology Due Diligence
             </h3>
             <p className="text-sm text-muted-foreground">
-              Technology due diligence for investors, PE firms, and corporate finance advisers.
+              Technology due diligence for investors, corporate finance advisers, law firms, and founders.
             </p>
           </div>
           <div>
@@ -58,8 +58,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/for-partners" className="text-muted-foreground hover:text-foreground">
-                  For partners
+                <Link href="/for-investors" className="text-muted-foreground hover:text-foreground">
+                  For investors
+                </Link>
+              </li>
+              <li>
+                <Link href="/for-corporate-finance" className="text-muted-foreground hover:text-foreground">
+                  For corporate finance
                 </Link>
               </li>
               <li>
@@ -68,8 +73,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/for-enterprises" className="text-muted-foreground hover:text-foreground">
-                  For PE &amp; acquirers
+                <Link href="/for-founders" className="text-muted-foreground hover:text-foreground">
+                  For founders
                 </Link>
               </li>
               <li>

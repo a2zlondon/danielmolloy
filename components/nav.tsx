@@ -14,9 +14,10 @@ const navItems = [
 ];
 
 const audienceItems = [
-  { href: "/for-partners", label: "For partners" },
+  { href: "/for-investors", label: "For investors" },
+  { href: "/for-corporate-finance", label: "For corporate finance" },
   { href: "/for-law-firms", label: "For law firms" },
-  { href: "/for-enterprises", label: "For PE & acquirers" },
+  { href: "/for-founders", label: "For founders" },
 ];
 
 const mobileNavItems = [
@@ -52,7 +53,7 @@ export function Nav() {
                 Who we help
                 <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
               </button>
-              <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-52 -translate-x-1/2 rounded-xl border border-border bg-background p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-64 -translate-x-1/2 rounded-xl border border-border bg-background p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                 {audienceItems.map((item) => (
                   <Link
                     key={item.href}
