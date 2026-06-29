@@ -21,7 +21,7 @@ export default function ForCorporateFinancePage() {
           sections={[
             {
               title: "A technical due diligence layer for your deal team",
-              body: "We support corporate finance advisers, M&A brokers, and transaction teams when software, SaaS, AI, cloud or platform risk needs deeper independent review.",
+              body: "We support corporate finance advisers, M&A brokers, and transaction teams when software, SaaS, AI, cloud or platform risk needs deeper independent review without slowing the deal timetable.",
             },
             {
               title: "Clear findings your client can use",
@@ -33,6 +33,7 @@ export default function ForCorporateFinancePage() {
             "Whether technology claims should increase confidence, affect valuation, or trigger further questions.",
             "Whether cloud, security, team, or delivery risks could disrupt completion or post-close integration.",
             "What evidence your client needs before signing, completion, or investment committee.",
+            "Whether AI claims need specialist review before they become a valuation risk.",
           ]}
           closingTitle="Give your clients confidence in the technology behind the deal."
           closingBody="We work quietly alongside advisers under NDA, with fast scoping, clear reporting, and practical findings that make transaction advice stronger."

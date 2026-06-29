@@ -2,24 +2,24 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const signals = [
   {
+    title: "Fast, focused turnaround",
+    description:
+      "Rapid red-flag reviews and two-to-three-week full diligence reports, scoped around the access, deadline, and decision in front of you.",
+  },
+  {
     title: "Plain-English findings",
     description:
       "Clear findings, risk ratings, commercial implications, and follow-up questions that non-technical investors, founders, advisers, and lawyers can use.",
   },
   {
-    title: "Survey without disruption",
+    title: "AI-aware technical review",
     description:
-      "Focused document requests, targeted interviews, and read-only technical access where possible, designed around live deal timelines and busy founders.",
+      "We test AI claims against architecture, data, integration depth, costs, security, defensibility, and whether the product is more than a thin wrapper.",
   },
   {
-    title: "Technical operators",
+    title: "Agile senior team",
     description:
-      "Assessments are led by people who understand architecture, code quality, cloud cost, delivery trade-offs, and AI implementation depth.",
-  },
-  {
-    title: "Confidential handling",
-    description:
-      "NDA-led process, controlled access, no public client disclosure, and data handling expectations agreed before review work starts.",
+      "Small senior teams move quickly, ask direct questions, and keep the process proportionate rather than turning diligence into a heavyweight consulting exercise.",
   },
 ];
 
@@ -33,10 +33,10 @@ export function DealConfidence() {
               Why it helps
             </p>
             <h2 className="text-4xl md:text-5xl font-light mb-6">
-              Confidence without slowing the decision.
+              Senior technical diligence at deal speed.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Buyers and founders need more than a technical opinion. They need a clear due diligence view of what is working, what is risky, and what needs attention before investment, acquisition, or legal due diligence.
+              Buyers and founders need more than a technical opinion. They need a clear due diligence view of what is working, what is risky, and what needs attention — delivered quickly enough to support the decision, not slow it down.
             </p>
           </div>
 

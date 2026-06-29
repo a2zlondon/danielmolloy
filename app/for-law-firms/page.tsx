@@ -34,6 +34,7 @@ export default function ForLawFirmsPage() {
             "Whether code, architecture, cloud, security, data, or technical debt creates deal risk.",
             "Whether technical findings should inform warranties, disclosure, price, or post-close obligations.",
             "What questions lawyers and clients should ask management before completion.",
+            "Whether a focused technical review can answer the immediate legal question before a wider report is required.",
           ]}
           closingTitle="Add technical evidence to the legal process."
           closingBody="We work under NDA with legal teams, buyers, sellers, advisers, and client-side sponsors. The report provides the evidence; the value is confidence before transaction terms are finalised."

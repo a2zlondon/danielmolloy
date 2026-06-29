@@ -38,6 +38,7 @@ export default function ForFoundersPage() {
             "Whether documentation, deployment, security, ownership, and engineering process are diligence-ready.",
             "What should be fixed now, what can be planned, and what simply needs clearer explanation.",
             "How to present technical maturity honestly without creating avoidable concerns.",
+            "Whether AI claims, automation, or product demos will stand up to technical questioning.",
           ]}
           closingTitle="Make your company investment-ready before due diligence begins."
           closingBody="We help founders prepare for scrutiny with a practical technical due diligence readiness review, prioritised actions, and a clearer story for investors, buyers, lawyers, and advisers."

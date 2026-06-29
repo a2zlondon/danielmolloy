@@ -18,8 +18,9 @@ export function Hero() {
           </p>
           <div className="flex flex-wrap items-center gap-2">
             <Badge variant="secondary">M&A tech due diligence</Badge>
-            <Badge variant="secondary">20+ years in software</Badge>
-            <Badge variant="secondary">Trusted by investors & advisers</Badge>
+            <Badge variant="secondary">Fast turnaround</Badge>
+            <Badge variant="secondary">AI-aware review</Badge>
+            <Badge variant="secondary">Senior technical team</Badge>
           </div>
           <p className="text-sm text-muted-foreground">
             London, UK — working with investors, founders, advisers, and law firms across Europe and beyond.

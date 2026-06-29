@@ -33,6 +33,7 @@ export default function ForInvestorsPage() {
             "Whether AI, automation, or platform claims are real, fragile, or mostly marketing.",
             "Where technical debt, security, cloud cost, or scalability issues may create future spend.",
             "Whether the company depends on one person, undocumented knowledge, or manual processes.",
+            "Whether a rapid red-flag review is enough now, or whether the deal needs a deeper full technical due diligence report.",
           ]}
           closingTitle="Is this organisation worth investing in?"
           closingBody="We help you make the decision with fewer unknowns. The report gives you evidence; the real value is knowing what you are paying for before you buy it."

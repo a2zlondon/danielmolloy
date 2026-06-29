@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const principles = [
-  "Independent technical judgement",
-  "Evidence-led problem solving",
-  "Shared review standards",
+  "Agile senior reviewers",
+  "Evidence-led judgement",
+  "AI-aware technical depth",
 ];
 
 export function WorkingStyle() {
@@ -26,10 +26,10 @@ export function WorkingStyle() {
               How we work
             </p>
             <h2 className="text-4xl md:text-5xl font-light mb-6">
-              Autonomous consultants, shared technical standards.
+              Agile consultants, shared technical standards.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              The best diligence work comes from people who can follow evidence, question assumptions, and think from first principles. Our consultants are trusted to work independently, then bring findings back into a structured review process.
+              The best diligence work comes from people who can follow evidence, question assumptions, and think from first principles. Our consultants work independently and move quickly, then bring findings back into a structured review process so speed does not dilute judgement.
             </p>
             <div className="grid gap-3 sm:grid-cols-3">
               {principles.map((principle) => (

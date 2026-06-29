@@ -8,6 +8,7 @@ export function GET() {
 - Technology due diligence helps buyers, investors, advisers, law firms, and founders understand the technology risks and value drivers behind a software business.
 - Before someone invests, acquires, advises on, or sells a technology business, we assess the product, code, cloud, data, AI claims, security, documentation, and team dependency.
 - The report provides the evidence. The value is confidence: what is solid, what is fragile, what needs fixing, and what questions should be answered before money changes hands.
+- Differentiators: agile senior team, fast turnaround, AI-aware technical review, and proportionate diligence scoped to the decision and available access.
 
 ## Legal Entity
 - Trading name: Daniel Molloy Technology Due Diligence

@@ -85,7 +85,7 @@ const team: TeamMember[] = [
 const capacitySignals = [
   { value: "6+", label: "Active workstreams" },
   { value: "2–3 wks", label: "Typical full report" },
-  { value: "5 areas", label: "Structured review dimensions" },
+  { value: "5–7 days", label: "Rapid red-flag review" },
   { value: "100%", label: "Under NDA & confidentiality" },
 ];
 
@@ -123,7 +123,7 @@ export default function WhoWeArePage() {
 
               <h2 className="text-3xl font-light mb-4">The team</h2>
               <p className="text-muted-foreground mb-10 max-w-2xl">
-                Each engagement is supported by specialists who review infrastructure, security, and product dimensions in parallel — allowing multiple due diligence mandates to run concurrently without compromising depth.
+                Each engagement is supported by specialists who review infrastructure, security, AI, product, and delivery dimensions in parallel — giving clients senior technical judgement without the drag of a heavyweight consulting process.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">

@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "Agree the scope",
     description:
-      "We agree the reason for the review, timeline, and access required — usually documents, source code, cloud details, product evidence, and a few focused interviews.",
+      "We agree the reason for the review, decision deadline, and access required — usually documents, source code, cloud details, product evidence, and a few focused interviews.",
   },
   {
     number: "02",
@@ -17,7 +17,7 @@ const steps = [
     number: "03",
     title: "Explain what it means",
     description:
-      "We translate technical evidence into plain-English findings: what is solid, what is fragile, what needs fixing, and what could affect value.",
+      "We translate technical and AI evidence into plain-English findings: what is solid, what is fragile, what needs fixing, and what could affect value.",
   },
   {
     number: "04",
@@ -36,7 +36,7 @@ export function HowItWorks() {
             How it works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A structured technical due diligence process designed for deal timelines, founder preparation, and confidentiality.
+            A structured technical due diligence process designed for quick turnaround, founder preparation, and confidential deal timelines.
           </p>
         </div>
 
