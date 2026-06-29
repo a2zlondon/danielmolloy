@@ -34,7 +34,7 @@ export default function ForInvestorsPage() {
             "Where technical debt, security, cloud cost, or scalability risks may create future spend.",
             "Whether the team, documentation, and delivery process can survive investment or acquisition pressure.",
           ]}
-          closingTitle="Know whether the software company is worth investing in."
+          closingTitle="Is this organisation worth investing in?"
           closingBody="We give investors a clear technical view before capital is committed. The output is practical, independent, and designed to help you make the decision with fewer unknowns."
         />
       </main>

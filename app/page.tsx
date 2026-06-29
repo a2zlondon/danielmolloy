@@ -21,7 +21,7 @@ const audienceLinks = [
     href: "/for-investors",
     title: "For Investors",
     description:
-      "Know whether this software company is worth investing in.",
+      "Is this organisation worth investing in?",
   },
   {
     href: "/for-corporate-finance",

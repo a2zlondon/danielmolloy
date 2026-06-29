@@ -37,7 +37,7 @@ export function GET() {
 - [Home](${SITE_URL}/): Primary overview and positioning.
 - [Services](${SITE_URL}/work-with-me): Engagement options and ways to work together.
 - [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
-- [For Investors](${SITE_URL}/for-investors): Independent technical due diligence to help investors decide whether a software company is worth investing in.
+- [For Investors](${SITE_URL}/for-investors): Independent technical due diligence to help investors answer whether an organisation is worth investing in.
 - [For Corporate Finance & M&A Advisers](${SITE_URL}/for-corporate-finance): Technology due diligence that strengthens transaction advice and gives clients confidence to complete the deal.
 - [For Law Firms](${SITE_URL}/for-law-firms): Technical expertise that supports legal due diligence by identifying technology risks that could affect valuation, warranties, and transaction terms.
 - [For Founders](${SITE_URL}/for-founders): Technical assessments that prepare companies for investment, acquisition, or commercial due diligence.
