@@ -15,27 +15,27 @@ export default function ForInvestorsPage() {
       <main>
         <AudiencePage
           eyebrow="For investors"
-          title="Invest with confidence in software, SaaS and AI businesses"
-          intro="Independent technical due diligence to help you invest with confidence and avoid costly technology risks."
-          confidenceStatement="Not just a report — you are buying confidence at a critical decision point, backed by evidence strong enough to support the investment case, challenge the valuation, or walk away."
+          title="What am I really buying?"
+          intro="Independent technical due diligence for investors who want to understand a software, SaaS or AI business before committing capital."
+          confidenceStatement="Think of this as a technology survey before you invest. We inspect the product, code, cloud, security, AI claims, documentation and team dependency so you understand what is solid, what is risky, and what may need money after investment."
           sections={[
             {
-              title: "Know what you are really buying",
-              body: "We review the product, codebase, architecture, AI claims, infrastructure, team dependency, technical debt, and delivery maturity behind the company.",
+              title: "A survey before you invest",
+              body: "For seed, SEIS, angel, family office or acquisition decisions, we give you an independent technical view before you rely on the founder's pitch or product demo.",
             },
             {
-              title: "Separate upside from hidden risk",
-              body: "Findings are written for investors and committees: what works, what is fragile, what is overstated, and what should affect valuation or post-close planning.",
+              title: "Plain-English risk and confidence",
+              body: "You get clear findings on what works, what is fragile, what is overstated, what could cost money later, and which questions to ask before you invest.",
             },
           ]}
           proofPoints={[
-            "Whether the technology can support the commercial plan.",
-            "Whether AI, automation, or platform claims are real or mostly marketing.",
-            "Where technical debt, security, cloud cost, or scalability risks may create future spend.",
-            "Whether the team, documentation, and delivery process can survive investment or acquisition pressure.",
+            "Whether the technology can support the growth plan you are being asked to fund.",
+            "Whether AI, automation, or platform claims are real, fragile, or mostly marketing.",
+            "Where technical debt, security, cloud cost, or scalability issues may create future spend.",
+            "Whether the company depends on one person, undocumented knowledge, or manual processes.",
           ]}
           closingTitle="Is this organisation worth investing in?"
-          closingBody="We give investors a clear technical view before capital is committed. The output is practical, independent, and designed to help you make the decision with fewer unknowns."
+          closingBody="We help you make the decision with fewer unknowns. The report gives you evidence; the real value is knowing what you are paying for before you buy it."
         />
       </main>
       <Footer />

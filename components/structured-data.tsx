@@ -18,7 +18,7 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
       identifier: COMPANY_NUMBER,
       vatID: VAT_NUMBER,
       description:
-        "Technical consulting and technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses.",
+        "A technology survey for software businesses: independent technical due diligence for investors, corporate finance advisers, law firms, and founders evaluating SaaS, AI, and technology companies.",
       url: SITE_URL,
       address: {
         "@type": "PostalAddress",
@@ -36,7 +36,7 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
       "@id": `${SITE_URL}/#service`,
       name: "Daniel Molloy Technology Due Diligence",
       description:
-        "M&A technology due diligence, acquisition reviews, AI capability assessments, and investor technical reviews for PE firms, brokers, and corporate finance advisers.",
+        "Technology due diligence, technology surveys, acquisition reviews, AI capability assessments, and investor technical reviews for software, SaaS, AI, and technology businesses.",
       url: SITE_URL,
       provider: { "@id": `${SITE_URL}/#organization` },
       areaServed: [

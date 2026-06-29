@@ -3,27 +3,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const steps = [
   {
     number: "01",
-    title: "Scope & Access",
+    title: "Agree the survey scope",
     description:
-      "We agree the deal context, timeline, and access requirements — source code, infrastructure, documentation, and key personnel interviews.",
+      "We agree the reason for the review, timeline, and access required — usually documents, source code, cloud details, product evidence, and a few focused interviews.",
   },
   {
     number: "02",
-    title: "Evidence Mining",
+    title: "Inspect the technology",
     description:
-      "We extract structured insight from code, infrastructure, documents, product evidence, and targeted interviews.",
+      "We inspect the code, architecture, cloud setup, security posture, AI claims, documentation, team dependency, and delivery process.",
   },
   {
     number: "03",
-    title: "Synthesis",
+    title: "Explain what it means",
     description:
-      "Findings are ranked by impact, confidence, and solvability so risks and upside potential are clear.",
+      "We translate technical evidence into plain-English findings: what is solid, what is fragile, what needs fixing, and what could affect value.",
   },
   {
     number: "04",
-    title: "Report & Briefing",
+    title: "Report and briefing",
     description:
-      "You receive a concise report, recommendations, and a live briefing for the deal team or investment committee.",
+      "You receive a concise report and live briefing so investors, founders, advisers, or lawyers know what questions to ask next.",
   },
 ];
 
@@ -36,7 +36,7 @@ export function HowItWorks() {
             How it works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A disciplined process designed for deal timelines and confidentiality.
+            A structured technology survey designed for deal timelines, founder preparation, and confidentiality.
           </p>
         </div>
 

@@ -15,22 +15,22 @@ export default function ForCorporateFinancePage() {
       <main>
         <AudiencePage
           eyebrow="For corporate finance & M&A advisers"
-          title="Strengthen your transaction advice with technical confidence"
-          intro="Independent technology due diligence that strengthens your transaction advice and gives your clients confidence to complete the deal."
-          confidenceStatement="Your client needs to know whether the technology supports the story being sold. We provide the independent technical evidence that helps deals move forward with confidence."
+          title="Give clients confidence in the technology behind the deal"
+          intro="Independent technology due diligence for corporate finance and M&A advisers who need a specialist technical survey to support the transaction."
+          confidenceStatement="Like a property survey, our work gives the buyer or seller a clearer view of what is being transferred. We inspect the technology and translate the findings into evidence your client can understand and use."
           sections={[
             {
-              title: "A specialist technical layer for your deal team",
-              body: "We support corporate finance advisers, M&A brokers, and transaction teams when software, SaaS, AI, or platform risk needs deeper technical review.",
+              title: "A technical survey layer for your deal team",
+              body: "We support corporate finance advisers, M&A brokers, and transaction teams when software, SaaS, AI, cloud or platform risk needs deeper independent review.",
             },
             {
               title: "Clear findings your client can use",
-              body: "Reports translate technical evidence into commercial implications, management questions, remediation priorities, and deal risks your client can act on.",
+              body: "Findings translate technical evidence into commercial implications, management questions, remediation priorities, and deal risks your client can act on.",
             },
           ]}
           proofPoints={[
-            "Whether the target's product and architecture support the growth story.",
-            "Whether technology claims should increase confidence, reduce valuation, or trigger further questions.",
+            "Whether the target's product and architecture support the story being sold.",
+            "Whether technology claims should increase confidence, affect valuation, or trigger further questions.",
             "Whether cloud, security, team, or delivery risks could disrupt completion or post-close integration.",
             "What evidence your client needs before signing, completion, or investment committee.",
           ]}

@@ -15,9 +15,9 @@ export default function ForFoundersPage() {
       <main>
         <AudiencePage
           eyebrow="For founders"
-          title="Prepare your company before buyers find the issues"
-          intro="Independent technical assessments that prepare your business for investment, acquisition or commercial due diligence before buyers uncover the issues themselves."
-          confidenceStatement="Founders do not need surprises during diligence. We help you understand what a buyer, investor, or adviser will see — and what to fix, explain, or evidence before the process begins."
+          title="Prepare before the buyer's technology survey"
+          intro="Independent technical assessments for founders who need to prepare for investment, acquisition or commercial due diligence before a buyer's reviewer finds the issues."
+          confidenceStatement="If you do not have an in-house technical leadership team, due diligence can feel opaque. We show you what an investor, buyer, lawyer, or alternative technical due diligence firm is likely to inspect — and what to fix, explain, or evidence before the process begins."
           primaryCta="Book a preparation call"
           secondaryCta={{
             href: "/fix-your-tech-fast",
@@ -25,22 +25,22 @@ export default function ForFoundersPage() {
           }}
           sections={[
             {
-              title: "Know your technical weak points first",
-              body: "We review code, architecture, deployment, security, cloud, AI claims, documentation, and team dependency through the lens of an investor or acquirer.",
+              title: "Know what they will look for",
+              body: "We review code, architecture, deployment, security, cloud, AI claims, documentation, and team dependency through the lens of a buyer's technical survey.",
             },
             {
-              title: "Turn risk into a credible plan",
-              body: "The goal is not cosmetic tidying. It is a clear view of what needs remediation, what needs better evidence, and what can be explained confidently in diligence.",
+              title: "Turn gaps into a plan",
+              body: "The goal is not cosmetic tidying. It is a practical view of what needs fixing, what needs better evidence, and what can be explained confidently in diligence.",
             },
           ]}
           proofPoints={[
-            "Which technical risks a buyer or investor is likely to challenge.",
-            "Whether documentation, deployment, security, and engineering process are diligence-ready.",
-            "What should be fixed now, what can be planned, and what simply needs clearer evidence.",
-            "How to present technical maturity without overstating the product or creating avoidable concerns.",
+            "Which technical risks a buyer, investor, or due diligence firm is likely to challenge.",
+            "Whether documentation, deployment, security, ownership, and engineering process are diligence-ready.",
+            "What should be fixed now, what can be planned, and what simply needs clearer explanation.",
+            "How to present technical maturity honestly without creating avoidable concerns.",
           ]}
           closingTitle="Make your company investment-ready before due diligence begins."
-          closingBody="We help founders prepare for scrutiny with a practical technical assessment, prioritised actions, and a clearer story for investors, buyers, and advisers."
+          closingBody="We help founders prepare for scrutiny with a practical technical survey, prioritised actions, and a clearer story for investors, buyers, lawyers, and advisers."
         />
       </main>
       <Footer />

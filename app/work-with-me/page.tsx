@@ -11,7 +11,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Services",
   description:
-    "Technology due diligence services — acquisition reviews, investor assessments, AI capability verification, and embedded advisory for PE firms and corporate finance advisers.",
+    "Technology due diligence services — technology surveys, acquisition reviews, investor assessments, AI capability verification, and founder readiness reviews.",
 };
 
 const additionalServices = [
@@ -59,7 +59,7 @@ export default function WorkWithMe() {
                 Services
               </h1>
               <p className="text-xl text-muted-foreground">
-                Structured technology due diligence for investors, PE firms, and corporate finance advisers. From rapid investor screens to full acquisition reports.
+                Structured technology due diligence for investors, advisers, law firms, and founders. From rapid investor screens to full technology surveys and acquisition reports.
               </p>
               <p className="mt-6 text-muted-foreground">
                 Supporting a legal due diligence process?{" "}

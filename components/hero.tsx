@@ -10,10 +10,10 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-20 md:pb-16 lg:pt-24 lg:pb-20">
         <div className="max-w-5xl space-y-6">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
-            Technical due diligence for startups and investors
+            The technology survey for software businesses
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl">
-            We reduce uncertainty before you invest, acquire, or build. Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. Our team creates transparency around{" "}
+            Before you invest in, acquire, advise on, or sell a software business, we inspect the technology so you know what you are really dealing with. We create transparency around{" "}
             <HeroTypewriter />.
           </p>
           <div className="flex flex-wrap items-center gap-2">
@@ -22,7 +22,7 @@ export function Hero() {
             <Badge variant="secondary">Trusted by investors & advisers</Badge>
           </div>
           <p className="text-sm text-muted-foreground">
-            London, UK — working with PE firms, brokers, and investors across Europe and beyond.
+            London, UK — working with investors, founders, advisers, and law firms across Europe and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="text-lg px-8 py-6" asChild>
@@ -34,7 +34,7 @@ export function Hero() {
           </div>
           <div>
             <p className="text-sm text-muted-foreground">
-              Technical consulting depth. Clear findings. Decisions your deal team can defend.
+              Like a property survey, but for software, SaaS, AI, cloud, code, and technical risk.
             </p>
           </div>
         </div>

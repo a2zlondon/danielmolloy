@@ -9,12 +9,12 @@ export const faqs = [
   {
     question: "Who do you work with?",
     answer:
-      "Private equity firms, corporate finance advisers, M&A brokers, venture investors, and family offices evaluating software acquisitions or investments. We are often brought in by the buy-side or their advisers before a deal closes.",
+      "Investors, corporate finance and M&A advisers, law firms, and founders. Sometimes the investor hires us directly. Sometimes a lawyer or adviser brings us in to add a technical report to the wider due diligence process. Sometimes a founder hires us before the buyer starts asking difficult technical questions.",
   },
   {
     question: "What does a typical engagement look like?",
     answer:
-      "For acquisition due diligence, we typically need two to three weeks with access to source code, cloud infrastructure, documentation, and key technical personnel. We deliver a written report and a management briefing. Rapid investor assessments can be completed in five to seven days.",
+      "It works like a property survey, but for a software business. We agree the scope, inspect the available technology evidence, interview key people, then provide a written report and briefing that explains what is solid, what is risky, and what questions should be answered before money changes hands.",
   },
   {
     question: "Can you assess whether the AI is real?",
@@ -29,22 +29,22 @@ export const faqs = [
   {
     question: "How is this different from a general IT consultant?",
     answer:
-      "We specialise in technology risk for transactions — not building software. Our findings are structured for deal teams and investment committees: risk ratings, commercial implications, and questions to ask in negotiation. We have spent decades walking into messy systems and explaining what is actually going on.",
+      "A general IT consultant usually helps build, fix, or operate technology. We act more like a surveyor. We inspect the technology behind a business so investors, founders, advisers, and lawyers understand what is being bought, what risks exist, and what may need attention after investment or acquisition.",
   },
   {
     question: "Can brokers and corporate finance advisers refer clients?",
     answer:
-      "Yes. We work regularly with M&A brokers and corporate finance firms who need a technology specialist on their side of the table. Referral and partnership arrangements are available — see our For Partners page or book a call to discuss.",
+      "Yes. Corporate finance and M&A advisers often bring us in when a client needs an independent technical survey of a software, SaaS, AI, or technology business. The aim is to give the client more confidence in the technology behind the transaction.",
   },
   {
     question: "What access do you need from the target company?",
     answer:
-      "Typically: source code repository access, cloud console read-only access, CI/CD and deployment documentation, architecture diagrams if they exist, and 60–90 minute interviews with the CTO or lead engineer. We work with whatever access the deal timeline allows.",
+      "Usually: product access, source code repository access, cloud or infrastructure information, CI/CD and deployment documentation, architecture diagrams if they exist, security and data documentation, and focused interviews with the CTO, lead engineer, or founder. We work with whatever access the timeline allows.",
   },
   {
     question: "Do you only work on acquisitions?",
     answer:
-      "No. We also support pre-investment screening for VCs, portfolio company reviews for PE firms, and standalone AI capability assessments. If technology risk is the question, we can scope an engagement to fit.",
+      "No. We also support pre-investment screening for angels, VCs and family offices, founder readiness reviews before fundraising or sale, and standalone AI capability assessments. If technology risk is the question, we can scope an engagement to fit.",
   },
 ];
 

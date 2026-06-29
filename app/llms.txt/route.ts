@@ -2,7 +2,12 @@ import { SITE_URL } from "@/lib/constants";
 
 export function GET() {
   const body = `# Daniel Molloy Technology Due Diligence
-> Technical consulting and technology due diligence for investors, PE firms, corporate finance advisers, and software businesses. We turn technical complexity into clear risks, value potential, mitigation actions, and delivery roadmaps.
+> The technology survey for software businesses. Independent technical due diligence for investors, corporate finance advisers, law firms, and founders who need to understand what they are buying, selling, advising on, or preparing for.
+
+## Core Positioning
+- Technical due diligence is the software equivalent of a property survey.
+- Before someone invests, acquires, advises on, or sells a technology business, we inspect the product, code, cloud, data, AI claims, security, documentation, and team dependency.
+- The report provides the evidence. The value is confidence: what is solid, what is fragile, what needs fixing, and what questions should be answered before money changes hands.
 
 ## Legal Entity
 - Trading name: Daniel Molloy Technology Due Diligence
@@ -15,6 +20,7 @@ export function GET() {
 
 ## Services
 - Technology due diligence
+- Technology survey for software businesses
 - M&A technical reviews
 - Technical strategy and architecture assessment
 - Product and engineering delivery review
@@ -34,7 +40,7 @@ export function GET() {
 - Remote review for cross-border diligence
 
 ## Key Pages
-- [Home](${SITE_URL}/): Primary overview and positioning.
+- [Home](${SITE_URL}/): Primary overview and technology survey positioning.
 - [Services](${SITE_URL}/work-with-me): Engagement options and ways to work together.
 - [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
 - [For Investors](${SITE_URL}/for-investors): Independent technical due diligence to help investors answer whether an organisation is worth investing in.

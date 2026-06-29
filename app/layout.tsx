@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Daniel Molloy Technology Due Diligence",
   },
   description:
-    "Technology due diligence for private equity, corporate finance advisers, and investors evaluating software businesses. M&A tech reviews, AI capability assessments, and acquisition reports.",
+    "A technology survey for software businesses. Independent technical due diligence for investors, corporate finance advisers, law firms, and founders evaluating SaaS, AI, and technology companies.",
   keywords: [
     "technical due diligence",
     "M&A tech due diligence",
@@ -56,13 +56,13 @@ export const metadata: Metadata = {
     siteName: "Daniel Molloy Technology Due Diligence",
     title: "Daniel Molloy Technology Due Diligence",
     description:
-      "Technology due diligence for PE firms, corporate finance advisers, and investors. Technical consulting depth for risks, value potential, mitigation actions, and roadmap clarity.",
+      "The technology survey for software businesses. Independent technical due diligence for investors, advisers, law firms, and founders.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Daniel Molloy Technology Due Diligence",
     description:
-      "Technology due diligence for PE firms, corporate finance advisers, and investors evaluating software businesses.",
+      "The technology survey for software businesses: technical due diligence for investors, advisers, law firms, and founders.",
   },
   metadataBase: new URL("https://danielmolloy.com"),
 };

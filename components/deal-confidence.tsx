@@ -2,14 +2,14 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const signals = [
   {
-    title: "Decision-ready output",
+    title: "Plain-English findings",
     description:
-      "Clear findings, risk ratings, commercial implications, and follow-up questions for founders, advisers, and investment committees.",
+      "Clear findings, risk ratings, commercial implications, and follow-up questions that non-technical investors, founders, advisers, and lawyers can use.",
   },
   {
-    title: "Minimally invasive review",
+    title: "Survey without disruption",
     description:
-      "Focused document requests, targeted interviews, and read-only technical access where possible, designed around live deal timelines.",
+      "Focused document requests, targeted interviews, and read-only technical access where possible, designed around live deal timelines and busy founders.",
   },
   {
     title: "Technical operators",
@@ -30,13 +30,13 @@ export function DealConfidence() {
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] max-w-6xl mx-auto">
           <div>
             <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4">
-              Why it converts
+              Why it helps
             </p>
             <h2 className="text-4xl md:text-5xl font-light mb-6">
-              Confidence without slowing the deal.
+              Confidence without slowing the decision.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Buyers need more than a technical opinion. They need evidence they can use in valuation, negotiation, risk planning, and post-close integration.
+              Buyers and founders need more than a technical opinion. They need a clear survey of what is working, what is risky, and what needs attention before investment, acquisition, or legal due diligence.
             </p>
           </div>
 

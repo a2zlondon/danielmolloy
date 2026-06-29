@@ -86,7 +86,7 @@ export function AudiencePage({
 
           <div className="mb-16">
             <h2 className="text-3xl font-light mb-6">
-              What we help you understand
+              What the survey helps you understand
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               {proofPoints.map((point) => (

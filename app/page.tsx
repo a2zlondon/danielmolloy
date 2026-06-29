@@ -21,7 +21,7 @@ const audienceLinks = [
     href: "/for-investors",
     title: "For Investors",
     description:
-      "Is this organisation worth investing in?",
+      "What am I really buying, and what could go wrong later?",
   },
   {
     href: "/for-corporate-finance",
@@ -33,13 +33,13 @@ const audienceLinks = [
     href: "/for-law-firms",
     title: "For Law Firms",
     description:
-      "Identify technical risks your legal review cannot uncover alone.",
+      "Add technical evidence to legal due diligence, warranties, and terms.",
   },
   {
     href: "/for-founders",
     title: "For Founders",
     description:
-      "Make your company investment-ready before due diligence begins.",
+      "Prepare before a buyer's technical survey finds the issues.",
   },
 ];
 
@@ -56,7 +56,10 @@ export default function Home() {
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-background">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We provide technology due diligence for investors, corporate finance advisers, law firms, and founders evaluating or preparing software businesses. Our work creates confidence at the decision point — with evidence on risks, value potential, mitigation actions, and the practical roadmap required after close.
+              Technical due diligence is the software equivalent of a property survey. Before someone invests, acquires, advises on, or sells a technology business, we inspect the product, code, cloud, data, AI claims, security, documentation, and team dependency so everyone understands what is really being bought.
+            </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              The report is the evidence. What you are really buying is confidence: what is solid, what is fragile, what needs fixing, and what questions should be answered before money changes hands.
             </p>
             <div className="grid gap-4 md:grid-cols-2 mt-10">
               {audienceLinks.map((audience) => (
