@@ -6,44 +6,43 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { ReportSampleDownload } from "@/components/report-sample-download";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Link from "next/link";
 
 export const metadata = {
-  title: "Services",
+  title: "Technical Due Diligence",
   description:
-    "Technology due diligence services — acquisition reviews, investor assessments, AI capability verification, and founder readiness reviews.",
+    "One service: independent technical due diligence that assesses the technical value of a software, SaaS or AI company before you invest, acquire, advise, or sell.",
 };
 
-const additionalServices = [
+const assessmentDimensions = [
   {
-    title: "Acquisition Reviews",
+    title: "Code Quality & Technical Debt",
     description:
-      "Full technical due diligence for investors and acquirers evaluating software businesses.",
+      "How well the software is built, where the debt sits, and what it would cost to fix — in terms a deal team can use.",
   },
   {
-    title: "CTO Due Diligence",
+    title: "Security",
     description:
-      "Assessment of technical leadership, team structure, bus factor, and knowledge concentration.",
+      "Vulnerabilities, data handling, access control, and the security practices behind the product.",
   },
   {
-    title: "Startup Technical Assessments",
+    title: "AI Capability Verification",
     description:
-      "Rapid screening for investors evaluating pre-revenue or early-stage software companies.",
+      "Whether AI claims are real — model architecture, training data, inference costs, and genuine capability vs marketing.",
   },
   {
-    title: "Investor Technical Reviews",
+    title: "Team & Key-Person Risk",
     description:
-      "Independent technology assessment for VCs, family offices, and angel syndicates.",
+      "Bus factor, knowledge concentration, documentation, and how dependent the technology is on individual people.",
   },
   {
-    title: "AI Capability Assessments",
+    title: "Scalability & Cloud Cost",
     description:
-      "Verification of AI claims — model architecture, training data, inference costs, and genuine capability vs marketing.",
+      "Whether the architecture supports the growth plan, and how cloud spend behaves as the business scales.",
   },
   {
-    title: "Broker Partnerships",
+    title: "Commercial Defensibility",
     description:
-      "Technology specialist support for M&A brokers and corporate finance advisers on software deals.",
+      "Whether the technology genuinely supports the story being sold — differentiation, IP, and platform risk.",
   },
 ];
 
@@ -56,17 +55,10 @@ export default function WorkWithMe() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-light mb-6">
-                Services
+                Technical Due Diligence
               </h1>
               <p className="text-xl text-muted-foreground">
-                Structured technology due diligence for investors, advisers, law firms, and founders. From rapid investor screens to full acquisition reports and founder readiness reviews.
-              </p>
-              <p className="mt-6 text-muted-foreground">
-                Supporting a legal due diligence process?{" "}
-                <Link href="/for-law-firms" className="text-foreground underline hover:no-underline">
-                  View technical due diligence for law firms
-                </Link>
-                .
+                One service: an independent assessment of the technical value of a company. We combine senior experience, modern tooling, and specialist reviewers to tell you what the technology is really worth — before the deal completes.
               </p>
             </div>
           </div>
@@ -81,13 +73,13 @@ export default function WorkWithMe() {
                 What we assess
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                {additionalServices.map((service) => (
-                  <Card key={service.title}>
+                {assessmentDimensions.map((dimension) => (
+                  <Card key={dimension.title}>
                     <CardHeader>
-                      <CardTitle>{service.title}</CardTitle>
+                      <CardTitle>{dimension.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">{service.description}</p>
+                      <p className="text-muted-foreground">{dimension.description}</p>
                     </CardContent>
                   </Card>
                 ))}

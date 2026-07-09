@@ -14,32 +14,27 @@ import { DealConfidence } from "@/components/deal-confidence";
 import { ReportSampleDownload } from "@/components/report-sample-download";
 import { ConsultationPrompt } from "@/components/consultation-prompt";
 import { Card, CardContent } from "@/components/ui/card";
-import Link from "next/link";
 
-const audienceLinks = [
+const audiences = [
   {
-    href: "/for-investors",
-    title: "For Investors",
+    title: "Investors",
     description:
-      "What am I really buying, and what could go wrong later?",
+      "Independent technical due diligence for investors evaluating software, SaaS and AI businesses before committing capital. Whether it is a seed round, an SEIS investment, a family office deal, or an acquisition, we assess whether the technology can support the growth plan, whether AI and platform claims are real or mostly marketing, and where technical debt, security, or cloud cost could create spend after the deal.",
   },
   {
-    href: "/for-corporate-finance",
-    title: "For Corporate Finance & M&A Advisers",
+    title: "Corporate Finance & M&A Advisers",
     description:
-      "Give your clients confidence in the technology behind the deal.",
+      "Independent technology due diligence that gives your clients confidence in the technology behind the deal. We support corporate finance advisers, M&A brokers, and transaction teams when software, SaaS, AI, or cloud risk needs deeper review without slowing the deal timetable — translating technical evidence into commercial implications, management questions, and remediation priorities.",
   },
   {
-    href: "/for-law-firms",
-    title: "For Law Firms",
+    title: "Law Firms",
     description:
-      "Add technical evidence to legal due diligence, warranties, and terms.",
+      "Technical due diligence alongside legal due diligence. We support corporate, M&A, technology, IP and data lawyers when a client needs technical evidence on risks that could affect valuation, warranties, indemnities, disclosure, or transaction terms — working under NDA with legal teams, buyers, sellers, and advisers.",
   },
   {
-    href: "/for-founders",
-    title: "For Founders",
+    title: "Founders",
     description:
-      "Prepare before a buyer's technical due diligence finds the issues.",
+      "Prepare before a buyer's technical due diligence finds the issues. We review code, architecture, security, cloud, AI claims, documentation, and team dependency through the lens of a buyer's due diligence process, so you know what to fix, what to evidence, and what to explain before investment, acquisition, or commercial due diligence begins.",
   },
 ];
 
@@ -53,26 +48,25 @@ export default function Home() {
         <WorkingStyle />
         <DealConfidence />
         <Testimonials />
-        <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-background">
+        <section id="who-we-work-with" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-background">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Technology due diligence gives investors, advisers, law firms, and founders an independent view of what sits behind a software business. Before money changes hands, we assess the product, code, cloud, data, AI claims, security, documentation, and team dependency so everyone understands what is really being bought.
+              Technical due diligence is one service with one question behind it: what is the technology of this company really worth? Before money changes hands, we assess the product, code, cloud, data, AI claims, security, documentation, and team dependency so everyone understands what is really being bought.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The closest analogy is a property survey: the report is the evidence, but what you are really buying is confidence — what is solid, what is fragile, what needs fixing, and what questions should be answered before completion.
             </p>
-            <div className="grid gap-4 md:grid-cols-2 mt-10">
-              {audienceLinks.map((audience) => (
-                <Card key={audience.href} className="border-0 shadow-sm h-full">
+            <h2 className="text-3xl font-light mt-14 mb-8">Who we work with</h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              {audiences.map((audience) => (
+                <Card key={audience.title} className="border-0 shadow-sm h-full">
                   <CardContent className="p-6 h-full">
-                    <Link href={audience.href} className="group block h-full">
-                      <h2 className="text-xl font-medium mb-3 group-hover:underline">
-                        {audience.title}
-                      </h2>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {audience.description}
-                      </p>
-                    </Link>
+                    <h3 className="text-xl font-medium mb-3">
+                      {audience.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {audience.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}

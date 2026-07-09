@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -13,17 +13,7 @@ const navItems = [
   { href: "/blog", label: "Writing" },
 ];
 
-const audienceItems = [
-  { href: "/for-investors", label: "For investors" },
-  { href: "/for-corporate-finance", label: "For corporate finance" },
-  { href: "/for-law-firms", label: "For law firms" },
-  { href: "/for-founders", label: "For founders" },
-];
-
-const mobileNavItems = [
-  ...navItems,
-  ...audienceItems,
-];
+const mobileNavItems = [...navItems];
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,26 +35,6 @@ export function Nav() {
                 {item.label}
               </Link>
             ))}
-            <div className="group relative">
-              <button
-                type="button"
-                className="inline-flex items-center gap-1 text-sm hover:text-foreground/80 transition-colors"
-              >
-                Who we help
-                <ChevronDown className="h-3.5 w-3.5" aria-hidden="true" />
-              </button>
-              <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-64 -translate-x-1/2 rounded-xl border border-border bg-background p-2 opacity-0 shadow-lg transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                {audienceItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="block rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
             <Button size="sm" asChild>
               <a href={BOOK_CALL_URL}>Book a call</a>
             </Button>
