@@ -42,6 +42,9 @@ export function ExperienceIncludes() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
+          <p className="text-center text-sm tracking-[0.2em] uppercase text-muted-foreground mb-8">
+            Experience includes
+          </p>
           <div className="grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
             {logos.map((client) => (
               <div

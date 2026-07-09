@@ -8,7 +8,7 @@ import { BOOK_CALL_URL } from "@/lib/constants";
 export const metadata = {
   title: "Contact",
   description:
-    "Contact Daniel Molloy Technology Due Diligence for technical consulting, M&A technology reviews, and investor technical assessments.",
+    "Contact Daniel Molloy for technical due diligence, embedded technical leadership, and portfolio technical support for investment firms.",
 };
 
 export default function ContactPage() {

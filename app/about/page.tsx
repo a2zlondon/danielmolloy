@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 export const metadata = {
   title: "About",
   description:
-    "About Daniel Molloy Technology Due Diligence — a technical consulting team providing technology due diligence for investors, advisers, law firms, and founders.",
+    "About Daniel Molloy — a technical consultancy providing technical due diligence, embedded technical leadership, and portfolio technical support for investment firms.",
 };
 
 export default function AboutPage() {
@@ -21,13 +21,13 @@ export default function AboutPage() {
 
               <div className="prose prose-lg max-w-none space-y-4">
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  We reduce uncertainty before investors, acquirers, and deal teams commit capital by creating a clear technical view of the target company.
+                  We give investment firms a clear technical view — of a deal, of their own operations, or of a company in the portfolio.
                 </p>
                 <p>
-                  Our team provides technology due diligence for investors, corporate finance advisers, law firms, and founders evaluating or preparing software businesses. We look beyond the pitch deck to assess the codebase, architecture, infrastructure, product maturity, AI capability, delivery process, and technical organisation.
+                  Our team works with venture capital, private equity, family offices, and asset managers — either embedded in your office or applied to a portfolio company. That might mean technical due diligence before a deal, hands-on technical leadership while a gap is filled, or ongoing oversight across a portfolio.
                 </p>
                 <p>
-                  The work is led from a technical consulting background: hands-on software, architecture, delivery, infrastructure, and engineering leadership. We identify risks, value potential, mitigation actions, and the practical roadmap required to make the investment case hold up after close.
+                  The work is led from a technical consulting background: hands-on software, architecture, delivery, infrastructure, and engineering leadership. We identify risks, value potential, mitigation actions, and the practical roadmap required to make the investment case hold up.
                 </p>
                 <p>
                   Engagements are evidence-led, structured, and designed for decision-makers who need clarity under time pressure.

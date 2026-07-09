@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Daniel Molloy Technology Due Diligence";
+export const alt = "Daniel Molloy — Technical Expertise for Investment Firms";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -46,7 +46,7 @@ export default async function Image() {
               marginBottom: 24,
             }}
           >
-            Technology Due Diligence
+            Technical Expertise for Investment Firms
           </div>
           <div
             style={{
@@ -56,7 +56,7 @@ export default async function Image() {
               maxWidth: 600,
             }}
           >
-            Risk · Value potential · Mitigation · Roadmap
+            Due diligence · Embedded leadership · Portfolio support
           </div>
         </div>
       </div>

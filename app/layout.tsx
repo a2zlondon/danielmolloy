@@ -22,30 +22,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 export const metadata: Metadata = {
   title: {
-    default: "Daniel Molloy Technology Due Diligence",
-    template: "%s | Daniel Molloy Technology Due Diligence",
+    default: "Daniel Molloy — Technical Expertise for Investment Firms",
+    template: "%s | Daniel Molloy",
   },
   description:
-    "Technical due diligence for software, SaaS and AI businesses. One service: an independent assessment of the technical value of a company before the deal completes.",
+    "Technical expertise for investment firms. We help venture capital, private equity, and family office teams build, evaluate, and run technology — in the office or inside the portfolio.",
   keywords: [
     "technical due diligence",
     "M&A tech due diligence",
     "software acquisition review",
-    "technology due diligence",
+    "embedded CTO",
+    "fractional CTO",
     "PE tech due diligence",
     "AI capability assessment",
     "CTO due diligence",
     "investor technical review",
-    "software company acquisition",
+    "portfolio technical support",
     "technology risk assessment",
-    "corporate finance technology",
-    "technical consulting",
+    "venture capital technical advisor",
     "IP due diligence",
     "code ownership review",
     "open source licence audit",
   ],
-  authors: [{ name: "Daniel Molloy Technology Due Diligence" }],
-  creator: "Daniel Molloy Technology Due Diligence",
+  authors: [{ name: "Daniel Molloy" }],
+  creator: "Daniel Molloy",
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -56,16 +56,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     url: SITE_URL,
-    siteName: "Daniel Molloy Technology Due Diligence",
-    title: "Daniel Molloy Technology Due Diligence",
+    siteName: "Daniel Molloy",
+    title: "Daniel Molloy — Technical Expertise for Investment Firms",
     description:
-      "Technical due diligence for software, SaaS and AI businesses. An independent assessment of the technical value of a company before the deal completes.",
+      "We help venture capital, private equity, and family office teams build, evaluate, and run technology — in the office or inside the portfolio.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Molloy Technology Due Diligence",
+    title: "Daniel Molloy — Technical Expertise for Investment Firms",
     description:
-      "Technical due diligence for software, SaaS and AI businesses. An independent assessment of the technical value of a company.",
+      "We help investment firms build, evaluate, and run technology — in the office or inside the portfolio.",
   },
   metadataBase: new URL("https://danielmolloy.com"),
 };

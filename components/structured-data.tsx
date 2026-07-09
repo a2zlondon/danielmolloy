@@ -13,12 +13,12 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
     {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
-      name: "Daniel Molloy Technology Due Diligence",
+      name: "Daniel Molloy",
       legalName: LEGAL_COMPANY_NAME,
       identifier: COMPANY_NUMBER,
       vatID: VAT_NUMBER,
       description:
-        "Technical due diligence for software, SaaS and AI businesses: an independent assessment of the technical value of a company before the deal completes.",
+        "Technical expertise for investment firms: technical due diligence, embedded technical leadership, and portfolio technical support for venture capital, private equity, and family office teams.",
       url: SITE_URL,
       address: {
         "@type": "PostalAddress",
@@ -34,9 +34,9 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
     {
       "@type": "ProfessionalService",
       "@id": `${SITE_URL}/#service`,
-      name: "Daniel Molloy Technology Due Diligence",
+      name: "Daniel Molloy",
       description:
-        "Technical due diligence for software, SaaS, and AI businesses — covering code quality, security, technical debt, IP and code ownership, AI capability verification, team risk, scalability, and commercial defensibility.",
+        "Technical expertise for investment firms — technical due diligence, embedded technical leadership, portfolio technical support, and AI & data advisory, in the office or inside the portfolio.",
       url: SITE_URL,
       provider: { "@id": `${SITE_URL}/#organization` },
       areaServed: [
@@ -51,9 +51,9 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
       ],
       serviceType: [
         "Technical due diligence",
-        "M&A technology review",
+        "Embedded technical leadership",
+        "Portfolio technical support",
         "AI capability assessment",
-        "Acquisition due diligence",
         "IP and code ownership review",
       ],
     },

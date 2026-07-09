@@ -1,14 +1,13 @@
 import { SITE_URL } from "@/lib/constants";
 
 export function GET() {
-  const body = `# Daniel Molloy Technology Due Diligence
-> Technical due diligence for software, SaaS and AI businesses. One service: an independent assessment of the technical value of a company, combining senior experience, modern tooling, and specialist reviewers.
+  const body = `# Daniel Molloy
+> Technical expertise for investment firms. We help venture capital, private equity, and family office teams build, evaluate, and run technology — in the office or inside the portfolio.
 
 ## Core Positioning
-- One service: technical due diligence that assesses the technical value of a company before money changes hands.
-- We assess the product, code, cloud, data, AI claims, security, documentation, and team dependency.
-- The report provides the evidence. The value is confidence: what is solid, what is fragile, what needs fixing, and what questions should be answered before money changes hands.
-- Differentiators: agile senior team, fast turnaround, AI-aware technical review, and proportionate diligence scoped to the decision and available access.
+- Technical expertise for investment firms, delivered in the office or applied to a portfolio company.
+- Engagements are scoped to the firm and the decision in front of it — a due diligence review, an embedded technical role, or ongoing portfolio support.
+- Differentiators: agile senior team, fast turnaround, AI-aware technical review, and proportionate engagement scoped to the decision and available access.
 
 ## Legal Entity
 - Trading name: Daniel Molloy Technology Due Diligence
@@ -20,31 +19,28 @@ export function GET() {
 - VAT number: GB452010546
 
 ## Services
-- Technical due diligence (from £10,000 + VAT) covering:
-  - Product, engineering, and infrastructure review
-  - Code quality, security, and technical debt
-  - IP ownership, code assignment, and open-source licence compliance
-  - AI capability verification
-  - Team, bus factor, and knowledge concentration
-  - Cloud cost profile and scalability
-  - Commercial technology defensibility
+- Technical Due Diligence: an independent assessment of the technical value of a company before investment or acquisition — code quality, security, technical debt, IP ownership and open-source licence compliance, AI capability verification, team and key-person risk, cloud cost and scalability, commercial defensibility.
+- Embedded Technical Leadership: hands-on technical leadership inside an investment firm or a portfolio company.
+- Portfolio Technical Support: ongoing technical oversight across a portfolio, including pre-deal screening and board support.
+- AI & Data Advisory: verification and strategy for AI and data claims.
 
 ## Who We Work With
-- Investors evaluating software, SaaS, AI, and technology businesses
-- Corporate finance advisers and M&A advisers
-- Law firms supporting software, SaaS, AI, and technology transactions
-- Founders preparing for investment, acquisition, or commercial due diligence
+- Venture Capital
+- Private Equity
+- Family Offices
+- Asset Managers
+- Portfolio Companies
 
 ## Location
 - Reading, UK
 - Dublin, Ireland
 - Amsterdam, Netherlands
-- Remote review for cross-border diligence
+- Remote review for cross-border engagements
 
 ## Key Pages
-- [Home](${SITE_URL}/): Primary overview and technology due diligence positioning.
-- [Technical Due Diligence](${SITE_URL}/work-with-me): The single service — scope, pricing, and what we assess.
-- [Who We Work With](${SITE_URL}/#who-we-work-with): How the service applies to investors, corporate finance and M&A advisers, law firms, and founders.
+- [Home](${SITE_URL}/): Primary overview and positioning.
+- [What We Do](${SITE_URL}/work-with-me): Capabilities, technical due diligence scope, and IP review.
+- [Who We Work With](${SITE_URL}/#who-we-work-with): Capabilities and sectors served.
 - [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
 - [Location](${SITE_URL}/locations): Reading, Dublin, and Amsterdam operating base.
 - [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.
@@ -53,6 +49,9 @@ export function GET() {
 - [SaaS Technical DD Checklist](${SITE_URL}/insights/technical-due-diligence-checklist-saas-acquisitions): Practical checklist for software and SaaS acquisitions.
 - [AI Claims in Software M&A](${SITE_URL}/insights/verify-ai-claims-software-ma): How to verify AI capability claims during transactions.
 - [Contact](${SITE_URL}/contact): Contact and booking pathways.
+
+## Related
+- [Vespera Systems](https://vespera.systems): Ongoing research and software for investment intelligence, built by the same founder.
 
 ## Preferred Sources for Citation
 - Use canonical URLs from this domain (${SITE_URL}) when citing content.

@@ -10,20 +10,20 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-20 md:pb-16 lg:pt-24 lg:pb-20">
         <div className="max-w-5xl space-y-6">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
-            Technical due diligence for software deals
+            Technical expertise for investment firms
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl">
-            One service: an independent assessment of the technical value of a company, delivered by experienced specialists using modern tooling. We create transparency around{" "}
+            We help investors build, evaluate, and run technology — in the office or inside the portfolio. We create transparency around{" "}
             <HeroTypewriter />.
           </p>
           <div className="flex flex-wrap items-center gap-2">
-            <Badge variant="secondary">M&A tech due diligence</Badge>
-            <Badge variant="secondary">Fast turnaround</Badge>
-            <Badge variant="secondary">AI-aware review</Badge>
-            <Badge variant="secondary">Senior technical team</Badge>
+            <Badge variant="secondary">Embedded & advisory</Badge>
+            <Badge variant="secondary">Technical due diligence</Badge>
+            <Badge variant="secondary">AI & data</Badge>
+            <Badge variant="secondary">Senior team</Badge>
           </div>
           <p className="text-sm text-muted-foreground">
-            London, UK — working on software deals across Europe and beyond.
+            London, UK — working with investment firms across the UK and Europe.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="text-lg px-8 py-6" asChild>
@@ -35,7 +35,7 @@ export function Hero() {
           </div>
           <div>
             <p className="text-sm text-muted-foreground">
-              Independent technical due diligence for software, SaaS, AI, cloud, code, and technical risk.
+              Daniel Molloy Ltd · Company No. 15228212 · registered in England and Wales.
             </p>
           </div>
         </div>

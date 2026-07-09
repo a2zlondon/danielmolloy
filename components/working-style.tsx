@@ -29,7 +29,7 @@ export function WorkingStyle() {
               Agile consultants, shared technical standards.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              The best diligence work comes from people who can follow evidence, question assumptions, and think from first principles. Our consultants work independently and move quickly, then bring findings back into a structured review process so speed does not dilute judgement.
+              The best technical work comes from people who can follow evidence, question assumptions, and think from first principles. Our consultants work independently and move quickly — embedded in your office, inside a portfolio company, or on a focused review — then bring findings back into a structured process so speed does not dilute judgement.
             </p>
             <div className="grid gap-3 sm:grid-cols-3">
               {principles.map((principle) => (

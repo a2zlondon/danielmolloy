@@ -10,7 +10,7 @@ import { ExperienceIncludes } from "@/components/client-logo-banner";
 export const metadata = {
   title: "Who we are",
   description:
-    "Daniel Molloy Technology Due Diligence — a specialist team supporting investors, advisers, law firms, and founders with structured technical due diligence.",
+    "Daniel Molloy — a specialist technical consultancy supporting investment firms with technical due diligence, embedded leadership, and portfolio technical support.",
 };
 
 type TeamMember = {
@@ -105,7 +105,7 @@ export default function WhoWeArePage() {
                 Who we are
               </h1>
               <p className="text-xl text-muted-foreground mb-12 max-w-2xl">
-                Daniel Molloy Technology Due Diligence is a specialist technical consulting team supporting investors, advisers, law firms, and founders with structured technology due diligence before capital is committed or due diligence begins.
+                Daniel Molloy is a specialist technical consultancy supporting investment firms — technical due diligence before capital is committed, embedded technical leadership, and ongoing support across the portfolio.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">

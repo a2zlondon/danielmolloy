@@ -2,24 +2,24 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const signals = [
   {
-    title: "Fast, focused turnaround",
+    title: "Scoped to the engagement",
     description:
-      "Rapid red-flag reviews and two-to-three-week full diligence reports, scoped around the access, deadline, and decision in front of you.",
+      "From a rapid technical review to an embedded role inside a portfolio company, the engagement is scoped around the access, timeline, and decision in front of you.",
   },
   {
     title: "Plain-English findings",
     description:
-      "Clear findings, risk ratings, commercial implications, and follow-up questions that non-technical investors, founders, advisers, and lawyers can use.",
+      "Clear findings, risk ratings, commercial implications, and next steps that non-technical partners and operators can use.",
   },
   {
-    title: "AI-aware technical review",
+    title: "AI-aware technical depth",
     description:
-      "We test AI claims against architecture, data, integration depth, costs, security, defensibility, and whether the product is more than a thin wrapper.",
+      "We test AI claims against architecture, data, integration depth, costs, security, and defensibility, not just the demo.",
   },
   {
-    title: "Agile senior team",
+    title: "Senior team",
     description:
-      "Small senior teams move quickly, ask direct questions, and keep the process proportionate rather than turning diligence into a heavyweight consulting exercise.",
+      "Small senior teams move quickly, ask direct questions, and keep the process proportionate rather than turning it into a heavyweight consulting exercise.",
   },
 ];
 
@@ -33,10 +33,10 @@ export function DealConfidence() {
               Why it helps
             </p>
             <h2 className="text-4xl md:text-5xl font-light mb-6">
-              Senior technical diligence at deal speed.
+              Senior technical judgement, on your timeline.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Buyers and founders need more than a technical opinion. They need a clear due diligence view of what is working, what is risky, and what needs attention — delivered quickly enough to support the decision, not slow it down.
+              Investment teams need more than a technical opinion. They need a clear view of what is working, what is risky, and what needs attention — delivered at the speed the decision requires, whether that decision is a deal, a hire, or a build.
             </p>
           </div>
 

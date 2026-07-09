@@ -5,13 +5,13 @@ const steps = [
     number: "01",
     title: "Agree the scope",
     description:
-      "We agree the reason for the review, decision deadline, and access required — usually documents, source code, cloud details, product evidence, and a few focused interviews.",
+      "We agree the reason for the engagement, the timeline, and the access required — whether that is a focused review, an embedded role, or ongoing portfolio support.",
   },
   {
     number: "02",
-    title: "Inspect the technology",
+    title: "Get into the detail",
     description:
-      "We inspect the code, architecture, cloud setup, security posture, AI claims, documentation, team dependency, and delivery process.",
+      "We inspect the code, architecture, cloud setup, security posture, AI claims, documentation, team dependency, and delivery process — or work directly alongside your team.",
   },
   {
     number: "03",
@@ -21,9 +21,9 @@ const steps = [
   },
   {
     number: "04",
-    title: "Report and briefing",
+    title: "Report and next steps",
     description:
-      "You receive a concise report and live briefing so investors, founders, advisers, or lawyers know what questions to ask next.",
+      "You receive a concise report and briefing, or an ongoing working relationship, so your team knows what to do next.",
   },
 ];
 
@@ -36,7 +36,7 @@ export function HowItWorks() {
             How it works
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A structured technical due diligence process designed for quick turnaround, founder preparation, and confidential deal timelines.
+            A structured process designed for quick turnaround and confidential timelines, whether the engagement is a one-off review or an ongoing role.
           </p>
         </div>
 

@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata = {
   title: "Location",
   description:
-    "Technology due diligence and technical consulting from Reading, Dublin, and Amsterdam for investors, advisers, and software businesses.",
+    "Technical due diligence, embedded technical leadership, and portfolio technical support from Reading, Dublin, and Amsterdam for investment firms.",
 };
 
 const locations = [

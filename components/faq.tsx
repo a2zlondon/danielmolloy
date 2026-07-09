@@ -9,12 +9,12 @@ export const faqs = [
   {
     question: "Who do you work with?",
     answer:
-      "Investors, corporate finance and M&A advisers, law firms, and founders. Sometimes the investor hires us directly. Sometimes a lawyer or adviser brings us in to add a technical report to the wider due diligence process. Sometimes a founder hires us before the buyer starts asking difficult technical questions.",
+      "Venture capital firms, private equity firms, family offices, and asset managers — either directly in your office, or applied to a company in your portfolio. Sometimes that means technical due diligence before a deal. Sometimes it means an embedded technical role, or ongoing support across the portfolio.",
   },
   {
     question: "What does a typical engagement look like?",
     answer:
-      "We agree the scope, inspect the available technology evidence, interview key people, then provide a written report and briefing that explains what is solid, what is risky, and what questions should be answered before money changes hands. For a first-time investor, the closest analogy is a property survey, but for a software business.",
+      "We agree the scope — a due diligence review, an embedded role, or portfolio support — then get into the detail, translate findings into plain English, and report back with clear next steps. Engagements range from a few days to an ongoing arrangement.",
   },
   {
     question: "Can you assess whether the AI is real?",
@@ -22,44 +22,29 @@ export const faqs = [
       "Yes. AI capability assessment is a core part of our work. We examine model architecture, training data, inference costs, integration depth, and whether claimed AI capabilities are genuine engineering or a ChatGPT wrapper in marketing clothing.",
   },
   {
-    question: "Do you work under NDA and deal confidentiality?",
+    question: "Do you work under NDA and confidentiality?",
     answer:
       "Always. We operate under strict confidentiality for every engagement. We do not disclose client names, deal details, or findings to third parties without explicit permission.",
   },
   {
     question: "How is this different from a general IT consultant?",
     answer:
-      "A general IT consultant usually helps build, fix, or operate technology. We provide independent technical due diligence. That means assessing the technology behind a business so investors, founders, advisers, and lawyers understand what is being bought, what risks exist, and what may need attention after investment or acquisition.",
-  },
-  {
-    question: "Can brokers and corporate finance advisers refer clients?",
-    answer:
-      "Yes. Corporate finance and M&A advisers often bring us in when a client needs independent technical due diligence on a software, SaaS, AI, or technology business. The aim is to give the client more confidence in the technology behind the transaction.",
-  },
-  {
-    question: "What access do you need from the target company?",
-    answer:
-      "Usually: product access, source code repository access, cloud or infrastructure information, CI/CD and deployment documentation, architecture diagrams if they exist, security and data documentation, and focused interviews with the CTO, lead engineer, or founder. We work with whatever access the timeline allows.",
-  },
-  {
-    question: "Do you only work on acquisitions?",
-    answer:
-      "No. We also support pre-investment screening for angels, VCs and family offices, founder readiness reviews before fundraising or sale, and standalone AI capability assessments. If technology risk is the question, we can scope an engagement to fit.",
+      "A general IT consultant usually helps build, fix, or operate technology for one company. We work at the investor level — assessing or supporting the technology across a firm's own operations and its portfolio, so investment teams understand what they are backing and what may need attention.",
   },
   {
     question: "Do you review intellectual property, code ownership, and open-source licences?",
     answer:
-      "Yes. We check that the company actually owns the code it is selling: contractor and employee IP assignment, open-source licence compliance and copyleft exposure, third-party dependencies, and the provenance of AI-generated code. The findings give buyers and lawyers evidence to support IP warranties, disclosure, and transaction terms.",
+      "Yes. We check that a company actually owns the code it depends on: contractor and employee IP assignment, open-source licence compliance and copyleft exposure, third-party dependencies, and the provenance of AI-generated code.",
   },
   {
-    question: "How much does technical due diligence cost?",
+    question: "How much does an engagement cost?",
     answer:
-      "Technical due diligence starts from £10,000 + VAT, scoped to the deal — the size of the codebase, the level of access, and the decision the report needs to support. A rapid red-flag review sits at the smaller end; a full acquisition report with interviews and a management briefing sits at the larger end.",
+      "It depends on scope — a rapid technical review, a full due diligence report, or an embedded role are priced differently. Get in touch with the size of the firm, the portfolio, and the decision in front of you, and we'll scope it from there.",
   },
   {
-    question: "Can founders get investment-ready before due diligence starts?",
+    question: "Do you only work on deals?",
     answer:
-      "Yes. A readiness review makes your company investment-ready before a buyer's technical due diligence begins: we look at your code, architecture, security, documentation, and team dependency the way an acquirer's reviewer would, so you can fix, evidence, or explain the issues before they become negotiating points.",
+      "No. We also support embedded technical leadership inside your firm, ongoing technical oversight across a portfolio, and founder readiness reviews before fundraising or sale. If technology is the question, we can scope an engagement to fit.",
   },
 ];
 

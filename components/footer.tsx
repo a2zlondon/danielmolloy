@@ -8,14 +8,14 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-medium mb-4">
-              Daniel Molloy Technology Due Diligence
+              Daniel Molloy
             </h3>
             <p className="text-sm text-muted-foreground">
-              Independent technical due diligence — assessing the technical value of software, SaaS, and AI companies.
+              Technical expertise for investment firms — in the office or inside the portfolio.
             </p>
           </div>
           <div>
-            <h4 className="font-medium mb-4">Services</h4>
+            <h4 className="font-medium mb-4">What we do</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
@@ -23,8 +23,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#who-we-work-with" className="text-muted-foreground hover:text-foreground">
-                  Who we work with
+                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
+                  Embedded technical leadership
+                </Link>
+              </li>
+              <li>
+                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
+                  Portfolio technical support
                 </Link>
               </li>
               <li>
@@ -53,6 +58,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <a href="https://vespera.systems" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground">
+                  Vespera Systems — research
+                </a>
+              </li>
+              <li>
                 <Link href="/privacy-policy" className="text-muted-foreground hover:text-foreground">
                   Privacy Policy
                 </Link>
@@ -77,8 +87,7 @@ export function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-border text-sm text-muted-foreground text-center">
           <p>
-            &copy; {new Date().getFullYear()} Daniel Molloy Technology Due
-            Diligence. All rights reserved.
+            &copy; {new Date().getFullYear()} Daniel Molloy Ltd. All rights reserved.
           </p>
           <div className="mt-4 text-xs">
             <CompanyLegalDetails compact />

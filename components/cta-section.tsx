@@ -9,7 +9,7 @@ export function CTASection() {
           Before you invest, acquire, or build — get clarity first.
         </h2>
         <p className="text-xl mb-8 text-background/80 max-w-2xl mx-auto">
-          Book a confidential call to discuss your deal, timeline, and what a technical review would cover.
+          Book a confidential call to discuss your firm, your portfolio, and where technical expertise would help.
         </p>
         <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
           <a href={BOOK_CALL_URL}>Book a call</a>
