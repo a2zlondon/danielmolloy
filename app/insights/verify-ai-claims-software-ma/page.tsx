@@ -40,7 +40,7 @@ export default function VerifyAiClaimsPage() {
               </div>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
                 <Button asChild>
-                  <Link href="/for-law-firms">AI due diligence for law firms</Link>
+                  <Link href="/work-with-me">AI capability verification</Link>
                 </Button>
                 <Button variant="outline" asChild>
                   <a href={BOOK_CALL_URL}>Discuss AI claims</a>

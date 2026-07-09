@@ -10,10 +10,10 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-20 md:pb-16 lg:pt-24 lg:pb-20">
         <div className="max-w-5xl space-y-6">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight leading-tight">
-            Technology due diligence for software investments
+            Technical due diligence for software deals
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl">
-            Before you invest in, acquire, advise on, or sell a software business, we assess the technology so you know what you are really dealing with. We create transparency around{" "}
+            One service: an independent assessment of the technical value of a company, delivered by experienced specialists using modern tooling. We create transparency around{" "}
             <HeroTypewriter />.
           </p>
           <div className="flex flex-wrap items-center gap-2">
@@ -23,7 +23,7 @@ export function Hero() {
             <Badge variant="secondary">Senior technical team</Badge>
           </div>
           <p className="text-sm text-muted-foreground">
-            London, UK — working with investors, founders, advisers, and law firms across Europe and beyond.
+            London, UK — working on software deals across Europe and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="text-lg px-8 py-6" asChild>

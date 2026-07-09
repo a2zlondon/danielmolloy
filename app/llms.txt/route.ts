@@ -2,11 +2,11 @@ import { SITE_URL } from "@/lib/constants";
 
 export function GET() {
   const body = `# Daniel Molloy Technology Due Diligence
-> Technology due diligence for software, SaaS and AI businesses. Independent technical reviews for investors, corporate finance advisers, law firms, and founders who need to understand what they are buying, selling, advising on, or preparing for.
+> Technical due diligence for software, SaaS and AI businesses. One service: an independent assessment of the technical value of a company, combining senior experience, modern tooling, and specialist reviewers.
 
 ## Core Positioning
-- Technology due diligence helps buyers, investors, advisers, law firms, and founders understand the technology risks and value drivers behind a software business.
-- Before someone invests, acquires, advises on, or sells a technology business, we assess the product, code, cloud, data, AI claims, security, documentation, and team dependency.
+- One service: technical due diligence that assesses the technical value of a company before money changes hands.
+- We assess the product, code, cloud, data, AI claims, security, documentation, and team dependency.
 - The report provides the evidence. The value is confidence: what is solid, what is fragile, what needs fixing, and what questions should be answered before money changes hands.
 - Differentiators: agile senior team, fast turnaround, AI-aware technical review, and proportionate diligence scoped to the decision and available access.
 
@@ -20,12 +20,13 @@ export function GET() {
 - VAT number: GB452010546
 
 ## Services
-- Technology due diligence
-- M&A technical reviews
-- Technical strategy and architecture assessment
-- Product and engineering delivery review
-- AI and automation advisory
-- Infrastructure, scalability, and technical debt assessment
+- Technical due diligence (from £10,000 + VAT) covering:
+  - Product, engineering, and infrastructure review
+  - Code quality, security, and technical debt
+  - AI capability verification
+  - Team, bus factor, and knowledge concentration
+  - Cloud cost profile and scalability
+  - Commercial technology defensibility
 
 ## Who We Work With
 - Investors evaluating software, SaaS, AI, and technology businesses
@@ -41,12 +42,9 @@ export function GET() {
 
 ## Key Pages
 - [Home](${SITE_URL}/): Primary overview and technology due diligence positioning.
-- [Services](${SITE_URL}/work-with-me): Engagement options and ways to work together.
+- [Technical Due Diligence](${SITE_URL}/work-with-me): The single service — scope, pricing, and what we assess.
+- [Who We Work With](${SITE_URL}/#who-we-work-with): How the service applies to investors, corporate finance and M&A advisers, law firms, and founders.
 - [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
-- [For Investors](${SITE_URL}/for-investors): Independent technical due diligence to help investors answer whether an organisation is worth investing in.
-- [For Corporate Finance & M&A Advisers](${SITE_URL}/for-corporate-finance): Technology due diligence that strengthens transaction advice and gives clients confidence to complete the deal.
-- [For Law Firms](${SITE_URL}/for-law-firms): Technical expertise that supports legal due diligence by identifying technology risks that could affect valuation, warranties, and transaction terms.
-- [For Founders](${SITE_URL}/for-founders): Technical assessments that prepare companies for investment, acquisition, or commercial due diligence.
 - [Location](${SITE_URL}/locations): Reading, Dublin, and Amsterdam operating base.
 - [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.
 - [Blog](${SITE_URL}/blog): Articles on tech strategy, product, and leadership.

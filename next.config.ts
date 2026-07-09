@@ -22,12 +22,32 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/for-enterprises",
-        destination: "/for-investors",
+        destination: "/#who-we-work-with",
         permanent: true,
       },
       {
         source: "/for-partners",
-        destination: "/for-corporate-finance",
+        destination: "/#who-we-work-with",
+        permanent: true,
+      },
+      {
+        source: "/for-investors",
+        destination: "/#who-we-work-with",
+        permanent: true,
+      },
+      {
+        source: "/for-corporate-finance",
+        destination: "/#who-we-work-with",
+        permanent: true,
+      },
+      {
+        source: "/for-law-firms",
+        destination: "/#who-we-work-with",
+        permanent: true,
+      },
+      {
+        source: "/for-founders",
+        destination: "/#who-we-work-with",
         permanent: true,
       },
     ];

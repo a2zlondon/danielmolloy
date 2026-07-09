@@ -11,7 +11,7 @@ export function Footer() {
               Daniel Molloy Technology Due Diligence
             </h3>
             <p className="text-sm text-muted-foreground">
-              Technology due diligence for investors, corporate finance advisers, law firms, and founders.
+              Independent technical due diligence — assessing the technical value of software, SaaS, and AI companies.
             </p>
           </div>
           <div>
@@ -19,27 +19,17 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Acquisition due diligence
+                  Technical due diligence
                 </Link>
               </li>
               <li>
-                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Technical assessments
-                </Link>
-              </li>
-              <li>
-                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  AI capability reviews
+                <Link href="/#who-we-work-with" className="text-muted-foreground hover:text-foreground">
+                  Who we work with
                 </Link>
               </li>
               <li>
                 <Link href="/fix-your-tech-fast" className="text-muted-foreground hover:text-foreground">
                   Fix your tech fast
-                </Link>
-              </li>
-              <li>
-                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Embedded advisory
                 </Link>
               </li>
             </ul>
@@ -55,26 +45,6 @@ export function Footer() {
               <li>
                 <Link href="/blog" className="text-muted-foreground hover:text-foreground">
                   Writing
-                </Link>
-              </li>
-              <li>
-                <Link href="/for-investors" className="text-muted-foreground hover:text-foreground">
-                  For investors
-                </Link>
-              </li>
-              <li>
-                <Link href="/for-corporate-finance" className="text-muted-foreground hover:text-foreground">
-                  For corporate finance
-                </Link>
-              </li>
-              <li>
-                <Link href="/for-law-firms" className="text-muted-foreground hover:text-foreground">
-                  For law firms
-                </Link>
-              </li>
-              <li>
-                <Link href="/for-founders" className="text-muted-foreground hover:text-foreground">
-                  For founders
                 </Link>
               </li>
               <li>
