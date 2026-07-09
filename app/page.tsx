@@ -51,7 +51,7 @@ export default function Home() {
         <section id="who-we-work-with" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-background">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Technical due diligence is one service with one question behind it: what is the technology of this company really worth? Before money changes hands, we assess the product, code, cloud, data, AI claims, security, documentation, and team dependency so everyone understands what is really being bought.
+              Technical due diligence is one service with one question behind it: what is the technology of this company really worth? Before money changes hands, we assess the product, code, cloud, data, AI claims, security, intellectual property, documentation, and team dependency so everyone understands what is really being bought.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               The closest analogy is a property survey: the report is the evidence, but what you are really buying is confidence — what is solid, what is fragile, what needs fixing, and what questions should be answered before completion.

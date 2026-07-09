@@ -23,6 +23,7 @@ export function GET() {
 - Technical due diligence (from £10,000 + VAT) covering:
   - Product, engineering, and infrastructure review
   - Code quality, security, and technical debt
+  - IP ownership, code assignment, and open-source licence compliance
   - AI capability verification
   - Team, bus factor, and knowledge concentration
   - Cloud cost profile and scalability

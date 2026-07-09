@@ -36,7 +36,7 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
       "@id": `${SITE_URL}/#service`,
       name: "Daniel Molloy Technology Due Diligence",
       description:
-        "Technical due diligence for software, SaaS, and AI businesses — covering code quality, security, technical debt, AI capability verification, team risk, scalability, and commercial defensibility.",
+        "Technical due diligence for software, SaaS, and AI businesses — covering code quality, security, technical debt, IP and code ownership, AI capability verification, team risk, scalability, and commercial defensibility.",
       url: SITE_URL,
       provider: { "@id": `${SITE_URL}/#organization` },
       areaServed: [
@@ -54,6 +54,7 @@ const ORGANIZATION_AND_SERVICE_JSON_LD = {
         "M&A technology review",
         "AI capability assessment",
         "Acquisition due diligence",
+        "IP and code ownership review",
       ],
     },
   ],

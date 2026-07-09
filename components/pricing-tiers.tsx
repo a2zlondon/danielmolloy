@@ -12,6 +12,7 @@ const service = {
     "Product, engineering & infrastructure review",
     "Code quality, security & technical debt",
     "AI capability verification — real, fragile, or marketing",
+    "IP ownership & open-source licence review",
     "Team, bus factor & knowledge concentration",
     "Cloud cost profile & scalability",
     "Commercial technology defensibility",

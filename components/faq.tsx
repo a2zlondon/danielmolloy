@@ -46,6 +46,21 @@ export const faqs = [
     answer:
       "No. We also support pre-investment screening for angels, VCs and family offices, founder readiness reviews before fundraising or sale, and standalone AI capability assessments. If technology risk is the question, we can scope an engagement to fit.",
   },
+  {
+    question: "Do you review intellectual property, code ownership, and open-source licences?",
+    answer:
+      "Yes. We check that the company actually owns the code it is selling: contractor and employee IP assignment, open-source licence compliance and copyleft exposure, third-party dependencies, and the provenance of AI-generated code. The findings give buyers and lawyers evidence to support IP warranties, disclosure, and transaction terms.",
+  },
+  {
+    question: "How much does technical due diligence cost?",
+    answer:
+      "Technical due diligence starts from £10,000 + VAT, scoped to the deal — the size of the codebase, the level of access, and the decision the report needs to support. A rapid red-flag review sits at the smaller end; a full acquisition report with interviews and a management briefing sits at the larger end.",
+  },
+  {
+    question: "Can founders get investment-ready before due diligence starts?",
+    answer:
+      "Yes. A readiness review makes your company investment-ready before a buyer's technical due diligence begins: we look at your code, architecture, security, documentation, and team dependency the way an acquirer's reviewer would, so you can fix, evidence, or explain the issues before they become negotiating points.",
+  },
 ];
 
 export function FAQ() {

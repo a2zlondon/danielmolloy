@@ -46,6 +46,11 @@ const questions = [
     explainer:
       "We inspect the data, models, prompts, integrations, costs, and defensibility behind AI claims so investors know what is genuinely proprietary.",
   },
+  {
+    question: "Who actually owns the IP?",
+    explainer:
+      "We check contractor and employee IP assignment, open-source licence obligations, and third-party code provenance, so the company can actually sell what it claims to own.",
+  },
 ];
 
 export function DueDiligenceQuestions() {
@@ -58,7 +63,7 @@ export function DueDiligenceQuestions() {
               Technical transparency before the deal closes.
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We assess the target&apos;s code, architecture, delivery process, infrastructure, data, AI claims, and team resilience so investors understand what they are really buying.
+              We assess the target&apos;s code, architecture, delivery process, infrastructure, data, AI claims, IP ownership, and team resilience so investors understand what they are really buying.
             </p>
           </div>
 
