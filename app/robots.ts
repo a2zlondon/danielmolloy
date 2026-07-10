@@ -21,9 +21,10 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
       {
-        // Keep search inclusion while opting out of model training crawl.
+        // Allow GPTBot to crawl public content while keeping administrative paths out.
         userAgent: "GPTBot",
-        disallow: "/",
+        allow: "/",
+        disallow: ["/api/"],
       },
     ],
     sitemap: "https://danielmolloy.com/sitemap.xml",

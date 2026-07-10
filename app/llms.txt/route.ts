@@ -2,12 +2,13 @@ import { SITE_URL } from "@/lib/constants";
 
 export function GET() {
   const body = `# Daniel Molloy
-> Technical expertise for investment firms. We help venture capital, private equity, and family office teams build, evaluate, and run technology — in the office or inside the portfolio.
+> Technical expertise for investment firms. We help venture capital, private equity, corporate finance firms, family offices, secondary market investors, and portfolio teams build, evaluate, and run technology — in the office or inside the portfolio.
 
 ## Core Positioning
 - Technical expertise for investment firms, delivered in the office or applied to a portfolio company.
-- Engagements are scoped to the firm and the decision in front of it — a due diligence review, an embedded technical role, or ongoing portfolio support.
+- Engagements are scoped to the firm and the decision in front of it — a due diligence review, an AI and data platform assessment, a technology risk review, fractional CTO advisory, or ongoing portfolio support.
 - Differentiators: agile senior team, fast turnaround, AI-aware technical review, and proportionate engagement scoped to the decision and available access.
+- Niche focus: technical due diligence for AI, healthcare, and venture-backed software companies.
 
 ## Legal Entity
 - Trading name: Daniel Molloy Technology Due Diligence
@@ -20,14 +21,16 @@ export function GET() {
 
 ## Services
 - Technical Due Diligence: an independent assessment of the technical value of a company before investment or acquisition — code quality, security, technical debt, IP ownership and open-source licence compliance, AI capability verification, team and key-person risk, cloud cost and scalability, commercial defensibility.
-- Embedded Technical Leadership: hands-on technical leadership inside an investment firm or a portfolio company.
-- Portfolio Technical Support: ongoing technical oversight across a portfolio, including pre-deal screening and board support.
-- AI & Data Advisory: verification and strategy for AI and data claims.
+- AI & Data Platform Assessment: verification of AI claims, data ownership, model architecture, telemetry, inference costs, and genuine capability vs marketing.
+- Technology Risk Review: rapid technical screening for investors evaluating software, SaaS, healthcare, AI, or venture-backed companies.
+- Fractional CTO Advisory: ongoing technical counsel for investment firms, deal teams, portfolio companies, and founders who need senior technology judgement.
 
 ## Who We Work With
 - Venture Capital
 - Private Equity
+- Corporate Finance Firms
 - Family Offices
+- Secondary Market Investors
 - Asset Managers
 - Portfolio Companies
 
@@ -46,7 +49,11 @@ export function GET() {
 - [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.
 - [Blog](${SITE_URL}/blog): Articles on tech strategy, product, and leadership.
 - [Legal DD vs Technical DD](${SITE_URL}/insights/legal-due-diligence-vs-technical-due-diligence): Explains where legal due diligence ends and technical due diligence begins.
-- [SaaS Technical DD Checklist](${SITE_URL}/insights/technical-due-diligence-checklist-saas-acquisitions): Practical checklist for software and SaaS acquisitions.
+- [Technical Due Diligence Checklist for Investors](${SITE_URL}/insights/technical-due-diligence-checklist-saas-acquisitions): Practical checklist covering source code ownership, deployment process, technical debt, security, AI claims, team concentration risk, and cloud costs.
+- [How to Evaluate an AI Startup Before Investing](${SITE_URL}/insights/how-to-evaluate-ai-startup-before-investing): AI due diligence guide for proprietary AI, model usage, data ownership, telemetry, and unit economics.
+- [Red Flags in SaaS Acquisitions](${SITE_URL}/insights/red-flags-saas-acquisitions): Common technical red flags before acquiring a SaaS company.
+- [Why Telemetry Matters More Than Features](${SITE_URL}/insights/why-telemetry-matters-more-than-features): Explains why usage evidence and operational signals matter more than feature lists.
+- [What Happens During Technical Due Diligence](${SITE_URL}/insights/what-happens-during-technical-due-diligence): Framework for discovery, architecture, code, infrastructure, risk assessment, and executive summary.
 - [AI Claims in Software M&A](${SITE_URL}/insights/verify-ai-claims-software-ma): How to verify AI capability claims during transactions.
 - [Contact](${SITE_URL}/contact): Contact and booking pathways.
 

@@ -5,6 +5,39 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Link from "next/link";
 import { decodeHtmlEntities, extractDateParts, getFeaturedImageUrl, stripHtml } from "@/lib/wp";
 
+const insightArticles = [
+  {
+    title: "Technical Due Diligence Checklist for Investors",
+    href: "/insights/technical-due-diligence-checklist-saas-acquisitions",
+    description:
+      "Source code ownership, deployment, technical debt, security, AI claims, team risk and cloud costs.",
+  },
+  {
+    title: "How to Evaluate an AI Startup Before Investing",
+    href: "/insights/how-to-evaluate-ai-startup-before-investing",
+    description:
+      "A practical AI due diligence guide for VCs and investors.",
+  },
+  {
+    title: "Red Flags in SaaS Acquisitions",
+    href: "/insights/red-flags-saas-acquisitions",
+    description:
+      "One-person knowledge risk, no automated testing, no observability and excessive cloud spend.",
+  },
+  {
+    title: "Why Telemetry Matters More Than Features",
+    href: "/insights/why-telemetry-matters-more-than-features",
+    description:
+      "Why usage evidence and operating signals matter more than feature lists.",
+  },
+  {
+    title: "What Happens During Technical Due Diligence?",
+    href: "/insights/what-happens-during-technical-due-diligence",
+    description:
+      "Discovery, architecture review, code review, infrastructure review, risk assessment and executive summary.",
+  },
+];
+
 export const metadata = {
   title: "Writing",
   description:
@@ -30,6 +63,29 @@ export default async function BlogPage() {
               <p className="text-xl text-muted-foreground mb-12">
                 Thoughts on technology strategy, product development, and building companies that last.
               </p>
+
+              <div className="grid gap-4 md:grid-cols-2 mb-16">
+                {insightArticles.map((article) => (
+                  <Card key={article.href} className="border-0 shadow-sm hover:shadow-md transition-shadow">
+                    <CardHeader>
+                      <Link href={article.href}>
+                        <CardTitle className="text-xl hover:text-foreground/80 transition-colors">
+                          {article.title}
+                        </CardTitle>
+                      </Link>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{article.description}</p>
+                      <Link
+                        href={article.href}
+                        className="inline-block mt-4 text-sm font-medium hover:text-foreground/80 transition-colors"
+                      >
+                        Read guide →
+                      </Link>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
               
               <div className="space-y-8">
                 {posts.map((post) => {

@@ -18,8 +18,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   });
 
   const insightUrls = [
+    "how-to-evaluate-ai-startup-before-investing",
     "legal-due-diligence-vs-technical-due-diligence",
+    "red-flags-saas-acquisitions",
     "technical-due-diligence-checklist-saas-acquisitions",
+    "what-happens-during-technical-due-diligence",
+    "why-telemetry-matters-more-than-features",
     "verify-ai-claims-software-ma",
   ].map((slug) => ({
     url: `${baseUrl}/insights/${slug}`,

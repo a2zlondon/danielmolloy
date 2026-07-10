@@ -8,29 +8,29 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export const metadata = {
   title: "What We Do",
   description:
-    "Technical expertise for investment firms — technical due diligence, embedded technical leadership, and portfolio technical support, in the office or inside the portfolio.",
+    "Technical expertise for investment firms — technical due diligence, AI and data platform assessment, technology risk review, and fractional CTO advisory.",
 };
 
 const capabilities = [
   {
     title: "Technical Due Diligence",
     description:
-      "An independent assessment of the technical value of a company before you invest or acquire — code, cloud, security, IP, AI claims, and team dependency.",
+      "An independent assessment of the technical value of a company before investment or acquisition — code, cloud, security, IP, AI claims, and team dependency.",
   },
   {
-    title: "Embedded Technical Leadership",
+    title: "AI & Data Platform Assessment",
     description:
-      "Hands-on technical leadership inside your firm or a portfolio company, for as long as the gap needs filling — architecture decisions, engineering hiring, delivery oversight.",
+      "Verification of AI claims, data ownership, model architecture, telemetry, inference costs, and genuine capability vs marketing.",
   },
   {
-    title: "Portfolio Technical Support",
+    title: "Technology Risk Review",
     description:
-      "Ongoing technical oversight across a portfolio — pre-deal screening, board support, and a second opinion whenever technology risk needs one.",
+      "Rapid technical screening for investors evaluating software, SaaS, healthcare, AI, or venture-backed companies.",
   },
   {
-    title: "AI & Data Advisory",
+    title: "Fractional CTO Advisory",
     description:
-      "Verification and strategy for AI and data claims — what is genuinely proprietary, what is fragile, and what is marketing.",
+      "Ongoing technical counsel for investment firms, deal teams, portfolio companies, and founders who need senior technology judgement.",
   },
 ];
 
@@ -48,7 +48,7 @@ const assessmentDimensions = [
   {
     title: "AI Capability Verification",
     description:
-      "Whether AI claims are real — model architecture, training data, inference costs, and genuine capability vs marketing.",
+      "Whether AI claims are real — model architecture, training data, inference costs, telemetry, and genuine capability vs marketing.",
   },
   {
     title: "Team & Key-Person Risk",
@@ -63,7 +63,7 @@ const assessmentDimensions = [
   {
     title: "Commercial Defensibility",
     description:
-      "Whether the technology genuinely supports the story being sold — differentiation, IP, and platform risk.",
+      "Whether the technology genuinely supports the story being sold — differentiation, IP, data, and platform risk.",
   },
 ];
 

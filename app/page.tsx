@@ -21,26 +21,28 @@ const capabilities = [
       "An independent assessment of the technical value of a company before you invest or acquire — code, cloud, security, IP, AI claims, and team dependency.",
   },
   {
-    title: "Embedded Technical Leadership",
+    title: "AI & Data Platform Assessment",
     description:
-      "Hands-on technical leadership inside your firm or a portfolio company, for as long as the gap needs filling.",
+      "Verification of AI and data claims — what is genuinely proprietary, what models are used, what telemetry proves value, and what is marketing.",
   },
   {
-    title: "Portfolio Technical Support",
+    title: "Technology Risk Review",
     description:
-      "Ongoing technical oversight across a portfolio — pre-deal screening, board support, and a second opinion whenever technology risk needs one.",
+      "Focused review of technical debt, architecture, cloud cost, observability, security, and key-person risk before an investment decision.",
   },
   {
-    title: "AI & Data Advisory",
+    title: "Fractional CTO Advisory",
     description:
-      "Verification and strategy for AI and data claims — what is genuinely proprietary, what is fragile, and what is marketing.",
+      "Senior technical leadership inside your firm or a portfolio company, for as long as the gap needs filling.",
   },
 ];
 
 const sectors = [
   "Venture Capital",
   "Private Equity",
+  "Corporate Finance Firms",
   "Family Offices",
+  "Secondary Market Investors",
   "Asset Managers",
   "Portfolio Companies",
 ];

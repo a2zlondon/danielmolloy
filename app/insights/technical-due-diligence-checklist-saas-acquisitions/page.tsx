@@ -5,20 +5,20 @@ import { Button } from "@/components/ui/button";
 import { BOOK_CALL_URL } from "@/lib/constants";
 
 export const metadata = {
-  title: "Technical due diligence checklist for SaaS acquisitions",
+  title: "Technical Due Diligence Checklist for Investors",
   description:
-    "A practical technical due diligence checklist for SaaS acquisitions covering code, architecture, cloud, security, AI, documentation and team risk.",
+    "A practical technical due diligence checklist for investors covering source code ownership, deployment, technical debt, security, AI claims, team risk and cloud costs.",
 };
 
 const checks = [
-  "Where is the source code, who owns it, and how healthy is the repository history?",
-  "How many active contributors are there, and where is knowledge concentrated?",
-  "How are releases tested, approved, deployed and rolled back?",
-  "What technical debt affects scalability, security or delivery speed?",
-  "Is the cloud bill proportionate to customers, usage and revenue?",
+  "Source code ownership: where the code lives, who owns it, who has access, and whether contractor or founder IP has been assigned correctly.",
+  "Deployment process: how releases are tested, approved, deployed, monitored and rolled back when something goes wrong.",
+  "Technical debt: what slows delivery, creates fragility, increases security exposure or raises the future cost of change.",
+  "Security: authentication, access controls, secrets management, dependency risk, incident history and customer data exposure.",
+  "AI claims: whether AI features are proprietary, defensible, measurable and actually used in production workflows.",
+  "Team concentration risk: whether one engineer, founder or agency holds critical operational knowledge.",
+  "Cloud costs: whether infrastructure spend is proportionate to revenue, usage, margins and the growth plan.",
   "What documentation exists for architecture, onboarding, incidents and operations?",
-  "What would break if the CTO or lead engineer left after completion?",
-  "Are AI claims backed by real data, models, workflows and defensible engineering?",
 ];
 
 export default function SaasChecklistPage() {
@@ -33,11 +33,11 @@ export default function SaasChecklistPage() {
                 Checklist
               </p>
               <h1 className="text-5xl md:text-6xl font-light mb-8">
-                Technical due diligence checklist for SaaS acquisitions
+                Technical Due Diligence Checklist for Investors
               </h1>
               <div className="prose prose-lg max-w-none">
                 <p>
-                  In a SaaS acquisition, the technical review should test whether the platform can support the commercial story. A polished demo is not enough; buyers need evidence from the codebase, infrastructure, delivery process and team.
+                  Investors assess technical debt during acquisitions by asking whether the platform can support the commercial story. A polished demo is not enough; buyers need evidence from the codebase, infrastructure, deployment process, security posture, AI implementation and team.
                 </p>
                 <ul>
                   {checks.map((check) => (
@@ -48,7 +48,7 @@ export default function SaasChecklistPage() {
                   The output should not be a generic IT report. It should translate engineering evidence into deal language: risk ratings, commercial implications, mitigation actions, questions for management and post-close priorities.
                 </p>
                 <p>
-                  This is especially important when the valuation depends on scalability, AI capability, enterprise readiness or rapid product expansion after completion.
+                  This is especially important for AI, healthcare and venture-backed software companies, where valuation often depends on scalability, data quality, regulatory confidence and rapid product expansion after completion.
                 </p>
               </div>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
