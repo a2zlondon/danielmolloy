@@ -47,12 +47,20 @@ export function Testimonials() {
       content:
         "Dan has been an invaluable technical expert for the business in helping build out a core management information system, as well as taking the lead on AI and automation proof of concepts. Great to work with and very knowledgeable, would recommend!",
     },
+    {
+      headline: "Boardroom to dev team",
+      name: "Chris Lowry",
+      role: "Co-Founder, SwingSmart UK",
+      content:
+        "I was always impressed with not only your understanding of 'what' technology, but more importantly the 'why' technology. Having the business aptitude and ability to explain heavy development concepts to a boardroom as well as boardroom level concepts to dev teams is a massive skill to have in an organisation.",
+    },
   ];
 
   const hydrated: Testimonial[] = testimonials.map((t) => {
     if (t.name === "Glenn") return { ...t, imageSrc: "/images/testimonials/glenn.png" };
     if (t.name === "Matt Platt") return { ...t, imageSrc: "/images/testimonials/matt.png" };
     if (t.name === "Rob Jones") return { ...t, imageSrc: "/images/testimonials/rob.png" };
+    if (t.name === "Chris Lowry") return { ...t, imageSrc: "/images/testimonials/chris.png" };
     return t;
   });
 
