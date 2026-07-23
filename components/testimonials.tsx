@@ -72,7 +72,7 @@ export function Testimonials() {
             What clients say
           </p>
           <h2 className="text-4xl md:text-5xl font-light mb-4">
-            Trust is built in the hard moments.
+            Trust
           </h2>
           <p className="text-xl text-muted-foreground">
             References from leaders who needed technical depth, calm assessment, and clear answers under pressure.
