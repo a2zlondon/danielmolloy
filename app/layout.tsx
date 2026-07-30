@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { OrganizationAndServiceJsonLd } from "@/components/structured-data";
+import { BRAND_INK } from "@/lib/brand";
 import { SITE_URL } from "@/lib/constants";
 
 const inter = Inter({
@@ -46,12 +47,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Daniel Molloy" }],
   creator: "Daniel Molloy",
-  icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/icon.png", type: "image/png", sizes: "32x32" },
-    ],
-  },
+  // No `icons` block: setting it explicitly overrides Next's file-convention
+  // detection, which is what previously stopped app/apple-icon.png being emitted.
+  // app/icon.svg, app/icon.png, app/favicon.ico, app/apple-icon.png and
+  // app/manifest.ts are picked up automatically.
   openGraph: {
     type: "website",
     locale: "en_GB",
@@ -70,6 +69,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://danielmolloy.com"),
 };
 
+export const viewport: Viewport = {
+  themeColor: BRAND_INK,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,8 +80,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Script id="google-tag-manager" strategy="afterInteractive">
           {gtmScript}

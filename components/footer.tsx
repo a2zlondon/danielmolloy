@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { Mark } from "@/components/brand/logo";
 import { CompanyLegalDetails } from "@/components/company-legal-details";
+import { BRAND_NAME } from "@/lib/brand";
 
 export function Footer() {
   return (
@@ -7,8 +9,9 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-medium mb-4">
-              Daniel Molloy
+            <h3 className="font-medium mb-4 flex items-center gap-2.5">
+              <Mark className="size-6" />
+              {BRAND_NAME}
             </h3>
             <p className="text-sm text-muted-foreground">
               Technical expertise for investment firms — in the office or inside the portfolio.
