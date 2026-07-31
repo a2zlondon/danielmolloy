@@ -278,6 +278,40 @@ function renderWordmark({ markFont, textFont, ink, surface }) {
   return svgDocument(round(width), size, body);
 }
 
+/**
+ * Right-aligns a line of outlined type, with its baseline on `baselineY` and its ink
+ * ending at `rightX`. Right alignment keeps banner copy clear of the avatar, which
+ * LinkedIn overlaps into the lower-left corner of the cover image.
+ */
+function rightAlignedOutline(font, text, fontSize, rightX, baselineY) {
+  const probe = outline(font, text, fontSize);
+  const placed = outline(font, text, fontSize, 0, rightX - probe.bbox.x2, baselineY);
+  return { data: toPathData(placed.path), width: probe.bbox.x2 - probe.bbox.x1 };
+}
+
+/**
+ * A cover banner: charcoal ground, copy set right.
+ *
+ * The mark is deliberately absent — on both LinkedIn surfaces the avatar or company
+ * logo already sits on top of the banner, and repeating the monogram beside itself
+ * reads as a mistake.
+ */
+function renderBanner({ width, height, lines, ink, margin }) {
+  const rightX = width - margin;
+  const totalHeight = lines.reduce((sum, line) => sum + line.leading, 0) - lines[0].leading;
+  let baseline = (height - totalHeight) / 2 + lines[0].size * 0.36;
+
+  const body = lines
+    .map((line, index) => {
+      if (index > 0) baseline += line.leading;
+      const { data } = rightAlignedOutline(line.font, line.text, line.size, rightX, baseline);
+      return `  <path d="${data}" fill="${line.fill}"/>`;
+    })
+    .join("\n");
+
+  return svgDocument(width, height, `  <rect width="${width}" height="${height}" fill="${ink}"/>\n${body}`);
+}
+
 const round = (value) => Number(value.toFixed(PRECISION));
 
 /**
@@ -364,13 +398,25 @@ const AVATAR_SIZES = [400, 800, 1024];
 /** Sizes packed into favicon.ico. */
 const ICO_SIZES = [16, 32, 48];
 
+/**
+ * Cover banners. LinkedIn uses different dimensions for the two surfaces, and crops
+ * both on mobile, so copy is kept well inside the margins.
+ */
+const BANNERS = [
+  { name: "banner-linkedin-profile", width: 1584, height: 396, margin: 120, scale: 1 },
+  { name: "banner-linkedin-company", width: 1128, height: 191, margin: 64, scale: 0.52 },
+];
+
+/** Crème is too bright for supporting copy on charcoal; this sits between the two. */
+const BANNER_MUTED = oklchToHex(0.68, 0.005, 85);
+
 async function main() {
   assertColoursMatchTheme();
 
   // Medium and Light are persisted as TTF for the OG card to load at runtime.
   const semiBold = await loadInter("SemiBold");
   const medium = await loadInter("Medium", { persist: true });
-  await loadInter("Light", { persist: true });
+  const light = await loadInter("Light", { persist: true });
 
   await fs.mkdir(PACK_DIR, { recursive: true });
 
@@ -446,6 +492,42 @@ async function main() {
   // --- Social avatars -----------------------------------------------------
   for (const size of AVATAR_SIZES) {
     await write(path.join(PACK_DIR, `avatar-${size}.png`), await rasteriseOpaque(maskableSvg, size));
+  }
+
+  // --- Cover banners ------------------------------------------------------
+  for (const { name, width, height, margin, scale } of BANNERS) {
+    const svg = renderBanner({
+      width,
+      height,
+      margin,
+      ink: BRAND_INK,
+      lines: [
+        {
+          text: "Technical expertise for investment firms",
+          font: light,
+          size: 54 * scale,
+          leading: 0,
+          fill: BRAND_SURFACE,
+        },
+        {
+          text: "Due diligence · Embedded leadership · Portfolio support",
+          font: medium,
+          size: 24 * scale,
+          leading: 52 * scale,
+          fill: BANNER_MUTED,
+        },
+      ],
+    });
+
+    await write(path.join(PACK_DIR, `${name}.svg`), svg);
+    await write(
+      path.join(PACK_DIR, `${name}.png`),
+      await sharp(Buffer.from(svg), { density: RENDER_DENSITY })
+        .resize(width, height)
+        .flatten({ background: BRAND_INK })
+        .png({ compressionLevel: 9 })
+        .toBuffer()
+    );
   }
 
   console.log(`Generated ${written.length} brand assets:`);

@@ -56,9 +56,16 @@ wordmark's name is Medium (500). There is no secondary typeface.
 | Raster icon, any size | `icon-{16,32,48,64,128,180,192,256,512,1024}.png` |
 | Android home screen | `icon-maskable-512.png` |
 | LinkedIn, X, GitHub profile picture | `avatar-{400,800,1024}.png` |
+| LinkedIn profile cover (1584 × 396) | `banner-linkedin-profile.png` |
+| LinkedIn company cover (1128 × 191) | `banner-linkedin-company.png` |
 
 Rounded PNGs have transparent corners. Maskable and avatar files are full-bleed with
 the monogram pulled into the centre 80%, so circular and squircle crops never clip it.
+
+The banners carry no mark: on both LinkedIn surfaces the avatar or company logo already
+sits on top of the cover, and repeating the monogram beside itself reads as a mistake.
+Copy is set right so it stays clear of that overlap. LinkedIn changes these dimensions
+from time to time — if the uploader objects, adjust `BANNERS` in the generator.
 
 In the app itself the nav and footer use `components/brand/logo.tsx`, which renders
 the mark as inline SVG with live Inter text beside it — the webfont is already loaded
