@@ -1,11 +1,17 @@
 import { Nav } from "@/components/nav";
+import { ArticleJsonLd } from "@/components/structured-data";
+import { INSIGHT_DATES } from "@/lib/insights";
+import { SITE_URL } from "@/lib/constants";
 import { Footer } from "@/components/footer";
 import { InsightArticle } from "@/components/insight-article";
+
+const SLUG = "why-telemetry-matters-more-than-features";
 
 export const metadata = {
   title: "Why Telemetry Matters More Than Features",
   description:
     "Why investors and acquirers should value telemetry, usage evidence and operating signals over feature lists during technical due diligence.",
+  alternates: { canonical: `${SITE_URL}/insights/${SLUG}` },
 };
 
 const sections = [
@@ -34,6 +40,13 @@ const sections = [
 export default function WhyTelemetryMattersPage() {
   return (
     <>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        datePublished={INSIGHT_DATES[SLUG].published}
+        dateModified={INSIGHT_DATES[SLUG].modified}
+        url={`${SITE_URL}/insights/${SLUG}`}
+      />
       <Nav />
       <main>
         <InsightArticle

@@ -1,11 +1,17 @@
 import { Nav } from "@/components/nav";
+import { ArticleJsonLd } from "@/components/structured-data";
+import { INSIGHT_DATES } from "@/lib/insights";
+import { SITE_URL } from "@/lib/constants";
 import { Footer } from "@/components/footer";
 import { InsightArticle } from "@/components/insight-article";
+
+const SLUG = "how-to-evaluate-ai-startup-before-investing";
 
 export const metadata = {
   title: "How to Evaluate an AI Startup Before Investing",
   description:
     "A practical AI due diligence guide for VCs and investors covering proprietary AI, models, data ownership, telemetry and unit economics.",
+  alternates: { canonical: `${SITE_URL}/insights/${SLUG}` },
 };
 
 const sections = [
@@ -34,6 +40,13 @@ const sections = [
 export default function EvaluateAiStartupPage() {
   return (
     <>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        datePublished={INSIGHT_DATES[SLUG].published}
+        dateModified={INSIGHT_DATES[SLUG].modified}
+        url={`${SITE_URL}/insights/${SLUG}`}
+      />
       <Nav />
       <main>
         <InsightArticle

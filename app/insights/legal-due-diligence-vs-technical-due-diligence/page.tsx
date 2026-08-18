@@ -1,18 +1,30 @@
 import Link from "next/link";
 import { Nav } from "@/components/nav";
+import { ArticleJsonLd } from "@/components/structured-data";
+import { INSIGHT_DATES } from "@/lib/insights";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
-import { BOOK_CALL_URL } from "@/lib/constants";
+import { BOOK_CALL_URL, SITE_URL } from "@/lib/constants";
+
+const SLUG = "legal-due-diligence-vs-technical-due-diligence";
 
 export const metadata = {
   title: "Legal due diligence vs technical due diligence",
   description:
     "A short guide for lawyers, buyers and advisers on where legal due diligence stops and technical due diligence begins in software, SaaS and AI transactions.",
+  alternates: { canonical: `${SITE_URL}/insights/${SLUG}` },
 };
 
 export default function LegalVsTechnicalDueDiligencePage() {
   return (
     <>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        datePublished={INSIGHT_DATES[SLUG].published}
+        dateModified={INSIGHT_DATES[SLUG].modified}
+        url={`${SITE_URL}/insights/${SLUG}`}
+      />
       <Nav />
       <main>
         <article className="py-24 bg-background">

@@ -1,13 +1,18 @@
 import Link from "next/link";
 import { Nav } from "@/components/nav";
+import { ArticleJsonLd } from "@/components/structured-data";
+import { INSIGHT_DATES } from "@/lib/insights";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
-import { BOOK_CALL_URL } from "@/lib/constants";
+import { BOOK_CALL_URL, SITE_URL } from "@/lib/constants";
+
+const SLUG = "technical-due-diligence-checklist-saas-acquisitions";
 
 export const metadata = {
   title: "Technical Due Diligence Checklist for Investors",
   description:
     "A practical technical due diligence checklist for investors covering source code ownership, deployment, technical debt, security, AI claims, team risk and cloud costs.",
+  alternates: { canonical: `${SITE_URL}/insights/${SLUG}` },
 };
 
 const checks = [
@@ -24,6 +29,13 @@ const checks = [
 export default function SaasChecklistPage() {
   return (
     <>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        datePublished={INSIGHT_DATES[SLUG].published}
+        dateModified={INSIGHT_DATES[SLUG].modified}
+        url={`${SITE_URL}/insights/${SLUG}`}
+      />
       <Nav />
       <main>
         <article className="py-24 bg-background">

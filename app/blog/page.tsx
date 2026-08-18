@@ -1,9 +1,9 @@
-import { getPosts } from "@/lib/wp";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { decodeHtmlEntities, extractDateParts, getFeaturedImageUrl, stripHtml } from "@/lib/wp";
+import { getPosts, metaDescription } from "@/lib/posts";
+import { SITE_URL } from "@/lib/constants";
 
 const insightArticles = [
   {
@@ -36,19 +36,29 @@ const insightArticles = [
     description:
       "Discovery, architecture review, code review, infrastructure review, risk assessment and executive summary.",
   },
+  {
+    title: "Legal Due Diligence vs Technical Due Diligence",
+    href: "/insights/legal-due-diligence-vs-technical-due-diligence",
+    description:
+      "How the two disciplines differ, where they overlap and why you need both before you sign.",
+  },
+  {
+    title: "How to Verify AI Claims in Software M&A",
+    href: "/insights/verify-ai-claims-software-ma",
+    description:
+      "Separating real machine learning from a wrapper around someone else's API.",
+  },
 ];
 
 export const metadata = {
   title: "Writing",
   description:
     "Articles on technology due diligence, technical strategy, product development, engineering leadership, and AI capability assessment.",
+  alternates: { canonical: `${SITE_URL}/blog` },
 };
 
-export const dynamic = "force-dynamic";
-export const revalidate = 300; // 5 min — new WordPress posts show within a few minutes
-
-export default async function BlogPage() {
-  const posts = await getPosts();
+export default function BlogPage() {
+  const posts = getPosts();
   
   return (
     <>
@@ -89,14 +99,13 @@ export default async function BlogPage() {
               
               <div className="space-y-8">
                 {posts.map((post) => {
-                  const dateParts = extractDateParts(post.date);
-                  const href = `/${dateParts.year}/${dateParts.month}/${dateParts.day}/${post.slug}`;
-                  const imageUrl = getFeaturedImageUrl(post);
-                  const title = decodeHtmlEntities(post.title.rendered);
-                  const excerptText = stripHtml(post.excerpt.rendered || post.content.rendered).slice(0, 220);
-                  
+                  const href = post.url;
+                  const imageUrl = post.image;
+                  const title = post.title;
+                  const excerptText = metaDescription(post.excerpt, 220);
+
                   return (
-                    <Card key={post.id} className="border-0 shadow-sm hover:shadow-md transition-shadow">
+                    <Card key={post.slug} className="border-0 shadow-sm hover:shadow-md transition-shadow">
                       {imageUrl && (
                         <div className="aspect-[16/9] w-full overflow-hidden rounded-t-lg bg-muted">
                           <img
@@ -114,18 +123,16 @@ export default async function BlogPage() {
                           </CardTitle>
                         </Link>
                         <CardDescription>
-                          {new Date(post.date).toLocaleDateString("en-GB", {
+                          {new Date(`${post.date}Z`).toLocaleDateString("en-GB", {
                             year: "numeric",
                             month: "long",
                             day: "numeric",
+                            timeZone: "UTC",
                           })}
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-muted-foreground">
-                          {excerptText}
-                          {excerptText.length >= 220 ? "…" : ""}
-                        </p>
+                        <p className="text-muted-foreground">{excerptText}</p>
                         <Link
                           href={href}
                           className="inline-block mt-4 text-sm font-medium hover:text-foreground/80 transition-colors"

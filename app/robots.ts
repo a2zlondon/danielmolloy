@@ -26,6 +26,23 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/"],
       },
+      {
+        // Anthropic's crawler, for Claude's search and citations.
+        userAgent: "ClaudeBot",
+        allow: "/",
+        disallow: ["/api/"],
+      },
+      {
+        userAgent: "PerplexityBot",
+        allow: "/",
+        disallow: ["/api/"],
+      },
+      {
+        // Bing powers Copilot's answers as well as its own index.
+        userAgent: "Bingbot",
+        allow: "/",
+        disallow: ["/api/"],
+      },
     ],
     sitemap: "https://danielmolloy.com/sitemap.xml",
   };

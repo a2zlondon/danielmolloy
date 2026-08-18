@@ -1,11 +1,17 @@
 import { Nav } from "@/components/nav";
+import { ArticleJsonLd } from "@/components/structured-data";
+import { INSIGHT_DATES } from "@/lib/insights";
+import { SITE_URL } from "@/lib/constants";
 import { Footer } from "@/components/footer";
 import { InsightArticle } from "@/components/insight-article";
+
+const SLUG = "what-happens-during-technical-due-diligence";
 
 export const metadata = {
   title: "What Happens During Technical Due Diligence?",
   description:
     "A practical framework for technical due diligence: discovery, architecture review, code review, infrastructure review, risk assessment and executive summary.",
+  alternates: { canonical: `${SITE_URL}/insights/${SLUG}` },
 };
 
 const sections = [
@@ -38,6 +44,13 @@ const sections = [
 export default function TechnicalDueDiligenceProcessPage() {
   return (
     <>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        datePublished={INSIGHT_DATES[SLUG].published}
+        dateModified={INSIGHT_DATES[SLUG].modified}
+        url={`${SITE_URL}/insights/${SLUG}`}
+      />
       <Nav />
       <main>
         <InsightArticle

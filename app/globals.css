@@ -161,9 +161,12 @@ img[data-preserve-color] {
   .prose p {
     @apply mb-6 leading-relaxed;
   }
-  .prose ul,
+  /* Preflight strips list markers, so put them back explicitly. */
+  .prose ul {
+    @apply mb-6 ml-6 list-disc;
+  }
   .prose ol {
-    @apply mb-6 ml-6;
+    @apply mb-6 ml-6 list-decimal;
   }
   .prose li {
     @apply mb-2;
@@ -182,6 +185,9 @@ img[data-preserve-color] {
   }
   .prose blockquote {
     @apply border-l-4 border-muted pl-4 italic my-6;
+  }
+  .prose hr {
+    @apply my-10 border-t border-border;
   }
 }
 

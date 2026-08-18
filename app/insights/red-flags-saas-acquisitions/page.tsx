@@ -1,11 +1,17 @@
 import { Nav } from "@/components/nav";
+import { ArticleJsonLd } from "@/components/structured-data";
+import { INSIGHT_DATES } from "@/lib/insights";
+import { SITE_URL } from "@/lib/constants";
 import { Footer } from "@/components/footer";
 import { InsightArticle } from "@/components/insight-article";
+
+const SLUG = "red-flags-saas-acquisitions";
 
 export const metadata = {
   title: "Red Flags in SaaS Acquisitions",
   description:
     "Common technical red flags in SaaS acquisitions, including one-person knowledge risk, lack of testing, weak observability and excessive cloud spend.",
+  alternates: { canonical: `${SITE_URL}/insights/${SLUG}` },
 };
 
 const sections = [
@@ -34,6 +40,13 @@ const sections = [
 export default function RedFlagsSaasAcquisitionsPage() {
   return (
     <>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        datePublished={INSIGHT_DATES[SLUG].published}
+        dateModified={INSIGHT_DATES[SLUG].modified}
+        url={`${SITE_URL}/insights/${SLUG}`}
+      />
       <Nav />
       <main>
         <InsightArticle
