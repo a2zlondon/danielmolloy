@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { getListedPosts } from "@/lib/posts";
+import { INSIGHTS } from "@/lib/insights";
 import { SITE_URL } from "@/lib/constants";
 
 // Static pages carry no `lastModified`. They previously reported the build
@@ -22,16 +23,6 @@ const staticPaths: Array<{ path: string; changeFrequency: "weekly" | "monthly" |
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
 ];
 
-const insightSlugs = [
-  "how-to-evaluate-ai-startup-before-investing",
-  "legal-due-diligence-vs-technical-due-diligence",
-  "red-flags-saas-acquisitions",
-  "technical-due-diligence-checklist-saas-acquisitions",
-  "what-happens-during-technical-due-diligence",
-  "why-telemetry-matters-more-than-features",
-  "verify-ai-claims-software-ma",
-];
-
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPaths.map(({ path, changeFrequency, priority }) => ({
@@ -39,8 +30,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency,
       priority,
     })),
-    ...insightSlugs.map((slug) => ({
-      url: `${SITE_URL}/insights/${slug}`,
+    ...INSIGHTS.map((insight) => ({
+      url: `${SITE_URL}/insights/${insight.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

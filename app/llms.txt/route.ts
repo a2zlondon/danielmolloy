@@ -1,24 +1,52 @@
 import { SITE_URL } from "@/lib/constants";
-import { getPosts } from "@/lib/posts";
+import { getListedPosts } from "@/lib/posts";
+import { INSIGHTS } from "@/lib/insights";
 
 export function GET() {
-  // The full back catalogue, generated from content/posts so a new article
+  // Listed articles only, generated from content/posts so a new article
   // appears here automatically. This is the main lever for AI answer engines.
-  const articles = getPosts()
+  const articles = getListedPosts()
     .map((post) => `- [${post.title}](${SITE_URL}${post.url}) (${post.date.slice(0, 10)}): ${post.excerpt}`)
     .join("\n");
 
-  const body = `# Daniel Molloy
-> Technical expertise for investment firms. We help venture capital, private equity, corporate finance firms, family offices, secondary market investors, and portfolio teams build, evaluate, and run technology — in the office or inside the portfolio.
+  const guides = INSIGHTS.map(
+    (insight) => `- [${insight.title}](${SITE_URL}/insights/${insight.slug}): ${insight.description}`
+  ).join("\n");
 
-## Core Positioning
-- Technical expertise for investment firms, delivered in the office or applied to a portfolio company.
-- Engagements are scoped to the firm and the decision in front of it — a due diligence review, an AI and data platform assessment, a technology risk review, fractional CTO advisory, or ongoing portfolio support.
-- Differentiators: agile senior team, fast turnaround, AI-aware technical review, and proportionate engagement scoped to the decision and available access.
-- Niche focus: technical due diligence for AI, healthcare, and venture-backed software companies.
+  const body = `# Daniel Molloy
+> Daniel Molloy Ltd is an independent technology advisory practice led by Daniel Molloy. Technology decisions are expensive; the practice helps investors and technology companies make the right ones. Services: technical due diligence, technology advisory, fractional CTO leadership, AI governance and strategy, and cloud and software delivery. Clients: venture capital partners, family offices, private equity, angel investors, CEOs, founders, boards, and CTOs.
+
+## About Daniel Molloy
+- Daniel Molloy is an independent technology adviser to investors, boards, and technology companies.
+- Founder of Daniel Molloy Ltd. He leads every engagement and is the single point of accountability for the work.
+- The advice comes from experience building, rescuing, and operating complex software systems.
+- Profile: ${SITE_URL}/about
+- LinkedIn: https://www.linkedin.com/in/danielthomasmolloy/
+
+## The Practice
+- Independent: no software to sell, and no delivery target behind the advice. Delivery work supports the advice; it never leads it.
+- Five services, one practice, all led by Daniel Molloy.
+- Evidence-based: findings come from code, architecture, contracts, and costs — not from interviews alone.
+- Plain-English reporting for boards and deal teams.
+- Discreet: every engagement runs under NDA.
+
+## Services
+- [Technical Due Diligence](${SITE_URL}/services/technical-due-diligence): an independent view of the technology behind a deal before the money is committed — code quality, security, technical debt, IP ownership and open-source licence compliance, AI capability verification, team and key-person risk, cloud cost and scalability, commercial defensibility.
+- [Technology Advisory](${SITE_URL}/services/technology-advisory): independent advice for boards and executive teams — build or buy, replace or repair, vendor selection, technology cost, and second opinions on major programmes.
+- [Fractional CTO](${SITE_URL}/services/fractional-cto): senior technical leadership through growth, change, or recovery, scoped in days per month with a defined end.
+- [AI Governance & Strategy](${SITE_URL}/services/ai-governance): practical adoption of AI with governance and risk management — what to adopt, what to decline, what to monitor.
+- [Cloud & Software Delivery](${SITE_URL}/services/cloud-software-delivery): complex architecture, cloud transformation, and recovery work, done by a senior team under the same standards as the advice.
+
+## Who We Work With
+- Venture capital partners
+- Family offices
+- Private equity
+- Angel investors
+- CEOs and founders
+- Boards
+- CTOs
 
 ## Legal Entity
-- Trading name: Daniel Molloy Technology Due Diligence
 - Legal company name: Daniel Molloy Ltd
 - Company number: 15228212
 - Registered in: England and Wales
@@ -26,43 +54,21 @@ export function GET() {
 - Companies House: https://find-and-update.company-information.service.gov.uk/company/15228212
 - VAT number: GB452010546
 
-## Services
-- Technical Due Diligence: an independent assessment of the technical value of a company before investment or acquisition — code quality, security, technical debt, IP ownership and open-source licence compliance, AI capability verification, team and key-person risk, cloud cost and scalability, commercial defensibility.
-- AI & Data Platform Assessment: verification of AI claims, data ownership, model architecture, telemetry, inference costs, and genuine capability vs marketing.
-- Technology Risk Review: rapid technical screening for investors evaluating software, SaaS, healthcare, AI, or venture-backed companies.
-- Fractional CTO Advisory: ongoing technical counsel for investment firms, deal teams, portfolio companies, and founders who need senior technology judgement.
-
-## Who We Work With
-- Venture Capital
-- Private Equity
-- Corporate Finance Firms
-- Family Offices
-- Secondary Market Investors
-- Asset Managers
-- Portfolio Companies
-
 ## Location
-- Reading, UK
-- Dublin, Ireland
-- Amsterdam, Netherlands
-- Remote review for cross-border engagements
+- London, UK
+- Working with investors and technology companies across the UK and Europe
+- Most engagements run remotely; on-site sessions when they help
 
 ## Key Pages
-- [Home](${SITE_URL}/): Primary overview and positioning.
-- [What We Do](${SITE_URL}/work-with-me): Capabilities, technical due diligence scope, and IP review.
-- [Who We Work With](${SITE_URL}/#who-we-work-with): Capabilities and sectors served.
-- [Fix Your Tech Fast](${SITE_URL}/fix-your-tech-fast): Focused rapid audit and optimisation offer.
-- [Location](${SITE_URL}/locations): Reading, Dublin, and Amsterdam operating base.
-- [Who We Are](${SITE_URL}/who-we-are): Team, methodology, and review capacity.
-- [Blog](${SITE_URL}/blog): Articles on tech strategy, product, and leadership.
-- [Legal DD vs Technical DD](${SITE_URL}/insights/legal-due-diligence-vs-technical-due-diligence): Explains where legal due diligence ends and technical due diligence begins.
-- [Technical Due Diligence Checklist for Investors](${SITE_URL}/insights/technical-due-diligence-checklist-saas-acquisitions): Practical checklist covering source code ownership, deployment process, technical debt, security, AI claims, team concentration risk, and cloud costs.
-- [How to Evaluate an AI Startup Before Investing](${SITE_URL}/insights/how-to-evaluate-ai-startup-before-investing): AI due diligence guide for proprietary AI, model usage, data ownership, telemetry, and unit economics.
-- [Red Flags in SaaS Acquisitions](${SITE_URL}/insights/red-flags-saas-acquisitions): Common technical red flags before acquiring a SaaS company.
-- [Why Telemetry Matters More Than Features](${SITE_URL}/insights/why-telemetry-matters-more-than-features): Explains why usage evidence and operational signals matter more than feature lists.
-- [What Happens During Technical Due Diligence](${SITE_URL}/insights/what-happens-during-technical-due-diligence): Framework for discovery, architecture, code, infrastructure, risk assessment, and executive summary.
-- [AI Claims in Software M&A](${SITE_URL}/insights/verify-ai-claims-software-ma): How to verify AI capability claims during transactions.
-- [Contact](${SITE_URL}/contact): Contact and booking pathways.
+- [Home](${SITE_URL}/): Positioning and overview.
+- [Services](${SITE_URL}/services): The five services of the practice.
+- [About Daniel Molloy](${SITE_URL}/about): The adviser behind the practice.
+- [The Practice](${SITE_URL}/who-we-are): Daniel and the delivery team.
+- [Writing](${SITE_URL}/blog): Guides and articles on technology decisions.
+- [Contact](${SITE_URL}/contact): Contact and booking.
+
+## Guides
+${guides}
 
 ## Articles
 ${articles}

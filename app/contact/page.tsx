@@ -3,12 +3,13 @@ import { Footer } from "@/components/footer";
 import { CompanyLegalDetails } from "@/components/company-legal-details";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BOOK_CALL_URL } from "@/lib/constants";
+import { BOOK_CALL_URL, SITE_URL } from "@/lib/constants";
 
 export const metadata = {
   title: "Contact",
   description:
-    "Contact Daniel Molloy for technical due diligence, embedded technical leadership, and portfolio technical support for investment firms.",
+    "Contact Daniel Molloy Ltd about technology advisory, technical due diligence, fractional CTO, or AI governance work.",
+  alternates: { canonical: `${SITE_URL}/contact` },
 };
 
 export default function ContactPage() {
@@ -20,9 +21,9 @@ export default function ContactPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-light mb-12">
-                Get in touch
+                Contact
               </h1>
-              
+
               <Card>
                 <CardContent className="pt-6 space-y-6">
                   <div>
@@ -34,18 +35,20 @@ export default function ContactPage() {
                       connect@danielmolloy.com
                     </a>
                   </div>
-                  
+
                   <div>
                     <h2 className="text-xl font-medium mb-2">Location</h2>
                     <p className="text-muted-foreground">
-                      Reading, UK - Dublin, Ireland - Amsterdam, Netherlands
+                      London, UK — working with investors and technology
+                      companies across the UK and Europe.
                     </p>
                   </div>
-                  
+
                   <div>
                     <h2 className="text-xl font-medium mb-4">Book a call</h2>
                     <p className="text-muted-foreground mb-4">
-                      Ready to discuss how we can work together? Book a free discovery call.
+                      Bring the decision in front of you. An introductory call
+                      is enough to say whether Daniel can help.
                     </p>
                     <Button size="lg" asChild>
                       <a href={BOOK_CALL_URL}>Book a call</a>

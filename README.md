@@ -1,120 +1,57 @@
 # danielmolloy.com
 
-A modern, conversion-focused website for Daniel Molloy's fractional CTO services, built with Next.js and headless WordPress.
+The website of Daniel Molloy Ltd, an independent technology advisory practice.
+Positioning: "Technology decisions are expensive. Daniel Molloy Ltd helps
+investors and technology companies make the right ones."
 
-## Features
+## Tech stack
 
-- **Headless WordPress**: Content managed in WordPress, rendered by Next.js
-- **SEO-Optimized**: Preserves all existing blog post URLs, sitemap, robots.txt
-- **Apple-Inspired Design**: Charcoal and crème color scheme with clean typography
-- **Three-Tier Pricing**: Day Rate, Monthly Retainer, and Embedded Fractional CTO
-- **Responsive**: Mobile-first design with shadcn/ui components
+- Next.js 16 (App Router), React 19, TypeScript
+- Tailwind CSS v4, shadcn/ui components
+- No CMS. All content lives in this repo.
 
-## Tech Stack
+## Where content lives
 
-- **Framework**: Next.js 16 (App Router)
-- **Styling**: Tailwind CSS v4
-- **UI Components**: shadcn/ui
-- **CMS**: WordPress (headless via REST API)
-- **TypeScript**: Full type safety
+- **Marketing pages**: copy is hardcoded in TSX under `app/` and
+  `components/`. Business facts (URLs, legal details, Stripe button IDs) are
+  in `lib/constants.ts`.
+- **Blog posts**: markdown files in `content/posts/`. The blog index,
+  sitemap, RSS feed and `llms.txt` pick up new posts automatically. Posts
+  with `unlisted: true` frontmatter keep their URL but are hidden from all
+  listings and marked noindex.
+- **Insight guides**: hand-authored pages under `app/insights/`, registered
+  in `lib/insights.ts` (one entry per guide drives the blog index, sitemap
+  and `llms.txt`).
+- **Structured data**: `components/structured-data.tsx` holds the
+  Organization / Person / WebSite graph and the Service, Article, FAQ and
+  Breadcrumb helpers.
+- **AI crawler brief**: `app/llms.txt/route.ts`.
 
-## Getting Started
+## Writing an article
 
-### Prerequisites
+Follow `.claude/skills/write-article/SKILL.md`. Plain English. The audience
+is investors and advisers.
 
-- Node.js 18+ 
-- npm or yarn
-- WordPress site (for content)
+## Development
 
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create a `.env.local` file:
-   ```bash
-   cp .env.example .env.local
-   ```
-
-4. Update `.env.local` with your WordPress API URL:
-   ```
-   NEXT_PUBLIC_WP_API_URL=https://cms.danielmolloy.com/wp-json/wp/v2
-   ```
-
-5. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-6. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Project Structure
-
+```bash
+npm install
+npm run dev
 ```
-├── app/                    # Next.js app router pages
-│   ├── [year]/[month]/[day]/[slug]/  # Blog post dynamic routes
-│   ├── about/               # About page
-│   ├── blog/                # Blog index
-│   ├── contact/             # Contact page
-│   ├── work-with-me/        # Pricing/services page
-│   └── page.tsx             # Homepage
-├── components/              # React components
-│   ├── ui/                  # shadcn/ui components
-│   ├── hero.tsx             # Homepage hero section
-│   ├── pricing-tiers.tsx    # Pricing cards
-│   ├── capabilities.tsx     # Skills/capabilities section
-│   └── ...
-├── lib/                     # Utilities
-│   ├── wp.ts                # WordPress API client
-│   └── utils.ts             # General utilities
-└── public/                  # Static assets
-```
-
-## WordPress Setup
-
-The site uses WordPress as a headless CMS. After launch:
-
-1. Move WordPress to `cms.danielmolloy.com` subdomain
-2. Ensure REST API is enabled (default in WordPress)
-3. Set permalink structure to: `/%year%/%monthnum%/%day%/%postname%/`
-4. Update `NEXT_PUBLIC_WP_API_URL` environment variable
 
 ## Deployment
 
-### Vercel (Recommended)
+Vercel, configured in the Vercel dashboard (no config in the repo). Merging
+to `main` deploys production. **Never commit to `main`** — branch, run
+`npm run build`, push, and open a pull request. Review the Vercel preview
+before merging.
 
-1. Push code to GitHub
-2. Import project in Vercel
-3. Add environment variable: `NEXT_PUBLIC_WP_API_URL`
-4. Deploy
+## Unlisted pages
 
-### Other Platforms
-
-The site can be deployed to any platform that supports Next.js:
-- Netlify
-- AWS Amplify
-- Railway
-- Self-hosted (Node.js server)
-
-## Environment Variables
-
-- `NEXT_PUBLIC_WP_API_URL`: WordPress REST API base URL (required)
-
-## Blog Post URL Preservation
-
-All blog posts maintain their original WordPress permalink structure:
-- Format: `/{year}/{month}/{day}/{slug}/`
-- Example: `/2024/09/20/the-ctos-role-the-decision-maker-behind-the-scenes/`
-
-This ensures zero SEO impact during migration.
-
-## Launch Checklist
-
-See [LAUNCH_CHECKLIST.md](./LAUNCH_CHECKLIST.md) for a complete pre-launch checklist.
+`/engage` is a private payment page shared directly by Daniel. It is
+noindexed and deliberately absent from nav, footer, sitemap and `llms.txt`.
+Product names and prices are managed in the Stripe dashboard.
 
 ## License
 
-Private project - All rights reserved.
+Private project — all rights reserved.

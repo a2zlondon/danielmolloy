@@ -23,17 +23,14 @@ export default function NotFound() {
                 />
               </div>
               <h1 className="text-5xl md:text-6xl font-light mb-3">
-                Oops — wrong turn
+                Page not found
               </h1>
-              <p className="text-xl text-muted-foreground mb-2">
-                This page seems to have wandered off. Maybe it’s in a meeting.
-              </p>
-              <p className="text-muted-foreground mb-10">
-                No worries. Head back and we’ll get you where you need to go.
+              <p className="text-xl text-muted-foreground mb-10">
+                The page you are looking for does not exist or has moved.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                  <Link href="/">Back to home</Link>
+                  <Link href="/">Home</Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <Link href="/contact">Contact</Link>
