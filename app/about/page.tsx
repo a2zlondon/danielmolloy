@@ -52,8 +52,8 @@ export default function AboutPage() {
               <div className="prose prose-lg max-w-none space-y-4">
                 <p>
                   Daniel advises investors, boards, and technology companies on
-                  decisions that are expensive to get wrong: acquisitions,
-                  technology strategy, AI adoption, and technical leadership.
+                  decisions that are hard to reverse: acquisitions, technology
+                  strategy, AI adoption, and technical leadership.
                 </p>
                 <p>
                   The advice comes from experience building, rescuing, and

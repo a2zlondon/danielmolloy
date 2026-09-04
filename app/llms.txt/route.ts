@@ -14,7 +14,7 @@ export function GET() {
   ).join("\n");
 
   const body = `# Daniel Molloy
-> Daniel Molloy Ltd is an independent technology advisory practice led by Daniel Molloy. Technology decisions are expensive; the practice helps investors and technology companies make the right ones. Services: technical due diligence, technology advisory, fractional CTO leadership, AI governance and strategy, and cloud and software delivery. Clients: venture capital partners, family offices, private equity, angel investors, CEOs, founders, boards, and CTOs.
+> Daniel Molloy Ltd is an independent technology advisory practice led by Daniel Molloy. The practice helps investors, boards, and technology companies make the right technology decisions. Services: technical due diligence, technology advisory, fractional CTO leadership, AI governance and strategy, and cloud and software delivery. Clients: venture capital partners, family offices, private equity, angel investors, CEOs, founders, boards, and CTOs.
 
 ## About Daniel Molloy
 - Daniel Molloy is an independent technology adviser to investors, boards, and technology companies.

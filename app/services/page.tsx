@@ -61,8 +61,8 @@ export default function ServicesPage() {
             <div className="max-w-3xl mx-auto text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-light mb-6">Services</h1>
               <p className="text-xl text-muted-foreground">
-                Technology decisions are expensive. Daniel Molloy Ltd helps
-                investors and technology companies make the right ones.
+                Independent technology advisory. Daniel Molloy Ltd helps
+                investors and technology companies make the right decisions.
               </p>
               <p className="mt-4 text-muted-foreground">
                 Five services. One practice. Every engagement starts with the

@@ -39,7 +39,7 @@ const services = [
     title: "AI governance & strategy",
     href: "/services/ai-governance",
     description:
-      "Adopt AI where the evidence supports it. Govern it like anything else that can lose you money.",
+      "Adopt AI where the evidence supports it. Govern it with the same discipline as any other risk.",
   },
   {
     title: "Cloud & software delivery",
@@ -108,7 +108,7 @@ export default function Home() {
                 private equity, and angel investors. Then the CEOs, founders,
                 boards, and CTOs facing the same decisions from the other side.
                 The work is the same in both directions: an independent view of
-                a technology decision that is expensive to get wrong.
+                a technology decision that is hard to reverse.
               </p>
             </div>
           </div>

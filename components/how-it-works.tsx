@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "Start with the decision",
     description:
-      "What you are deciding, by when, and what it costs to get wrong. The scope, timeline, and access follow from that.",
+      "What you are deciding, by when, and what happens if you get it wrong. The scope, timeline, and access follow from that.",
   },
   {
     number: "02",

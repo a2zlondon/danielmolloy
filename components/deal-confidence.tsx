@@ -36,7 +36,7 @@ export function DealConfidence() {
               Judgement first. Technology second.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              An expensive technology decision needs more than a confident
+              An important technology decision needs more than a confident
               opinion. It needs evidence, examined by someone with nothing to
               sell on the back of it. That is what this practice does.
             </p>

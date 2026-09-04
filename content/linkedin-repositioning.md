@@ -10,8 +10,8 @@ manually on LinkedIn.
 
 ### Headline (220 characters max)
 
-> Independent technology adviser to investors and boards · Technical due
-> diligence · Fractional CTO · AI governance · Founder, Daniel Molloy Ltd
+> Independent Technology Advisory for Investors · Technical Due Diligence ·
+> Fractional CTO · AI Governance
 
 Shorter alternative:
 
@@ -20,8 +20,8 @@ Shorter alternative:
 
 ### About section
 
-> Technology decisions are expensive. I help investors and technology
-> companies make the right ones.
+> I help investors, boards, and technology companies make the right
+> technology decisions.
 >
 > I run Daniel Molloy Ltd, an independent technology advisory practice.
 > The work falls into five areas:
@@ -33,7 +33,7 @@ Shorter alternative:
 > — Fractional CTO: senior technical leadership through growth, change, or
 > recovery, with a defined end.
 > — AI governance and strategy: adopt AI where the evidence supports it, and
-> govern it like anything else that can lose you money.
+> govern it with the same discipline as any other risk.
 > — Cloud and software delivery: when the advice calls for building, a senior
 > team does the work under the same standards.
 >
@@ -41,7 +41,7 @@ Shorter alternative:
 > software systems. There is no software to sell and no delivery target
 > behind it. Most engagements are confidential.
 >
-> If you are facing an expensive technology decision, talk it through first:
+> If you are facing an important technology decision, talk it through first:
 > danielmolloy.com
 
 ### Featured links (in this order)
@@ -69,8 +69,8 @@ already generated).
 
 > Daniel Molloy Ltd is an independent technology advisory practice.
 >
-> Technology decisions are expensive. We help investors and technology
-> companies make the right ones — technical due diligence before a deal,
+> We help investors and technology companies make the right technology
+> decisions — technical due diligence before a deal,
 > independent advice for boards, fractional CTO leadership, AI governance,
 > and cloud and software delivery when the advice calls for building.
 >
