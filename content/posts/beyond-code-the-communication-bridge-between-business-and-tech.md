@@ -2,6 +2,7 @@
 title: "Beyond Code: The Communication Bridge Between Business and Tech"
 slug: "beyond-code-the-communication-bridge-between-business-and-tech"
 date: "2024-09-19T23:10:38"
+unlisted: true
 modified: "2024-09-19T23:10:38"
 excerpt: "Effective communication is the lifeblood of any successful business, and this is especially true in the context of multitenant SaaS development. A strong technical leader serves as the bridge between the business and technical teams, ensuring that everyone is aligned and working towards common goals. One of the biggest challenges in SaaS development is often"
 image: "/images/posts/beyond-code-the-communication-bridge-between-business-and-tech.jpg"

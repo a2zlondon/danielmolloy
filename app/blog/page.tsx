@@ -2,7 +2,7 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { getPosts, metaDescription } from "@/lib/posts";
+import { getListedPosts, metaDescription } from "@/lib/posts";
 import { SITE_URL } from "@/lib/constants";
 
 const insightArticles = [
@@ -53,13 +53,13 @@ const insightArticles = [
 export const metadata = {
   title: "Writing",
   description:
-    "Articles on technology due diligence, technical strategy, product development, engineering leadership, and AI capability assessment.",
+    "Guides and articles by Daniel Molloy on technology due diligence, technology decisions, AI governance, and engineering leadership.",
   alternates: { canonical: `${SITE_URL}/blog` },
 };
 
 export default function BlogPage() {
-  const posts = getPosts();
-  
+  const posts = getListedPosts();
+
   return (
     <>
       <Nav />
@@ -71,9 +71,11 @@ export default function BlogPage() {
                 Writing
               </h1>
               <p className="text-xl text-muted-foreground mb-12">
-                Thoughts on technology strategy, product development, and building companies that last.
+                Notes on technology decisions — due diligence, advisory, AI,
+                and what the evidence shows.
               </p>
 
+              <h2 className="text-3xl font-light mb-6">Guides</h2>
               <div className="grid gap-4 md:grid-cols-2 mb-16">
                 {insightArticles.map((article) => (
                   <Card key={article.href} className="border-0 shadow-sm hover:shadow-md transition-shadow">
@@ -97,6 +99,7 @@ export default function BlogPage() {
                 ))}
               </div>
               
+              <h2 className="text-3xl font-light mb-6">Articles</h2>
               <div className="space-y-8">
                 {posts.map((post) => {
                   const href = post.url;

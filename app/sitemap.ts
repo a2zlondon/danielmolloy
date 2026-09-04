@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { getPosts } from "@/lib/posts";
+import { getListedPosts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/constants";
 
 // Static pages carry no `lastModified`. They previously reported the build
@@ -44,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
-    ...getPosts().map((post) => ({
+    ...getListedPosts().map((post) => ({
       url: `${SITE_URL}${post.url}`,
       lastModified: new Date(`${post.modified}Z`),
       changeFrequency: "monthly" as const,

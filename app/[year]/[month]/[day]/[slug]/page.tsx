@@ -57,6 +57,8 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
     title: post.title,
     description,
     alternates: { canonical: postUrl },
+    // Unlisted posts keep working URLs but are excluded from search indexes.
+    ...(post.unlisted && { robots: { index: false, follow: true } }),
     openGraph: {
       title: post.title,
       description,
@@ -112,9 +114,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <h1 className="text-4xl md:text-5xl font-light mb-4">
                   {post.title}
                 </h1>
-                <time dateTime={post.date} className="text-muted-foreground">
-                  {formatDate(post.date)}
-                </time>
+                <p className="text-muted-foreground">
+                  <time dateTime={post.date}>{formatDate(post.date)}</time>
+                  {" · By "}
+                  <Link
+                    href="/about"
+                    className="underline underline-offset-4 hover:no-underline"
+                  >
+                    Daniel Molloy
+                  </Link>
+                </p>
               </header>
 
               {post.image && (

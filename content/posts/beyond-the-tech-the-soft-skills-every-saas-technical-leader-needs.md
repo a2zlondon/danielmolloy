@@ -2,6 +2,7 @@
 title: "Beyond the Tech: The Soft Skills Every SaaS Technical Leader Needs"
 slug: "beyond-the-tech-the-soft-skills-every-saas-technical-leader-needs"
 date: "2024-09-19T23:22:04"
+unlisted: true
 modified: "2024-09-19T23:22:04"
 excerpt: "While technical expertise is undoubtedly essential for a successful SaaS technical leader, soft skills are equally important. These interpersonal and leadership skills can make the difference between a good leader and a great one. Some of the most important soft skills for a SaaS technical leader include: By developing these soft skills, a technical leader"
 image: "/images/posts/beyond-the-tech-the-soft-skills-every-saas-technical-leader-needs.jpg"

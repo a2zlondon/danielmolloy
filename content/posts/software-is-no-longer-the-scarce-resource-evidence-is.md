@@ -31,7 +31,7 @@ _“Can we prove anyone wants it?”_
 
 This is where many founders still think like engineers.
 
-Successsful founders, in my experience, refect on what is working technically and what isn’t. That is, every product should be designed to learn and these answers don’t come from intuition alone.
+Successful founders, in my experience, reflect on what is working technically and what isn’t. That is, every product should be designed to learn and these answers don’t come from intuition alone.
 
 They come from data.
 

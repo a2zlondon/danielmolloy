@@ -2,6 +2,7 @@
 title: "The CTO’s Role: The Decision Maker Behind the Scenes"
 slug: "the-ctos-role-the-decision-maker-behind-the-scenes"
 date: "2024-09-20T08:56:25"
+unlisted: true
 modified: "2024-09-20T08:56:25"
 excerpt: "The CTO plays a crucial role in selecting the right tech stack for a SaaS startup. Their technical expertise and strategic thinking are essential for making informed decisions. Strategic Thinking: Risk Assessment: Team Alignment: Continuous Learning: By investing in a strong CTO, you can ensure that your SaaS startup is equipped with the right tools"
 image: "/images/posts/the-ctos-role-the-decision-maker-behind-the-scenes.jpg"

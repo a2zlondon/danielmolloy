@@ -1,4 +1,4 @@
-import { getPosts } from "@/lib/posts";
+import { getListedPosts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/constants";
 
 // WordPress served an RSS feed at /feed. The Next.js site served nothing there,
@@ -15,7 +15,7 @@ function escapeXml(value: string): string {
 }
 
 export function GET() {
-  const posts = getPosts();
+  const posts = getListedPosts();
   const updated = posts[0] ? new Date(`${posts[0].modified}Z`) : new Date();
 
   const items = posts
@@ -36,7 +36,7 @@ export function GET() {
   <channel>
     <title>Daniel Molloy — Writing</title>
     <link>${SITE_URL}/blog</link>
-    <description>Articles on technology due diligence, technical strategy and engineering leadership.</description>
+    <description>Articles on technology advisory, technical due diligence, AI governance and engineering leadership.</description>
     <language>en-GB</language>
     <lastBuildDate>${updated.toUTCString()}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />

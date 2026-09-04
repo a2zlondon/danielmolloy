@@ -30,6 +30,12 @@ export interface Post {
   html: string;
   /** Canonical path, e.g. "/2026/07/03/my-post". */
   url: string;
+  /**
+   * Unlisted posts keep their URL but are excluded from the blog index,
+   * sitemap, RSS feed and llms.txt, and carry a noindex robots meta. Set
+   * `unlisted: true` in frontmatter.
+   */
+  unlisted: boolean;
 }
 
 /**
@@ -83,6 +89,7 @@ function readPost(filename: string): Post {
     image: data.image ? String(data.image) : null,
     html: marked.parse(content, { async: false }) as string,
     url: postUrl({ date, slug }),
+    unlisted: data.unlisted === true,
   };
 }
 
@@ -98,6 +105,11 @@ export function getPosts(): Post[] {
     .map(readPost)
     .sort((a, b) => b.date.localeCompare(a.date));
   return cache;
+}
+
+/** Posts shown on the blog index, sitemap, feed and llms.txt, newest first. */
+export function getListedPosts(): Post[] {
+  return getPosts().filter((post) => !post.unlisted);
 }
 
 export function getPostBySlug(slug: string): Post | null {
