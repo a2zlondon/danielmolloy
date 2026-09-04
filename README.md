@@ -46,11 +46,10 @@ to `main` deploys production. **Never commit to `main`** — branch, run
 `npm run build`, push, and open a pull request. Review the Vercel preview
 before merging.
 
-## Unlisted pages
+## Payments
 
-`/engage` is a private payment page shared directly by Daniel. It is
-noindexed and deliberately absent from nav, footer, sitemap and `llms.txt`.
-Product names and prices are managed in the Stripe dashboard.
+There is no payment page on the site. Payments go through Stripe payment
+links sent from Xero.
 
 ## License
 

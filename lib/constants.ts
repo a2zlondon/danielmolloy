@@ -9,10 +9,3 @@ export const REGISTERED_OFFICE_ADDRESS =
 export const COMPANIES_HOUSE_URL =
   "https://find-and-update.company-information.service.gov.uk/company/15228212";
 export const VAT_NUMBER = "GB452010546";
-
-// Stripe embed buy buttons (unlisted /engage page)
-export const STRIPE_PUBLISHABLE_KEY =
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY ||
-  "pk_live_51RRDroDZAmZRWRr57snAAXgRYfiRYPhSfs72pGEQT9J152vtznFfZL6eHgur0Js2hgZUOZr9kxTncaLKpWNV2kVo00XEzT1rI7";
-export const STRIPE_BUY_BUTTON_AUDIT_ID = "buy_btn_1TC5n2DZAmZRWRr5dNWgJ8sK";
-export const STRIPE_BUY_BUTTON_FIX_OPTIMISE_ID = "buy_btn_1TC5p3DZAmZRWRr5dukp16kU";
