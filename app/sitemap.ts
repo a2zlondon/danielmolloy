@@ -9,14 +9,17 @@ import { SITE_URL } from "@/lib/constants";
 
 const staticPaths: Array<{ path: string; changeFrequency: "weekly" | "monthly" | "yearly"; priority: number }> = [
   { path: "", changeFrequency: "weekly", priority: 1 },
-  { path: "/work-with-me", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/services", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/services/technical-due-diligence", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/services/technology-advisory", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/services/fractional-cto", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/services/ai-governance", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/services/cloud-software-delivery", changeFrequency: "monthly", priority: 0.7 },
   { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
-  { path: "/about", changeFrequency: "monthly", priority: 0.6 },
-  { path: "/who-we-are", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/about", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/who-we-are", changeFrequency: "monthly", priority: 0.6 },
   { path: "/contact", changeFrequency: "monthly", priority: 0.5 },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
-  { path: "/locations", changeFrequency: "monthly", priority: 0.6 },
-  { path: "/fix-your-tech-fast", changeFrequency: "monthly", priority: 0.8 },
 ];
 
 const insightSlugs = [

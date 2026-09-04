@@ -8,9 +8,8 @@ import { Button } from "@/components/ui/button";
 import { BOOK_CALL_URL } from "@/lib/constants";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/work-with-me", label: "Services" },
-  { href: "/who-we-are", label: "Who we are" },
+  { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
   { href: "/blog", label: "Writing" },
 ];
 

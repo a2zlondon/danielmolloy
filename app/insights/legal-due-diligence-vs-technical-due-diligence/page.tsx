@@ -52,7 +52,7 @@ export default function LegalVsTechnicalDueDiligencePage() {
               </div>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
                 <Button asChild>
-                  <Link href="/work-with-me">Technical due diligence services</Link>
+                  <Link href="/services/technical-due-diligence">Technical due diligence services</Link>
                 </Button>
                 <Button variant="outline" asChild>
                   <a href={BOOK_CALL_URL}>Discuss a transaction</a>

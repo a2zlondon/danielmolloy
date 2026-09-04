@@ -1,5 +1,6 @@
 export const SITE_URL = "https://danielmolloy.com";
 export const BOOK_CALL_URL = "https://calendly.com/d4nmolloy/book-a-call";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/danielthomasmolloy/";
 
 export const LEGAL_COMPANY_NAME = "Daniel Molloy Ltd";
 export const COMPANY_NUMBER = "15228212";
