@@ -45,13 +45,13 @@ export default function AiGovernancePage() {
       serviceType="AI governance and strategy"
       schemaDescription={metadata.description}
       h1="AI governance & strategy"
-      intro="Adopt AI where the evidence supports it. Govern it like anything else that can lose you money."
+      intro="Adopt AI where the evidence supports it. Govern it with the same discipline as any other risk."
     >
       <ServiceSection heading="The pressure" tone="card">
         <div className="max-w-2xl mx-auto text-muted-foreground space-y-4">
           <p>
             Boards are being told to move on AI. Most proposals overstate what
-            exists today. The cost of a wrong commitment — money, data,
+            exists today. The damage from a wrong commitment — to data, to
             reputation — arrives later, when it is harder to undo.
           </p>
           <p>

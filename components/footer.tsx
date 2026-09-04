@@ -31,8 +31,9 @@ export function Footer() {
               {BRAND_NAME}
             </h3>
             <p className="text-sm text-muted-foreground">
-              Technology decisions are expensive. Daniel Molloy Ltd helps
-              investors and technology companies make the right ones.
+              Independent technology advisory. Daniel Molloy Ltd helps
+              investors, boards, and technology companies make the right
+              decisions.
             </p>
           </div>
           <div>

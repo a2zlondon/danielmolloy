@@ -9,7 +9,7 @@ export const faqs = [
   {
     question: "Who does Daniel work with?",
     answer:
-      "Investors first: venture capital partners, family offices, private equity, and angel investors. Then the CEOs, founders, boards, and CTOs facing the same decisions from the other side. The common thread is an expensive technology decision that needs an independent view.",
+      "Investors first: venture capital partners, family offices, private equity, and angel investors. Then the CEOs, founders, boards, and CTOs facing the same decisions from the other side. The common thread is an important technology decision that needs an independent view.",
   },
   {
     question: "What does an engagement look like?",
