@@ -1,18 +1,30 @@
 import Link from "next/link";
 import { Nav } from "@/components/nav";
+import { ArticleJsonLd } from "@/components/structured-data";
+import { INSIGHT_DATES } from "@/lib/insights";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
-import { BOOK_CALL_URL } from "@/lib/constants";
+import { BOOK_CALL_URL, SITE_URL } from "@/lib/constants";
+
+const SLUG = "verify-ai-claims-software-ma";
 
 export const metadata = {
   title: "How to verify AI claims in software M&A",
   description:
     "How buyers, law firms and advisers can verify AI claims during software M&A technical due diligence.",
+  alternates: { canonical: `${SITE_URL}/insights/${SLUG}` },
 };
 
 export default function VerifyAiClaimsPage() {
   return (
     <>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        datePublished={INSIGHT_DATES[SLUG].published}
+        dateModified={INSIGHT_DATES[SLUG].modified}
+        url={`${SITE_URL}/insights/${SLUG}`}
+      />
       <Nav />
       <main>
         <article className="py-24 bg-background">

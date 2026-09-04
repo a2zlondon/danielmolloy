@@ -1,6 +1,13 @@
 import { SITE_URL } from "@/lib/constants";
+import { getPosts } from "@/lib/posts";
 
 export function GET() {
+  // The full back catalogue, generated from content/posts so a new article
+  // appears here automatically. This is the main lever for AI answer engines.
+  const articles = getPosts()
+    .map((post) => `- [${post.title}](${SITE_URL}${post.url}) (${post.date.slice(0, 10)}): ${post.excerpt}`)
+    .join("\n");
+
   const body = `# Daniel Molloy
 > Technical expertise for investment firms. We help venture capital, private equity, corporate finance firms, family offices, secondary market investors, and portfolio teams build, evaluate, and run technology — in the office or inside the portfolio.
 
@@ -56,6 +63,9 @@ export function GET() {
 - [What Happens During Technical Due Diligence](${SITE_URL}/insights/what-happens-during-technical-due-diligence): Framework for discovery, architecture, code, infrastructure, risk assessment, and executive summary.
 - [AI Claims in Software M&A](${SITE_URL}/insights/verify-ai-claims-software-ma): How to verify AI capability claims during transactions.
 - [Contact](${SITE_URL}/contact): Contact and booking pathways.
+
+## Articles
+${articles}
 
 ## Related
 - [Vespera Systems](https://vespera.systems): Ongoing research and software for investment intelligence, built by the same founder.

@@ -1,99 +1,51 @@
 import { MetadataRoute } from "next";
-import { getPosts } from "@/lib/wp";
-import { extractDateParts } from "@/lib/wp";
+import { getPosts } from "@/lib/posts";
 import { SITE_URL } from "@/lib/constants";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = SITE_URL;
-  const posts = await getPosts();
-  
-  const postUrls = posts.map((post) => {
-    const dateParts = extractDateParts(post.date);
-    return {
-      url: `${baseUrl}/${dateParts.year}/${dateParts.month}/${dateParts.day}/${post.slug}`,
-      lastModified: new Date(post.modified),
+// Static pages carry no `lastModified`. They previously reported the build
+// timestamp, which told Google every page changed on every deploy — an
+// inaccurate lastmod gets the signal ignored site-wide, so no value is better
+// than a false one. Posts below do carry a real date from their frontmatter.
+
+const staticPaths: Array<{ path: string; changeFrequency: "weekly" | "monthly" | "yearly"; priority: number }> = [
+  { path: "", changeFrequency: "weekly", priority: 1 },
+  { path: "/work-with-me", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/about", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/who-we-are", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/contact", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/locations", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/fix-your-tech-fast", changeFrequency: "monthly", priority: 0.8 },
+];
+
+const insightSlugs = [
+  "how-to-evaluate-ai-startup-before-investing",
+  "legal-due-diligence-vs-technical-due-diligence",
+  "red-flags-saas-acquisitions",
+  "technical-due-diligence-checklist-saas-acquisitions",
+  "what-happens-during-technical-due-diligence",
+  "why-telemetry-matters-more-than-features",
+  "verify-ai-claims-software-ma",
+];
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  return [
+    ...staticPaths.map(({ path, changeFrequency, priority }) => ({
+      url: `${SITE_URL}${path}`,
+      changeFrequency,
+      priority,
+    })),
+    ...insightSlugs.map((slug) => ({
+      url: `${SITE_URL}/insights/${slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.7,
-    };
-  });
-
-  const insightUrls = [
-    "how-to-evaluate-ai-startup-before-investing",
-    "legal-due-diligence-vs-technical-due-diligence",
-    "red-flags-saas-acquisitions",
-    "technical-due-diligence-checklist-saas-acquisitions",
-    "what-happens-during-technical-due-diligence",
-    "why-telemetry-matters-more-than-features",
-    "verify-ai-claims-software-ma",
-  ].map((slug) => ({
-    url: `${baseUrl}/insights/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-  
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/work-with-me`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/who-we-are`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/llms.txt`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.4,
-    },
-    {
-      url: `${baseUrl}/locations`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/fix-your-tech-fast`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    ...insightUrls,
-    ...postUrls,
+    })),
+    ...getPosts().map((post) => ({
+      url: `${SITE_URL}${post.url}`,
+      lastModified: new Date(`${post.modified}Z`),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
   ];
 }
