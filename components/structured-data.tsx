@@ -26,7 +26,7 @@ const PERSON_JSON_LD = {
   name: "Daniel Molloy",
   jobTitle: "Independent Technology Adviser",
   url: `${SITE_URL}/about`,
-  image: `${SITE_URL}/images/portrait-smile.png`,
+  image: `${SITE_URL}/images/portrait-linkedin.jpg`,
   worksFor: { "@id": ORGANIZATION_ID },
   sameAs: [
     "https://www.linkedin.com/in/danielthomasmolloy/",
