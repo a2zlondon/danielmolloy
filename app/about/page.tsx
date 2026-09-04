@@ -38,7 +38,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <img
-                src="/images/portrait-smile.png"
+                src="/images/portrait-linkedin.jpg"
                 alt="Daniel Molloy"
                 className="h-24 w-24 rounded-full object-cover mb-8"
               />

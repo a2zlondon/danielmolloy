@@ -81,7 +81,7 @@ export default function WhoWeArePage() {
                 <CardContent className="pt-8 pb-8 md:flex md:items-start md:gap-8">
                   <Avatar className="h-28 w-28 mb-5 md:mb-0 shrink-0">
                     <AvatarImage
-                      src="/images/portrait-smile.png"
+                      src="/images/portrait-linkedin.jpg"
                       alt="Daniel Molloy"
                       className="object-cover grayscale"
                     />
