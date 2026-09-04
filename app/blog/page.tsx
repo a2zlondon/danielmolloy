@@ -2,64 +2,26 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { getPosts, metaDescription } from "@/lib/posts";
+import { getListedPosts, metaDescription } from "@/lib/posts";
+import { INSIGHTS } from "@/lib/insights";
 import { SITE_URL } from "@/lib/constants";
 
-const insightArticles = [
-  {
-    title: "Technical Due Diligence Checklist for Investors",
-    href: "/insights/technical-due-diligence-checklist-saas-acquisitions",
-    description:
-      "Source code ownership, deployment, technical debt, security, AI claims, team risk and cloud costs.",
-  },
-  {
-    title: "How to Evaluate an AI Startup Before Investing",
-    href: "/insights/how-to-evaluate-ai-startup-before-investing",
-    description:
-      "A practical AI due diligence guide for VCs and investors.",
-  },
-  {
-    title: "Red Flags in SaaS Acquisitions",
-    href: "/insights/red-flags-saas-acquisitions",
-    description:
-      "One-person knowledge risk, no automated testing, no observability and excessive cloud spend.",
-  },
-  {
-    title: "Why Telemetry Matters More Than Features",
-    href: "/insights/why-telemetry-matters-more-than-features",
-    description:
-      "Why usage evidence and operating signals matter more than feature lists.",
-  },
-  {
-    title: "What Happens During Technical Due Diligence?",
-    href: "/insights/what-happens-during-technical-due-diligence",
-    description:
-      "Discovery, architecture review, code review, infrastructure review, risk assessment and executive summary.",
-  },
-  {
-    title: "Legal Due Diligence vs Technical Due Diligence",
-    href: "/insights/legal-due-diligence-vs-technical-due-diligence",
-    description:
-      "How the two disciplines differ, where they overlap and why you need both before you sign.",
-  },
-  {
-    title: "How to Verify AI Claims in Software M&A",
-    href: "/insights/verify-ai-claims-software-ma",
-    description:
-      "Separating real machine learning from a wrapper around someone else's API.",
-  },
-];
+const insightArticles = INSIGHTS.map((insight) => ({
+  title: insight.title,
+  href: `/insights/${insight.slug}`,
+  description: insight.description,
+}));
 
 export const metadata = {
   title: "Writing",
   description:
-    "Articles on technology due diligence, technical strategy, product development, engineering leadership, and AI capability assessment.",
+    "Guides and articles by Daniel Molloy on technology due diligence, technology decisions, AI governance, and engineering leadership.",
   alternates: { canonical: `${SITE_URL}/blog` },
 };
 
 export default function BlogPage() {
-  const posts = getPosts();
-  
+  const posts = getListedPosts();
+
   return (
     <>
       <Nav />
@@ -71,9 +33,11 @@ export default function BlogPage() {
                 Writing
               </h1>
               <p className="text-xl text-muted-foreground mb-12">
-                Thoughts on technology strategy, product development, and building companies that last.
+                Notes on technology decisions — due diligence, advisory, AI,
+                and what the evidence shows.
               </p>
 
+              <h2 className="text-3xl font-light mb-6">Guides</h2>
               <div className="grid gap-4 md:grid-cols-2 mb-16">
                 {insightArticles.map((article) => (
                   <Card key={article.href} className="border-0 shadow-sm hover:shadow-md transition-shadow">
@@ -97,6 +61,7 @@ export default function BlogPage() {
                 ))}
               </div>
               
+              <h2 className="text-3xl font-light mb-6">Articles</h2>
               <div className="space-y-8">
                 {posts.map((post) => {
                   const href = post.url;

@@ -59,7 +59,7 @@ export default function TechnicalDueDiligenceProcessPage() {
           intro="Technical due diligence turns engineering evidence into deal confidence. A good process gives investors, acquirers and advisers a clear view of the product, code, infrastructure, security, AI claims, team dependencies and risks before money changes hands."
           sections={sections}
           ctaLabel="See our diligence process"
-          ctaHref="/work-with-me"
+          ctaHref="/services/technical-due-diligence"
         />
       </main>
       <Footer />

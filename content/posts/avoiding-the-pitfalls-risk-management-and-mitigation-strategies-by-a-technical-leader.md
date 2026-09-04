@@ -2,6 +2,7 @@
 title: "Avoiding the Pitfalls: Risk Management and Mitigation Strategies by a Technical Leader"
 slug: "avoiding-the-pitfalls-risk-management-and-mitigation-strategies-by-a-technical-leader"
 date: "2024-09-19T23:23:32"
+unlisted: true
 modified: "2024-09-19T23:23:32"
 excerpt: "In the world of multitenant SaaS, risk is an ever-present reality. A strong technical leader is essential for identifying and mitigating these risks, protecting the business from potential disasters. A technical leader can conduct a thorough risk assessment to identify potential threats to the SaaS application. These threats can include security breaches, data loss, infrastructure"
 image: "/images/posts/avoiding-the-pitfalls-risk-management-and-mitigation-strategies-by-a-technical-leader.jpg"

@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
-import { OrganizationAndServiceJsonLd } from "@/components/structured-data";
+import { SiteJsonLd } from "@/components/structured-data";
 import { BRAND_INK } from "@/lib/brand";
 import { SITE_URL } from "@/lib/constants";
 
@@ -23,27 +23,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 export const metadata: Metadata = {
   title: {
-    default: "Daniel Molloy — Technical Expertise for Investment Firms",
+    default: "Daniel Molloy — Independent Technology Advisory",
     template: "%s | Daniel Molloy",
   },
   description:
-    "Technical expertise for investment firms. We help venture capital, private equity, and family office teams build, evaluate, and run technology — in the office or inside the portfolio.",
+    "Independent technology advisory for investors, boards, and technology companies. Technical due diligence, technology advisory, fractional CTO, and AI governance. Led by Daniel Molloy.",
   keywords: [
+    "technology advisory",
+    "independent technology advisory",
     "technical due diligence",
-    "M&A tech due diligence",
-    "software acquisition review",
-    "embedded CTO",
+    "technology due diligence",
     "fractional CTO",
-    "PE tech due diligence",
-    "AI capability assessment",
-    "CTO due diligence",
-    "investor technical review",
-    "portfolio technical support",
-    "technology risk assessment",
-    "venture capital technical advisor",
-    "IP due diligence",
-    "code ownership review",
-    "open source licence audit",
+    "AI governance",
+    "AI strategy",
+    "technology risk",
+    "software architecture",
+    "cloud transformation",
+    "private equity technology advisor",
+    "venture capital technology advisor",
+    "family office technology advisor",
+    "investor technology advisor",
+    "Daniel Molloy",
+    "Daniel Molloy Ltd",
   ],
   authors: [{ name: "Daniel Molloy" }],
   creator: "Daniel Molloy",
@@ -56,15 +57,15 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: SITE_URL,
     siteName: "Daniel Molloy",
-    title: "Daniel Molloy — Technical Expertise for Investment Firms",
+    title: "Daniel Molloy — Independent Technology Advisory",
     description:
-      "We help venture capital, private equity, and family office teams build, evaluate, and run technology — in the office or inside the portfolio.",
+      "Independent technology advisory and technical due diligence for investors, boards, and technology companies. Led by Daniel Molloy.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Molloy — Technical Expertise for Investment Firms",
+    title: "Daniel Molloy — Independent Technology Advisory",
     description:
-      "We help investment firms build, evaluate, and run technology — in the office or inside the portfolio.",
+      "Independent technology advisory and technical due diligence for investors, boards, and technology companies.",
   },
   metadataBase: new URL("https://danielmolloy.com"),
 };
@@ -99,7 +100,7 @@ export default function RootLayout({
             title="Google Tag Manager"
           />
         </noscript>
-        <OrganizationAndServiceJsonLd />
+        <SiteJsonLd />
         {children}
         <SpeedInsights />
       </body>

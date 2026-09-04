@@ -11,6 +11,22 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Pages retired in the 2026 advisory repositioning.
+      {
+        source: "/work-with-me",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/fix-your-tech-fast",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/locations",
+        destination: "/contact",
+        permanent: true,
+      },
       {
         source: "/blog-posts",
         destination: "/blog",
@@ -54,7 +70,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/design",
-        destination: "/work-with-me",
+        destination: "/services",
         permanent: true,
       },
       {

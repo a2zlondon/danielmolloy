@@ -3,7 +3,6 @@ import {
   COMPANY_NUMBER,
   LEGAL_COMPANY_NAME,
   REGISTERED_OFFICE_ADDRESS,
-  TRADING_NAME,
   VAT_NUMBER,
 } from "@/lib/constants";
 
@@ -15,8 +14,7 @@ export function CompanyLegalDetails({
   return (
     <div className={compact ? "space-y-1" : "space-y-2"}>
       <p>
-        {TRADING_NAME} is a trading name of {LEGAL_COMPANY_NAME}, a company
-        registered in England and Wales.
+        {LEGAL_COMPANY_NAME} is a company registered in England and Wales.
       </p>
       <p>
         Company number:{" "}

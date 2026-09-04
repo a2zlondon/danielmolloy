@@ -6,6 +6,7 @@ export const metadata = {
   title: "Privacy Policy",
   description:
     "Privacy policy for danielmolloy.com. How we collect, use, and protect your information when you use this site or book a call.",
+  alternates: { canonical: "https://danielmolloy.com/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
@@ -22,10 +23,10 @@ export default function PrivacyPolicyPage() {
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  At Daniel Molloy Technology Due Diligence, your privacy is
-                  important to us. This Privacy Policy explains how we collect,
-                  use, and protect your information when you use this website or
-                  book a call via Calendly.
+                  At Daniel Molloy Ltd, your privacy is important to us. This
+                  Privacy Policy explains how we collect, use, and protect your
+                  information when you use this website or book a call via
+                  Calendly.
                 </p>
 
                 <h2>1. Information we collect</h2>
@@ -52,14 +53,14 @@ export default function PrivacyPolicyPage() {
                 <ul>
                   <li>Respond to your inquiry or interest in our services</li>
                   <li>
-                    Provide information about our technical consulting and due
-                    diligence services
+                    Provide information about our advisory and due diligence
+                    services
                   </li>
                   <li>
-                    Send occasional updates, case studies, or relevant offers
-                    (you may opt out anytime)
+                    Send occasional updates you have asked for (you may opt out
+                    at any time)
                   </li>
-                  <li>Improve our marketing and communication strategies</li>
+                  <li>Improve our website and communications</li>
                 </ul>
 
                 <p>
@@ -111,7 +112,7 @@ export default function PrivacyPolicyPage() {
                   handle your data, please contact:
                 </p>
                 <p>
-                  Daniel Molloy Technology Due Diligence
+                  Daniel Molloy Ltd
                   <br />
                   Email:{" "}
                   <a href="mailto:connect@danielmolloy.com">

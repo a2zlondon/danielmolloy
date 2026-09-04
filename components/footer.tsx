@@ -2,6 +2,23 @@ import Link from "next/link";
 import { Mark } from "@/components/brand/logo";
 import { CompanyLegalDetails } from "@/components/company-legal-details";
 import { BRAND_NAME } from "@/lib/brand";
+import { BOOK_CALL_URL, LINKEDIN_URL } from "@/lib/constants";
+
+const serviceLinks = [
+  { href: "/services/technical-due-diligence", label: "Technical due diligence" },
+  { href: "/services/technology-advisory", label: "Technology advisory" },
+  { href: "/services/fractional-cto", label: "Fractional CTO" },
+  { href: "/services/ai-governance", label: "AI governance & strategy" },
+  { href: "/services/cloud-software-delivery", label: "Cloud & software delivery" },
+];
+
+const practiceLinks = [
+  { href: "/about", label: "About Daniel" },
+  { href: "/who-we-are", label: "The practice" },
+  { href: "/blog", label: "Writing" },
+  { href: "/contact", label: "Contact" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+];
 
 export function Footer() {
   return (
@@ -14,76 +31,68 @@ export function Footer() {
               {BRAND_NAME}
             </h3>
             <p className="text-sm text-muted-foreground">
-              Technical expertise for investment firms — in the office or inside the portfolio.
+              Technology decisions are expensive. Daniel Molloy Ltd helps
+              investors and technology companies make the right ones.
             </p>
           </div>
           <div>
-            <h4 className="font-medium mb-4">What we do</h4>
+            <h4 className="font-medium mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Technical due diligence
-                </Link>
-              </li>
-              <li>
-                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Embedded technical leadership
-                </Link>
-              </li>
-              <li>
-                <Link href="/work-with-me" className="text-muted-foreground hover:text-foreground">
-                  Portfolio technical support
-                </Link>
-              </li>
-              <li>
-                <Link href="/fix-your-tech-fast" className="text-muted-foreground hover:text-foreground">
-                  Fix your tech fast
-                </Link>
-              </li>
+              {serviceLinks.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-4">Company</h4>
+            <h4 className="font-medium mb-4">Practice</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/who-we-are" className="text-muted-foreground hover:text-foreground">
-                  Who we are
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-muted-foreground hover:text-foreground">
-                  Writing
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-muted-foreground hover:text-foreground">
-                  About
-                </Link>
-              </li>
-              <li>
-                <a href="https://vespera.systems" target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-foreground">
-                  Vespera Systems — research
-                </a>
-              </li>
-              <li>
-                <Link href="/privacy-policy" className="text-muted-foreground hover:text-foreground">
-                  Privacy Policy
-                </Link>
-              </li>
+              {practiceLinks.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-muted-foreground hover:text-foreground"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h4 className="font-medium mb-4">Connect</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:connect@danielmolloy.com" className="text-muted-foreground hover:text-foreground">
+                <a
+                  href="mailto:connect@danielmolloy.com"
+                  className="text-muted-foreground hover:text-foreground"
+                >
                   Email
                 </a>
               </li>
               <li>
-                <Link href="/contact" className="text-muted-foreground hover:text-foreground">
-                  Contact
-                </Link>
+                <a
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href={BOOK_CALL_URL}
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Book a call
+                </a>
               </li>
             </ul>
           </div>

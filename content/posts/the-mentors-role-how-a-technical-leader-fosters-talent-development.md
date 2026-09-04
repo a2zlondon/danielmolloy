@@ -2,6 +2,7 @@
 title: "The Mentor’s Role: How a Technical Leader Fosters Talent Development"
 slug: "the-mentors-role-how-a-technical-leader-fosters-talent-development"
 date: "2024-09-19T23:20:51"
+unlisted: true
 modified: "2024-09-19T23:20:51"
 excerpt: "A strong technical leader is more than just a manager; they are also a mentor. By investing in the development of their team members, they can create a pipeline of talent that will drive the future success of the SaaS business. A technical leader can provide mentorship in a variety of ways, including: By investing"
 image: "/images/posts/the-mentors-role-how-a-technical-leader-fosters-talent-development.jpg"

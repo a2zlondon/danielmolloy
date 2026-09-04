@@ -55,7 +55,7 @@ export default function EvaluateAiStartupPage() {
           intro="VCs should perform AI due diligence by testing the commercial story against the technical evidence: what is genuinely proprietary, what depends on third-party models, what data rights exist, what telemetry proves usage, and whether the economics survive scale."
           sections={sections}
           ctaLabel="AI diligence for investors"
-          ctaHref="/work-with-me"
+          ctaHref="/services/technical-due-diligence"
         />
       </main>
       <Footer />

@@ -6,7 +6,7 @@ import { ImageResponse } from "next/og";
 import { BRAND_INK, BRAND_MUTED, BRAND_NAME, BRAND_SURFACE, MARK } from "@/lib/brand";
 import { MARK_PATH } from "@/lib/brand-mark.generated";
 
-export const alt = "Daniel Molloy — Technical Expertise for Investment Firms";
+export const alt = "Daniel Molloy — Independent Technology Advisory";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -62,7 +62,7 @@ export default async function Image() {
           {BRAND_NAME}
         </div>
         <div style={{ fontSize: 36, fontWeight: 500, color: BRAND_INK, marginBottom: 24 }}>
-          Technical Expertise for Investment Firms
+          Independent Technology Advisory
         </div>
         <div
           style={{
@@ -73,7 +73,7 @@ export default async function Image() {
             maxWidth: 600,
           }}
         >
-          Due diligence · Embedded leadership · Portfolio support
+          Technical due diligence · Fractional CTO · AI governance
         </div>
       </div>
     ),

@@ -3,27 +3,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const steps = [
   {
     number: "01",
-    title: "Agree the scope",
+    title: "Start with the decision",
     description:
-      "We agree the reason for the engagement, the timeline, and the access required — whether that is a focused review, an embedded role, or ongoing portfolio support.",
+      "What you are deciding, by when, and what it costs to get wrong. The scope, timeline, and access follow from that.",
   },
   {
     number: "02",
-    title: "Get into the detail",
+    title: "Examine the evidence",
     description:
-      "We inspect the code, architecture, cloud setup, security posture, AI claims, documentation, team dependency, and delivery process — or work directly alongside your team.",
+      "Code, architecture, contracts, costs, teams, claims — whatever bears on the decision.",
   },
   {
     number: "03",
-    title: "Explain what it means",
+    title: "Advise in plain English",
     description:
-      "We translate technical and AI evidence into plain-English findings: what is solid, what is fragile, what needs fixing, and what could affect value.",
+      "What is solid, what is fragile, what it means commercially, and what Daniel would do in your position.",
   },
   {
     number: "04",
-    title: "Report and next steps",
+    title: "Support the outcome",
     description:
-      "You receive a concise report and briefing, or an ongoing working relationship, so your team knows what to do next.",
+      "A report and briefing, a seat at the table, or delivery under the same standards.",
   },
 ];
 
@@ -33,10 +33,11 @@ export function HowItWorks() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-4">
-            How it works
+            How an engagement runs
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A structured process designed for quick turnaround and confidential timelines, whether the engagement is a one-off review or an ongoing role.
+            The same structure whether it is a two-week review or a standing
+            role. Confidential throughout.
           </p>
         </div>
 

@@ -22,7 +22,7 @@ export function InsightArticle({
   intro,
   sections,
   ctaLabel = "Discuss technical due diligence",
-  ctaHref = "/work-with-me",
+  ctaHref = "/services/technical-due-diligence",
 }: InsightArticleProps) {
   return (
     <article className="py-24 bg-background">

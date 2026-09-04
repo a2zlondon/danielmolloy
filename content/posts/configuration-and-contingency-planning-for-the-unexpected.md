@@ -2,6 +2,7 @@
 title: "Configuration and Contingency: Planning for the Unexpected"
 slug: "configuration-and-contingency-planning-for-the-unexpected"
 date: "2024-09-20T08:48:53"
+unlisted: true
 modified: "2024-09-20T08:50:59"
 excerpt: "In the world of SaaS, things don’t always go according to plan. It’s essential to be prepared for unexpected challenges and changes. This is where configuration flexibility and contingency planning come into play. A well-designed tech stack should allow for easy configuration changes. This means that you can modify your application’s behavior without having to"
 image: "/images/posts/configuration-and-contingency-planning-for-the-unexpected.jpg"

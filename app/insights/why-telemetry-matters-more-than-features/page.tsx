@@ -55,7 +55,7 @@ export default function WhyTelemetryMattersPage() {
           intro="Investors often ask what features a software company has built. The better question is what the product knows about itself. Telemetry turns software from a black box into an evidence base for product value, operational maturity and technical risk."
           sections={sections}
           ctaLabel="Assess telemetry and platform risk"
-          ctaHref="/work-with-me"
+          ctaHref="/services/technical-due-diligence"
         />
       </main>
       <Footer />

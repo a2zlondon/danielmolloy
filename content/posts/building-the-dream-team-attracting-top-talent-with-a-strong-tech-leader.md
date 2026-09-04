@@ -2,6 +2,7 @@
 title: "Building the Dream Team: Attracting Top Talent with a Strong Tech Leader"
 slug: "building-the-dream-team-attracting-top-talent-with-a-strong-tech-leader"
 date: "2024-09-19T23:06:56"
+unlisted: true
 modified: "2024-09-19T23:06:56"
 excerpt: "A strong technical leader is more than just a skilled programmer; they are the architect of a high-performing development team. Their ability to attract and retain top talent is crucial for the success of any SaaS startup, especially in the competitive landscape of multitenant SaaS development. A technical leader creates a culture of innovation and"
 image: "/images/posts/building-the-dream-team-attracting-top-talent-with-a-strong-tech-leader.jpg"

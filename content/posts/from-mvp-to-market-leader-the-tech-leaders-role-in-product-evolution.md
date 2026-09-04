@@ -2,6 +2,7 @@
 title: "From MVP to Market Leader: The Tech Leader’s Role in Product Evolution"
 slug: "from-mvp-to-market-leader-the-tech-leaders-role-in-product-evolution"
 date: "2024-09-19T23:26:27"
+unlisted: true
 modified: "2024-09-19T23:26:27"
 excerpt: "A successful multitenant SaaS startup doesn’t just launch a product and call it a day. The product must constantly evolve to meet the changing needs of the market. A strong technical leader is essential for guiding this evolution and ensuring that the SaaS application remains competitive. A technical leader can help to identify product gaps"
 image: "/images/posts/from-mvp-to-market-leader-the-tech-leaders-role-in-product-evolution.jpg"

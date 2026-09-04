@@ -7,64 +7,160 @@ import {
   VAT_NUMBER,
 } from "@/lib/constants";
 
-const ORGANIZATION_AND_SERVICE_JSON_LD = {
+const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+const PERSON_ID = `${SITE_URL}/about#person`;
+const WEBSITE_ID = `${SITE_URL}/#website`;
+
+const AREA_SERVED = [
+  "United Kingdom",
+  "Ireland",
+  "Netherlands",
+  "Germany",
+  "France",
+  "Spain",
+].map((name) => ({ "@type": "Country", name }));
+
+const PERSON_JSON_LD = {
+  "@type": "Person",
+  "@id": PERSON_ID,
+  name: "Daniel Molloy",
+  jobTitle: "Independent Technology Adviser",
+  url: `${SITE_URL}/about`,
+  image: `${SITE_URL}/images/portrait-smile.png`,
+  worksFor: { "@id": ORGANIZATION_ID },
+  sameAs: [
+    "https://www.linkedin.com/in/danielthomasmolloy/",
+    "https://github.com/a2zlondon",
+  ],
+  knowsAbout: [
+    "Technology Advisory",
+    "Technical Due Diligence",
+    "Technology Due Diligence",
+    "Fractional CTO leadership",
+    "AI Governance",
+    "Technology Risk",
+    "Software Architecture",
+    "Cloud Transformation",
+    "https://en.wikipedia.org/wiki/Due_diligence",
+    "https://en.wikipedia.org/wiki/Private_equity",
+    "https://en.wikipedia.org/wiki/Venture_capital",
+    "https://en.wikipedia.org/wiki/Family_office",
+    "https://en.wikipedia.org/wiki/Software_architecture",
+    "https://en.wikipedia.org/wiki/Chief_technology_officer",
+  ],
+};
+
+const SITE_JSON_LD = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Organization",
-      "@id": `${SITE_URL}/#organization`,
-      name: "Daniel Molloy",
+      "@id": ORGANIZATION_ID,
+      name: LEGAL_COMPANY_NAME,
+      alternateName: "Daniel Molloy",
       legalName: LEGAL_COMPANY_NAME,
       identifier: COMPANY_NUMBER,
       vatID: VAT_NUMBER,
       description:
-        "Technical expertise for investment firms: technical due diligence, embedded technical leadership, and portfolio technical support for venture capital, private equity, and family office teams.",
+        "Independent technology advisory practice. Technical due diligence, technology advisory, fractional CTO leadership, AI governance, and cloud and software delivery for investors, boards, and technology companies.",
       url: SITE_URL,
+      founder: { "@id": PERSON_ID },
+      areaServed: AREA_SERVED,
       address: {
         "@type": "PostalAddress",
         streetAddress: REGISTERED_OFFICE_ADDRESS,
         addressCountry: "GB",
       },
-      sameAs: [
-        COMPANIES_HOUSE_URL,
-        "https://www.linkedin.com/in/danielthomasmolloy/",
-        "https://github.com/a2zlondon",
-      ],
+      sameAs: [COMPANIES_HOUSE_URL],
     },
+    PERSON_JSON_LD,
     {
-      "@type": "ProfessionalService",
-      "@id": `${SITE_URL}/#service`,
+      "@type": "WebSite",
+      "@id": WEBSITE_ID,
       name: "Daniel Molloy",
-      description:
-        "Technical expertise for investment firms — technical due diligence, embedded technical leadership, portfolio technical support, and AI & data advisory, in the office or inside the portfolio.",
       url: SITE_URL,
-      provider: { "@id": `${SITE_URL}/#organization` },
-      areaServed: [
-        { "@type": "Country", name: "United Kingdom" },
-        { "@type": "Country", name: "United States" },
-        { "@type": "Country", name: "United Arab Emirates" },
-        { "@type": "Country", name: "Saudi Arabia" },
-        { "@type": "Country", name: "Germany" },
-        { "@type": "Country", name: "France" },
-        { "@type": "Country", name: "Spain" },
-        { "@type": "Country", name: "Netherlands" },
-      ],
-      serviceType: [
-        "Technical due diligence",
-        "Embedded technical leadership",
-        "Portfolio technical support",
-        "AI capability assessment",
-        "IP and code ownership review",
-      ],
+      publisher: { "@id": ORGANIZATION_ID },
     },
   ],
 };
 
-export function OrganizationAndServiceJsonLd() {
+export function SiteJsonLd() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_AND_SERVICE_JSON_LD) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_JSON_LD) }}
+    />
+  );
+}
+
+export function ServiceJsonLd({
+  name,
+  description,
+  url,
+  serviceType,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  serviceType?: string;
+}) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name,
+    serviceType: serviceType ?? name,
+    description,
+    url,
+    provider: { "@id": ORGANIZATION_ID },
+    audience: {
+      "@type": "Audience",
+      audienceType:
+        "Venture capital, private equity, family offices, boards, and technology companies",
+    },
+    areaServed: AREA_SERVED,
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
+export function ProfilePageJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    mainEntity: PERSON_JSON_LD,
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
+export function BreadcrumbJsonLd({
+  items,
+}: {
+  items: Array<{ name: string; url: string }>;
+}) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
   );
 }
@@ -125,14 +221,16 @@ export function ArticleJsonLd({
     ...(dateModified && { dateModified }),
     author: {
       "@type": "Person",
+      "@id": PERSON_ID,
       name: "Daniel Molloy",
-      url: SITE_URL,
+      url: `${SITE_URL}/about`,
     },
     publisher: {
-      "@type": "Person",
-      name: "Daniel Molloy",
-      url: SITE_URL,
+      "@type": "Organization",
+      "@id": ORGANIZATION_ID,
+      name: LEGAL_COMPANY_NAME,
     },
+    mainEntityOfPage: url,
     ...(imageUrl && { image: imageUrl }),
     url,
   };

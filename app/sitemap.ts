@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
-import { getPosts } from "@/lib/posts";
+import { getListedPosts } from "@/lib/posts";
+import { INSIGHTS } from "@/lib/insights";
 import { SITE_URL } from "@/lib/constants";
 
 // Static pages carry no `lastModified`. They previously reported the build
@@ -9,24 +10,17 @@ import { SITE_URL } from "@/lib/constants";
 
 const staticPaths: Array<{ path: string; changeFrequency: "weekly" | "monthly" | "yearly"; priority: number }> = [
   { path: "", changeFrequency: "weekly", priority: 1 },
-  { path: "/work-with-me", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/services", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/services/technical-due-diligence", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/services/technology-advisory", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/services/fractional-cto", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/services/ai-governance", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/services/cloud-software-delivery", changeFrequency: "monthly", priority: 0.7 },
   { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
-  { path: "/about", changeFrequency: "monthly", priority: 0.6 },
-  { path: "/who-we-are", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/about", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/who-we-are", changeFrequency: "monthly", priority: 0.6 },
   { path: "/contact", changeFrequency: "monthly", priority: 0.5 },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
-  { path: "/locations", changeFrequency: "monthly", priority: 0.6 },
-  { path: "/fix-your-tech-fast", changeFrequency: "monthly", priority: 0.8 },
-];
-
-const insightSlugs = [
-  "how-to-evaluate-ai-startup-before-investing",
-  "legal-due-diligence-vs-technical-due-diligence",
-  "red-flags-saas-acquisitions",
-  "technical-due-diligence-checklist-saas-acquisitions",
-  "what-happens-during-technical-due-diligence",
-  "why-telemetry-matters-more-than-features",
-  "verify-ai-claims-software-ma",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -36,12 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency,
       priority,
     })),
-    ...insightSlugs.map((slug) => ({
-      url: `${SITE_URL}/insights/${slug}`,
+    ...INSIGHTS.map((insight) => ({
+      url: `${SITE_URL}/insights/${insight.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
-    ...getPosts().map((post) => ({
+    ...getListedPosts().map((post) => ({
       url: `${SITE_URL}${post.url}`,
       lastModified: new Date(`${post.modified}Z`),
       changeFrequency: "monthly" as const,

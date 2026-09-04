@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
 
 type Testimonial = {
   headline: string;
@@ -69,10 +68,10 @@ export function Testimonials() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            What clients say
+            References
           </p>
           <h2 className="text-4xl md:text-5xl font-light mb-4">
-            Trust
+            What people say
           </h2>
           <p className="text-xl text-muted-foreground">
             References from leaders who needed technical depth, calm assessment, and clear answers under pressure.
@@ -86,12 +85,6 @@ export function Testimonials() {
                 <p className="text-sm tracking-[0.15em] uppercase text-muted-foreground mb-3">
                   {testimonial.headline}
                 </p>
-
-                <div className="flex items-center gap-1 text-foreground/80 mb-4">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-current" />
-                  ))}
-                </div>
 
                 <p className="text-muted-foreground leading-relaxed flex-1">
                   &ldquo;{testimonial.content}&rdquo;
