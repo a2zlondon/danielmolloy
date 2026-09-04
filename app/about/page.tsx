@@ -1,40 +1,107 @@
+import Link from "next/link";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
+import { Button } from "@/components/ui/button";
+import { ProfilePageJsonLd } from "@/components/structured-data";
+import { BOOK_CALL_URL, LINKEDIN_URL, SITE_URL } from "@/lib/constants";
 
 export const metadata = {
-  title: "About",
+  title: { absolute: "Daniel Molloy — Independent Technology Adviser" },
   description:
-    "About Daniel Molloy — a technical consultancy providing technical due diligence, embedded technical leadership, and portfolio technical support for investment firms.",
+    "Daniel Molloy is an independent technology adviser to investors, boards, and technology companies. Founder of Daniel Molloy Ltd.",
+  alternates: { canonical: `${SITE_URL}/about` },
+  openGraph: {
+    title: "Daniel Molloy — Independent Technology Adviser",
+    description:
+      "Daniel Molloy is an independent technology adviser to investors, boards, and technology companies. Founder of Daniel Molloy Ltd.",
+  },
 };
+
+const writing = [
+  {
+    title: "Software is no longer the scarce resource. Evidence is.",
+    href: "/2026/07/03/software-is-no-longer-the-scarce-resource-evidence-is",
+  },
+  {
+    title: "Technical due diligence checklist for investors",
+    href: "/insights/technical-due-diligence-checklist-saas-acquisitions",
+  },
+];
 
 export default function AboutPage() {
   return (
     <>
+      <ProfilePageJsonLd />
       <Nav />
       <main>
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h1 className="text-5xl md:text-6xl font-light mb-12">
-                About
+            <div className="max-w-3xl mx-auto">
+              <img
+                src="/images/portrait-smile.png"
+                alt="Daniel Molloy"
+                className="h-24 w-24 rounded-full object-cover mb-8"
+              />
+              <h1 className="text-5xl md:text-6xl font-light mb-4">
+                Daniel Molloy
               </h1>
+              <p className="text-xl text-muted-foreground mb-12">
+                Independent technology adviser. Founder of Daniel Molloy Ltd.
+              </p>
 
               <div className="prose prose-lg max-w-none space-y-4">
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  We give investment firms a clear technical view — of a deal, of their own operations, or of a company in the portfolio.
+                <p>
+                  Daniel advises investors, boards, and technology companies on
+                  decisions that are expensive to get wrong: acquisitions,
+                  technology strategy, AI adoption, and technical leadership.
                 </p>
                 <p>
-                  Our team works with venture capital, private equity, family offices, and asset managers — either embedded in your office or applied to a portfolio company. That might mean technical due diligence before a deal, hands-on technical leadership while a gap is filled, or ongoing oversight across a portfolio.
+                  The advice comes from experience building, rescuing, and
+                  operating complex software systems. That background shapes how
+                  he works: start with the decision, examine the evidence, and
+                  report in plain English.
                 </p>
                 <p>
-                  The work is led from a technical consulting background: hands-on software, architecture, delivery, infrastructure, and engineering leadership. We identify risks, value potential, mitigation actions, and the practical roadmap required to make the investment case hold up.
+                  The practice is independent. There is no software to sell and
+                  no delivery target behind the advice. Most engagements are
+                  confidential, and most of the work is never spoken about.
                 </p>
-                <p>
-                  Engagements are evidence-led, structured, and designed for decision-makers who need clarity under time pressure.
-                </p>
-                <p>
-                  Before you invest, acquire, or build anything significant — get clarity first.
-                </p>
+              </div>
+
+              <h2 className="text-2xl font-light mt-14 mb-4">Writing</h2>
+              <ul className="space-y-3">
+                {writing.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="underline underline-offset-4 hover:no-underline"
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <Link
+                    href="/blog"
+                    className="text-muted-foreground underline underline-offset-4 hover:no-underline"
+                  >
+                    All writing
+                  </Link>
+                </li>
+              </ul>
+
+              <div className="flex flex-col sm:flex-row gap-4 mt-14">
+                <Button size="lg" asChild>
+                  <a href={BOOK_CALL_URL}>Book a call</a>
+                </Button>
+                <Button size="lg" variant="outline" asChild>
+                  <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+                    LinkedIn
+                  </a>
+                </Button>
+                <Button size="lg" variant="outline" asChild>
+                  <a href="mailto:connect@danielmolloy.com">Email</a>
+                </Button>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,94 +7,60 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/cta-section";
 import { ExperienceIncludes } from "@/components/client-logo-banner";
+import { LINKEDIN_URL, SITE_URL } from "@/lib/constants";
 
 export const metadata = {
-  title: "Who we are",
+  title: "The Practice",
   description:
-    "Daniel Molloy — a specialist technical consultancy supporting investment firms with technical due diligence, embedded leadership, and portfolio technical support.",
+    "Daniel Molloy leads every engagement. A small team of senior specialists supports delivery — infrastructure, product, frontend, and reporting — under the same standards.",
+  alternates: { canonical: `${SITE_URL}/who-we-are` },
 };
 
-type TeamMember = {
-  title: string;
+type Specialist = {
+  name: string;
   focus: string;
   bio: string;
   initials: string;
   imageSrc?: string;
   linkedInUrl?: string;
-  isLeader?: boolean;
-  isHidden?: boolean;
 };
 
-const team: TeamMember[] = [
+const specialists: Specialist[] = [
   {
-    title: "Daniel Molloy",
-    focus: "Founder & Lead Technical Advisor",
-    bio: "Leads technical due diligence methodology, specialist workstreams, and board-ready findings across software, architecture, delivery, and engineering risk.",
-    initials: "DM",
-    imageSrc: "/images/portrait-smile.png",
-    linkedInUrl: "https://www.linkedin.com/in/danielthomasmolloy/",
-    isLeader: true,
-  },
-  {
-    title: "Infrastructure Specialist",
-    focus: "Cloud & Cost Review",
-    bio: "Reviews AWS, Azure, and hybrid cloud architectures. Assesses cost profiles, scalability limits, deployment maturity, and operational reliability — the dimensions that determine post-acquisition integration risk.",
-    initials: "IS",
-    isHidden: true,
-  },
-  {
-    title: "Security & Engineering Specialist",
-    focus: "Code Quality & Security",
-    bio: "Examines source code repositories, CI/CD pipelines, test coverage, vulnerability exposure, and technical debt. Quantifies engineering risk and contributor patterns for deal teams.",
-    initials: "SE",
-    isHidden: true,
-  },
-  {
-    title: "Abdul Manan",
-    focus: "Scale & Reliability Consultant",
+    name: "Abdul Manan",
+    focus: "Scale & Reliability",
     bio: "Advises on scalable production systems across mobile, web, cloud, realtime datastores, distributed platforms, and reliability under real usage.",
     initials: "AM",
     imageSrc: "/images/team/abdul-manan.png",
     linkedInUrl: "https://www.linkedin.com/in/abdul-manan10/",
   },
   {
-    title: "Selinay Yildirim",
-    focus: "UI/UX & Frontend Consultant",
+    name: "Selinay Yildirim",
+    focus: "UI/UX & Frontend",
     bio: "Reviews brand, interface quality, frontend execution, interaction speed, and user journeys that may slow trust, conversion, or sales.",
     initials: "SY",
     imageSrc: "/images/team/selinay-yildirim.png",
     linkedInUrl: "https://www.linkedin.com/in/selinayyildirim/",
   },
   {
-    title: "Ray Mongey",
-    focus: "Product & AI Specialist",
+    name: "Ray Mongey",
+    focus: "Product & AI",
     bio: "Evaluates product roadmaps, customer demand signals, AI capability claims, and whether the technology is defensible engineering.",
     initials: "RM",
     imageSrc: "/images/team/ray-mongey.png",
     linkedInUrl: "https://www.linkedin.com/in/raymongey/",
   },
   {
-    title: "Gillian Fitzgibbon",
-    focus: "Technology Readiness & Reporting Consultant",
-    bio: "Turns operational evidence into clear diligence findings on whether a target has the systems, controls, and delivery maturity to support the investment case.",
+    name: "Gillian Fitzgibbon",
+    focus: "Technology Readiness & Reporting",
+    bio: "Turns operational evidence into clear findings on whether a company has the systems, controls, and delivery maturity to support the plan.",
     initials: "GF",
     imageSrc: "/images/team/gillian-fitzgibbon.png",
     linkedInUrl: "https://www.linkedin.com/in/gillian-fitzgibbon-60252333/",
   },
 ];
 
-const capacitySignals = [
-  { value: "6+", label: "Active workstreams" },
-  { value: "2–3 wks", label: "Typical full report" },
-  { value: "5–7 days", label: "Rapid red-flag review" },
-  { value: "100%", label: "Under NDA & confidentiality" },
-];
-
 export default function WhoWeArePage() {
-  const members = team
-    .filter((m) => !m.isHidden)
-    .sort((a, b) => Number(a.isLeader) - Number(b.isLeader));
-
   return (
     <>
       <Nav />
@@ -102,39 +69,67 @@ export default function WhoWeArePage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl font-light mb-6">
-                Who we are
+                The practice
               </h1>
               <p className="text-xl text-muted-foreground mb-12 max-w-2xl">
-                Daniel Molloy is a specialist technical consultancy supporting investment firms — technical due diligence before capital is committed, embedded technical leadership, and ongoing support across the portfolio.
+                Daniel advises every client directly. A small team of senior
+                specialists supports delivery when an engagement needs hands-on
+                work.
               </p>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-                {capacitySignals.map((signal) => (
-                  <Card key={signal.label} className="border-0 shadow-sm text-center">
-                    <CardContent className="py-6">
-                      <p className="text-3xl font-light mb-1">{signal.value}</p>
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide">
-                        {signal.label}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+              <Card className="border-0 shadow-sm mb-16">
+                <CardContent className="pt-8 pb-8 md:flex md:items-start md:gap-8">
+                  <Avatar className="h-28 w-28 mb-5 md:mb-0 shrink-0">
+                    <AvatarImage
+                      src="/images/portrait-smile.png"
+                      alt="Daniel Molloy"
+                      className="object-cover grayscale"
+                    />
+                    <AvatarFallback className="text-lg bg-muted text-muted-foreground">
+                      DM
+                    </AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <Badge variant="outline" className="mb-3 text-xs">
+                      Founder
+                    </Badge>
+                    <h2 className="text-2xl font-medium mb-3">Daniel Molloy</h2>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Founder and lead adviser. Daniel leads every engagement:
+                      the scope, the evidence, the findings, and the advice
+                      itself. He is the single point of accountability for the
+                      work.
+                    </p>
+                    <div className="flex gap-3">
+                      <Button asChild variant="outline" size="sm">
+                        <Link href="/about">About Daniel</Link>
+                      </Button>
+                      <Button asChild variant="outline" size="sm">
+                        <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+                          LinkedIn
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
 
-              <h2 className="text-3xl font-light mb-4">The team</h2>
+              <h2 className="text-3xl font-light mb-4">The delivery team</h2>
               <p className="text-muted-foreground mb-10 max-w-2xl">
-                Each engagement is supported by specialists who review infrastructure, security, AI, product, and delivery dimensions in parallel — giving clients senior technical judgement without the drag of a heavyweight consulting process.
+                Senior specialists who carry out and review delivery work —
+                infrastructure, product, frontend, and reporting — under
+                Daniel&apos;s direction.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
-                {members.map((member) => (
-                  <Card key={member.title} className="border-0 shadow-sm h-full">
+                {specialists.map((member) => (
+                  <Card key={member.name} className="border-0 shadow-sm h-full">
                     <CardContent className="pt-8 pb-8 h-full flex flex-col">
                       <Avatar className="h-28 w-28 mb-5">
                         {member.imageSrc ? (
                           <AvatarImage
                             src={member.imageSrc}
-                            alt={member.title}
+                            alt={member.name}
                             className="object-cover grayscale"
                           />
                         ) : null}
@@ -143,12 +138,12 @@ export default function WhoWeArePage() {
                         </AvatarFallback>
                       </Avatar>
                       <Badge variant="outline" className="mb-3 text-xs">
-                        {member.isLeader ? "Founder · Consultant" : "Consultant"}
+                        Specialist
                       </Badge>
                       <p className="text-sm tracking-[0.1em] uppercase text-muted-foreground mb-1">
                         {member.focus}
                       </p>
-                      <h3 className="text-xl font-medium mb-3">{member.title}</h3>
+                      <h3 className="text-xl font-medium mb-3">{member.name}</h3>
                       <p className="text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
                         {member.bio}
                       </p>
@@ -167,6 +162,11 @@ export default function WhoWeArePage() {
                   </Card>
                 ))}
               </div>
+
+              <p className="text-muted-foreground mt-12 max-w-2xl">
+                Everyone works under the same NDA, the same evidence standards,
+                and Daniel&apos;s review.
+              </p>
             </div>
           </div>
         </section>
