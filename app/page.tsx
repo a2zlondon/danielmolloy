@@ -6,45 +6,47 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Testimonials } from "@/components/testimonials";
 import { FaqPageJsonLd } from "@/components/structured-data";
-import { WorkingStyle } from "@/components/working-style";
 import { DealConfidence } from "@/components/deal-confidence";
-import { ConsultationPrompt } from "@/components/consultation-prompt";
 import { ExperienceIncludes } from "@/components/client-logo-banner";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { SITE_URL } from "@/lib/constants";
 import Link from "next/link";
 
-const capabilities = [
-  {
-    title: "Technical Due Diligence",
-    description:
-      "An independent assessment of the technical value of a company before you invest or acquire — code, cloud, security, IP, AI claims, and team dependency.",
-  },
-  {
-    title: "AI & Data Platform Assessment",
-    description:
-      "Verification of AI and data claims — what is genuinely proprietary, what models are used, what telemetry proves value, and what is marketing.",
-  },
-  {
-    title: "Technology Risk Review",
-    description:
-      "Focused review of technical debt, architecture, cloud cost, observability, security, and key-person risk before an investment decision.",
-  },
-  {
-    title: "Fractional CTO Advisory",
-    description:
-      "Senior technical leadership inside your firm or a portfolio company, for as long as the gap needs filling.",
-  },
-];
+export const metadata = {
+  alternates: { canonical: SITE_URL },
+};
 
-const sectors = [
-  "Venture Capital",
-  "Private Equity",
-  "Corporate Finance Firms",
-  "Family Offices",
-  "Secondary Market Investors",
-  "Asset Managers",
-  "Portfolio Companies",
+const services = [
+  {
+    title: "Technical due diligence",
+    href: "/services/technical-due-diligence",
+    description:
+      "An independent view of the technology behind a deal — before the money is committed.",
+  },
+  {
+    title: "Technology advisory",
+    href: "/services/technology-advisory",
+    description:
+      "Independent advice for boards and executive teams making decisions they cannot easily reverse.",
+  },
+  {
+    title: "Fractional CTO",
+    href: "/services/fractional-cto",
+    description:
+      "Senior technical leadership through growth, change, or recovery — without the full-time hire.",
+  },
+  {
+    title: "AI governance & strategy",
+    href: "/services/ai-governance",
+    description:
+      "Adopt AI where the evidence supports it. Govern it like anything else that can lose you money.",
+  },
+  {
+    title: "Cloud & software delivery",
+    href: "/services/cloud-software-delivery",
+    description:
+      "When the advice calls for building, a senior team does the work. Delivery supports the advice — it never leads.",
+  },
 ];
 
 export default function Home() {
@@ -55,50 +57,75 @@ export default function Home() {
       <main>
         <Hero />
         <ExperienceIncludes />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center bg-card border-b border-border">
-          <p className="text-sm text-muted-foreground">
-            A specialist team, not a solo generalist —{" "}
-            <Link href="/who-we-are" className="underline underline-offset-4 hover:no-underline">
-              meet the consultants
-            </Link>
-            .
-          </p>
-        </div>
-        <WorkingStyle />
         <DealConfidence />
-        <Testimonials />
-        <section id="who-we-work-with" className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-background">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-light mb-8">What we do</h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              {capabilities.map((capability) => (
-                <Card key={capability.title} className="border-0 shadow-sm h-full">
-                  <CardContent className="p-6 h-full">
-                    <h3 className="text-xl font-medium mb-3">
-                      {capability.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {capability.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            <h2 className="text-3xl font-light mt-14 mb-6">Who we work with</h2>
-            <div className="flex flex-wrap gap-2">
-              {sectors.map((sector) => (
-                <Badge key={sector} variant="outline" className="text-sm px-3 py-1.5">
-                  {sector}
-                </Badge>
-              ))}
+        <section className="py-24 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-light mb-8">
+                One practice. Five ways to engage.
+              </h2>
+              <div className="grid gap-4 md:grid-cols-2">
+                {services.map((service) => (
+                  <Card key={service.href} className="border-0 shadow-sm h-full">
+                    <CardContent className="p-6 h-full flex flex-col">
+                      <h3 className="text-xl font-medium mb-3">
+                        <Link
+                          href={service.href}
+                          className="hover:text-foreground/80 transition-colors"
+                        >
+                          {service.title}
+                        </Link>
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                        {service.description}
+                      </p>
+                      <p className="mt-4">
+                        <Link
+                          href={service.href}
+                          className="text-sm underline underline-offset-4 hover:no-underline"
+                        >
+                          Read more
+                        </Link>
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>
+        <section
+          id="who-we-work-with"
+          className="py-24 bg-background"
+        >
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-light mb-6">
+                Who Daniel works with
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
+                Investors first — venture capital partners, family offices,
+                private equity, and angel investors. Then the CEOs, founders,
+                boards, and CTOs facing the same decisions from the other side.
+                The work is the same in both directions: an independent view of
+                a technology decision that is expensive to get wrong.
+              </p>
+            </div>
+          </div>
+        </section>
+        <Testimonials />
+        <div className="bg-card pb-24 -mt-8">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-sm text-muted-foreground">
+              Case studies are shared privately. Ask, and Daniel will walk you
+              through relevant work under NDA.
+            </p>
+          </div>
+        </div>
         <HowItWorks />
         <FAQ />
         <CTASection />
       </main>
-      <ConsultationPrompt />
       <Footer />
     </>
   );

@@ -2,24 +2,24 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const signals = [
   {
-    title: "Scoped to the engagement",
+    title: "Independent",
     description:
-      "From a rapid technical review to an embedded role inside a portfolio company, the engagement is scoped around the access, timeline, and decision in front of you.",
+      "No software to sell. No stake in the outcome beyond getting the decision right.",
   },
   {
-    title: "Plain-English findings",
+    title: "Evidence-based",
     description:
-      "Clear findings, risk ratings, commercial implications, and next steps that non-technical partners and operators can use.",
+      "Findings come from code, architecture, contracts, and costs — not from interviews alone.",
   },
   {
-    title: "AI-aware technical depth",
+    title: "Plain English",
     description:
-      "We test AI claims against architecture, data, integration depth, costs, security, and defensibility, not just the demo.",
+      "Board-ready findings. Clear risks, clear costs, clear next steps.",
   },
   {
-    title: "Senior team",
+    title: "Discreet",
     description:
-      "Small senior teams move quickly, ask direct questions, and keep the process proportionate rather than turning it into a heavyweight consulting exercise.",
+      "Under NDA as standard. Most of the work is never spoken about.",
   },
 ];
 
@@ -30,13 +30,15 @@ export function DealConfidence() {
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] max-w-6xl mx-auto">
           <div>
             <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-4">
-              Why it helps
+              Why it works
             </p>
             <h2 className="text-4xl md:text-5xl font-light mb-6">
-              Senior technical judgement, on your timeline.
+              Judgement first. Technology second.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Investment teams need more than a technical opinion. They need a clear view of what is working, what is risky, and what needs attention — delivered at the speed the decision requires, whether that decision is a deal, a hire, or a build.
+              An expensive technology decision needs more than a confident
+              opinion. It needs evidence, examined by someone with nothing to
+              sell on the back of it. That is what this practice does.
             </p>
           </div>
 

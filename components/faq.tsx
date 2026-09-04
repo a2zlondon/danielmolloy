@@ -7,44 +7,44 @@ import {
 
 export const faqs = [
   {
-    question: "Who do you work with?",
+    question: "Who does Daniel work with?",
     answer:
-      "Venture capital firms, private equity firms, family offices, and asset managers — either directly in your office, or applied to a company in your portfolio. Sometimes that means technical due diligence before a deal. Sometimes it means an embedded technical role, or ongoing support across the portfolio.",
+      "Investors first: venture capital partners, family offices, private equity, and angel investors. Then the CEOs, founders, boards, and CTOs facing the same decisions from the other side. The common thread is an expensive technology decision that needs an independent view.",
   },
   {
-    question: "What does a typical engagement look like?",
+    question: "What does an engagement look like?",
     answer:
-      "We agree the scope — a due diligence review, an embedded role, or portfolio support — then get into the detail, translate findings into plain English, and report back with clear next steps. Engagements range from a few days to an ongoing arrangement.",
+      "It starts with the decision in front of you. The scope, timeline, and access follow from that. It might be a due diligence review before a deal, a written opinion for a board, a fractional leadership role, or delivery work agreed after the advice. Engagements range from a few days to a standing arrangement.",
   },
   {
-    question: "Can you assess whether the AI is real?",
+    question: "Can you tell whether the AI is real?",
     answer:
-      "Yes. AI capability assessment is a core part of our work. We examine model architecture, training data, inference costs, integration depth, and whether claimed AI capabilities are genuine engineering or a ChatGPT wrapper in marketing clothing.",
+      "Yes. Daniel examines model architecture, training data, inference costs, integration depth, and telemetry — enough to say whether a claimed AI capability is genuine engineering or a thin layer over someone else's model.",
   },
   {
     question: "Do you work under NDA and confidentiality?",
     answer:
-      "Always. We operate under strict confidentiality for every engagement. We do not disclose client names, deal details, or findings to third parties without explicit permission.",
+      "Always. Every engagement runs under strict confidentiality. Client names, deal details, and findings are not disclosed without explicit permission.",
   },
   {
-    question: "How is this different from a general IT consultant?",
+    question: "Do you build software as well as advise?",
     answer:
-      "A general IT consultant usually helps build, fix, or operate technology for one company. We work at the investor level — assessing or supporting the technology across a firm's own operations and its portfolio, so investment teams understand what they are backing and what may need attention.",
+      "Yes, when the advice calls for it. A small team of senior specialists delivers under the same standards as the advice. Advice leads; delivery follows. Most engagements end with a decision, not a proposal.",
   },
   {
     question: "Do you review intellectual property, code ownership, and open-source licences?",
     answer:
-      "Yes. We check that a company actually owns the code it depends on: contractor and employee IP assignment, open-source licence compliance and copyleft exposure, third-party dependencies, and the provenance of AI-generated code.",
+      "Yes. Every due diligence engagement checks that a company owns the code it depends on: contractor and employee IP assignment, open-source licence compliance and copyleft exposure, third-party dependencies, and the provenance of AI-generated code.",
   },
   {
     question: "How much does an engagement cost?",
     answer:
-      "It depends on scope — a rapid technical review, a full due diligence report, or an embedded role are priced differently. Get in touch with the size of the firm, the portfolio, and the decision in front of you, and we'll scope it from there.",
+      "It is priced by scope: a short review, a full report, a retainer, or a fractional role. Say what the decision is and you will get a clear number before you commit to anything.",
   },
   {
-    question: "Do you only work on deals?",
+    question: "How is this different from a consultancy?",
     answer:
-      "No. We also support embedded technical leadership inside your firm, ongoing technical oversight across a portfolio, and founder readiness reviews before fundraising or sale. If technology is the question, we can scope an engagement to fit.",
+      "There is no product to sell and no large team to keep busy. The advice is the engagement. When delivery happens, it is because the advice called for it — not the other way round.",
   },
 ];
 
