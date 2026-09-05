@@ -6,7 +6,7 @@ import { ImageResponse } from "next/og";
 import { BRAND_INK, BRAND_MUTED, BRAND_NAME, BRAND_SURFACE, MARK } from "@/lib/brand";
 import { MARK_PATH } from "@/lib/brand-mark.generated";
 
-export const alt = "Daniel Molloy — Independent Technology Advisory";
+export const alt = "Daniel Molloy | Independent Technology Advisory";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

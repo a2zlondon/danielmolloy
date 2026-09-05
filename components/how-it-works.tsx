@@ -11,7 +11,7 @@ const steps = [
     number: "02",
     title: "Examine the evidence",
     description:
-      "Code, architecture, contracts, costs, teams, claims — whatever bears on the decision.",
+      "Code, architecture, contracts, costs, teams, claims: whatever bears on the decision.",
   },
   {
     number: "03",

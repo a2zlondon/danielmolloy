@@ -33,7 +33,7 @@ export default function BlogPage() {
                 Writing
               </h1>
               <p className="text-xl text-muted-foreground mb-12">
-                Notes on technology decisions — due diligence, advisory, AI,
+                Notes on technology decisions: due diligence, advisory, AI,
                 and what the evidence shows.
               </p>
 

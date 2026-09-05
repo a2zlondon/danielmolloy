@@ -21,7 +21,7 @@ const services = [
     title: "Technical due diligence",
     href: "/services/technical-due-diligence",
     description:
-      "An independent view of the technology behind a deal — before the money is committed.",
+      "An independent view of the technology behind a deal, before the money is committed.",
   },
   {
     title: "Technology advisory",
@@ -33,7 +33,7 @@ const services = [
     title: "Fractional CTO",
     href: "/services/fractional-cto",
     description:
-      "Senior technical leadership through growth, change, or recovery — without the full-time hire.",
+      "Senior technical leadership through growth, change, or recovery, without the full-time hire.",
   },
   {
     title: "AI governance & strategy",
@@ -45,7 +45,7 @@ const services = [
     title: "Cloud & software delivery",
     href: "/services/cloud-software-delivery",
     description:
-      "When the advice calls for building, a senior team does the work. Delivery supports the advice — it never leads.",
+      "When the advice calls for building, a senior team does the work. Delivery supports the advice. It never leads.",
   },
 ];
 
@@ -104,7 +104,7 @@ export default function Home() {
                 Who Daniel works with
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
-                Investors first — venture capital partners, family offices,
+                Investors first: venture capital partners, family offices,
                 private equity, and angel investors. Then the CEOs, founders,
                 boards, and CTOs facing the same decisions from the other side.
                 The work is the same in both directions: an independent view of

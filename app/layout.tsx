@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 export const metadata: Metadata = {
   title: {
-    default: "Daniel Molloy — Independent Technology Advisory",
+    default: "Daniel Molloy | Independent Technology Advisory",
     template: "%s | Daniel Molloy",
   },
   description:
@@ -57,13 +57,13 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: SITE_URL,
     siteName: "Daniel Molloy",
-    title: "Daniel Molloy — Independent Technology Advisory",
+    title: "Daniel Molloy | Independent Technology Advisory",
     description:
       "Independent technology advisory and technical due diligence for investors, boards, and technology companies. Led by Daniel Molloy.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daniel Molloy — Independent Technology Advisory",
+    title: "Daniel Molloy | Independent Technology Advisory",
     description:
       "Independent technology advisory and technical due diligence for investors, boards, and technology companies.",
   },

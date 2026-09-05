@@ -51,8 +51,8 @@ export default function AiGovernancePage() {
         <div className="max-w-2xl mx-auto text-muted-foreground space-y-4">
           <p>
             Boards are being told to move on AI. Most proposals overstate what
-            exists today. The damage from a wrong commitment — to data, to
-            reputation — arrives later, when it is harder to undo.
+            exists today. The damage from a wrong commitment, to data or to
+            reputation, arrives later, when it is harder to undo.
           </p>
           <p>
             The useful question is not whether AI matters. It is which uses are
@@ -72,7 +72,7 @@ export default function AiGovernancePage() {
         <div className="max-w-2xl mx-auto text-muted-foreground space-y-4">
           <p>
             A position you can defend: what to adopt, what to decline, what to
-            monitor — and the evidence behind each call.
+            monitor, and the evidence behind each call.
           </p>
           <p>
             This is governance and judgement work, not evangelism. Daniel has

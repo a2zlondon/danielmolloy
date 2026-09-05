@@ -6,12 +6,12 @@ import { ProfilePageJsonLd } from "@/components/structured-data";
 import { BOOK_CALL_URL, LINKEDIN_URL, SITE_URL } from "@/lib/constants";
 
 export const metadata = {
-  title: { absolute: "Daniel Molloy — Independent Technology Adviser" },
+  title: { absolute: "Daniel Molloy | Independent Technology Adviser" },
   description:
     "Daniel Molloy is an independent technology adviser to investors, boards, and technology companies. Founder of Daniel Molloy Ltd.",
   alternates: { canonical: `${SITE_URL}/about` },
   openGraph: {
-    title: "Daniel Molloy — Independent Technology Adviser",
+    title: "Daniel Molloy | Independent Technology Adviser",
     description:
       "Daniel Molloy is an independent technology adviser to investors, boards, and technology companies. Founder of Daniel Molloy Ltd.",
   },
@@ -63,8 +63,8 @@ export default function AboutPage() {
                 </p>
                 <p>
                   The practice is independent. There is no software to sell and
-                  no delivery target behind the advice. Most engagements are
-                  confidential, and most of the work is never spoken about.
+                  no delivery target behind the advice. Every engagement is
+                  confidential. The work is never spoken about.
                 </p>
               </div>
 

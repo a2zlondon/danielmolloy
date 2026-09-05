@@ -34,7 +34,7 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Daniel Molloy — Writing</title>
+    <title>Daniel Molloy | Writing</title>
     <link>${SITE_URL}/blog</link>
     <description>Articles on technology advisory, technical due diligence, AI governance and engineering leadership.</description>
     <language>en-GB</language>

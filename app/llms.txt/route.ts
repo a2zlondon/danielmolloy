@@ -26,15 +26,15 @@ export function GET() {
 ## The Practice
 - Independent: no software to sell, and no delivery target behind the advice. Delivery work supports the advice; it never leads it.
 - Five services, one practice, all led by Daniel Molloy.
-- Evidence-based: findings come from code, architecture, contracts, and costs — not from interviews alone.
+- Evidence-based: findings come from code, architecture, contracts, and costs, not from interviews alone.
 - Plain-English reporting for boards and deal teams.
 - Discreet: every engagement runs under NDA.
 
 ## Services
-- [Technical Due Diligence](${SITE_URL}/services/technical-due-diligence): an independent view of the technology behind a deal before the money is committed — code quality, security, technical debt, IP ownership and open-source licence compliance, AI capability verification, team and key-person risk, cloud cost and scalability, commercial defensibility.
-- [Technology Advisory](${SITE_URL}/services/technology-advisory): independent advice for boards and executive teams — build or buy, replace or repair, vendor selection, technology cost, and second opinions on major programmes.
+- [Technical Due Diligence](${SITE_URL}/services/technical-due-diligence): an independent view of the technology behind a deal before the money is committed: code quality, security, technical debt, IP ownership and open-source licence compliance, AI capability verification, team and key-person risk, cloud cost and scalability, commercial defensibility.
+- [Technology Advisory](${SITE_URL}/services/technology-advisory): independent advice for boards and executive teams: build or buy, replace or repair, vendor selection, technology cost, and second opinions on major programmes.
 - [Fractional CTO](${SITE_URL}/services/fractional-cto): senior technical leadership through growth, change, or recovery, scoped in days per month with a defined end.
-- [AI Governance & Strategy](${SITE_URL}/services/ai-governance): practical adoption of AI with governance and risk management — what to adopt, what to decline, what to monitor.
+- [AI Governance & Strategy](${SITE_URL}/services/ai-governance): practical adoption of AI with governance and risk management: what to adopt, what to decline, what to monitor.
 - [Cloud & Software Delivery](${SITE_URL}/services/cloud-software-delivery): complex architecture, cloud transformation, and recovery work, done by a senior team under the same standards as the advice.
 
 ## Who We Work With

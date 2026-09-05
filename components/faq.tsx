@@ -19,7 +19,7 @@ export const faqs = [
   {
     question: "Can you tell whether the AI is real?",
     answer:
-      "Yes. Daniel examines model architecture, training data, inference costs, integration depth, and telemetry — enough to say whether a claimed AI capability is genuine engineering or a thin layer over someone else's model.",
+      "Yes. Daniel examines model architecture, training data, inference costs, integration depth, and telemetry, enough to say whether a claimed AI capability is genuine engineering or a thin layer over someone else's model.",
   },
   {
     question: "Do you work under NDA and confidentiality?",
@@ -44,7 +44,7 @@ export const faqs = [
   {
     question: "How is this different from a consultancy?",
     answer:
-      "There is no product to sell and no large team to keep busy. The advice is the engagement. When delivery happens, it is because the advice called for it — not the other way round.",
+      "There is no product to sell and no large team to keep busy. The advice is the engagement. When delivery happens, it is because the advice called for it, not the other way round.",
   },
 ];
 
