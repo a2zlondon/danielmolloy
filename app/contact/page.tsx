@@ -39,7 +39,7 @@ export default function ContactPage() {
                   <div>
                     <h2 className="text-xl font-medium mb-2">Location</h2>
                     <p className="text-muted-foreground">
-                      London, UK — working with investors and technology
+                      London, UK. Working with investors and technology
                       companies across the UK and Europe.
                     </p>
                   </div>

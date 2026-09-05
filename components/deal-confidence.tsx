@@ -9,7 +9,7 @@ const signals = [
   {
     title: "Evidence-based",
     description:
-      "Findings come from code, architecture, contracts, and costs — not from interviews alone.",
+      "Findings come from code, architecture, contracts, and costs, not from interviews alone.",
   },
   {
     title: "Plain English",
@@ -19,7 +19,7 @@ const signals = [
   {
     title: "Discreet",
     description:
-      "Under NDA as standard. Most of the work is never spoken about.",
+      "Under NDA as standard. The work is never spoken about.",
   },
 ];
 

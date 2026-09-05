@@ -19,12 +19,12 @@ const theWork = [
   {
     title: "Complex architecture",
     description:
-      "Systems designed for the load, the data, and the growth plan — including cloud platforms such as Azure.",
+      "Systems designed for the load, the data, and the growth plan, including cloud platforms such as Azure.",
   },
   {
     title: "Cloud transformation",
     description:
-      "Replatforming and migration work that finishes — while the business keeps running.",
+      "Replatforming and migration work that finishes, while the business keeps running.",
   },
   {
     title: "Recovery",

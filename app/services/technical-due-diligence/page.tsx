@@ -42,7 +42,7 @@ const assessmentDimensions = [
   {
     title: "Code quality & technical debt",
     description:
-      "How well the software is built, where the debt sits, and what it would cost to fix — in terms a deal team can use.",
+      "How well the software is built, where the debt sits, and what it would cost to fix, in terms a deal team can use.",
   },
   {
     title: "Security",
@@ -52,7 +52,7 @@ const assessmentDimensions = [
   {
     title: "AI capability verification",
     description:
-      "Whether AI claims are real — model architecture, training data, inference costs, telemetry, and genuine capability against marketing.",
+      "Whether AI claims are real: model architecture, training data, inference costs, telemetry, and genuine capability against marketing.",
   },
   {
     title: "Team & key-person risk",
@@ -67,7 +67,7 @@ const assessmentDimensions = [
   {
     title: "Commercial defensibility",
     description:
-      "Whether the technology genuinely supports the story being sold — differentiation, IP, data, and platform risk.",
+      "Whether the technology genuinely supports the story being sold: differentiation, IP, data, and platform risk.",
   },
 ];
 
@@ -75,7 +75,7 @@ const ipChecks = [
   {
     title: "Code ownership & IP assignment",
     description:
-      "Whether contractors, employees, and past collaborators have properly assigned their intellectual property — so the company actually owns the code it depends on.",
+      "Whether contractors, employees, and past collaborators have properly assigned their intellectual property, so the company actually owns the code it depends on.",
   },
   {
     title: "Open-source licence compliance",
@@ -120,7 +120,7 @@ export default function TechnicalDueDiligencePage() {
       name="Technical Due Diligence"
       schemaDescription={metadata.description}
       h1="Technical due diligence"
-      intro="An independent view of the technology behind a deal — before the money is committed."
+      intro="An independent view of the technology behind a deal, before the money is committed."
     >
       <ServiceSection
         heading="When investors call"
@@ -153,7 +153,7 @@ export default function TechnicalDueDiligencePage() {
       <ServiceSection
         id="intellectual-property"
         heading="Intellectual property & code ownership"
-        lead="In a software deal, the intellectual property is the asset. Every engagement checks whether the company owns what it is selling — and whether anything in the codebase could weaken the IP position after completion."
+        lead="In a software deal, the intellectual property is the asset. Every engagement checks whether the company owns what it is selling, and whether anything in the codebase could weaken the IP position after completion."
         tone="background"
         items={ipChecks}
       />

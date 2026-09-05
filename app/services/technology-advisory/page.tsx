@@ -18,7 +18,7 @@ const decisions = [
   {
     title: "Build or buy",
     description:
-      "Whether to build the capability in-house, buy it, or license it — and what each path costs over time.",
+      "Whether to build the capability in-house, buy it, or license it, and what each path costs over time.",
   },
   {
     title: "Replace or repair",

@@ -35,7 +35,7 @@ const services = [
     title: "Fractional CTO",
     href: "/services/fractional-cto",
     description:
-      "Senior technical leadership through growth, change, or recovery — without the full-time hire. Defined days, defined outcomes, and an agreed end.",
+      "Senior technical leadership through growth, change, or recovery, without the full-time hire. Defined days, defined outcomes, and an agreed end.",
   },
   {
     title: "AI governance & strategy",
@@ -47,7 +47,7 @@ const services = [
     title: "Cloud & software delivery",
     href: "/services/cloud-software-delivery",
     description:
-      "When the advice calls for building, a senior team does the work. Complex architecture, migration, and recovery — under the same standards as the advice. Delivery supports the advice. It never leads.",
+      "When the advice calls for building, a senior team does the work. Complex architecture, migration, and recovery, under the same standards as the advice. Delivery supports the advice. It never leads.",
   },
 ];
 

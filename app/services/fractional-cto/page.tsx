@@ -5,12 +5,12 @@ const PAGE_URL = servicePageUrl("fractional-cto");
 export const metadata = {
   title: "Fractional CTO",
   description:
-    "Fractional CTO leadership for growing and changing technology companies. Team, architecture, cost, and board reporting — scoped in days per month, with a defined end.",
+    "Fractional CTO leadership for growing and changing technology companies. Team, architecture, cost, and board reporting, scoped in days per month, with a defined end.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
     title: "Fractional CTO | Daniel Molloy",
     description:
-      "Fractional CTO leadership for growing and changing technology companies. Team, architecture, cost, and board reporting — scoped in days per month, with a defined end.",
+      "Fractional CTO leadership for growing and changing technology companies. Team, architecture, cost, and board reporting, scoped in days per month, with a defined end.",
   },
 };
 
@@ -18,7 +18,7 @@ const whenItFits = [
   {
     title: "Between CTOs",
     description:
-      "Cover and continuity while you hire properly — and help running the search.",
+      "Cover and continuity while you hire properly, and help running the search.",
   },
   {
     title: "After investment",
@@ -68,7 +68,7 @@ export default function FractionalCtoPage() {
       serviceType="Fractional CTO leadership"
       schemaDescription={metadata.description}
       h1="Fractional CTO"
-      intro="Senior technical leadership through growth, change, or recovery — without the full-time hire."
+      intro="Senior technical leadership through growth, change, or recovery, without the full-time hire."
     >
       <ServiceSection
         heading="When it fits"
@@ -89,7 +89,7 @@ export default function FractionalCtoPage() {
             Honest reporting on progress against them.
           </p>
           <p>
-            A fractional role should end. The exit is agreed at the start —
+            A fractional role should end. The exit is agreed at the start:
             usually a permanent hire, a stable team, or a completed change.
           </p>
         </div>

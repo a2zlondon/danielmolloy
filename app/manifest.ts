@@ -4,7 +4,7 @@ import { BRAND_INK, BRAND_NAME, BRAND_SURFACE } from "@/lib/brand";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${BRAND_NAME} — Independent Technology Advisory`,
+    name: `${BRAND_NAME} | Independent Technology Advisory`,
     short_name: BRAND_NAME,
     description:
       "Independent technology advisory for investors, boards, and technology companies. Technical due diligence, technology advisory, fractional CTO, and AI governance.",
