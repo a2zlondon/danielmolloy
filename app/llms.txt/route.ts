@@ -24,13 +24,16 @@ export function GET() {
 - LinkedIn: https://www.linkedin.com/in/danielthomasmolloy/
 
 ## The Practice
-- Independent: no software to sell, and no delivery target behind the advice. Delivery work supports the advice; it never leads it.
-- Five services, one practice, all led by Daniel Molloy.
+- Independent. No software to sell, and no delivery target behind the advice. Delivery work supports the advice and never leads it.
+- Seven services, one practice, all led by Daniel Molloy.
+- Built for transactions. Reports can be addressed to named parties with reliance agreed at scoping, a conflicts check runs before every engagement, and professional indemnity insurance is held.
 - Evidence-based: findings come from code, architecture, contracts, and costs, not from interviews alone.
 - Plain-English reporting for boards and deal teams.
 - Discreet: every engagement runs under NDA.
 
 ## Services
+- [AI Due Diligence](${SITE_URL}/services/ai-due-diligence): an independent view of whether claimed AI capability is real, defensible, and safe to buy. Model architecture, data provenance, evaluation methodology, infrastructure and running costs, dependencies, security, defensibility, and AI technical debt.
+- [Technology Value Creation](${SITE_URL}/services/value-creation): post-investment technology planning. Diligence findings become a 100-day plan where each finding gets a priority, an owner, a cost, a timeline, and a success measure.
 - [Technical Due Diligence](${SITE_URL}/services/technical-due-diligence): an independent view of the technology behind a deal before the money is committed: code quality, security, technical debt, IP ownership and open-source licence compliance, AI capability verification, team and key-person risk, cloud cost and scalability, commercial defensibility.
 - [Technology Advisory](${SITE_URL}/services/technology-advisory): independent advice for boards and executive teams: build or buy, replace or repair, vendor selection, technology cost, and second opinions on major programmes.
 - [Fractional CTO](${SITE_URL}/services/fractional-cto): senior technical leadership through growth, change, or recovery, scoped in days per month with a defined end.
@@ -64,8 +67,10 @@ export function GET() {
 - [Services](${SITE_URL}/services): The five services of the practice.
 - [About Daniel Molloy](${SITE_URL}/about): The adviser behind the practice.
 - [The Practice](${SITE_URL}/who-we-are): Daniel and the delivery team.
+- [Working With Counsel & Advisers](${SITE_URL}/partners): how the practice fits a transaction team, with reliance, conflicts checks, and professional indemnity insurance.
+- [Case Studies](${SITE_URL}/case-studies): shared privately under NDA, anonymised where confidentiality requires it.
 - [Writing](${SITE_URL}/blog): Guides and articles on technology decisions.
-- [Contact](${SITE_URL}/contact): Contact and booking.
+- [Contact](${SITE_URL}/contact): Email, WhatsApp, and booking. Enquiries are treated as confidential from the first message.
 
 ## Guides
 ${guides}

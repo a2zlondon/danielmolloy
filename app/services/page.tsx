@@ -26,6 +26,18 @@ const services = [
       "An independent view of the technology behind a deal, before the money is committed. Code, architecture, security, IP, AI claims, and the people the product depends on. Reported in plain English, at the speed of the deal.",
   },
   {
+    title: "AI due diligence",
+    href: "/services/ai-due-diligence",
+    description:
+      "An independent view of whether claimed AI capability is real, defensible, and safe to buy. Model architecture, data rights, evaluation, running costs, and AI technical debt.",
+  },
+  {
+    title: "Technology value creation",
+    href: "/services/value-creation",
+    description:
+      "Diligence findings become an executable plan for the first hundred days and beyond. Each finding gets a priority, an owner, a cost, a timeline, and a success measure.",
+  },
+  {
     title: "Technology advisory",
     href: "/services/technology-advisory",
     description:
@@ -65,7 +77,7 @@ export default function ServicesPage() {
                 investors and technology companies make the right decisions.
               </p>
               <p className="mt-4 text-muted-foreground">
-                Five services. One practice. Every engagement starts with the
+                Seven services. One practice. Every engagement starts with the
                 decision in front of you.
               </p>
             </div>

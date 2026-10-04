@@ -56,9 +56,9 @@ export default function AboutPage() {
                   strategy, AI adoption, and technical leadership.
                 </p>
                 <p>
-                  The advice comes from experience building, rescuing, and
-                  operating complex software systems. That background shapes how
-                  he works. Start with the decision, examine the evidence, and
+                  The advice comes from more than 25 years building, rescuing,
+                  and operating complex software systems. That background
+                  shapes how he works. Start with the decision, examine the evidence, and
                   report in plain English.
                 </p>
                 <p>

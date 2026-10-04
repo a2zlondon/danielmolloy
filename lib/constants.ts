@@ -1,6 +1,8 @@
 export const SITE_URL = "https://danielmolloy.com";
 export const BOOK_CALL_URL = "https://calendly.com/d4nmolloy/book-a-call";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/danielthomasmolloy/";
+export const WHATSAPP_NUMBER_DISPLAY = "+44 7719 772000";
+export const WHATSAPP_URL = "https://wa.me/447719772000";
 
 export const LEGAL_COMPANY_NAME = "Daniel Molloy Ltd";
 export const COMPANY_NUMBER = "15228212";
