@@ -27,6 +27,11 @@ export const faqs = [
       "Always. Every engagement runs under strict confidentiality. Client names, deal details, and findings are not disclosed without explicit permission.",
   },
   {
+    question: "Can lawyers and deal teams rely on the report?",
+    answer:
+      "Yes, where the engagement is set up for it. Reports can be addressed to named parties and reliance agreed at scoping. A conflicts check runs before every engagement, and professional indemnity insurance is held, with details available on request.",
+  },
+  {
     question: "Do you build software as well as advise?",
     answer:
       "Yes, when the advice calls for it. A small team of senior specialists delivers under the same standards as the advice. Advice leads. Delivery follows. Most engagements end with a decision, not a proposal.",

@@ -2,10 +2,12 @@ import Link from "next/link";
 import { Mark } from "@/components/brand/logo";
 import { CompanyLegalDetails } from "@/components/company-legal-details";
 import { BRAND_NAME } from "@/lib/brand";
-import { BOOK_CALL_URL, LINKEDIN_URL } from "@/lib/constants";
+import { BOOK_CALL_URL, LINKEDIN_URL, WHATSAPP_URL } from "@/lib/constants";
 
 const serviceLinks = [
   { href: "/services/technical-due-diligence", label: "Technical due diligence" },
+  { href: "/services/ai-due-diligence", label: "AI due diligence" },
+  { href: "/services/value-creation", label: "Technology value creation" },
   { href: "/services/technology-advisory", label: "Technology advisory" },
   { href: "/services/fractional-cto", label: "Fractional CTO" },
   { href: "/services/ai-governance", label: "AI governance & strategy" },
@@ -15,6 +17,8 @@ const serviceLinks = [
 const practiceLinks = [
   { href: "/about", label: "About Daniel" },
   { href: "/who-we-are", label: "The practice" },
+  { href: "/partners", label: "Counsel & advisers" },
+  { href: "/case-studies", label: "Case studies" },
   { href: "/blog", label: "Writing" },
   { href: "/contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
@@ -75,6 +79,16 @@ export function Footer() {
                   className="text-muted-foreground hover:text-foreground"
                 >
                   Email
+                </a>
+              </li>
+              <li>
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  WhatsApp
                 </a>
               </li>
               <li>

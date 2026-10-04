@@ -3,7 +3,12 @@ import { Footer } from "@/components/footer";
 import { CompanyLegalDetails } from "@/components/company-legal-details";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BOOK_CALL_URL, SITE_URL } from "@/lib/constants";
+import {
+  BOOK_CALL_URL,
+  SITE_URL,
+  WHATSAPP_NUMBER_DISPLAY,
+  WHATSAPP_URL,
+} from "@/lib/constants";
 
 export const metadata = {
   title: "Contact",
@@ -34,6 +39,22 @@ export default function ContactPage() {
                     >
                       connect@danielmolloy.com
                     </a>
+                  </div>
+
+                  <div>
+                    <h2 className="text-xl font-medium mb-2">WhatsApp</h2>
+                    <a
+                      href={WHATSAPP_URL}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {WHATSAPP_NUMBER_DISPLAY}
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-2">
+                      Enquiries are treated as confidential from the first
+                      message.
+                    </p>
                   </div>
 
                   <div>

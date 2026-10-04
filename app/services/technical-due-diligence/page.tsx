@@ -158,10 +158,31 @@ export default function TechnicalDueDiligencePage() {
         items={ipChecks}
       />
 
+      <ServiceSection heading="Engagement and reliance" tone="card">
+        <div className="max-w-2xl mx-auto text-muted-foreground space-y-4">
+          <p>
+            Reports can be addressed to named parties in the transaction, and
+            reliance can be agreed where the engagement requires it. A
+            conflicts check runs before every engagement. Professional
+            indemnity insurance is held, with details available on request.
+          </p>
+          <p>
+            Working alongside counsel or a deal team? See{" "}
+            <Link
+              href="/partners"
+              className="underline underline-offset-4 hover:no-underline"
+            >
+              how the practice fits into a transaction team
+            </Link>
+            .
+          </p>
+        </div>
+      </ServiceSection>
+
       <ServiceSection
         heading="Guides"
         lead="Longer reading on how the work is done."
-        tone="card"
+        tone="background"
       >
         <ul className="max-w-2xl mx-auto space-y-3">
           {guides.map((guide) => (

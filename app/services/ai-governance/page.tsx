@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ServicePage, ServiceSection, servicePageUrl } from "@/components/service-page";
 
 const PAGE_URL = servicePageUrl("ai-governance");
@@ -78,6 +79,16 @@ export default function AiGovernancePage() {
             This is governance and judgement work, not evangelism. Daniel has
             built and reviewed AI systems. The advice starts from how the
             technology actually behaves.
+          </p>
+          <p>
+            Assessing AI you are about to buy is a different engagement. See{" "}
+            <Link
+              href="/services/ai-due-diligence"
+              className="underline underline-offset-4 hover:no-underline"
+            >
+              AI due diligence
+            </Link>
+            .
           </p>
         </div>
       </ServiceSection>
