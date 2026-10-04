@@ -16,7 +16,7 @@ export const metadata = {
 
 const sections = [
   {
-    title: "Features are claims; telemetry is evidence",
+    title: "Features are claims. Telemetry is evidence",
     body: "A feature list says what the product can theoretically do. Telemetry shows what customers actually use, where they get value, what fails, what gets ignored and what creates support load. During diligence, that evidence is more useful than a roadmap slide.",
   },
   {
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     title: "Good telemetry makes the deal more investable",
-    body: "A company that measures the right signals is easier to diligence, easier to improve and easier to govern after investment. Telemetry is not just instrumentation; it is evidence that the team understands its own product.",
+    body: "A company that measures the right signals is easier to diligence, easier to improve and easier to govern after investment. Telemetry is more than instrumentation. It is evidence that the team understands its own product.",
   },
 ];
 

@@ -9,7 +9,7 @@ export const faqs = [
   {
     question: "Who does Daniel work with?",
     answer:
-      "Investors first: venture capital partners, family offices, private equity, and angel investors. Then the CEOs, founders, boards, and CTOs facing the same decisions from the other side. The common thread is an important technology decision that needs an independent view.",
+      "Investors first. Venture capital partners, family offices, private equity, and angel investors. Then the CEOs, founders, boards, and CTOs facing the same decisions from the other side. The common thread is an important technology decision that needs an independent view.",
   },
   {
     question: "What does an engagement look like?",
@@ -29,17 +29,17 @@ export const faqs = [
   {
     question: "Do you build software as well as advise?",
     answer:
-      "Yes, when the advice calls for it. A small team of senior specialists delivers under the same standards as the advice. Advice leads; delivery follows. Most engagements end with a decision, not a proposal.",
+      "Yes, when the advice calls for it. A small team of senior specialists delivers under the same standards as the advice. Advice leads. Delivery follows. Most engagements end with a decision, not a proposal.",
   },
   {
     question: "Do you review intellectual property, code ownership, and open-source licences?",
     answer:
-      "Yes. Every due diligence engagement checks that a company owns the code it depends on: contractor and employee IP assignment, open-source licence compliance and copyleft exposure, third-party dependencies, and the provenance of AI-generated code.",
+      "Yes. Every due diligence engagement checks that a company owns the code it depends on. That means contractor and employee IP assignment, open-source licence compliance and copyleft exposure, third-party dependencies, and the provenance of AI-generated code.",
   },
   {
     question: "How much does an engagement cost?",
     answer:
-      "It is priced by scope: a short review, a full report, a retainer, or a fractional role. Say what the decision is and you will get a clear number before you commit to anything.",
+      "It is priced by scope. A short review, a full report, a retainer, or a fractional role. Say what the decision is and you will get a clear number before you commit to anything.",
   },
   {
     question: "How is this different from a consultancy?",

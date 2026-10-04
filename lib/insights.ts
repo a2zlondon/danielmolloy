@@ -24,7 +24,7 @@ export const INSIGHTS: Insight[] = [
     description:
       "Source code ownership, deployment, technical debt, security, AI claims, team risk and cloud costs.",
     published: "2026-06-25",
-    modified: "2026-07-10",
+    modified: "2026-10-04",
   },
   {
     slug: "how-to-evaluate-ai-startup-before-investing",
@@ -39,7 +39,7 @@ export const INSIGHTS: Insight[] = [
     description:
       "One-person knowledge risk, no automated testing, no observability and excessive cloud spend.",
     published: "2026-07-10",
-    modified: "2026-07-10",
+    modified: "2026-10-04",
   },
   {
     slug: "why-telemetry-matters-more-than-features",
@@ -47,7 +47,7 @@ export const INSIGHTS: Insight[] = [
     description:
       "Why usage evidence and operating signals matter more than feature lists.",
     published: "2026-07-10",
-    modified: "2026-07-10",
+    modified: "2026-10-04",
   },
   {
     slug: "what-happens-during-technical-due-diligence",
@@ -55,7 +55,7 @@ export const INSIGHTS: Insight[] = [
     description:
       "Discovery, architecture review, code review, infrastructure review, risk assessment and executive summary.",
     published: "2026-07-10",
-    modified: "2026-07-10",
+    modified: "2026-10-04",
   },
   {
     slug: "legal-due-diligence-vs-technical-due-diligence",
@@ -63,7 +63,7 @@ export const INSIGHTS: Insight[] = [
     description:
       "How the two disciplines differ, where they overlap and why you need both before you sign.",
     published: "2026-06-25",
-    modified: "2026-07-09",
+    modified: "2026-10-04",
   },
   {
     slug: "verify-ai-claims-software-ma",

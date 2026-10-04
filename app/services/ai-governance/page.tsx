@@ -71,7 +71,7 @@ export default function AiGovernancePage() {
       <ServiceSection heading="What you get" tone="card">
         <div className="max-w-2xl mx-auto text-muted-foreground space-y-4">
           <p>
-            A position you can defend: what to adopt, what to decline, what to
+            A position you can defend. What to adopt, what to decline, what to
             monitor, and the evidence behind each call.
           </p>
           <p>

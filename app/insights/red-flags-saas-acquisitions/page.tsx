@@ -52,7 +52,7 @@ export default function RedFlagsSaasAcquisitionsPage() {
         <InsightArticle
           eyebrow="SaaS acquisitions"
           title="Red Flags in SaaS Acquisitions"
-          intro="A SaaS acquisition should include a practical infrastructure and engineering checklist before completion. The goal is not to punish imperfection; it is to understand which technical issues could affect valuation, integration, customer retention or future investment."
+          intro="A SaaS acquisition should include a practical infrastructure and engineering checklist before completion. The goal is not to punish imperfection. It is to understand which technical issues could affect valuation, integration, customer retention or future investment."
           sections={sections}
           ctaLabel="Review SaaS acquisition risk"
           ctaHref="/services/technical-due-diligence"

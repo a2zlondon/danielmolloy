@@ -16,13 +16,13 @@ export const metadata = {
 };
 
 const checks = [
-  "Source code ownership: where the code lives, who owns it, who has access, and whether contractor or founder IP has been assigned correctly.",
-  "Deployment process: how releases are tested, approved, deployed, monitored and rolled back when something goes wrong.",
-  "Technical debt: what slows delivery, creates fragility, increases security exposure or raises the future cost of change.",
-  "Security: authentication, access controls, secrets management, dependency risk, incident history and customer data exposure.",
-  "AI claims: whether AI features are proprietary, defensible, measurable and actually used in production workflows.",
-  "Team concentration risk: whether one engineer, founder or agency holds critical operational knowledge.",
-  "Cloud costs: whether infrastructure spend is proportionate to revenue, usage, margins and the growth plan.",
+  "Source code ownership. Where the code lives, who owns it, who has access, and whether contractor or founder IP has been assigned correctly.",
+  "Deployment process. How releases are tested, approved, deployed, monitored and rolled back when something goes wrong.",
+  "Technical debt. What slows delivery, creates fragility, increases security exposure or raises the future cost of change.",
+  "Security. Authentication, access controls, secrets management, dependency risk, incident history and customer data exposure.",
+  "AI claims. Whether AI features are proprietary, defensible, measurable and actually used in production workflows.",
+  "Team concentration risk. Whether one engineer, founder or agency holds critical operational knowledge.",
+  "Cloud costs. Whether infrastructure spend is proportionate to revenue, usage, margins and the growth plan.",
   "What documentation exists for architecture, onboarding, incidents and operations?",
 ];
 
@@ -49,7 +49,7 @@ export default function SaasChecklistPage() {
               </h1>
               <div className="prose prose-lg max-w-none">
                 <p>
-                  Investors assess technical debt during acquisitions by asking whether the platform can support the commercial story. A polished demo is not enough; buyers need evidence from the codebase, infrastructure, deployment process, security posture, AI implementation and team.
+                  Investors assess technical debt during acquisitions by asking whether the platform can support the commercial story. A polished demo is not enough. Buyers need evidence from the codebase, infrastructure, deployment process, security posture, AI implementation and team.
                 </p>
                 <ul>
                   {checks.map((check) => (
