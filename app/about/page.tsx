@@ -58,7 +58,7 @@ export default function AboutPage() {
                 <p>
                   The advice comes from experience building, rescuing, and
                   operating complex software systems. That background shapes how
-                  he works: start with the decision, examine the evidence, and
+                  he works. Start with the decision, examine the evidence, and
                   report in plain English.
                 </p>
                 <p>

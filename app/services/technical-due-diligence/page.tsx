@@ -52,7 +52,7 @@ const assessmentDimensions = [
   {
     title: "AI capability verification",
     description:
-      "Whether AI claims are real: model architecture, training data, inference costs, telemetry, and genuine capability against marketing.",
+      "Whether AI claims are real. Model architecture, training data, inference costs, telemetry, and genuine capability against marketing.",
   },
   {
     title: "Team & key-person risk",
@@ -67,7 +67,7 @@ const assessmentDimensions = [
   {
     title: "Commercial defensibility",
     description:
-      "Whether the technology genuinely supports the story being sold: differentiation, IP, data, and platform risk.",
+      "Whether the technology genuinely supports the story being sold. Differentiation, IP, data, and platform risk.",
   },
 ];
 

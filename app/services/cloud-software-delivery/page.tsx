@@ -34,7 +34,7 @@ const theWork = [
   {
     title: "Delivery oversight",
     description:
-      "Senior review of an existing team's work: architecture, quality, security, and pace.",
+      "Senior review of an existing team's work. Architecture, quality, security, and pace.",
   },
 ];
 

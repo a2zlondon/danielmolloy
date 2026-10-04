@@ -47,7 +47,7 @@ export default function LegalVsTechnicalDueDiligencePage() {
                   The gap matters most in SaaS and AI transactions. A legal report may confirm that IP is assigned correctly, while a technical review may find that the code is fragile, the cloud bill is unsustainable, the deployment process is manual, or the claimed AI is a thin wrapper around commodity tooling.
                 </p>
                 <p>
-                  The best approach is collaborative. The legal team identifies transaction risks and disclosure points; the technical diligence team validates the engineering reality behind them. Together, that gives the buyer clearer negotiation points, better post-close planning and fewer surprises after completion.
+                  The best approach is collaborative. The legal team identifies transaction risks and disclosure points. The technical diligence team validates the engineering reality behind them. Together, that gives the buyer clearer negotiation points, better post-close planning and fewer surprises after completion.
                 </p>
               </div>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">

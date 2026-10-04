@@ -12,7 +12,7 @@ import { LINKEDIN_URL, SITE_URL } from "@/lib/constants";
 export const metadata = {
   title: "The Practice",
   description:
-    "Daniel Molloy leads every engagement. A small team of senior specialists supports delivery: infrastructure, product, frontend, and reporting, under the same standards.",
+    "Daniel Molloy leads every engagement. A small team of senior specialists supports delivery across infrastructure, product, frontend, and reporting, under the same standards.",
   alternates: { canonical: `${SITE_URL}/who-we-are` },
 };
 
@@ -95,8 +95,8 @@ export default function WhoWeArePage() {
                     </Badge>
                     <h2 className="text-2xl font-medium mb-3">Daniel Molloy</h2>
                     <p className="text-muted-foreground leading-relaxed mb-6">
-                      Founder and lead adviser. Daniel leads every engagement:
-                      the scope, the evidence, the findings, and the advice
+                      Founder and lead adviser. Daniel leads every engagement.
+                      The scope, the evidence, the findings, and the advice
                       itself. He is the single point of accountability for the
                       work.
                     </p>
@@ -116,8 +116,8 @@ export default function WhoWeArePage() {
 
               <h2 className="text-3xl font-light mb-4">The delivery team</h2>
               <p className="text-muted-foreground mb-10 max-w-2xl">
-                Senior specialists who carry out and review delivery work:
-                infrastructure, product, frontend, and reporting, under
+                Senior specialists who carry out and review delivery work
+                across infrastructure, product, frontend, and reporting, under
                 Daniel&apos;s direction.
               </p>
 

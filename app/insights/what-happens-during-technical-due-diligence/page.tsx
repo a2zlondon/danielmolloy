@@ -10,7 +10,7 @@ const SLUG = "what-happens-during-technical-due-diligence";
 export const metadata = {
   title: "What Happens During Technical Due Diligence?",
   description:
-    "A practical framework for technical due diligence: discovery, architecture review, code review, infrastructure review, risk assessment and executive summary.",
+    "A practical framework for technical due diligence. Discovery, architecture review, code review, infrastructure review, risk assessment and executive summary.",
   alternates: { canonical: `${SITE_URL}/insights/${SLUG}` },
 };
 
@@ -25,7 +25,7 @@ const sections = [
   },
   {
     title: "3. Code review",
-    body: "The code review samples structure, maintainability, testing, dependency risk, repository health, security patterns and technical debt. The goal is not line-by-line perfection; it is to identify risks that affect value, delivery speed or resilience.",
+    body: "The code review samples structure, maintainability, testing, dependency risk, repository health, security patterns and technical debt. The goal is not line-by-line perfection. It is to identify risks that affect value, delivery speed or resilience.",
   },
   {
     title: "4. Infrastructure review",
@@ -33,7 +33,7 @@ const sections = [
   },
   {
     title: "5. Risk assessment",
-    body: "Findings are translated into commercial risk: what could affect valuation, integration, security, margin, roadmap execution or post-close investment. Each risk should have evidence, severity, likelihood and practical mitigation.",
+    body: "Findings are translated into commercial risk. What could affect valuation, integration, security, margin, roadmap execution or post-close investment. Each risk should have evidence, severity, likelihood and practical mitigation.",
   },
   {
     title: "6. Executive summary",

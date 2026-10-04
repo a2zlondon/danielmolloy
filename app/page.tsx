@@ -104,7 +104,7 @@ export default function Home() {
                 Who Daniel works with
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
-                Investors first: venture capital partners, family offices,
+                Investors first. Venture capital partners, family offices,
                 private equity, and angel investors. Then the CEOs, founders,
                 boards, and CTOs facing the same decisions from the other side.
                 The work is the same in both directions: an independent view of

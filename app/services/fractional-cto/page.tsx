@@ -89,8 +89,8 @@ export default function FractionalCtoPage() {
             Honest reporting on progress against them.
           </p>
           <p>
-            A fractional role should end. The exit is agreed at the start:
-            usually a permanent hire, a stable team, or a completed change.
+            A fractional role should end. The exit is agreed at the start.
+            Usually a permanent hire, a stable team, or a completed change.
           </p>
         </div>
       </ServiceSection>
