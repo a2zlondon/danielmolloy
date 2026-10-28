@@ -77,7 +77,7 @@ export default function WhoWeArePage() {
                 work.
               </p>
 
-              <Card className="border-0 shadow-sm mb-16">
+              <Card className="border-0 shadow-sm mb-6">
                 <CardContent className="pt-8 pb-8 md:flex md:items-start md:gap-8">
                   <Avatar className="h-28 w-28 mb-5 md:mb-0 shrink-0">
                     <AvatarImage
@@ -110,6 +110,47 @@ export default function WhoWeArePage() {
                         </a>
                       </Button>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-sm mb-16">
+                <CardContent className="pt-8 pb-8 md:flex md:items-start md:gap-8">
+                  <Avatar className="h-28 w-28 mb-5 md:mb-0 shrink-0">
+                    <AvatarImage
+                      src="/images/team/sanaya-bachooali.png"
+                      alt="Sanaya Bachooali"
+                      className="object-cover grayscale"
+                    />
+                    <AvatarFallback className="text-lg bg-muted text-muted-foreground">
+                      SB
+                    </AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <Badge variant="outline" className="mb-3 text-xs">
+                      Director
+                    </Badge>
+                    <p className="text-sm tracking-[0.1em] uppercase text-muted-foreground mb-1">
+                      Sales &amp; Business Development
+                    </p>
+                    <h2 className="text-2xl font-medium mb-3">
+                      Sanaya Bachooali
+                    </h2>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Leads business development and partnerships for the
+                      practice. Often the first point of contact for investors,
+                      counsel, and deal teams. More than five years in strategy
+                      consulting at Accenture before this.
+                    </p>
+                    <Button asChild variant="outline" size="sm">
+                      <a
+                        href="https://www.linkedin.com/in/sanaya-bachooali/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        LinkedIn
+                      </a>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
