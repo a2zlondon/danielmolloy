@@ -2,7 +2,7 @@
 title: "How to make technology decisions without a CTO"
 slug: "how-to-make-technology-decisions-without-a-cto"
 date: "2026-09-04T11:00:00"
-modified: "2026-10-04T09:00:00"
+modified: "2026-11-01T09:00:00"
 excerpt: "Many companies face big technology decisions with no senior technical voice in the room. A simple method makes those decisions safer."
 ---
 
@@ -34,6 +34,6 @@ Whatever you choose (a supplier, a build, an interim leader), agree upfront what
 
 ## When to borrow leadership instead
 
-Sometimes the honest answer is that the company needs technical leadership, not another one-off decision. That does not have to mean a full-time hire before you are ready. A [fractional CTO](/services/fractional-cto), a few days a month with defined outcomes and an agreed end, can hold the technical line through a search, a growth phase, or a recovery, and help you hire the permanent person properly.
+Sometimes the honest answer is that the company needs technical leadership, not another one-off decision. That does not have to mean a full-time hire before you are ready. A [fractional CTO](/services/technology-advisory), a few days a month with defined outcomes and an agreed end, can hold the technical line through a search, a growth phase, or a recovery, and help you hire the permanent person properly.
 
 The common thread in all of it is that technology decisions reward the same discipline you already apply to financial ones. Write them down. Price the downside. Follow the evidence.

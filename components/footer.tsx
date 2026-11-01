@@ -6,12 +6,7 @@ import { BOOK_CALL_URL, LINKEDIN_URL, WHATSAPP_URL } from "@/lib/constants";
 
 const serviceLinks = [
   { href: "/services/technical-due-diligence", label: "Technical due diligence" },
-  { href: "/services/ai-due-diligence", label: "AI due diligence" },
-  { href: "/services/value-creation", label: "Technology value creation" },
   { href: "/services/technology-advisory", label: "Technology advisory" },
-  { href: "/services/fractional-cto", label: "Fractional CTO" },
-  { href: "/services/ai-governance", label: "AI governance & strategy" },
-  { href: "/services/cloud-software-delivery", label: "Cloud & software delivery" },
 ];
 
 const practiceLinks = [

@@ -21,43 +21,13 @@ const services = [
     title: "Technical due diligence",
     href: "/services/technical-due-diligence",
     description:
-      "An independent view of the technology behind a deal, before the money is committed.",
-  },
-  {
-    title: "AI due diligence",
-    href: "/services/ai-due-diligence",
-    description:
-      "An independent view of whether claimed AI capability is real, defensible, and safe to buy.",
-  },
-  {
-    title: "Technology value creation",
-    href: "/services/value-creation",
-    description:
-      "Diligence findings become an executable plan for the first hundred days and beyond.",
+      "An independent view of the technology behind a deal, before the money is committed. AI claims included.",
   },
   {
     title: "Technology advisory",
     href: "/services/technology-advisory",
     description:
-      "Independent advice for boards and executive teams making decisions they cannot easily reverse.",
-  },
-  {
-    title: "Fractional CTO",
-    href: "/services/fractional-cto",
-    description:
-      "Senior technical leadership through growth, change, or recovery, without the full-time hire.",
-  },
-  {
-    title: "AI governance & strategy",
-    href: "/services/ai-governance",
-    description:
-      "Adopt AI where the evidence supports it. Govern it with the same discipline as any other risk.",
-  },
-  {
-    title: "Cloud & software delivery",
-    href: "/services/cloud-software-delivery",
-    description:
-      "When the advice calls for building, a senior team does the work. Delivery supports the advice. It never leads.",
+      "Independent advice for investors, boards, and executive teams. Leadership, AI, and post-deal planning included.",
   },
 ];
 
@@ -74,7 +44,7 @@ export default function Home() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl font-light mb-8">
-                One practice. Seven ways to engage.
+                One practice. Two ways to engage.
               </h2>
               <div className="grid gap-4 md:grid-cols-2">
                 {services.map((service) => (

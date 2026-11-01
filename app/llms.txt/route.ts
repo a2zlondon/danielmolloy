@@ -25,20 +25,15 @@ export function GET() {
 
 ## The Practice
 - Independent. No software to sell, and no delivery target behind the advice. Delivery work supports the advice and never leads it.
-- Seven services, one practice, all led by Daniel Molloy.
+- Two ways to engage, one practice, all led by Daniel Molloy. Technical due diligence for transactions, and technology advisory for everything between them.
 - Built for transactions. Reports can be addressed to named parties with reliance agreed at scoping, a conflicts check runs before every engagement, and professional indemnity insurance is held.
 - Evidence-based: findings come from code, architecture, contracts, and costs, not from interviews alone.
 - Plain-English reporting for boards and deal teams.
 - Discreet: every engagement runs under NDA.
 
 ## Services
-- [AI Due Diligence](${SITE_URL}/services/ai-due-diligence): an independent view of whether claimed AI capability is real, defensible, and safe to buy. Model architecture, data provenance, evaluation methodology, infrastructure and running costs, dependencies, security, defensibility, and AI technical debt.
-- [Technology Value Creation](${SITE_URL}/services/value-creation): post-investment technology planning. Diligence findings become a 100-day plan where each finding gets a priority, an owner, a cost, a timeline, and a success measure.
-- [Technical Due Diligence](${SITE_URL}/services/technical-due-diligence): an independent view of the technology behind a deal before the money is committed: code quality, security, technical debt, IP ownership and open-source licence compliance, AI capability verification, team and key-person risk, cloud cost and scalability, commercial defensibility.
-- [Technology Advisory](${SITE_URL}/services/technology-advisory): independent advice for boards and executive teams: build or buy, replace or repair, vendor selection, technology cost, and second opinions on major programmes.
-- [Fractional CTO](${SITE_URL}/services/fractional-cto): senior technical leadership through growth, change, or recovery, scoped in days per month with a defined end.
-- [AI Governance & Strategy](${SITE_URL}/services/ai-governance): practical adoption of AI with governance and risk management: what to adopt, what to decline, what to monitor.
-- [Cloud & Software Delivery](${SITE_URL}/services/cloud-software-delivery): complex architecture, cloud transformation, and recovery work, done by a senior team under the same standards as the advice.
+- [Technical Due Diligence](${SITE_URL}/services/technical-due-diligence): an independent view of the technology behind a deal before the money is committed. Code quality, security, technical debt, IP ownership and open-source licence compliance, team and key-person risk, cloud cost and scalability, and commercial defensibility. AI due diligence is included wherever AI claims appear, covering model architecture, data provenance, evaluation, running costs, and defensibility.
+- [Technology Advisory](${SITE_URL}/services/technology-advisory): independent advice for investors, boards, and executive teams. Decisions such as build or buy and vendor selection, fractional CTO leadership with a defined end, AI adoption and governance, post-investment 100-day planning, and cloud and software delivery by a senior team when the advice calls for it.
 
 ## Who We Work With
 - Venture capital partners

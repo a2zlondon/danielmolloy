@@ -27,6 +27,32 @@ const nextConfig: NextConfig = {
         destination: "/contact",
         permanent: true,
       },
+      // Service pages folded into the two remaining services (Nov 2026).
+      {
+        source: "/services/ai-due-diligence",
+        destination: "/services/technical-due-diligence",
+        permanent: true,
+      },
+      {
+        source: "/services/value-creation",
+        destination: "/services/technology-advisory",
+        permanent: true,
+      },
+      {
+        source: "/services/fractional-cto",
+        destination: "/services/technology-advisory",
+        permanent: true,
+      },
+      {
+        source: "/services/ai-governance",
+        destination: "/services/technology-advisory",
+        permanent: true,
+      },
+      {
+        source: "/services/cloud-software-delivery",
+        destination: "/services/technology-advisory",
+        permanent: true,
+      },
       {
         source: "/blog-posts",
         destination: "/blog",

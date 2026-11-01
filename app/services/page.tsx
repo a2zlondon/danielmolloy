@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "Technology Advisory Services | Daniel Molloy",
     description:
-      "Five services, one practice. Technical due diligence, technology advisory, fractional CTO, AI governance, and cloud and software delivery.",
+      "Two ways to engage, one practice. Technical due diligence for transactions, and technology advisory for everything between them.",
   },
 };
 
@@ -23,43 +23,13 @@ const services = [
     title: "Technical due diligence",
     href: "/services/technical-due-diligence",
     description:
-      "An independent view of the technology behind a deal, before the money is committed. Code, architecture, security, IP, AI claims, and the people the product depends on. Reported in plain English, at the speed of the deal.",
-  },
-  {
-    title: "AI due diligence",
-    href: "/services/ai-due-diligence",
-    description:
-      "An independent view of whether claimed AI capability is real, defensible, and safe to buy. Model architecture, data rights, evaluation, running costs, and AI technical debt.",
-  },
-  {
-    title: "Technology value creation",
-    href: "/services/value-creation",
-    description:
-      "Diligence findings become an executable plan for the first hundred days and beyond. Each finding gets a priority, an owner, a cost, a timeline, and a success measure.",
+      "An independent view of the technology behind a deal, before the money is committed. Code, architecture, security, IP, and the people the product depends on. AI due diligence included wherever AI claims appear. Reported in plain English, at the speed of the deal.",
   },
   {
     title: "Technology advisory",
     href: "/services/technology-advisory",
     description:
-      "Independent advice for boards and executive teams. Build or buy. Replace or repair. Spend more or spend less. A clear answer, and the evidence behind it.",
-  },
-  {
-    title: "Fractional CTO",
-    href: "/services/fractional-cto",
-    description:
-      "Senior technical leadership through growth, change, or recovery, without the full-time hire. Defined days, defined outcomes, and an agreed end.",
-  },
-  {
-    title: "AI governance & strategy",
-    href: "/services/ai-governance",
-    description:
-      "Adopt AI where the evidence supports it. Decline it where it does not. Governance, risk, and a position your board can stand behind.",
-  },
-  {
-    title: "Cloud & software delivery",
-    href: "/services/cloud-software-delivery",
-    description:
-      "When the advice calls for building, a senior team does the work. Complex architecture, migration, and recovery, under the same standards as the advice. Delivery supports the advice. It never leads.",
+      "Independent advice for investors, boards, and executive teams. Decisions, fractional CTO leadership, AI governance, post-deal planning, and delivery by a senior team when the advice calls for it. The advice is the product.",
   },
 ];
 
@@ -77,7 +47,7 @@ export default function ServicesPage() {
                 investors and technology companies make the right decisions.
               </p>
               <p className="mt-4 text-muted-foreground">
-                Seven services. One practice. Every engagement starts with the
+                Two ways to engage. One practice. Every engagement starts with the
                 decision in front of you.
               </p>
             </div>
