@@ -22,6 +22,10 @@ export function Hero() {
               <Link href="/services">How the practice works</Link>
             </Button>
           </div>
+          <p className="text-sm text-muted-foreground">
+            25+ years in complex software · Under NDA as standard · Scope and
+            fee fixed in a business day
+          </p>
         </div>
       </div>
     </section>
