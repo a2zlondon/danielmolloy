@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer";
 import { Testimonials } from "@/components/testimonials";
 import { FaqPageJsonLd } from "@/components/structured-data";
 import { DealConfidence } from "@/components/deal-confidence";
+import { EngagementAnimation } from "@/components/engagement-animation";
 import { ExperienceIncludes } from "@/components/client-logo-banner";
 import { Card, CardContent } from "@/components/ui/card";
 import { SITE_URL } from "@/lib/constants";
@@ -38,6 +39,13 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <section className="pb-16 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <EngagementAnimation />
+            </div>
+          </div>
+        </section>
         <ExperienceIncludes />
         <DealConfidence />
         <section className="py-24 bg-card">
