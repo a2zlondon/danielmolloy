@@ -186,7 +186,7 @@ export function EngagementAnimation() {
         className="ea-svg block w-full h-auto"
         viewBox="0 0 960 540"
         role="img"
-        aria-label="A short walkthrough of a typical engagement with an AI business. A deal arrives, the NDA and engagement contract are signed, the data room is examined across code, model and data, cloud, contracts, telemetry and security, the team is interviewed and the architecture reviewed, findings arrive in plain English, and the final due diligence report lets the investor decide with confidence."
+        aria-label="A short walkthrough of a typical engagement with an AI business. An investor faces an AI company with a question over the deal, the NDA and engagement contract are signed, the data room is examined across code, model and data, cloud, contracts, telemetry and security, the team is interviewed and the architecture reviewed, findings arrive in plain English, and the final due diligence report lets the investor decide with confidence."
       >
         <rect width="960" height="540" fill={BRAND_SURFACE} />
 
@@ -199,21 +199,27 @@ export function EngagementAnimation() {
           </text>
         </g>
 
-        {/* Scene 1. The AI deal */}
+        {/* Scene 1. The deal, an investor facing an AI company */}
         <g className="ea-s1">
-          <rect x="340" y="150" width="280" height="190" rx="14" fill="#ffffff" stroke={BRAND_INK} strokeOpacity="0.8" strokeWidth="2" />
-          <circle cx="390" cy="200" r="20" fill="none" stroke={BRAND_MUTED} strokeWidth="2" />
-          <rect x="424" y="188" width="120" height="10" rx="5" fill={BRAND_MUTED} opacity="0.35" />
-          <rect x="424" y="206" width="84" height="10" rx="5" fill={BRAND_MUTED} opacity="0.2" />
-          <rect x="366" y="244" width="94" height="24" rx="12" fill="none" stroke={ACCENT} strokeWidth="2" />
-          <text x="413" y="261" fontSize="13" fill={ACCENT} textAnchor="middle" fontFamily="inherit">AI product</text>
-          <circle cx="388" cy="300" r="4" fill={BRAND_MUTED} />
-          <circle cx="412" cy="288" r="4" fill={BRAND_MUTED} />
-          <circle cx="412" cy="312" r="4" fill={BRAND_MUTED} />
-          <line x1="391" y1="298" x2="409" y2="290" stroke={BRAND_MUTED} strokeWidth="1.5" />
-          <line x1="391" y1="302" x2="409" y2="310" stroke={BRAND_MUTED} strokeWidth="1.5" />
-          <polyline points="470,306 505,288 540,296 580,264" fill="none" stroke={BRAND_INK} strokeWidth="2" strokeOpacity="0.7" />
-          <text x="668" y="262" fontSize="72" fill={BRAND_MUTED} opacity="0.5" fontFamily="inherit">?</text>
+          <rect x="130" y="150" width="240" height="170" rx="14" fill="#ffffff" stroke={BRAND_INK} strokeOpacity="0.8" strokeWidth="2" />
+          <text x="250" y="184" fontSize="13" letterSpacing="2" fill={BRAND_MUTED} textAnchor="middle" fontFamily="inherit">INVESTOR</text>
+          <path d="M214 228 L250 206 L286 228 Z" fill="none" stroke={BRAND_INK} strokeOpacity="0.75" strokeWidth="2" strokeLinejoin="round" />
+          <line x1="224" y1="236" x2="224" y2="272" stroke={BRAND_INK} strokeOpacity="0.75" strokeWidth="2" />
+          <line x1="250" y1="236" x2="250" y2="272" stroke={BRAND_INK} strokeOpacity="0.75" strokeWidth="2" />
+          <line x1="276" y1="236" x2="276" y2="272" stroke={BRAND_INK} strokeOpacity="0.75" strokeWidth="2" />
+          <line x1="210" y1="280" x2="290" y2="280" stroke={BRAND_INK} strokeOpacity="0.75" strokeWidth="2" />
+          <rect x="590" y="150" width="240" height="170" rx="14" fill="#ffffff" stroke={BRAND_INK} strokeOpacity="0.8" strokeWidth="2" />
+          <text x="710" y="184" fontSize="13" letterSpacing="2" fill={BRAND_MUTED} textAnchor="middle" fontFamily="inherit">AI COMPANY</text>
+          <circle cx="710" cy="226" r="6" fill={BRAND_MUTED} />
+          <circle cx="684" cy="252" r="6" fill={BRAND_MUTED} />
+          <circle cx="736" cy="252" r="6" fill={BRAND_MUTED} />
+          <line x1="705" y1="231" x2="689" y2="247" stroke={BRAND_MUTED} strokeWidth="1.8" />
+          <line x1="715" y1="231" x2="731" y2="247" stroke={BRAND_MUTED} strokeWidth="1.8" />
+          <rect x="663" y="270" width="94" height="24" rx="12" fill="none" stroke={ACCENT} strokeWidth="2" />
+          <text x="710" y="287" fontSize="13" fill={ACCENT} textAnchor="middle" fontFamily="inherit">AI product</text>
+          <line x1="392" y1="245" x2="552" y2="245" stroke={BRAND_INK} strokeOpacity="0.75" strokeWidth="2.5" />
+          <path d="M552 245 l-14 -8 v16 Z" fill={BRAND_INK} fillOpacity="0.75" />
+          <text x="472" y="218" fontSize="52" fill={BRAND_MUTED} opacity="0.55" textAnchor="middle" fontFamily="inherit">?</text>
           <text x="480" y="440" fontSize="21" fill={BRAND_INK} textAnchor="middle" fontFamily="inherit">
             A deal is on the table. An AI company, and the technology carries the valuation.
           </text>
