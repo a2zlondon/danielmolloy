@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BOOK_CALL_URL } from "@/lib/constants";
+import { BOOK_CALL_URL, WHATSAPP_URL } from "@/lib/constants";
 
 export function CTASection() {
   return (
@@ -15,6 +15,16 @@ export function CTASection() {
         <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
           <a href={BOOK_CALL_URL}>Book a call</a>
         </Button>
+        <p className="mt-5 text-sm text-background/70">
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-4 hover:no-underline"
+          >
+            Or message Daniel on WhatsApp
+          </a>
+        </p>
       </div>
     </section>
   );

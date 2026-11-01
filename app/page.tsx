@@ -10,7 +10,8 @@ import { DealConfidence } from "@/components/deal-confidence";
 import { EngagementAnimation } from "@/components/engagement-animation";
 import { ExperienceIncludes } from "@/components/client-logo-banner";
 import { Card, CardContent } from "@/components/ui/card";
-import { SITE_URL } from "@/lib/constants";
+import { Button } from "@/components/ui/button";
+import { BOOK_CALL_URL, SITE_URL } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata = {
@@ -23,12 +24,14 @@ const services = [
     href: "/services/technical-due-diligence",
     description:
       "An independent view of the technology behind a deal, before the money is committed. AI claims included.",
+    cta: "See how a review runs",
   },
   {
     title: "Technology advisory",
     href: "/services/technology-advisory",
     description:
       "Independent advice for investors, boards, and executive teams. Leadership, AI, and post-deal planning included.",
+    cta: "See how the advice works",
   },
 ];
 
@@ -46,7 +49,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <ExperienceIncludes />
         <DealConfidence />
         <section className="py-24 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,12 +76,20 @@ export default function Home() {
                           href={service.href}
                           className="text-sm underline underline-offset-4 hover:no-underline"
                         >
-                          Read more
+                          {service.cta}
                         </Link>
                       </p>
                     </CardContent>
                   </Card>
                 ))}
+              </div>
+              <p className="text-muted-foreground mt-10 text-center">
+                Not sure which fits? Book a call and bring the decision.
+              </p>
+              <div className="flex justify-center mt-4">
+                <Button size="lg" asChild>
+                  <a href={BOOK_CALL_URL}>Book a call</a>
+                </Button>
               </div>
             </div>
           </div>
@@ -103,6 +113,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <ExperienceIncludes />
         <Testimonials />
         <div className="bg-card pb-24 -mt-8">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
