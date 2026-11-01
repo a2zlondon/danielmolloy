@@ -20,6 +20,68 @@ const TILES = [
   { x: 600, y: 258, label: "Security" },
 ];
 
+function TileIcon({ label }: { label: string }) {
+  const stroke = "#585455";
+  switch (label) {
+    case "Code":
+      return (
+        <text y="6" fontSize="17" fill={stroke} textAnchor="middle" fontFamily="inherit">
+          {"</>"}
+        </text>
+      );
+    case "Model & data":
+      return (
+        <g stroke={stroke} strokeWidth="1.8" fill="none">
+          <circle cx="0" cy="-7" r="3.2" />
+          <circle cx="-10" cy="5" r="3.2" />
+          <circle cx="10" cy="5" r="3.2" />
+          <line x1="-2" y1="-4.5" x2="-8" y2="2.5" />
+          <line x1="2" y1="-4.5" x2="8" y2="2.5" />
+        </g>
+      );
+    case "Cloud":
+      return (
+        <path
+          d="M -7 -5 a 5 5 0 0 0 -8 4 a 4.5 4.5 0 0 0 1 8 h 17 a 4.5 4.5 0 0 0 0.5 -8 a 6 6 0 0 0 -10.5 -4 z"
+          stroke={stroke}
+          strokeWidth="1.8"
+          fill="none"
+          strokeLinejoin="round"
+        />
+      );
+    case "Contracts":
+      return (
+        <g stroke={stroke} strokeWidth="1.8" fill="none">
+          <rect x="-8" y="-10" width="16" height="20" rx="2.5" />
+          <line x1="-4" y1="-3" x2="4" y2="-3" />
+          <line x1="-4" y1="2" x2="4" y2="2" />
+        </g>
+      );
+    case "Telemetry":
+      return (
+        <polyline
+          points="-12,2 -6,2 -3,-7 2,8 5,0 12,0"
+          stroke={stroke}
+          strokeWidth="1.8"
+          fill="none"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+        />
+      );
+    case "Security":
+      return (
+        <path
+          d="M 0 -10 L 8 -6.5 V -0.5 C 8 5.5 4.5 8.6 0 10.5 C -4.5 8.6 -8 5.5 -8 -0.5 V -6.5 Z"
+          stroke={stroke}
+          strokeWidth="1.8"
+          fill="none"
+          strokeLinejoin="round"
+        />
+      );
+  }
+  return null;
+}
+
 export function EngagementAnimation() {
   const [paused, setPaused] = useState(false);
 
@@ -164,7 +226,7 @@ export function EngagementAnimation() {
           <rect x="376" y="194" width="140" height="8" rx="4" fill={BRAND_MUTED} opacity="0.2" />
           <rect x="376" y="212" width="110" height="8" rx="4" fill={BRAND_MUTED} opacity="0.2" />
           <rect x="412" y="130" width="200" height="234" rx="10" fill="#ffffff" stroke={BRAND_INK} strokeOpacity="0.8" strokeWidth="2" />
-          <text x="436" y="164" fontSize="13" letterSpacing="1.5" fill={BRAND_INK} fontFamily="inherit">ENGAGEMENT CONTRACT</text>
+          <text x="436" y="164" fontSize="13" letterSpacing="1.5" fill={BRAND_INK} fontFamily="inherit">CONTRACT</text>
           <rect x="436" y="182" width="152" height="9" rx="4.5" fill={BRAND_MUTED} opacity="0.35" />
           <rect x="436" y="202" width="152" height="9" rx="4.5" fill={BRAND_MUTED} opacity="0.2" />
           <rect x="436" y="222" width="110" height="9" rx="4.5" fill={BRAND_MUTED} opacity="0.2" />
@@ -184,7 +246,10 @@ export function EngagementAnimation() {
           {TILES.map((tile) => (
             <g key={tile.label}>
               <rect x={tile.x} y={tile.y} width="150" height="92" rx="10" fill="#ffffff" stroke={BRAND_INK} strokeOpacity="0.7" strokeWidth="2" />
-              <text x={tile.x + 75} y={tile.y + 55} fontSize="14" fill={BRAND_MUTED} textAnchor="middle" fontFamily="inherit">
+              <g transform={`translate(${tile.x + 75} ${tile.y + 34})`}>
+                <TileIcon label={tile.label} />
+              </g>
+              <text x={tile.x + 75} y={tile.y + 72} fontSize="13" fill={BRAND_MUTED} textAnchor="middle" fontFamily="inherit">
                 {tile.label}
               </text>
             </g>
