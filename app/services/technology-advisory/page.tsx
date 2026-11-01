@@ -128,7 +128,7 @@ export default function TechnologyAdvisoryPage() {
           </p>
           <p>
             <Link
-              href="/who-we-are"
+              href="/about"
               className="underline underline-offset-4 hover:no-underline"
             >
               Meet the practice

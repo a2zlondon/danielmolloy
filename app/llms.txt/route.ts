@@ -60,8 +60,7 @@ export function GET() {
 ## Key Pages
 - [Home](${SITE_URL}/): Positioning and overview.
 - [Services](${SITE_URL}/services): The five services of the practice.
-- [About Daniel Molloy](${SITE_URL}/about): The adviser behind the practice.
-- [The Practice](${SITE_URL}/who-we-are): Daniel and the delivery team.
+- [About Daniel Molloy](${SITE_URL}/about): The adviser behind the practice, and the team that supports delivery.
 - [Working With Counsel & Advisers](${SITE_URL}/partners): how the practice fits a transaction team, with reliance, conflicts checks, and professional indemnity insurance.
 - [Case Studies](${SITE_URL}/case-studies): shared privately under NDA, anonymised where confidentiality requires it.
 - [Writing](${SITE_URL}/blog): Guides and articles on technology decisions.
