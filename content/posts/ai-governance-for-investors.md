@@ -2,7 +2,7 @@
 title: "AI governance for investors: what to ask before and after you invest"
 slug: "ai-governance-for-investors"
 date: "2026-09-04T09:00:00"
-modified: "2026-10-04T09:00:00"
+modified: "2026-11-01T09:00:00"
 excerpt: "Most AI proposals overstate what exists. A short set of questions, asked before and after the investment, keeps the risk priced and the story honest."
 ---
 
@@ -41,4 +41,4 @@ The output of governance is not a document. It is a position the board can state
 
 That position also protects the valuation story. When the next buyer or the next round runs diligence on the company, the difference between "we use AI" and "here is what it does, what it costs, what it depends on, and how we control it" is worth real money.
 
-If your board or portfolio needs help getting there, that is the work I do. [AI governance and strategy](/services/ai-governance) is grounded in how the technology actually behaves.
+If your board or portfolio needs help getting there, that is the work I do. [AI governance and strategy](/services/technology-advisory) is grounded in how the technology actually behaves.

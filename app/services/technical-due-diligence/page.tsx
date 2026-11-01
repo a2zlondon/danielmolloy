@@ -71,6 +71,29 @@ const assessmentDimensions = [
   },
 ];
 
+const aiDiligence = [
+  {
+    title: "Model architecture and dependencies",
+    description:
+      "What the system actually is, and what happens when a model provider changes prices, terms, or behaviour.",
+  },
+  {
+    title: "Data provenance and rights",
+    description:
+      "Where the data came from, who owns it, and whether it can legally be used for training and improvement.",
+  },
+  {
+    title: "Evaluation and production telemetry",
+    description:
+      "How the company knows its AI works. Test sets, benchmarks, and usage in production rather than the demo.",
+  },
+  {
+    title: "Running costs and defensibility",
+    description:
+      "Inference spend as usage grows, and whether a competitor with the same public models could rebuild the product in a quarter.",
+  },
+];
+
 const ipChecks = [
   {
     title: "Code ownership & IP assignment",
@@ -151,14 +174,22 @@ export default function TechnicalDueDiligencePage() {
       />
 
       <ServiceSection
+        id="ai-due-diligence"
+        heading="AI due diligence"
+        lead="Deals now carry AI claims, and AI due diligence is part of every review where they appear. A thin layer over a public model can still be useful. It should not be valued like a defensible AI platform."
+        tone="background"
+        items={aiDiligence}
+      />
+
+      <ServiceSection
         id="intellectual-property"
         heading="Intellectual property & code ownership"
         lead="In a software deal, the intellectual property is the asset. Every engagement checks whether the company owns what it is selling, and whether anything in the codebase could weaken the IP position after completion."
-        tone="background"
+        tone="card"
         items={ipChecks}
       />
 
-      <ServiceSection heading="Engagement and reliance" tone="card">
+      <ServiceSection heading="Engagement and reliance" tone="background">
         <div className="max-w-2xl mx-auto text-muted-foreground space-y-4">
           <p>
             Reports can be addressed to named parties in the transaction, and
@@ -182,7 +213,7 @@ export default function TechnicalDueDiligencePage() {
       <ServiceSection
         heading="Guides"
         lead="Longer reading on how the work is done."
-        tone="background"
+        tone="card"
       >
         <ul className="max-w-2xl mx-auto space-y-3">
           {guides.map((guide) => (
