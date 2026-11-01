@@ -8,7 +8,8 @@ import { Button } from "@/components/ui/button";
 import { BOOK_CALL_URL } from "@/lib/constants";
 
 const navItems = [
-  { href: "/services", label: "Services" },
+  { href: "/services/technical-due-diligence", label: "Due diligence" },
+  { href: "/services/technology-advisory", label: "Advisory" },
   { href: "/about", label: "About" },
   { href: "/blog", label: "Writing" },
 ];

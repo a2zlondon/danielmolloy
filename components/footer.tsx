@@ -11,7 +11,6 @@ const serviceLinks = [
 
 const practiceLinks = [
   { href: "/about", label: "About Daniel" },
-  { href: "/who-we-are", label: "The practice" },
   { href: "/partners", label: "Counsel & advisers" },
   { href: "/case-studies", label: "Case studies" },
   { href: "/blog", label: "Writing" },

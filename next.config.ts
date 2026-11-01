@@ -101,7 +101,13 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/misura-ai",
-        destination: "/who-we-are",
+        destination: "/about",
+        permanent: true,
+      },
+      // The practice page merged into About (Nov 2026).
+      {
+        source: "/who-we-are",
+        destination: "/about",
         permanent: true,
       },
       // WordPress served an RSS feed at /feed; keep that address working.
